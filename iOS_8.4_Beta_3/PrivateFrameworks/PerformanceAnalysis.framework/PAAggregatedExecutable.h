@@ -11,13 +11,13 @@
     NSMutableSet *_rootFrames;
 }
 
-@property(assign,readonly) PAExecutableAggregator * aggregator;
-@property(assign,readwrite) unsigned int count;
-@property(assign,readwrite) unsigned long long firstTimestampIndex;
-@property(assign,readwrite) unsigned long long lastTimestampIndex;
-@property(assign,readonly) NSUUID * mainBinaryUuid;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) NSMutableSet * rootFrames;
+@property (readonly) PAExecutableAggregator *aggregator;
+@property unsigned int count;
+@property unsigned long long firstTimestampIndex;
+@property unsigned long long lastTimestampIndex;
+@property (readonly) NSUUID *mainBinaryUuid;
+@property (readonly) NSString *name;
+@property (retain) NSMutableSet *rootFrames;
 
 - (void)addSampleTask:(id)arg1 atTimestampIndex:(unsigned long long)arg2;
 - (id)aggregator;

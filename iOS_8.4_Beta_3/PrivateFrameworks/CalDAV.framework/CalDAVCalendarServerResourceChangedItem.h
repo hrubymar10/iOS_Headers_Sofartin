@@ -11,12 +11,12 @@
     NSMutableSet *_updated;
 }
 
-@property(assign,retain) NSMutableSet * collectionChanges;
-@property(assign,retain) NSMutableSet * collectionUpdates;
-@property(assign,retain) NSMutableSet * created;
-@property(assign,retain) NSMutableSet * deleted;
-@property(assign,retain) ICSDateValue * dtstamp;
-@property(assign,retain) NSMutableSet * updated;
+@property (nonatomic, retain) NSMutableSet *collectionChanges;
+@property (nonatomic, retain) NSMutableSet *collectionUpdates;
+@property (nonatomic, retain) NSMutableSet *created;
+@property (nonatomic, retain) NSMutableSet *deleted;
+@property (nonatomic, retain) ICSDateValue *dtstamp;
+@property (nonatomic, retain) NSMutableSet *updated;
 
 - (void)addCollectionChanges:(id)arg1;
 - (void)addCollectionUpdates:(id)arg1;

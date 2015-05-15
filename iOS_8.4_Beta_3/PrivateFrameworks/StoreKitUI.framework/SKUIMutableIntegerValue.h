@@ -6,7 +6,7 @@
     long long _integerValue;
 }
 
-@property(assign,readwrite) long long integerValue;
+@property (nonatomic) long long integerValue;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (unsigned long long)hash;

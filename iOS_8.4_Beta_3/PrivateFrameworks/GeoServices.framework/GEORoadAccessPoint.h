@@ -14,14 +14,14 @@
     int _walkingDirection;
 }
 
-@property(assign,readwrite) int drivingDirection;
-@property(assign,readwrite) bool hasDrivingDirection;
-@property(assign,readwrite) bool hasIsApproximate;
-@property(assign,readonly) bool hasLocation;
-@property(assign,readwrite) bool hasWalkingDirection;
-@property(assign,readwrite) bool isApproximate;
-@property(assign,retain) GEOLatLng * location;
-@property(assign,readwrite) int walkingDirection;
+@property (nonatomic) int drivingDirection;
+@property (nonatomic) bool hasDrivingDirection;
+@property (nonatomic) bool hasIsApproximate;
+@property (nonatomic, readonly) bool hasLocation;
+@property (nonatomic) bool hasWalkingDirection;
+@property (nonatomic) bool isApproximate;
+@property (nonatomic, retain) GEOLatLng *location;
+@property (nonatomic) int walkingDirection;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

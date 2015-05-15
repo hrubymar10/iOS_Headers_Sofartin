@@ -7,10 +7,10 @@
     ABTransportButton *_transportIcon;
 }
 
-@property(assign,readonly) ABContactAction * action;
-@property(assign,readonly) ABCardActionGroupItem * actionGroupItem;
-@property(assign,retain) UILabel * label;
-@property(assign,retain) ABTransportButton * transportIcon;
+@property (nonatomic, readonly) ABContactAction *action;
+@property (nonatomic, readonly) ABCardActionGroupItem *actionGroupItem;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, retain) ABTransportButton *transportIcon;
 
 - (id)action;
 - (id)actionGroupItem;

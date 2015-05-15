@@ -7,8 +7,8 @@
     CAMCameraRollSpec *_spec;
 }
 
-@property(assign,retain) DeferredFrameworkLoader * deferredLoader;
-@property(assign,retain) CAMCameraRollSpec * spec;
+@property (nonatomic, retain) DeferredFrameworkLoader *deferredLoader;
+@property (nonatomic, retain) CAMCameraRollSpec *spec;
 
 - (void).cxx_destruct;
 - (id)_initWithSessionID:(id)arg1 usesCameraLocationBundleID:(bool)arg2 startPreviewImmediately:(bool)arg3;

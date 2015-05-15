@@ -11,12 +11,12 @@
     LTERTCPReceiverReport *_receiverReport;
 }
 
-@property(assign,readwrite) unsigned int NTPLeastSignificantWord;
-@property(assign,readwrite) unsigned int NTPMostSignificantWord;
-@property(assign,readwrite) unsigned int RTPTimestamp;
-@property(assign,readwrite) unsigned int octetsSent;
-@property(assign,readwrite) unsigned int packetsSent;
-@property(assign,retain) LTERTCPReceiverReport * receiverReport;
+@property (nonatomic) unsigned int NTPLeastSignificantWord;
+@property (nonatomic) unsigned int NTPMostSignificantWord;
+@property (nonatomic) unsigned int RTPTimestamp;
+@property (nonatomic) unsigned int octetsSent;
+@property (nonatomic) unsigned int packetsSent;
+@property (nonatomic, retain) LTERTCPReceiverReport *receiverReport;
 
 - (unsigned int)NTPLeastSignificantWord;
 - (unsigned int)NTPMostSignificantWord;

@@ -42,8 +42,8 @@
     } _virtualStatus;
 }
 
-@property(assign,readwrite) bool displayEnabled;
-@property(assign,readonly) bool needsDisplayFlush;
+@property (nonatomic) bool displayEnabled;
+@property (nonatomic, readonly) bool needsDisplayFlush;
 
 + (void)initialize;
 

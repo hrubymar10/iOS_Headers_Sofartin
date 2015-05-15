@@ -6,15 +6,15 @@
     IKJSObject *_detail;
 }
 
-@property(assign,readonly) bool bubbles;
-@property(assign,readonly) bool cancelable;
-@property(assign,retain) IKDOMNode * currentTarget;
-@property(assign,readonly) bool defaultPrevented;
-@property(assign,retain) IKJSObject * detail;
-@property(assign,readonly) long long eventPhase;
-@property(assign,retain) IKDOMNode * target;
-@property(assign,readonly) NSDate * timeStamp;
-@property(assign,retain) NSString * type;
+@property (nonatomic, readonly) bool bubbles;
+@property (nonatomic, readonly) bool cancelable;
+@property (nonatomic, readonly, retain) IKDOMNode *currentTarget;
+@property (nonatomic, readonly) bool defaultPrevented;
+@property (nonatomic, retain) IKJSObject *detail;
+@property (nonatomic, readonly) long long eventPhase;
+@property (nonatomic, readonly, retain) IKDOMNode *target;
+@property (nonatomic, readonly) NSDate *timeStamp;
+@property (nonatomic, readonly, retain) NSString *type;
 
 - (void).cxx_destruct;
 - (id)detail;

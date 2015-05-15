@@ -8,9 +8,9 @@
     NSURL *_sourceURL;
 }
 
-@property(assign,readwrite) bool overwriteExistingDestinations;
-@property(assign,retain) NSMutableArray * resizeDestinations;
-@property(assign,copy) NSURL * sourceURL;
+@property (nonatomic) bool overwriteExistingDestinations;
+@property (nonatomic, retain) NSMutableArray *resizeDestinations;
+@property (nonatomic, copy) NSURL *sourceURL;
 
 + (bool)supportsSecureCoding;
 

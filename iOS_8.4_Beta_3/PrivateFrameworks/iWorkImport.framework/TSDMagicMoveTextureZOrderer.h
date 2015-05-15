@@ -11,8 +11,8 @@
     NSArray *_zOrderMatches;
 }
 
-@property(assign,readonly) NSArray * flattenableAnimationMatches;
-@property(assign,readonly) unsigned long long zOrderIntersectionsCount;
+@property (nonatomic, readonly) NSArray *flattenableAnimationMatches;
+@property (nonatomic, readonly) unsigned long long zOrderIntersectionsCount;
 
 - (void)dealloc;
 - (id)flattenableAnimationMatches;

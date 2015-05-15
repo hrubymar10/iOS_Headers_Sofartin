@@ -8,9 +8,9 @@
     int _order;
 }
 
-@property(assign,readonly) int depth;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) int order;
+@property (readonly) int depth;
+@property (readonly) NSString *name;
+@property (readonly) int order;
 
 + (id)instanceFromPlist:(id)arg1;
 

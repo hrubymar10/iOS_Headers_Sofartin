@@ -10,22 +10,22 @@
     NSMutableOrderedSet *_weak_albums;
 }
 
-@property(assign,retain) NSMutableOrderedSet * _albums;
-@property(assign,retain) NSString * _prettyDescription;
-@property(assign,retain) NSString * _typeDescription;
-@property(assign,readonly) unsigned long long albumsCount;
-@property(assign,copy) id albumsSortingComparator;
-@property(assign,retain) NSObject<PLAlbumContainer> * backingAlbumList;
-@property(assign,copy) <NSObject><NSCopying> * cachedIndexMapState;
-@property(assign,readonly) unsigned long long containersCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int filter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isFolder;
-@property(assign,copy) id sortComparator;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long unreadAlbumsCount;
+@property (nonatomic, retain) NSMutableOrderedSet *_albums;
+@property (nonatomic, readonly, retain) NSString *_prettyDescription;
+@property (nonatomic, readonly, retain) NSString *_typeDescription;
+@property (nonatomic, readonly) unsigned long long albumsCount;
+@property (nonatomic, readonly, copy) id albumsSortingComparator;
+@property (nonatomic, retain) NSObject<PLAlbumContainer> *backingAlbumList;
+@property (nonatomic, readonly, copy) <NSObject><NSCopying> *cachedIndexMapState;
+@property (nonatomic, readonly) unsigned long long containersCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) int filter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isFolder;
+@property (nonatomic, copy) id sortComparator;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long unreadAlbumsCount;
 
 - (id)_albums;
 - (id)_prettyDescription;

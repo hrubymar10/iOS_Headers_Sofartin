@@ -12,12 +12,12 @@
     int _serviceType;
 }
 
-@property(assign,readwrite) bool hasPlaceRequestType;
-@property(assign,readonly) bool hasQuerySubstring;
-@property(assign,readwrite) bool hasServiceType;
-@property(assign,readwrite) int placeRequestType;
-@property(assign,retain) NSString * querySubstring;
-@property(assign,readwrite) int serviceType;
+@property (nonatomic) bool hasPlaceRequestType;
+@property (nonatomic, readonly) bool hasQuerySubstring;
+@property (nonatomic) bool hasServiceType;
+@property (nonatomic) int placeRequestType;
+@property (nonatomic, retain) NSString *querySubstring;
+@property (nonatomic) int serviceType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

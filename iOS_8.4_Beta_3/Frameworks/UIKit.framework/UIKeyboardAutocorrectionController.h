@@ -9,11 +9,11 @@
     bool _requestedAutocorrection;
 }
 
-@property(assign,readonly) TIKeyboardCandidate * autocorrection;
-@property(assign,retain) TIAutocorrectionList * autocorrectionList;
-@property(assign,readwrite) bool deferredAutocorrection;
-@property(assign,readwrite) bool needsAutocorrection;
-@property(assign,readwrite) bool requestedAutocorrection;
+@property (nonatomic, readonly) TIKeyboardCandidate *autocorrection;
+@property (nonatomic, retain) TIAutocorrectionList *autocorrectionList;
+@property (nonatomic) bool deferredAutocorrection;
+@property (nonatomic) bool needsAutocorrection;
+@property (nonatomic) bool requestedAutocorrection;
 
 - (id)autocorrection;
 - (id)autocorrectionList;

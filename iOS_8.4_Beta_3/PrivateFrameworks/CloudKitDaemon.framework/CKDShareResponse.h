@@ -7,8 +7,8 @@
     CKShareID *_shareID;
 }
 
-@property(assign,retain) CKShare * share;
-@property(assign,retain) CKShareID * shareID;
+@property (nonatomic, retain) CKShare *share;
+@property (nonatomic, retain) CKShareID *shareID;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

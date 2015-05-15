@@ -11,8 +11,8 @@
     long long _unitStyle;
 }
 
-@property(assign,copy) NSNumberFormatter * numberFormatter;
-@property(assign,readwrite) long long unitStyle;
+@property (copy) NSNumberFormatter *numberFormatter;
+@property long long unitStyle;
 
 - (void)dealloc;
 - (void)finalize;

@@ -8,8 +8,8 @@
     MPUReportingController *_parentReportingController;
 }
 
-@property(assign,copy) NSArray * childReportingControllers;
-@property(assign,readwrite) MPUReportingController * parentReportingController;
+@property (nonatomic, readonly, copy) NSArray *childReportingControllers;
+@property (nonatomic) MPUReportingController *parentReportingController;
 
 - (void).cxx_destruct;
 - (void)_recordReportingEvents:(id)arg1;

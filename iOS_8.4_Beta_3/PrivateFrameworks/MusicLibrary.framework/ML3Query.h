@@ -15,26 +15,26 @@
     bool _usingSections;
 }
 
-@property(assign,readonly) long long anyEntityPersistentID;
-@property(assign,readonly) unsigned long long countOfEntities;
-@property(assign,readonly) Class entityClass;
-@property(assign,readonly) bool filtersOnDynamicProperties;
-@property(assign,readonly) bool hasEntities;
-@property(assign,readwrite) bool ignoreRestrictionsPredicates;
-@property(assign,readwrite) bool ignoreSystemFilterPredicates;
-@property(assign,readonly) ML3MusicLibrary * library;
-@property(assign,readwrite) unsigned long long limit;
-@property(assign,readonly) ML3AggregateQuery * nonDirectAggregateQuery;
-@property(assign,readonly) long long options;
-@property(assign,readonly) NSArray * orderingTerms;
-@property(assign,readonly) NSString * persistentIDProperty;
-@property(assign,readonly) ML3Predicate * predicate;
-@property(assign,readonly) ML3Predicate * predicateIncludingSystemwidePredicates;
-@property(assign,readonly) NSString * propertyToCount;
-@property(assign,readonly) NSString * sectionProperty;
-@property(assign,readonly) NSString * selectCountSQL;
-@property(assign,readonly) NSString * selectPersistentIDsSQL;
-@property(assign,readonly) bool usingSections;
+@property (nonatomic, readonly) long long anyEntityPersistentID;
+@property (nonatomic, readonly) unsigned long long countOfEntities;
+@property (nonatomic, readonly) Class entityClass;
+@property (nonatomic, readonly) bool filtersOnDynamicProperties;
+@property (nonatomic, readonly) bool hasEntities;
+@property (nonatomic) bool ignoreRestrictionsPredicates;
+@property (nonatomic) bool ignoreSystemFilterPredicates;
+@property (nonatomic, readonly) ML3MusicLibrary *library;
+@property (nonatomic) unsigned long long limit;
+@property (nonatomic, readonly) ML3AggregateQuery *nonDirectAggregateQuery;
+@property (nonatomic, readonly) long long options;
+@property (nonatomic, readonly) NSArray *orderingTerms;
+@property (nonatomic, readonly) NSString *persistentIDProperty;
+@property (nonatomic, readonly) ML3Predicate *predicate;
+@property (nonatomic, readonly) ML3Predicate *predicateIncludingSystemwidePredicates;
+@property (nonatomic, readonly) NSString *propertyToCount;
+@property (nonatomic, readonly) NSString *sectionProperty;
+@property (nonatomic, readonly) NSString *selectCountSQL;
+@property (nonatomic, readonly) NSString *selectPersistentIDsSQL;
+@property (nonatomic, readonly) bool usingSections;
 
 - (void).cxx_destruct;
 - (long long)anyEntityPersistentID;

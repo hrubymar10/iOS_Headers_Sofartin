@@ -14,16 +14,16 @@
     MPUExtrasBorderedImageView *_zoomingImageView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } initialPinchCenter;
-@property(assign,readwrite) double initialPinchScale;
-@property(getter=isInteractive,assign,readwrite) bool interactive;
-@property(assign,readwrite) unsigned long long itemIndex;
-@property(assign,readwrite) bool shouldUseSpringAnimation;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) MPUExtrasBorderedImageView * zoomingImageView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct CGPoint { double x1; double x2; } initialPinchCenter;
+@property (nonatomic) double initialPinchScale;
+@property (getter=isInteractive, nonatomic) bool interactive;
+@property (nonatomic) unsigned long long itemIndex;
+@property (nonatomic) bool shouldUseSpringAnimation;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) MPUExtrasBorderedImageView *zoomingImageView;
 
 - (void).cxx_destruct;
 - (float)_desiredSpeedForNonInteractiveAnimationWithDuration:(double)arg1 deferredTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })arg2 finalTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })arg3;

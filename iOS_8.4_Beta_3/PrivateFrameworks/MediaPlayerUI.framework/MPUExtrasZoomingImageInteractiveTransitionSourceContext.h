@@ -9,10 +9,10 @@
     unsigned long long _supportedZoomingImageTransitionDirections;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) unsigned long long itemIndex;
-@property(assign,retain) UIPinchGestureRecognizer * pinchGestureRecognizer;
-@property(assign,readwrite) unsigned long long supportedZoomingImageTransitionDirections;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) unsigned long long itemIndex;
+@property (nonatomic, retain) UIPinchGestureRecognizer *pinchGestureRecognizer;
+@property (nonatomic) unsigned long long supportedZoomingImageTransitionDirections;
 
 - (void).cxx_destruct;
 - (id)identifier;

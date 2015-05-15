@@ -10,11 +10,11 @@
     CALayer *_selectionLayer;
 }
 
-@property(assign,retain) CALayer * dodgeRingLayer;
-@property(assign,retain) CALayer * highlightDodgeLayer;
-@property(assign,retain) CALayer * highlightLuminanceLayer;
-@property(assign,retain) CALayer * luminanceRingLayer;
-@property(assign,retain) CALayer * selectionLayer;
+@property (retain) CALayer *dodgeRingLayer;
+@property (retain) CALayer *highlightDodgeLayer;
+@property (retain) CALayer *highlightLuminanceLayer;
+@property (retain) CALayer *luminanceRingLayer;
+@property (retain) CALayer *selectionLayer;
 
 + (id)colorForDodge;
 + (id)colorForLuminance;

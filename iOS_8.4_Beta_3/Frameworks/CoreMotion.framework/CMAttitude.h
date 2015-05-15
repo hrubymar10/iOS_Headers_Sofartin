@@ -6,11 +6,11 @@
     id _internal;
 }
 
-@property(assign,readonly) double pitch;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } quaternion;
-@property(assign,readonly) double roll;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } rotationMatrix;
-@property(assign,readonly) double yaw;
+@property (nonatomic, readonly) double pitch;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } quaternion;
+@property (nonatomic, readonly) double roll;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; } rotationMatrix;
+@property (nonatomic, readonly) double yaw;
 
 + (bool)supportsSecureCoding;
 

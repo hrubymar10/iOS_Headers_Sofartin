@@ -7,7 +7,7 @@
     NSString *_sectionHeaderSubscript;
 }
 
-@property(assign,readonly) NSString * sectionHeaderSubscript;
+@property (nonatomic, readonly) NSString *sectionHeaderSubscript;
 
 - (void).cxx_destruct;
 - (id)initWithDictionary:(id)arg1;

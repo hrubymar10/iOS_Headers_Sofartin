@@ -12,23 +12,23 @@
     NSString *softwareLayout;
 }
 
-@property(assign,readonly) NSBundle * containingBundle;
-@property(assign,readonly) NSString * containingBundleDisplayName;
-@property(assign,readonly) bool defaultLayoutIsASCIICapable;
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * extendedDisplayName;
-@property(assign,readonly) NSExtension * extension;
-@property(assign,retain) NSString * hardwareLayout;
-@property(assign,retain) NSString * identifier;
-@property(assign,readonly) NSString * identifierWithLayouts;
-@property(assign,readonly) bool isDefaultRightToLeft;
-@property(assign,readwrite) bool isDisplayed;
-@property(assign,readonly) bool isExtensionInputMode;
-@property(assign,retain) NSString * languageWithRegion;
-@property(assign,retain) NSString * normalizedIdentifier;
-@property(assign,retain) NSArray * normalizedIdentifierLevels;
-@property(assign,retain) NSString * primaryLanguage;
-@property(assign,retain) NSString * softwareLayout;
+@property (nonatomic, readonly) NSBundle *containingBundle;
+@property (nonatomic, readonly) NSString *containingBundleDisplayName;
+@property (nonatomic, readonly) bool defaultLayoutIsASCIICapable;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSString *extendedDisplayName;
+@property (nonatomic, readonly) NSExtension *extension;
+@property (nonatomic, retain) NSString *hardwareLayout;
+@property (nonatomic, retain) NSString *identifier;
+@property (nonatomic, readonly) NSString *identifierWithLayouts;
+@property (nonatomic, readonly) bool isDefaultRightToLeft;
+@property (nonatomic) bool isDisplayed;
+@property (nonatomic, readonly) bool isExtensionInputMode;
+@property (nonatomic, retain) NSString *languageWithRegion;
+@property (nonatomic, retain) NSString *normalizedIdentifier;
+@property (nonatomic, readonly, retain) NSArray *normalizedIdentifierLevels;
+@property (nonatomic, retain) NSString *primaryLanguage;
+@property (nonatomic, retain) NSString *softwareLayout;
 
 + (id)canonicalLanguageIdentifierFromIdentifier:(id)arg1;
 + (id)dictationInputMode;

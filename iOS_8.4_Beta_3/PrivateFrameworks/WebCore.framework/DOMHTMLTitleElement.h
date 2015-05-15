@@ -4,7 +4,7 @@
 
 @interface DOMHTMLTitleElement : DOMHTMLElement
 
-@property(assign,copy) NSString * text;
+@property (copy) NSString *text;
 
 - (void)setText:(id)arg1;
 - (id)text;

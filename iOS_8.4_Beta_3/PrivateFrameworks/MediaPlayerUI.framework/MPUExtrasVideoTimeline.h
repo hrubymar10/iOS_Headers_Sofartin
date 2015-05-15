@@ -7,7 +7,7 @@
     NSArray *_timelineElements;
 }
 
-@property(assign,readonly) NSArray * events;
+@property (nonatomic, readonly) NSArray *events;
 
 - (void).cxx_destruct;
 - (id)description;

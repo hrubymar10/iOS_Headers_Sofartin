@@ -6,8 +6,8 @@
     bool _fetchPrincipalSearchProperties;
 }
 
-@property(assign,readwrite) <CalDAVAccountPropertyRefreshDelegate> * delegate;
-@property(assign,readwrite) bool fetchPrincipalSearchProperties;
+@property (nonatomic) <CalDAVAccountPropertyRefreshDelegate> *delegate;
+@property (nonatomic) bool fetchPrincipalSearchProperties;
 
 - (bool)fetchPrincipalSearchProperties;
 - (void)getAccountPropertiesTask:(id)arg1 completedWithError:(id)arg2;

@@ -4,23 +4,23 @@
 
 @interface SAStartRequest : SABaseCommand <SAServerBoundCommand>
 
-@property(assign,copy) NSString * aceId;
-@property(assign,readwrite) bool clearContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool eyesFree;
-@property(assign,readwrite) bool handsFree;
-@property(assign,copy) NSString * hardwareBuild;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSNumber * isCarryDevice;
-@property(assign,copy) NSString * motionActivity;
-@property(assign,copy) NSNumber * motionConfidence;
-@property(assign,copy) NSString * origin;
-@property(assign,copy) NSString * refId;
-@property(assign,retain) SASStartSpeech * sourceSpeechRequest;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool talkOnly;
-@property(assign,copy) NSString * utterance;
+@property (nonatomic, copy) NSString *aceId;
+@property (nonatomic) bool clearContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool eyesFree;
+@property (nonatomic) bool handsFree;
+@property (nonatomic, copy) NSString *hardwareBuild;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSNumber *isCarryDevice;
+@property (nonatomic, copy) NSString *motionActivity;
+@property (nonatomic, copy) NSNumber *motionConfidence;
+@property (nonatomic, copy) NSString *origin;
+@property (nonatomic, copy) NSString *refId;
+@property (nonatomic, retain) SASStartSpeech *sourceSpeechRequest;
+@property (readonly) Class superclass;
+@property (nonatomic) bool talkOnly;
+@property (nonatomic, copy) NSString *utterance;
 
 + (id)startRequest;
 + (id)startRequestWithDictionary:(id)arg1 context:(id)arg2;

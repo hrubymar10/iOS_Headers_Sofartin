@@ -14,15 +14,15 @@
     NSData *_simpleAdjustmentData;
 }
 
-@property(assign,copy) NSString * adjustmentCompoundVersion;
-@property(assign,copy) NSString * adjustmentCreatorCode;
-@property(assign,retain) CPLResource * adjustmentData;
-@property(assign,readwrite) unsigned long long adjustmentSourceType;
-@property(assign,copy) NSString * adjustmentType;
-@property(assign,copy) NSString * creatorCode;
-@property(assign,copy) NSString * otherAdjustmentsFingerprint;
-@property(assign,copy) NSString * similarToOriginalAdjustmentsFingerprint;
-@property(assign,retain) NSData * simpleAdjustmentData;
+@property (nonatomic, copy) NSString *adjustmentCompoundVersion;
+@property (nonatomic, copy) NSString *adjustmentCreatorCode;
+@property (nonatomic, retain) CPLResource *adjustmentData;
+@property (nonatomic) unsigned long long adjustmentSourceType;
+@property (nonatomic, copy) NSString *adjustmentType;
+@property (nonatomic, copy) NSString *creatorCode;
+@property (nonatomic, copy) NSString *otherAdjustmentsFingerprint;
+@property (nonatomic, copy) NSString *similarToOriginalAdjustmentsFingerprint;
+@property (nonatomic, retain) NSData *simpleAdjustmentData;
 
 + (bool)supportsSecureCoding;
 

@@ -16,14 +16,14 @@
     void *_source;
 }
 
-@property(assign,copy) NSString * accountIdentifier;
-@property(assign,retain) DADConnection * connection;
-@property(assign,readwrite) <ABPredicateDelegate> * delegate;
-@property(assign,readonly) int error;
-@property(assign,readwrite) bool includePhotosInResults;
-@property(assign,readwrite) bool includeSourceInResults;
-@property(assign,copy) NSString * searchString;
-@property(assign,readwrite) void* source;
+@property (nonatomic, copy) NSString *accountIdentifier;
+@property (nonatomic, retain) DADConnection *connection;
+@property (nonatomic) <ABPredicateDelegate> *delegate;
+@property (nonatomic, readonly) int error;
+@property (nonatomic) bool includePhotosInResults;
+@property (nonatomic) bool includeSourceInResults;
+@property (nonatomic, copy) NSString *searchString;
+@property (nonatomic) void*source;
 
 - (int)_errorForDAStatusCode:(long long)arg1;
 - (void)_searchQueryIsDone;

@@ -16,17 +16,17 @@
     NSMutableArray *_usageCollections;
 }
 
-@property(assign,retain) NSMutableArray * abExperimentAssignments;
-@property(assign,retain) NSMutableArray * directionsFeedbackCollections;
-@property(assign,retain) NSMutableArray * leaveNowFeedbackCollections;
-@property(assign,retain) NSMutableArray * mapsLaunchFeedbackCollections;
-@property(assign,retain) NSMutableArray * mapsUsageFeedbackCollections;
-@property(assign,retain) NSMutableArray * placeDataCacheFeedbackCollections;
-@property(assign,retain) NSMutableArray * stateTimingFeedbackCollections;
-@property(assign,retain) NSMutableArray * suggestionsFeedbackCollections;
-@property(assign,retain) NSMutableArray * tileSetStateFeedbackCollections;
-@property(assign,retain) NSMutableArray * transitAppLaunchFeedbackCollections;
-@property(assign,retain) NSMutableArray * usageCollections;
+@property (nonatomic, retain) NSMutableArray *abExperimentAssignments;
+@property (nonatomic, retain) NSMutableArray *directionsFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *leaveNowFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *mapsLaunchFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *mapsUsageFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *placeDataCacheFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *stateTimingFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *suggestionsFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *tileSetStateFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *transitAppLaunchFeedbackCollections;
+@property (nonatomic, retain) NSMutableArray *usageCollections;
 
 - (id)abExperimentAssignmentAtIndex:(unsigned long long)arg1;
 - (id)abExperimentAssignments;

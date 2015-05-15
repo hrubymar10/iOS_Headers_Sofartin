@@ -9,10 +9,10 @@
     short _visibilityState;
 }
 
-@property(assign,readonly) PHAsset * asset;
-@property(assign,readonly) NSString * avalancheUUID;
-@property(assign,readonly) double sortToken;
-@property(assign,readonly) short visibilityState;
+@property (nonatomic, readonly) PHAsset *asset;
+@property (nonatomic, readonly) NSString *avalancheUUID;
+@property (nonatomic, readonly) double sortToken;
+@property (nonatomic, readonly) short visibilityState;
 
 - (void).cxx_destruct;
 - (id)asset;

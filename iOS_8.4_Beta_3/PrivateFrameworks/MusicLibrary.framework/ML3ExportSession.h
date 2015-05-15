@@ -7,8 +7,8 @@
     NSOutputStream *_outputStream;
 }
 
-@property(assign,readonly) ML3MusicLibrary * library;
-@property(assign,readonly) NSOutputStream * outputStream;
+@property (nonatomic, readonly) ML3MusicLibrary *library;
+@property (nonatomic, readonly) NSOutputStream *outputStream;
 
 - (void).cxx_destruct;
 - (id)begin:(unsigned int)arg1;

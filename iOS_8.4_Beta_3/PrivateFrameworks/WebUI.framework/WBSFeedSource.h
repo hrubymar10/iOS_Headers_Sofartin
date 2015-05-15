@@ -11,13 +11,13 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSURL * feedURL;
-@property(assign,readonly) NSArray * siteIconURLs;
-@property(assign,readonly) NSURL * sourceURL;
-@property(assign,readonly) long long state;
-@property(assign,readwrite) bool subscribedWhenSyncWasOff;
-@property(assign,retain) NSString * title;
+@property (nonatomic, readonly) NSString *displayName;
+@property (nonatomic, readonly) NSURL *feedURL;
+@property (nonatomic, readonly) NSArray *siteIconURLs;
+@property (nonatomic, readonly) NSURL *sourceURL;
+@property (nonatomic, readonly) long long state;
+@property (nonatomic) bool subscribedWhenSyncWasOff;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (id)description;

@@ -17,15 +17,15 @@
     PUVideoTrimQueueController *_trimController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUAlbumStreamActivityDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool destinationAlbumWasCreated;
-@property(assign,retain) NSObject<PLUserEditableAlbumProtocol> * destinationStreamingAlbum;
-@property(assign,readonly) unsigned long long hash;
-@property(setter=setPresentedFromActivityViewController:,assign,readwrite) bool isPresentedFromActivityViewController;
-@property(assign,readwrite) UIViewController * referenceViewController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUAlbumStreamActivityDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property bool destinationAlbumWasCreated;
+@property (nonatomic, retain) NSObject<PLUserEditableAlbumProtocol> *destinationStreamingAlbum;
+@property (readonly) unsigned long long hash;
+@property (setter=setPresentedFromActivityViewController:, nonatomic) bool isPresentedFromActivityViewController;
+@property (nonatomic) UIViewController *referenceViewController;
+@property (readonly) Class superclass;
 
 + (long long)activityCategory;
 

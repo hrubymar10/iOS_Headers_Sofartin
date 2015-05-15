@@ -10,17 +10,17 @@
     NSMutableDictionary *_payload;
 }
 
-@property(assign,readonly) ACAccount * account;
-@property(assign,readonly) NSString * command;
-@property(assign,readonly) NSData * data;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readwrite) bool isReply;
-@property(assign,readwrite) bool needsReply;
-@property(assign,readonly) NSDictionary * options;
-@property(assign,readonly) NSObject<NSCoding> * result;
-@property(assign,readonly) NSString * sentMessageIdentifier;
-@property(assign,readonly) bool success;
+@property (nonatomic, readonly) ACAccount *account;
+@property (nonatomic, readonly) NSString *command;
+@property (nonatomic, readonly) NSData *data;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic) bool isReply;
+@property (nonatomic) bool needsReply;
+@property (nonatomic, readonly) NSDictionary *options;
+@property (nonatomic, readonly) NSObject<NSCoding> *result;
+@property (nonatomic, readonly) NSString *sentMessageIdentifier;
+@property (nonatomic, readonly) bool success;
 
 + (id)actionMessageWithCommand:(id)arg1 account:(id)arg2 options:(id)arg3;
 + (id)replyForMessage:(id)arg1 withSuccess:(bool)arg2 error:(id)arg3;

@@ -7,9 +7,9 @@
     SKUIItem *_item;
 }
 
-@property(assign,readonly) long long giftCategoryApps;
-@property(assign,readonly) long long giftCategoryBooks;
-@property(assign,readonly) long long giftCategoryMedia;
+@property (nonatomic, readonly) long long giftCategoryApps;
+@property (nonatomic, readonly) long long giftCategoryBooks;
+@property (nonatomic, readonly) long long giftCategoryMedia;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

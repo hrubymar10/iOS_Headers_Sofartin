@@ -6,7 +6,7 @@
     bool _wantsWriteNotifications;
 }
 
-@property(assign,readwrite) bool wantsWriteNotifications;
+@property bool wantsWriteNotifications;
 
 - (void)forwardUsingMessageSender:(id)arg1;
 - (void)observeEndOfWriteAtLocation:(id)arg1 forAccessClaim:(id)arg2;

@@ -6,7 +6,7 @@
     long long mPauseEventType;
 }
 
-@property(assign,readonly) long long pauseEventType;
+@property (nonatomic, readonly) long long pauseEventType;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)description;

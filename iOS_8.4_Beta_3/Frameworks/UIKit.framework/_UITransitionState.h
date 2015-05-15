@@ -8,10 +8,10 @@
     long long _transitionDirection;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) NSDate * beginDate;
-@property(assign,readonly) long long effectiveTransitionDirection;
-@property(assign,readonly) long long transitionDirection;
+@property (getter=isActive, nonatomic, readonly) bool active;
+@property (nonatomic, readonly) NSDate *beginDate;
+@property (nonatomic, readonly) long long effectiveTransitionDirection;
+@property (nonatomic, readonly) long long transitionDirection;
 
 - (id)beginDate;
 - (void)cleanupWithFinishedState:(bool)arg1 completedState:(bool)arg2;

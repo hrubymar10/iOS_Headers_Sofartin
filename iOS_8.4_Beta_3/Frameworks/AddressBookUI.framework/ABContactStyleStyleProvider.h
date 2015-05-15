@@ -6,7 +6,7 @@
     CNContactStyle *_contactStyle;
 }
 
-@property(assign,retain) CNContactStyle * contactStyle;
+@property (nonatomic, retain) CNContactStyle *contactStyle;
 
 - (id)cardCellBackgroundColor;
 - (id)cardCellDividerColorVertical:(bool)arg1;

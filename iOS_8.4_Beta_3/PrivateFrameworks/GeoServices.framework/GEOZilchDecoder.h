@@ -14,8 +14,8 @@
     NSObject<OS_dispatch_queue> *_requestQueue;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * decoderQueue;
-@property(assign,readwrite) <GEOMapAccessRestrictions> * mapAccessRestrictions;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *decoderQueue;
+@property (nonatomic) <GEOMapAccessRestrictions> *mapAccessRestrictions;
 
 + (bool)decodingSupported;
 

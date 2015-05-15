@@ -9,14 +9,14 @@
     NSDictionary *_timeReferences;
 }
 
-@property(assign,readwrite) PLSQLiteConnection * connection;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSDictionary * notificationsToTimeReferences;
-@property(assign,readwrite) PLStorageOperator * storageOperator;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDictionary * timeReferences;
+@property PLSQLiteConnection *connection;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) NSDictionary *notificationsToTimeReferences;
+@property PLStorageOperator *storageOperator;
+@property (readonly) Class superclass;
+@property (retain) NSDictionary *timeReferences;
 
 + (id)sharedInstance;
 

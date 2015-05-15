@@ -8,12 +8,12 @@
     AVWeakReference *_weakReferenceToDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) id delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) id delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (void)initialize;
 

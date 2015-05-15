@@ -6,8 +6,8 @@
     NSXPCInterface *_interface;
 }
 
-@property(assign,retain) NSXPCInterface * interface;
-@property(assign,readwrite) Protocol * protocol;
+@property (retain) NSXPCInterface *interface;
+@property Protocol *protocol;
 
 + (id)interfaceWithProtocol:(id)arg1;
 

@@ -9,8 +9,8 @@
     NSString *_storeName;
 }
 
-@property(assign,retain) NSString * localPeerID;
-@property(assign,retain) NSString * storeName;
+@property (nonatomic, retain) NSString *localPeerID;
+@property (nonatomic, retain) NSString *storeName;
 
 + (id)stringValueFromArray:(id)arg1 atIndexDescribedByStringNumber:(id)arg2;
 

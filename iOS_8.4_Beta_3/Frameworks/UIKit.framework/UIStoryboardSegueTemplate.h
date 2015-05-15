@@ -10,9 +10,9 @@
     UIViewController *_viewController;
 }
 
-@property(assign,readonly) NSString * identifier;
-@property(assign,readwrite) bool performOnViewLoad;
-@property(assign,readwrite) UIViewController * viewController;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic) bool performOnViewLoad;
+@property (nonatomic) UIViewController *viewController;
 
 - (void)_perform:(id)arg1;
 - (void)dealloc;

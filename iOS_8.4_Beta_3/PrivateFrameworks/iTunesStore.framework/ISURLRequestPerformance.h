@@ -11,12 +11,12 @@
     NSURLResponse *_urlResponse;
 }
 
-@property(assign,copy) NSURLResponse * URLResponse;
-@property(assign,readonly) double finishInterval;
-@property(assign,readonly) double receivedResponseInterval;
-@property(assign,readonly) double renderBeginInterval;
-@property(assign,readonly) double renderEndInterval;
-@property(assign,readwrite) double startTime;
+@property (nonatomic, copy) NSURLResponse *URLResponse;
+@property (nonatomic, readonly) double finishInterval;
+@property (nonatomic, readonly) double receivedResponseInterval;
+@property (nonatomic, readonly) double renderBeginInterval;
+@property (nonatomic, readonly) double renderEndInterval;
+@property (nonatomic) double startTime;
 
 - (id)URLResponse;
 - (void)dealloc;

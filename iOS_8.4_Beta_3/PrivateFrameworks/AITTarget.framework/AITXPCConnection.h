@@ -12,14 +12,14 @@
     int _pid;
 }
 
-@property(assign,readonly) bool available;
-@property(assign,copy) NSString * bundleId;
-@property(assign,readwrite) NSObject<OS_xpc_object> * connection;
-@property(assign,readwrite) NSObject<OS_xpc_object> * currentMessage;
-@property(assign,readwrite) <AITXPCConnectionDelegate> * delegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * internalQueue;
-@property(assign,readonly) int pid;
+@property (nonatomic, readonly) bool available;
+@property (nonatomic, copy) NSString *bundleId;
+@property (nonatomic) NSObject<OS_xpc_object> *connection;
+@property (nonatomic) NSObject<OS_xpc_object> *currentMessage;
+@property (nonatomic) <AITXPCConnectionDelegate> *delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> *internalQueue;
+@property (nonatomic, readonly) int pid;
 
 - (id)_deserializeMessage:(id)arg1;
 - (void)_handleEvent:(id)arg1;

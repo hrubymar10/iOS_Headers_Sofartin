@@ -8,9 +8,9 @@
     NSString *_mediaType;
 }
 
-@property(assign,retain) NSDictionary * featureValues;
-@property(assign,readonly) bool isNegated;
-@property(assign,retain) NSString * mediaType;
+@property (nonatomic, readonly, retain) NSDictionary *featureValues;
+@property (nonatomic, readonly) bool isNegated;
+@property (nonatomic, readonly, retain) NSString *mediaType;
 
 + (id)mediaQueryListWithQueryString:(id)arg1;
 

@@ -13,18 +13,18 @@
     NACEventThrottler *_volumeThrottler;
 }
 
-@property(assign,readonly) float EUVolumeLimit;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NACVolumeControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) float hapticIntensity;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isMuted,assign,readonly) bool muted;
-@property(assign,readonly) Class superclass;
-@property(getter=isSystemMuted,assign,readwrite) bool systemMuted;
-@property(getter=isVolumeControlAvailable,assign,readonly) bool volumeControlAvailable;
-@property(assign,readonly) float volumeValue;
-@property(getter=isVolumeWarningEnabled,assign,readonly) bool volumeWarningEnabled;
+@property (nonatomic, readonly) float EUVolumeLimit;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NACVolumeControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) float hapticIntensity;
+@property (readonly) unsigned long long hash;
+@property (getter=isMuted, nonatomic, readonly) bool muted;
+@property (readonly) Class superclass;
+@property (getter=isSystemMuted, nonatomic) bool systemMuted;
+@property (getter=isVolumeControlAvailable, nonatomic, readonly) bool volumeControlAvailable;
+@property (nonatomic, readonly) float volumeValue;
+@property (getter=isVolumeWarningEnabled, nonatomic, readonly) bool volumeWarningEnabled;
 
 - (void).cxx_destruct;
 - (float)EUVolumeLimit;

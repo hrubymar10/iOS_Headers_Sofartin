@@ -13,10 +13,10 @@
     SKUILayoutCache *_textLayoutCache;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) long long firstStringIndex;
-@property(assign,copy) NSArray * releaseNotes;
-@property(assign,retain) SKUILayoutCache * textLayoutCache;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) long long firstStringIndex;
+@property (nonatomic, copy) NSArray *releaseNotes;
+@property (nonatomic, retain) SKUILayoutCache *textLayoutCache;
 
 - (void).cxx_destruct;
 - (void)_reloadHeaderView;

@@ -7,8 +7,8 @@
     NSMutableArray *_handledSchemes;
 }
 
-@property(assign,retain) NSString * appBundleIdentifier;
-@property(assign,retain) NSMutableArray * handledSchemes;
+@property (nonatomic, retain) NSString *appBundleIdentifier;
+@property (nonatomic, retain) NSMutableArray *handledSchemes;
 
 - (void)addHandledSchemes:(id)arg1;
 - (id)appBundleIdentifier;

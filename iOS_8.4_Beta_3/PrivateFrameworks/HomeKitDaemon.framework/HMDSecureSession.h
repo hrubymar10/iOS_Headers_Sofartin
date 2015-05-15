@@ -15,17 +15,17 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,readwrite) bool clientMode;
-@property(assign,retain) NSString * destination;
-@property(assign,retain) HAPRemoteSession * hapRemoteSession;
-@property(assign,retain) HMDIdentityRegistry * identityRegistry;
-@property(assign,retain) HMDIDSMessageDispatcher * msgDispatcher;
-@property(assign,retain) HMMessageDispatcher * notificationDispatcher;
-@property(assign,retain) HMDNotificationRelay * notificationRelay;
-@property(assign,copy) NSUUID * sessionID;
-@property(assign,copy) id sessionStoppedNotificationHandler;
-@property(assign,copy) id stoppedNotificationHandler;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic) bool clientMode;
+@property (nonatomic, retain) NSString *destination;
+@property (nonatomic, retain) HAPRemoteSession *hapRemoteSession;
+@property (nonatomic, retain) HMDIdentityRegistry *identityRegistry;
+@property (nonatomic, retain) HMDIDSMessageDispatcher *msgDispatcher;
+@property (nonatomic, retain) HMMessageDispatcher *notificationDispatcher;
+@property (nonatomic, retain) HMDNotificationRelay *notificationRelay;
+@property (nonatomic, readonly, copy) NSUUID *sessionID;
+@property (nonatomic, copy) id sessionStoppedNotificationHandler;
+@property (nonatomic, copy) id stoppedNotificationHandler;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_configureAsClient:(bool)arg1 queue:(id)arg2 completionHandler:(id)arg3;

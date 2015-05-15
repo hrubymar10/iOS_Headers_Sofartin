@@ -12,13 +12,13 @@
     bool _useLegibilityView;
 }
 
-@property(assign,retain) UILabel * _label;
-@property(assign,retain) _UILegibilityView * _legibilityView;
-@property(assign,readonly) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
-@property(assign,retain) UIColor * textColor;
-@property(getter=isUsingLegibilityView,assign,readwrite) bool useLegibilityView;
+@property (nonatomic, readonly, retain) UILabel *_label;
+@property (nonatomic, readonly, retain) _UILegibilityView *_legibilityView;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
+@property (nonatomic, retain) UIColor *textColor;
+@property (getter=isUsingLegibilityView, nonatomic) bool useLegibilityView;
 
 - (void).cxx_destruct;
 - (void)_createLegibilityView;

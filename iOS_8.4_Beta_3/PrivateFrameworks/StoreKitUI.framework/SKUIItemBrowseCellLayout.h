@@ -15,14 +15,14 @@
     double _userRating;
 }
 
-@property(assign,copy) NSString * category;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageBoundingSize;
-@property(assign,copy) NSString * indexNumberString;
-@property(getter=isLargeSpacing,assign,readwrite) bool largeSpacing;
-@property(assign,readwrite) long long numberOfUserRatings;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) double userRating;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageBoundingSize;
+@property (nonatomic, copy) NSString *indexNumberString;
+@property (getter=isLargeSpacing, nonatomic) bool largeSpacing;
+@property (nonatomic) long long numberOfUserRatings;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) double userRating;
 
 - (void).cxx_destruct;
 - (id)_decimalNumberFormatter;

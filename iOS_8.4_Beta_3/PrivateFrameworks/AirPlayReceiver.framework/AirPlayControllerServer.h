@@ -11,14 +11,14 @@
     NSXPCListener *_xpcListener;
 }
 
-@property(assign,copy) id copyPropertyBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * dispatchQueue;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) id performCommandBlock;
-@property(assign,copy) id setPropertyBlock;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) id copyPropertyBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) NSObject<OS_dispatch_queue> *dispatchQueue;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) id performCommandBlock;
+@property (nonatomic, copy) id setPropertyBlock;
+@property (readonly) Class superclass;
 
 - (void)_connectionInvalidated:(id)arg1;
 - (id)copyPropertyBlock;

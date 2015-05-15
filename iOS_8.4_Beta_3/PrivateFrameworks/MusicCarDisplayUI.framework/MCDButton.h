@@ -8,9 +8,9 @@
     bool _showBezelInTouch;
 }
 
-@property(assign,copy) NSString * labelTemplateString;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readwrite) bool showBezelInTouch;
+@property (nonatomic, copy) NSString *labelTemplateString;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic) bool showBezelInTouch;
 
 + (id)buttonWithType:(long long)arg1;
 

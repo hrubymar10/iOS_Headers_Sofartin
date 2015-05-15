@@ -10,13 +10,13 @@
     ABTransportButton *_transportIcon2;
 }
 
-@property(assign,retain) UIColor * actionsColor;
-@property(assign,readwrite) bool allowsActions;
-@property(assign,readonly) bool shouldShowStar;
-@property(assign,readonly) UIImageView * standardStarView;
-@property(assign,readonly) ABTransportButton * standardTransportIcon;
-@property(assign,readonly) ABTransportButton * transportIcon1;
-@property(assign,readonly) ABTransportButton * transportIcon2;
+@property (nonatomic, retain) UIColor *actionsColor;
+@property (nonatomic) bool allowsActions;
+@property (nonatomic, readonly) bool shouldShowStar;
+@property (nonatomic, readonly) UIImageView *standardStarView;
+@property (nonatomic, readonly) ABTransportButton *standardTransportIcon;
+@property (nonatomic, readonly) ABTransportButton *transportIcon1;
+@property (nonatomic, readonly) ABTransportButton *transportIcon2;
 
 - (void)_contentSizeCategoryDidChange:(id)arg1;
 - (void)_updateStarImageForView:(id)arg1;

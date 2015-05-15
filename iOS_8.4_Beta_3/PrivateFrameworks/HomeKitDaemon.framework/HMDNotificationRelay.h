@@ -10,17 +10,17 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,readwrite) HMDIDSMessageDispatcher * msgDispatcher;
-@property(assign,readwrite) HMMessageDispatcher * notificationRelayDispatcher;
-@property(assign,retain) NSMutableDictionary * pendingNotifications;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic) HMDIDSMessageDispatcher *msgDispatcher;
+@property (nonatomic) HMMessageDispatcher *notificationRelayDispatcher;
+@property (nonatomic, retain) NSMutableDictionary *pendingNotifications;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_handleNotification:(id)arg1;

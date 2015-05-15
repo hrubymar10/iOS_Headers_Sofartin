@@ -65,22 +65,22 @@
     } _waveformVertexData;
 }
 
-@property(assign,copy) RCUIConfiguration * UIConfiguration;
-@property(getter=isActiveDisplayLinkRequired,assign,readwrite) bool activeDisplayLinkRequired;
-@property(assign,readonly) double contentWidth;
-@property(assign,readwrite) double dataPointWidth;
-@property(assign,retain) RCWaveformDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool frequentUpdatesSegmentUpdatesExpectedHint;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) struct { double x1; double x2; } highlightTimeRange;
-@property(getter=isPaused,assign,readwrite) bool paused;
-@property(assign,readwrite) <RCGLWaveformRendererDelegate> * rendererDelegate;
-@property(assign,readwrite) double spacingWidth;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
-@property(assign,readwrite) struct { double x1; double x2; } visibleTimeRange;
+@property (nonatomic, copy) RCUIConfiguration *UIConfiguration;
+@property (getter=isActiveDisplayLinkRequired, nonatomic) bool activeDisplayLinkRequired;
+@property (nonatomic, readonly) double contentWidth;
+@property (nonatomic) double dataPointWidth;
+@property (nonatomic, retain) RCWaveformDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool frequentUpdatesSegmentUpdatesExpectedHint;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) struct { double x1; double x2; } highlightTimeRange;
+@property (getter=isPaused, nonatomic) bool paused;
+@property (nonatomic) <RCGLWaveformRendererDelegate> *rendererDelegate;
+@property (nonatomic) double spacingWidth;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } visibleRect;
+@property (nonatomic) struct { double x1; double x2; } visibleTimeRange;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

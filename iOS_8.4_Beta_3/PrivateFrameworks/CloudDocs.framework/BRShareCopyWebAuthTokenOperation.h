@@ -7,8 +7,8 @@
     id _shareCopyWebAuthTokenCompletionBlock;
 }
 
-@property(assign,retain) NSString * containerIdentifier;
-@property(assign,copy) id shareCopyWebAuthTokenCompletionBlock;
+@property (nonatomic, retain) NSString *containerIdentifier;
+@property (copy) id shareCopyWebAuthTokenCompletionBlock;
 
 - (id)containerIdentifier;
 - (void)dealloc;

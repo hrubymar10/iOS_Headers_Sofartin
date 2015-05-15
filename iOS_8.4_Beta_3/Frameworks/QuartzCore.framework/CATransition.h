@@ -4,13 +4,13 @@
 
 @interface CATransition : CAAnimation
 
-@property(assign,readwrite) float endProgress;
-@property(assign,retain) id filter;
-@property(assign,copy) NSDictionary * options;
-@property(assign,readwrite) float startProgress;
-@property(assign,copy) NSString * subtype;
-@property(assign,readwrite) unsigned int transitionFlags;
-@property(assign,copy) NSString * type;
+@property float endProgress;
+@property (retain) id filter;
+@property (copy) NSDictionary *options;
+@property float startProgress;
+@property (copy) NSString *subtype;
+@property unsigned int transitionFlags;
+@property (copy) NSString *type;
 
 - (struct Animation { int (**x1)(); struct Atomic { struct { int x_1_2_1; } x_2_1_1; } x2; float x3; struct Ref<CA::Render::Timing> { struct Timing {} *x_4_1_1; } x4; struct Ref<CA::Render::Vector> { struct Vector {} *x_5_1_1; } x5; void *x6; unsigned int x7; unsigned int x8; unsigned int x9; unsigned int x10; }*)_copyRenderAnimationForLayer:(id)arg1;
 - (unsigned int)_propertyFlagsForLayer:(id)arg1;

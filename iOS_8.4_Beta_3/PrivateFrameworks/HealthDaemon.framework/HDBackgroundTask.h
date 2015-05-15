@@ -6,9 +6,9 @@
     NSObject<OS_xpc_object> *_job;
 }
 
-@property(assign,retain) NSDate * endDate;
-@property(assign,retain) NSDate * startDate;
-@property(assign,retain) NSDictionary * userContext;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic, retain) NSDictionary *userContext;
 
 - (void).cxx_destruct;
 - (id)_initWithJob:(id)arg1;

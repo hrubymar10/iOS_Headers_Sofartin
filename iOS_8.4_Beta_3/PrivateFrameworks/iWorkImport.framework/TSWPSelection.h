@@ -28,27 +28,27 @@
     } _visualRanges;
 }
 
-@property(assign,readonly) int caretAffinity;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long headChar;
-@property(assign,readonly) bool isAtEndOfLine;
-@property(assign,readonly) bool isEmpty;
-@property(assign,readonly) bool isInsertionPoint;
-@property(assign,readonly) bool isRange;
-@property(assign,readonly) bool isValid;
-@property(assign,readonly) bool isVisual;
-@property(assign,readonly) unsigned long long leadingCharIndex;
-@property(assign,readonly) bool leadingEdge;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } rawRange;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } smartFieldRange;
-@property(assign,readonly) int styleInsertionBehavior;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long tailChar;
-@property(assign,readonly) int type;
-@property(assign,readonly) bool validVisualRanges;
+@property (nonatomic, readonly) int caretAffinity;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long headChar;
+@property (nonatomic, readonly) bool isAtEndOfLine;
+@property (nonatomic, readonly) bool isEmpty;
+@property (nonatomic, readonly) bool isInsertionPoint;
+@property (nonatomic, readonly) bool isRange;
+@property (nonatomic, readonly) bool isValid;
+@property (nonatomic, readonly) bool isVisual;
+@property (nonatomic, readonly) unsigned long long leadingCharIndex;
+@property (nonatomic, readonly) bool leadingEdge;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } rawRange;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } smartFieldRange;
+@property (nonatomic, readonly) int styleInsertionBehavior;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long tailChar;
+@property (nonatomic, readonly) int type;
+@property (nonatomic, readonly) bool validVisualRanges;
 
 + (Class)archivedSelectionClass;
 + (bool)p_checkEndOfLineFlagForRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; }*)arg1 leadingEdge:(bool*)arg2 type:(int*)arg3 endOfLine:(bool)arg4 storage:(id)arg5;

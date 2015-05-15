@@ -15,18 +15,18 @@
     NSString *_phoneticName;
 }
 
-@property(assign,readwrite) bool hasIsDefault;
-@property(assign,readonly) bool hasLanguageCode;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasNameRank;
-@property(assign,readonly) bool hasNameType;
-@property(assign,readonly) bool hasPhoneticName;
-@property(assign,readwrite) bool isDefault;
-@property(assign,retain) NSString * languageCode;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) unsigned int nameRank;
-@property(assign,retain) NSString * nameType;
-@property(assign,retain) NSString * phoneticName;
+@property (nonatomic) bool hasIsDefault;
+@property (nonatomic, readonly) bool hasLanguageCode;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasNameRank;
+@property (nonatomic, readonly) bool hasNameType;
+@property (nonatomic, readonly) bool hasPhoneticName;
+@property (nonatomic) bool isDefault;
+@property (nonatomic, retain) NSString *languageCode;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) unsigned int nameRank;
+@property (nonatomic, retain) NSString *nameType;
+@property (nonatomic, retain) NSString *phoneticName;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

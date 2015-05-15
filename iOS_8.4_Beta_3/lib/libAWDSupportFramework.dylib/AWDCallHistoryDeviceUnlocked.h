@@ -11,10 +11,10 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int callCount;
-@property(assign,readwrite) bool hasCallCount;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int callCount;
+@property (nonatomic) bool hasCallCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (unsigned int)callCount;
 - (void)copyTo:(id)arg1;

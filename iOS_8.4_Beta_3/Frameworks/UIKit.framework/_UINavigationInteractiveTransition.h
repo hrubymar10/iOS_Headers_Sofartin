@@ -6,7 +6,7 @@
     UIScreenEdgePanGestureRecognizer *_edgePanRecognizer;
 }
 
-@property(assign,readonly) UIScreenEdgePanGestureRecognizer * screenEdgePanGestureRecognizer;
+@property (nonatomic, readonly) UIScreenEdgePanGestureRecognizer *screenEdgePanGestureRecognizer;
 
 - (void)_configureNavigationGesture;
 - (bool)_gestureRecognizer:(id)arg1 shouldBeRequiredToFailByGestureRecognizer:(id)arg2;

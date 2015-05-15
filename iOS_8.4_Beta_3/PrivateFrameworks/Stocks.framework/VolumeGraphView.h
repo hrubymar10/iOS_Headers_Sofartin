@@ -10,7 +10,7 @@
     UIImage *_volumeImage;
 }
 
-@property(assign,retain) StockGraphImageSet * graphImageSet;
+@property (nonatomic, retain) StockGraphImageSet *graphImageSet;
 
 - (void).cxx_destruct;
 - (id)graphImageSet;

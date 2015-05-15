@@ -8,13 +8,13 @@
     TPDialerSoundController *_soundController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TPDialerKeypadDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool playsSounds;
-@property(assign,retain) TPDialerSoundController * soundController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property <TPDialerKeypadDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool playsSounds;
+@property (retain) TPDialerSoundController *soundController;
+@property (readonly) Class superclass;
 
 + (id)dialerNumberPadFullCharacters;
 + (id)dialerNumberPadNumericCharacters;

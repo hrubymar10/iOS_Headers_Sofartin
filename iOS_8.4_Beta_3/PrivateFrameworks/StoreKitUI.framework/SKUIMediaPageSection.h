@@ -12,11 +12,11 @@
     SKUIEmbeddedMediaView *_mediaView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIMediaComponent * pageComponent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIMediaComponent *pageComponent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_loadImageWithReason:(long long)arg1;

@@ -6,7 +6,7 @@
     id _systemTimeZone;
 }
 
-@property(assign,retain) NSString * tzid;
+@property (nonatomic, retain) NSString *tzid;
 
 + (id)blocksAfterDate:(id)arg1 untilDate:(id)arg2 forTimeZone:(id)arg3;
 + (long long)matchTypeForSubarray:(id)arg1 inTZChangeArray:(id)arg2;

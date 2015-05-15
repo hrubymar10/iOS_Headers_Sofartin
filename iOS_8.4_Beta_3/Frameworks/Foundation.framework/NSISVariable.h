@@ -8,9 +8,9 @@
     int _refCount;
 }
 
-@property(assign,readwrite) <NSISVariableDelegate> * delegate;
-@property(assign,readonly) bool shouldBeMinimized;
-@property(assign,readonly) int valueRestriction;
+@property <NSISVariableDelegate> *delegate;
+@property (readonly) bool shouldBeMinimized;
+@property (readonly) int valueRestriction;
 
 + (id)variableMarkingConstraint:(id)arg1 valueRestriction:(int)arg2 shouldBeMinimized:(bool)arg3;
 + (id)variableWithDelegate:(id)arg1 valueRestriction:(int)arg2 shouldBeMinimized:(bool)arg3;

@@ -7,8 +7,8 @@
     PLCFNotificationOperatorComposition *_preferencesChangedNotification;
 }
 
-@property(assign,readonly) PLCFNotificationOperatorComposition * intervalChangedNotification;
-@property(assign,readonly) PLCFNotificationOperatorComposition * preferencesChangedNotification;
+@property (readonly) PLCFNotificationOperatorComposition *intervalChangedNotification;
+@property (readonly) PLCFNotificationOperatorComposition *preferencesChangedNotification;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

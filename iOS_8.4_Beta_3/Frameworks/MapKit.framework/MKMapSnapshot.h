@@ -7,7 +7,7 @@
     VKMapSnapshot *_snapshot;
 }
 
-@property(assign,readonly) UIImage * image;
+@property (nonatomic, readonly) UIImage *image;
 
 - (void).cxx_destruct;
 - (struct { double x1; double x2; })_coordinateForPoint:(struct CGPoint { double x1; double x2; })arg1;

@@ -10,11 +10,11 @@
     struct CGPDFNode { } *_tableCellNode;
 }
 
-@property(assign,retain) RMTableCell * nextCellInColumn;
-@property(assign,retain) RMTableCell * nextCellInRow;
-@property(assign,readonly) struct CGPDFPage { }* page;
-@property(assign,readwrite) RMTable * table;
-@property(assign,readwrite) struct CGPDFNode { }* tableCellNode;
+@property (retain) RMTableCell *nextCellInColumn;
+@property (retain) RMTableCell *nextCellInRow;
+@property (readonly) struct CGPDFPage { }*page;
+@property RMTable *table;
+@property struct CGPDFNode { }*tableCellNode;
 
 - (struct CGColor { }*)backgroundColor;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;

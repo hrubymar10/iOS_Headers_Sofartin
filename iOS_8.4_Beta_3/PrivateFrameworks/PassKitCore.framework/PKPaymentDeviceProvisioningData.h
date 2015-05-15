@@ -8,14 +8,14 @@
     NSString *_phoneNumber;
 }
 
-@property(assign,copy) NSString * deviceName;
-@property(assign,readonly) NSString * extensiveLatitude;
-@property(assign,readonly) NSString * extensiveLongitude;
-@property(assign,copy) CLLocation * location;
-@property(assign,copy) NSString * phoneNumber;
-@property(assign,readonly) NSString * phoneNumberSuffix;
-@property(assign,readonly) NSString * sanitizedLatitude;
-@property(assign,readonly) NSString * sanitizedLongitude;
+@property (nonatomic, copy) NSString *deviceName;
+@property (nonatomic, readonly) NSString *extensiveLatitude;
+@property (nonatomic, readonly) NSString *extensiveLongitude;
+@property (nonatomic, copy) CLLocation *location;
+@property (nonatomic, copy) NSString *phoneNumber;
+@property (nonatomic, readonly) NSString *phoneNumberSuffix;
+@property (nonatomic, readonly) NSString *sanitizedLatitude;
+@property (nonatomic, readonly) NSString *sanitizedLongitude;
 
 + (bool)supportsSecureCoding;
 

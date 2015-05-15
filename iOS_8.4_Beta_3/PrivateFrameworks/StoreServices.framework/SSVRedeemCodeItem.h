@@ -6,8 +6,8 @@
     NSMutableDictionary *_dictionary;
 }
 
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) NSDictionary * redeemCodeDictionary;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) NSDictionary *redeemCodeDictionary;
 
 - (void).cxx_destruct;
 - (id)initWithLookupItem:(id)arg1;

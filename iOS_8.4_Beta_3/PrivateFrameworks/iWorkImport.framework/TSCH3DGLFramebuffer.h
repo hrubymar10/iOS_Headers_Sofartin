@@ -7,12 +7,12 @@
     bool mHasSetDefaultStates;
 }
 
-@property(assign,readonly) TSCH3DGLContext * context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isTexturable;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) TSCH3DGLContext *context;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isTexturable;
+@property (readonly) Class superclass;
 
 + (id)framebufferWithContext:(id)arg1 size:(const struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; }*)arg2 attributes:(const struct FramebufferAttributes { int x1; long long x2; int x3; int x4; int x5; bool x6; bool x7; }*)arg3;
 

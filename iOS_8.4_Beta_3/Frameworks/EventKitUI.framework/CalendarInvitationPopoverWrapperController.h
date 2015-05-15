@@ -6,7 +6,7 @@
     EKEventViewController *_eventViewController;
 }
 
-@property(assign,retain) EKEventViewController * eventViewController;
+@property (nonatomic, retain) EKEventViewController *eventViewController;
 
 - (void).cxx_destruct;
 - (id)eventViewController;

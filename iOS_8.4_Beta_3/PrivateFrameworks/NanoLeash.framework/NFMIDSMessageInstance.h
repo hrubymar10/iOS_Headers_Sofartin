@@ -8,9 +8,9 @@
     double _retryInterval;
 }
 
-@property(assign,copy) id retryAction;
-@property(assign,readwrite) long long retryCount;
-@property(assign,readwrite) double retryInterval;
+@property (nonatomic, copy) id retryAction;
+@property (nonatomic) long long retryCount;
+@property (nonatomic) double retryInterval;
 
 + (id)newMessageInstanceWithAction:(id)arg1 retryCount:(long long)arg2 retryInterval:(double)arg3;
 

@@ -10,16 +10,16 @@
     long long _viewState;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) GKGameCenterViewController * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) GKGame * game;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * leaderboardIdentifier;
-@property(assign,readwrite) long long leaderboardTimeScope;
-@property(assign,readwrite) bool shouldDisplayChallengePlayButton;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) long long viewState;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) GKGameCenterViewController *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) GKGame *game;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *leaderboardIdentifier;
+@property (nonatomic) long long leaderboardTimeScope;
+@property (nonatomic) bool shouldDisplayChallengePlayButton;
+@property (readonly) Class superclass;
+@property (nonatomic) long long viewState;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

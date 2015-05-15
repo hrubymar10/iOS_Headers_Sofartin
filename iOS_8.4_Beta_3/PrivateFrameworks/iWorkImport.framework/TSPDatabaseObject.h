@@ -7,13 +7,13 @@
     long long _identifier;
 }
 
-@property(assign,readonly) int classType;
-@property(assign,readonly) long long dataState;
-@property(assign,readonly) NSString * fileState;
-@property(assign,readonly) NSURL * fileURL;
-@property(assign,readonly) bool hasDataState;
-@property(assign,readonly) bool hasFileState;
-@property(assign,readonly) long long identifier;
+@property (nonatomic, readonly) int classType;
+@property (nonatomic, readonly) long long dataState;
+@property (nonatomic, readonly) NSString *fileState;
+@property (nonatomic, readonly) NSURL *fileURL;
+@property (nonatomic, readonly) bool hasDataState;
+@property (nonatomic, readonly) bool hasFileState;
+@property (nonatomic, readonly) long long identifier;
 
 + (id)databaseObjectWithIdentifier:(long long)arg1 classType:(int)arg2 dataState:(long long)arg3;
 + (id)databaseObjectWithIdentifier:(long long)arg1 classType:(int)arg2 fileState:(id)arg3 packageURL:(id)arg4;

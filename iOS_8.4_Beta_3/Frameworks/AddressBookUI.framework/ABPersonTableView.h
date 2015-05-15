@@ -14,14 +14,14 @@
     <ABPersonTabsLayoutManager> *_tabsLayoutManager;
 }
 
-@property(assign,retain) UIView * backgroundView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ABPersonViewControllerHelper * helper;
-@property(assign,readwrite) double minimumBottomInset;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) <ABPersonTabsLayoutManager> * tabsLayoutManager;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ABPersonViewControllerHelper *helper;
+@property (nonatomic) double minimumBottomInset;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) <ABPersonTabsLayoutManager> *tabsLayoutManager;
 
 - (id)helper;
 - (void)layoutSubviews;

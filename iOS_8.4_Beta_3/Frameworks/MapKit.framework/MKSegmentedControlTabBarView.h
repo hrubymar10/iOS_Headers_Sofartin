@@ -10,13 +10,13 @@
     MKViewWithHairline *_separator;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) id didChangeSelectedSegmentIndex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isBlurred;
-@property(assign,readonly) UISegmentedControl * segmentedControl;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) id didChangeSelectedSegmentIndex;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isBlurred;
+@property (nonatomic, readonly) UISegmentedControl *segmentedControl;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_segmentSelectionDidChange;

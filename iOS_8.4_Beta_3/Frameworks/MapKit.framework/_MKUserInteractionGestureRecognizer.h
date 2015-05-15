@@ -7,7 +7,7 @@
     <_MKUserInteractionGestureRecognizerTouchObserver> *_touchObserver;
 }
 
-@property(assign,readwrite) <_MKUserInteractionGestureRecognizerTouchObserver> * touchObserver;
+@property (nonatomic) <_MKUserInteractionGestureRecognizerTouchObserver> *touchObserver;
 
 - (void).cxx_destruct;
 - (void)setTouchObserver:(id)arg1;

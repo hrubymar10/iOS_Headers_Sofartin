@@ -12,14 +12,14 @@
     NSString *_productType;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,readonly) bool hasBundleIdentifier;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasOptions;
-@property(assign,readonly) bool hasProductType;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long options;
-@property(assign,retain) NSString * productType;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, readonly) bool hasBundleIdentifier;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasOptions;
+@property (nonatomic, readonly) bool hasProductType;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long options;
+@property (nonatomic, retain) NSString *productType;
 
 - (void).cxx_destruct;
 - (id)bundleIdentifier;

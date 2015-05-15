@@ -8,9 +8,9 @@
     bool _lastUUIDInJournal;
 }
 
-@property(assign,retain) NSMutableArray * gaps;
-@property(assign,retain) NSUUID * lastUUID;
-@property(assign,readwrite) bool lastUUIDInJournal;
+@property (nonatomic, retain) NSMutableArray *gaps;
+@property (nonatomic, retain) NSUUID *lastUUID;
+@property (nonatomic) bool lastUUIDInJournal;
 
 + (bool)supportsSecureCoding;
 

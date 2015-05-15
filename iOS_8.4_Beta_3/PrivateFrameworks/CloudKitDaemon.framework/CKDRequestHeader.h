@@ -10,11 +10,11 @@
     unsigned long long _urlSessionTaskIdentifier;
 }
 
-@property(assign,retain) NSDictionary * headerDict;
-@property(assign,retain) NSString * method;
-@property(assign,retain) NSString * sessionConfigurationIdentifier;
-@property(assign,retain) NSURL * url;
-@property(assign,readwrite) unsigned long long urlSessionTaskIdentifier;
+@property (nonatomic, retain) NSDictionary *headerDict;
+@property (nonatomic, retain) NSString *method;
+@property (nonatomic, retain) NSString *sessionConfigurationIdentifier;
+@property (nonatomic, retain) NSURL *url;
+@property (nonatomic) unsigned long long urlSessionTaskIdentifier;
 
 + (bool)supportsSecureCoding;
 

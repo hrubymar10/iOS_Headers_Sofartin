@@ -11,11 +11,11 @@
     const char **_signatures;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MSSubscribeStorageProtocolDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MSSubscribeStorageProtocolDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_getItemDone:(unsigned long long)arg1 path:(id)arg2 error:(id)arg3;

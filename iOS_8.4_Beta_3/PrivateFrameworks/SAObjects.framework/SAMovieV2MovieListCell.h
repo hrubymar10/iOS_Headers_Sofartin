@@ -4,13 +4,13 @@
 
 @interface SAMovieV2MovieListCell : SADomainObject
 
-@property(assign,copy) NSArray * displayableShowtimes;
-@property(assign,retain) SAMovieV2MovieDetailSnippet * movieDetailSnippet;
-@property(assign,copy) NSString * movieName;
-@property(assign,copy) NSArray * posterImages;
-@property(assign,copy) NSNumber * qualityRating;
-@property(assign,copy) NSString * rating;
-@property(assign,copy) NSDate * theatricalReleaseDate;
+@property (nonatomic, copy) NSArray *displayableShowtimes;
+@property (nonatomic, retain) SAMovieV2MovieDetailSnippet *movieDetailSnippet;
+@property (nonatomic, copy) NSString *movieName;
+@property (nonatomic, copy) NSArray *posterImages;
+@property (nonatomic, copy) NSNumber *qualityRating;
+@property (nonatomic, copy) NSString *rating;
+@property (nonatomic, copy) NSDate *theatricalReleaseDate;
 
 + (id)movieListCell;
 + (id)movieListCellWithDictionary:(id)arg1 context:(id)arg2;

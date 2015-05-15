@@ -18,15 +18,15 @@
     PLManagedAsset *importedAsset;
 }
 
-@property(assign,retain) NSString * basePath;
-@property(assign,retain) NSString * eventName;
-@property(assign,readonly) NSString * identifier;
-@property(assign,retain) NSError * importError;
-@property(assign,retain) PLManagedAsset * importedAsset;
-@property(assign,readonly) NSString * parentFolder;
-@property(assign,readwrite) bool shouldImport;
-@property(assign,readonly) UIImage * thumbnail;
-@property(assign,retain) NSData * thumbnailData;
+@property (nonatomic, retain) NSString *basePath;
+@property (nonatomic, retain) NSString *eventName;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, retain) NSError *importError;
+@property (nonatomic, retain) PLManagedAsset *importedAsset;
+@property (nonatomic, readonly) NSString *parentFolder;
+@property (nonatomic) bool shouldImport;
+@property (nonatomic, readonly) UIImage *thumbnail;
+@property (nonatomic, retain) NSData *thumbnailData;
 
 - (void)_addRepresentation:(id)arg1;
 - (id)_fileExtensionForTypeWithSelector:(SEL)arg1;

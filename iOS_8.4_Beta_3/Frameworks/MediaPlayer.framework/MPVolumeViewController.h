@@ -6,7 +6,7 @@
     MPVolumeView *_volumeView;
 }
 
-@property(assign,readonly) MPVolumeView * volumeView;
+@property (nonatomic, readonly) MPVolumeView *volumeView;
 
 - (void).cxx_destruct;
 - (id)init;

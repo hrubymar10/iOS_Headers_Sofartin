@@ -6,12 +6,12 @@
     NSDictionary *_currentAVChatInfo;
 }
 
-@property(assign,readonly) NSDictionary * currentAVChatInfo;
-@property(assign,retain) NSArray * myAvailableMessages;
-@property(assign,retain) NSArray * myAwayMessages;
-@property(assign,readonly) unsigned long long requestAudioReflectorStart;
-@property(assign,readonly) unsigned long long requestAudioReflectorStop;
-@property(assign,readonly) unsigned long long vcCapabilities;
+@property (nonatomic, readonly) NSDictionary *currentAVChatInfo;
+@property (nonatomic, retain) NSArray *myAvailableMessages;
+@property (nonatomic, retain) NSArray *myAwayMessages;
+@property (nonatomic, readonly) unsigned long long requestAudioReflectorStart;
+@property (nonatomic, readonly) unsigned long long requestAudioReflectorStop;
+@property (nonatomic, readonly) unsigned long long vcCapabilities;
 
 + (void)forgetStatusImageAppearance;
 + (id)imageNameForStatus:(unsigned long long)arg1;

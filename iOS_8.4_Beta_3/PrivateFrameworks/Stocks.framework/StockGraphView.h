@@ -32,11 +32,11 @@
     VolumeGraphView *_volumeView;
 }
 
-@property(assign,readwrite) UIView<StockGraphViewContainer> * chartViewDelegate;
-@property(assign,retain) StockChartDisplayMode * displayMode;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } graphInsets;
-@property(assign,readonly) bool isRendered;
-@property(assign,readonly) bool isRendering;
+@property (nonatomic) UIView<StockGraphViewContainer> *chartViewDelegate;
+@property (nonatomic, retain) StockChartDisplayMode *displayMode;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } graphInsets;
+@property (nonatomic, readonly) bool isRendered;
+@property (nonatomic, readonly) bool isRendering;
 
 - (void).cxx_destruct;
 - (void)_finishCurrentLine;

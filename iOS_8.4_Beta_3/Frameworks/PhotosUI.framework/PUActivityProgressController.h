@@ -15,8 +15,8 @@
     double _whenDidShow;
 }
 
-@property(assign,copy) id cancellationHandler;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) id cancellationHandler;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_newProgressContainerView;

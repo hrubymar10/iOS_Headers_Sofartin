@@ -9,10 +9,10 @@
     NSDate *_sampleEndDate;
 }
 
-@property(assign,readonly) ABLEMockCDAttribute * databaseData;
-@property(assign,readonly) id pattern;
-@property(assign,readonly) NSArray * sampleData;
-@property(assign,readonly) NSDate * sampleEndDate;
+@property (readonly) ABLEMockCDAttribute *databaseData;
+@property (readonly) id pattern;
+@property (readonly) NSArray *sampleData;
+@property (readonly) NSDate *sampleEndDate;
 
 - (void).cxx_destruct;
 - (id)databaseData;

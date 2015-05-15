@@ -4,7 +4,7 @@
 
 @interface SAMPSetOutputSource : SADomainCommand
 
-@property(assign,copy) NSURL * outputSourceId;
+@property (nonatomic, copy) NSURL *outputSourceId;
 
 + (id)setOutputSource;
 + (id)setOutputSourceWithDictionary:(id)arg1 context:(id)arg2;

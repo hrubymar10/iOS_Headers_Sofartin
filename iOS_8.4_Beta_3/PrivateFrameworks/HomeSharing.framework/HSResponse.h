@@ -11,12 +11,12 @@
     NSDictionary *_responseHeaderFields;
 }
 
-@property(assign,readonly) NSString * MIMEType;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long responseCode;
-@property(assign,readonly) NSData * responseData;
-@property(assign,copy) NSURL * responseDataFileURL;
-@property(assign,readonly) NSDictionary * responseHeaderFields;
+@property (nonatomic, readonly) NSString *MIMEType;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) unsigned long long responseCode;
+@property (nonatomic, readonly) NSData *responseData;
+@property (nonatomic, copy) NSURL *responseDataFileURL;
+@property (nonatomic, readonly) NSDictionary *responseHeaderFields;
 
 + (id)responseWithCode:(unsigned long long)arg1 headerFields:(id)arg2 data:(id)arg3 MIMEType:(id)arg4 error:(id)arg5;
 + (id)responseWithResponse:(id)arg1;

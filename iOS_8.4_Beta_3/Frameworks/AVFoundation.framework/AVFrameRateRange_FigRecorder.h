@@ -6,10 +6,10 @@
     AVFrameRateRangeInternal_FigRecorder *_internal;
 }
 
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } maxFrameDuration;
-@property(assign,readonly) double maxFrameRate;
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } minFrameDuration;
-@property(assign,readonly) double minFrameRate;
+@property (readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } maxFrameDuration;
+@property (readonly) double maxFrameRate;
+@property (readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } minFrameDuration;
+@property (readonly) double minFrameRate;
 
 + (id)frameRateRangeWithMinRate:(int)arg1 maxFrameRate:(int)arg2;
 

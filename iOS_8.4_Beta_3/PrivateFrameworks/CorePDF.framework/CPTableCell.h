@@ -27,10 +27,10 @@
     } rowSpan;
 }
 
-@property(assign,readonly) unsigned int backgroundGraphicCount;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cellBounds;
-@property(assign,readwrite) struct { long long x1; long long x2; } columnSpan;
-@property(assign,readwrite) struct { long long x1; long long x2; } rowSpan;
+@property (nonatomic, readonly) unsigned int backgroundGraphicCount;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } cellBounds;
+@property (nonatomic) struct { long long x1; long long x2; } columnSpan;
+@property (nonatomic) struct { long long x1; long long x2; } rowSpan;
 
 - (struct CGColor { }*)backgroundColor;
 - (id)backgroundGraphicAtIndex:(unsigned int)arg1;

@@ -16,23 +16,23 @@
     NSObject<OS_dispatch_queue> *_xpcWorkQueue;
 }
 
-@property(assign,readwrite) bool activeHomeKitApps;
-@property(assign,retain) NSObject<OS_dispatch_group> * activeMessageTracker;
-@property(assign,retain) HMDApplicationStateMonitor * appMonitor;
-@property(assign,retain) HMDBackgroundAppMessageFilter * backgroundAppMsgFilter;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSMutableSet * foregroundApps;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,retain) HMMessageDispatcher * notificationRelayDispatcher;
-@property(assign,retain) HMDIDSMessageDispatcher * recvDispatcher;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSMutableSet * xpcClients;
-@property(assign,retain) NSXPCListener * xpcListener;
-@property(assign,retain) NSObject<OS_dispatch_queue> * xpcWorkQueue;
+@property (nonatomic) bool activeHomeKitApps;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *activeMessageTracker;
+@property (nonatomic, retain) HMDApplicationStateMonitor *appMonitor;
+@property (nonatomic, retain) HMDBackgroundAppMessageFilter *backgroundAppMsgFilter;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSMutableSet *foregroundApps;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (nonatomic, retain) HMMessageDispatcher *notificationRelayDispatcher;
+@property (nonatomic, retain) HMDIDSMessageDispatcher *recvDispatcher;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSMutableSet *xpcClients;
+@property (nonatomic, retain) NSXPCListener *xpcListener;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *xpcWorkQueue;
 
 - (void).cxx_destruct;
 - (void)_handleResumeXPCConnectionRequest:(id)arg1;

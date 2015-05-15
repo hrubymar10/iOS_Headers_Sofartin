@@ -7,8 +7,8 @@
     NSArray *_sortedRecords;
 }
 
-@property(assign,copy) NSMutableSet * nodes;
-@property(assign,retain) NSArray * sortedRecords;
+@property (nonatomic, copy) NSMutableSet *nodes;
+@property (nonatomic, retain) NSArray *sortedRecords;
 
 - (void).cxx_destruct;
 - (bool)addRecords:(id)arg1 error:(id*)arg2;

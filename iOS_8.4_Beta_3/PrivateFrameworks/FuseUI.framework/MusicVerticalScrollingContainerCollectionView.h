@@ -9,8 +9,8 @@
     bool _performingLayout;
 }
 
-@property(assign,readwrite) <MusicVerticalScrollingContainerCollectionViewDelegate> * delegate;
-@property(getter=isPerformingLayout,assign,readonly) bool performingLayout;
+@property (nonatomic) <MusicVerticalScrollingContainerCollectionViewDelegate> *delegate;
+@property (getter=isPerformingLayout, nonatomic, readonly) bool performingLayout;
 
 - (bool)_shouldFadeCellsForBoundChangeWhileRotating;
 - (bool)isPerformingLayout;

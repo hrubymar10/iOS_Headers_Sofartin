@@ -7,8 +7,8 @@
     NSMutableArray *_discoveredUserInfos;
 }
 
-@property(assign,copy) id discoverAllContactsCompletionBlock;
-@property(assign,retain) NSMutableArray * discoveredUserInfos;
+@property (nonatomic, copy) id discoverAllContactsCompletionBlock;
+@property (nonatomic, retain) NSMutableArray *discoveredUserInfos;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

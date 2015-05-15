@@ -9,10 +9,10 @@
     int _status;
 }
 
-@property(assign,copy) NSString * destID;
-@property(assign,retain) DAMessageMoveRequest * origRequest;
-@property(assign,copy) NSString * sourceID;
-@property(assign,readwrite) int status;
+@property (nonatomic, copy) NSString *destID;
+@property (nonatomic, retain) DAMessageMoveRequest *origRequest;
+@property (nonatomic, copy) NSString *sourceID;
+@property (nonatomic) int status;
 
 - (void).cxx_destruct;
 - (id)description;

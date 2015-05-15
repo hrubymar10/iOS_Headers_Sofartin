@@ -15,11 +15,11 @@
     bool _textFieldIsEmpty;
 }
 
-@property(assign,retain) UIImage * customCheckmarkImage;
-@property(assign,retain) UIImage * customCheckmarkImageSelected;
-@property(assign,retain) UIImage * shadowImage;
-@property(assign,retain) CNFRegShadowView * shadowView;
-@property(assign,readwrite) bool skipDelegateCallback;
+@property (nonatomic, retain) UIImage *customCheckmarkImage;
+@property (nonatomic, retain) UIImage *customCheckmarkImageSelected;
+@property (nonatomic, retain) UIImage *shadowImage;
+@property (nonatomic, retain) CNFRegShadowView *shadowView;
+@property (nonatomic) bool skipDelegateCallback;
 
 - (void)_handleTextChanged;
 - (void)_startListeningForTextChanges;

@@ -11,16 +11,16 @@
     CoreDAVItemWithNoChildren *_unauthenticated;
 }
 
-@property(assign,retain) CoreDAVItemWithNoChildren * addressBook;
-@property(assign,retain) CoreDAVItemWithNoChildren * bookmarkBarFolder;
-@property(assign,retain) CoreDAVItemWithNoChildren * bookmarkFolder;
-@property(assign,retain) CoreDAVItemWithNoChildren * bookmarkMenuFolder;
-@property(assign,retain) CoreDAVItemWithNoChildren * collection;
-@property(assign,retain) CoreDAVItemWithNoChildren * principal;
-@property(assign,retain) CoreDAVItemWithNoChildren * searchAddressBook;
-@property(assign,retain) CoreDAVItemWithNoChildren * shared;
-@property(assign,readonly) NSSet * stringSet;
-@property(assign,retain) CoreDAVItemWithNoChildren * unauthenticated;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *addressBook;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *bookmarkBarFolder;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *bookmarkFolder;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *bookmarkMenuFolder;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *collection;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *principal;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *searchAddressBook;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *shared;
+@property (nonatomic, readonly) NSSet *stringSet;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *unauthenticated;
 
 + (id)copyParseRules;
 

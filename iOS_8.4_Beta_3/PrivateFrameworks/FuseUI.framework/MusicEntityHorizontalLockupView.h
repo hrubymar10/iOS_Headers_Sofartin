@@ -20,15 +20,15 @@
     double _textContentLeftInset;
 }
 
-@property(assign,retain) MusicEntityViewContentDescriptor * contentDescriptor;
-@property(assign,readonly) UIButton * contextualActionsButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicEntityHorizontalLockupViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) <MusicEntityValueProviding> * entityValueProvider;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) double textContentLeftInset;
+@property (nonatomic, retain) MusicEntityViewContentDescriptor *contentDescriptor;
+@property (nonatomic, readonly) UIButton *contextualActionsButton;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicEntityHorizontalLockupViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) <MusicEntityValueProviding> *entityValueProvider;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) double textContentLeftInset;
 
 + (double)maximumHeightForContentDescriptor:(id)arg1 width:(double)arg2 traitCollection:(id)arg3;
 

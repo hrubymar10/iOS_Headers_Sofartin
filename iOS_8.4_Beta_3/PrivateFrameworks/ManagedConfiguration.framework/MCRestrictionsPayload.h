@@ -7,7 +7,7 @@
     NSMutableDictionary *_restrictions;
 }
 
-@property(assign,retain) NSString * iCloudPassword;
+@property (nonatomic, retain) NSString *iCloudPassword;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

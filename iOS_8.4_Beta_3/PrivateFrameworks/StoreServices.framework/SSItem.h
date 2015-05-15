@@ -13,25 +13,25 @@
     NSString *_tellAFriendSubject;
 }
 
-@property(assign,readonly) NSNumber * ITunesStoreIdentifier;
-@property(assign,readonly) NSArray * allItemOffers;
-@property(assign,readonly) NSString * artistName;
-@property(assign,readonly) float averageUserRating;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) SSItemOffer * defaultItemOffer;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSDate * expirationDate;
-@property(getter=isGameCenterEnabled,assign,readonly) bool gameCenterEnabled;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighDefinition,assign,readonly) bool highDefinition;
-@property(assign,readonly) SSItemImageCollection * imageCollection;
-@property(assign,readonly) NSString * itemKind;
-@property(assign,readonly) NSString * itemTitle;
-@property(assign,readonly) long long numberOfUserRatings;
-@property(getter=isRestricted,assign,readonly) bool restricted;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * thumbnailImages;
-@property(assign,readonly) NSURL * viewItemURL;
+@property (nonatomic, readonly) NSNumber *ITunesStoreIdentifier;
+@property (nonatomic, readonly) NSArray *allItemOffers;
+@property (nonatomic, readonly) NSString *artistName;
+@property (nonatomic, readonly) float averageUserRating;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) SSItemOffer *defaultItemOffer;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSDate *expirationDate;
+@property (getter=isGameCenterEnabled, nonatomic, readonly) bool gameCenterEnabled;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighDefinition, nonatomic, readonly) bool highDefinition;
+@property (nonatomic, readonly) SSItemImageCollection *imageCollection;
+@property (nonatomic, readonly) NSString *itemKind;
+@property (nonatomic, readonly) NSString *itemTitle;
+@property (nonatomic, readonly) long long numberOfUserRatings;
+@property (getter=isRestricted, nonatomic, readonly) bool restricted;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *thumbnailImages;
+@property (nonatomic, readonly) NSURL *viewItemURL;
 
 - (id)ITunesStoreIdentifier;
 - (void)_finishTellAFriendLoadWithError:(id)arg1;

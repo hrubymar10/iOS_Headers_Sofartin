@@ -9,22 +9,22 @@
     void *_reserved;
 }
 
-@property(assign,readwrite) <NSMetadataQueryDelegate> * delegate;
-@property(getter=isGathering,assign,readonly) bool gathering;
-@property(assign,copy) NSArray * groupedResults;
-@property(assign,copy) NSArray * groupingAttributes;
-@property(assign,readwrite) double notificationBatchingInterval;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,copy) NSPredicate * predicate;
-@property(assign,readonly) unsigned long long resultCount;
-@property(assign,copy) NSArray * results;
-@property(assign,copy) NSArray * searchItems;
-@property(assign,copy) NSArray * searchScopes;
-@property(assign,copy) NSArray * sortDescriptors;
-@property(getter=isStarted,assign,readonly) bool started;
-@property(getter=isStopped,assign,readonly) bool stopped;
-@property(assign,copy) NSArray * valueListAttributes;
-@property(assign,copy) NSDictionary * valueLists;
+@property <NSMetadataQueryDelegate> *delegate;
+@property (getter=isGathering, readonly) bool gathering;
+@property (readonly, copy) NSArray *groupedResults;
+@property (copy) NSArray *groupingAttributes;
+@property double notificationBatchingInterval;
+@property (retain) NSOperationQueue *operationQueue;
+@property (copy) NSPredicate *predicate;
+@property (readonly) unsigned long long resultCount;
+@property (readonly, copy) NSArray *results;
+@property (copy) NSArray *searchItems;
+@property (copy) NSArray *searchScopes;
+@property (copy) NSArray *sortDescriptors;
+@property (getter=isStarted, readonly) bool started;
+@property (getter=isStopped, readonly) bool stopped;
+@property (copy) NSArray *valueListAttributes;
+@property (readonly, copy) NSDictionary *valueLists;
 
 + (Class)_stitchingClass;
 + (bool)automaticallyNotifiesObserversForKey:(id)arg1;

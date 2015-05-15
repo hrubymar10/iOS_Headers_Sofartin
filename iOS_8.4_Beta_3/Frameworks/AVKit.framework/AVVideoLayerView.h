@@ -8,11 +8,11 @@
     AVVideoLayerDelegate *_videoLayerDelegate;
 }
 
-@property(assign,retain) AVPlayerController * playerController;
-@property(getter=isReadyForDisplay,assign,readonly) bool readyForDisplay;
-@property(assign,readwrite) long long videoLayerGravity;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoRect;
-@property(getter=isVideoScaled,assign,readwrite) bool videoScaled;
+@property (nonatomic, retain) AVPlayerController *playerController;
+@property (getter=isReadyForDisplay, nonatomic, readonly) bool readyForDisplay;
+@property (nonatomic) long long videoLayerGravity;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } videoRect;
+@property (getter=isVideoScaled, nonatomic) bool videoScaled;
 
 + (id)keyPathsForValuesAffectingReadyForDisplay;
 + (id)keyPathsForValuesAffectingVideoGravity;

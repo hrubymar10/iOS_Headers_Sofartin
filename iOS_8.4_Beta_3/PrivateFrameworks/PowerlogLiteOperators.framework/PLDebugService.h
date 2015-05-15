@@ -17,18 +17,18 @@
     PLXPCResponderOperatorComposition *_xpcResponderPLLog;
 }
 
-@property(assign,retain) PLXPCListenerOperatorComposition * aggregateTestListener;
-@property(assign,retain) PLXPCResponderOperatorComposition * aggregateTestResponder;
-@property(assign,retain) PLEntryNotificationOperatorComposition * assertionListener;
-@property(assign,retain) PLEntryNotificationOperatorComposition * assertionNewListener;
-@property(assign,retain) PLEntryNotificationOperatorComposition * assertionUpdateListener;
-@property(assign,retain) PLEntryNotificationOperatorComposition * canSleepNotification;
-@property(assign,retain) PLSemaphore * canSleepSemaphore;
-@property(assign,retain) PLXPCListenerOperatorComposition * schemaTestListener;
-@property(assign,retain) PLEntryNotificationOperatorComposition * sleepNotification;
-@property(assign,retain) PLEntryNotificationOperatorComposition * wakeNotification;
-@property(assign,retain) PLXPCListenerOperatorComposition * xpcListenerPLLog;
-@property(assign,retain) PLXPCResponderOperatorComposition * xpcResponderPLLog;
+@property (retain) PLXPCListenerOperatorComposition *aggregateTestListener;
+@property (retain) PLXPCResponderOperatorComposition *aggregateTestResponder;
+@property (retain) PLEntryNotificationOperatorComposition *assertionListener;
+@property (retain) PLEntryNotificationOperatorComposition *assertionNewListener;
+@property (retain) PLEntryNotificationOperatorComposition *assertionUpdateListener;
+@property (retain) PLEntryNotificationOperatorComposition *canSleepNotification;
+@property (retain) PLSemaphore *canSleepSemaphore;
+@property (retain) PLXPCListenerOperatorComposition *schemaTestListener;
+@property (retain) PLEntryNotificationOperatorComposition *sleepNotification;
+@property (retain) PLEntryNotificationOperatorComposition *wakeNotification;
+@property (retain) PLXPCListenerOperatorComposition *xpcListenerPLLog;
+@property (retain) PLXPCResponderOperatorComposition *xpcResponderPLLog;
 
 + (id)entryAggregateDefinitionAggregateTest;
 + (id)entryAggregateDefinitions;

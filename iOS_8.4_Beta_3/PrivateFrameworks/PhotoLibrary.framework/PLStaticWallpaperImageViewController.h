@@ -4,7 +4,7 @@
 
 @interface PLStaticWallpaperImageViewController : PLWallpaperImageViewController
 
-@property(assign,readwrite) bool colorSamplingEnabled;
+@property (nonatomic) bool colorSamplingEnabled;
 
 - (bool)colorSamplingEnabled;
 - (id)initWithPhoto:(id)arg1;

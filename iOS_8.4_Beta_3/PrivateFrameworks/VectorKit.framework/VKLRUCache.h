@@ -12,10 +12,10 @@
     id _tail;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readwrite) <VKLRUCacheDelegate> * delegate;
-@property(assign,readonly) unsigned long long maximumCapacity;
-@property(assign,readonly) unsigned long long reservedCapacity;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic) <VKLRUCacheDelegate> *delegate;
+@property (nonatomic, readonly) unsigned long long maximumCapacity;
+@property (nonatomic, readonly) unsigned long long reservedCapacity;
 
 - (void)consistencyCheck;
 - (id)contentsDescription;

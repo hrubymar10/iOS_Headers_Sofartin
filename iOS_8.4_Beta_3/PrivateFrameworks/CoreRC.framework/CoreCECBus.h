@@ -18,14 +18,14 @@
     } _tvLanguageCodeASCII;
 }
 
-@property(assign,readonly) CoreCECDevice * activeSource;
-@property(assign,readwrite) bool hasLink;
-@property(assign,readonly) NSString * osdName;
-@property(assign,readwrite) union CECOSDName { unsigned char x1[15]; struct { unsigned char x_2_1_1; unsigned char x_2_1_2[14]; } x2; } osdNameASCII;
-@property(assign,readwrite) unsigned long long physicalAddress;
-@property(assign,readwrite) unsigned long long systemAudioModeStatus;
-@property(assign,readonly) NSString * tvLanguageCode;
-@property(assign,readwrite) struct CECLanguage { unsigned char x1[3]; } tvLanguageCodeASCII;
+@property (nonatomic, readonly) CoreCECDevice *activeSource;
+@property (nonatomic) bool hasLink;
+@property (nonatomic, readonly) NSString *osdName;
+@property (nonatomic) union CECOSDName { unsigned char x1[15]; struct { unsigned char x_2_1_1; unsigned char x_2_1_2[14]; } x2; } osdNameASCII;
+@property (nonatomic) unsigned long long physicalAddress;
+@property (nonatomic) unsigned long long systemAudioModeStatus;
+@property (nonatomic, readonly) NSString *tvLanguageCode;
+@property (nonatomic) struct CECLanguage { unsigned char x1[3]; } tvLanguageCodeASCII;
 
 + (bool)supportsSecureCoding;
 

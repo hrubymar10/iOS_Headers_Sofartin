@@ -9,7 +9,7 @@
     NSURL *_url;
 }
 
-@property(assign,readwrite) id replacement;
+@property (nonatomic) id replacement;
 
 - (id)_attributes;
 - (id)attributeForName:(id)arg1;

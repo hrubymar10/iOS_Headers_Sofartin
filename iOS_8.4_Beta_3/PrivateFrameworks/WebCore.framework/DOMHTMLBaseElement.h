@@ -4,8 +4,8 @@
 
 @interface DOMHTMLBaseElement : DOMHTMLElement
 
-@property(assign,copy) NSString * href;
-@property(assign,copy) NSString * target;
+@property (copy) NSString *href;
+@property (copy) NSString *target;
 
 - (id)href;
 - (void)setHref:(id)arg1;

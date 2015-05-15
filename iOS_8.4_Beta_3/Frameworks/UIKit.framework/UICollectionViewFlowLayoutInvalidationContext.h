@@ -9,8 +9,8 @@
     } _flowLayoutInvalidationFlags;
 }
 
-@property(assign,readwrite) bool invalidateFlowLayoutAttributes;
-@property(assign,readwrite) bool invalidateFlowLayoutDelegateMetrics;
+@property (nonatomic) bool invalidateFlowLayoutAttributes;
+@property (nonatomic) bool invalidateFlowLayoutDelegateMetrics;
 
 - (id)init;
 - (bool)invalidateFlowLayoutAttributes;

@@ -4,7 +4,7 @@
 
 @interface MCUserNotificationManager : NSObject
 
-@property(assign,readonly) bool hasOutstandingNotifications;
+@property (nonatomic, readonly) bool hasOutstandingNotifications;
 
 + (id)sharedManager;
 

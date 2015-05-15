@@ -11,12 +11,12 @@
     int _traits;
 }
 
-@property(assign,copy) NSString * contentSizeCategory;
-@property(assign,copy) UIFontDescriptor * fontDescriptor;
-@property(assign,copy) NSString * fontName;
-@property(assign,readwrite) double pointSize;
-@property(assign,copy) NSString * textStyle;
-@property(assign,readwrite) int traits;
+@property (nonatomic, copy) NSString *contentSizeCategory;
+@property (nonatomic, copy) UIFontDescriptor *fontDescriptor;
+@property (nonatomic, copy) NSString *fontName;
+@property (nonatomic) double pointSize;
+@property (nonatomic, copy) NSString *textStyle;
+@property (nonatomic) int traits;
 
 + (id)fontCacheKeyWithFontDescriptor:(id)arg1 pointSize:(double)arg2;
 + (id)fontCacheKeyWithFontName:(id)arg1 traits:(int)arg2 pointSize:(double)arg3;

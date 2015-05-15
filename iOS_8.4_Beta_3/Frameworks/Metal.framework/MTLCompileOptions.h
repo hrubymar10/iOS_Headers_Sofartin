@@ -8,9 +8,9 @@
     NSDictionary *_preprocessorMacros;
 }
 
-@property(assign,readwrite) bool debuggingEnabled;
-@property(assign,readwrite) bool fastMathEnabled;
-@property(assign,copy) NSDictionary * preprocessorMacros;
+@property (nonatomic) bool debuggingEnabled;
+@property (nonatomic) bool fastMathEnabled;
+@property (nonatomic, copy) NSDictionary *preprocessorMacros;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

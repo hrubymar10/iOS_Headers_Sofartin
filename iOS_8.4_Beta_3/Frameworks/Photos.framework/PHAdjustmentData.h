@@ -9,11 +9,11 @@
     NSString *_formatVersion;
 }
 
-@property(assign,readwrite) long long baseVersion;
-@property(assign,readonly) NSData * data;
-@property(assign,copy) NSString * formatIdentifier;
-@property(assign,copy) NSString * formatVersion;
-@property(getter=isOpaque,assign,readonly) bool opaque;
+@property (nonatomic) long long baseVersion;
+@property (readonly) NSData *data;
+@property (copy) NSString *formatIdentifier;
+@property (copy) NSString *formatVersion;
+@property (getter=isOpaque, readonly) bool opaque;
 
 + (long long)adjustmentBaseVersionFromImageRequestVersion:(long long)arg1;
 + (long long)adjustmentBaseVersionFromVideoRequestVersion:(long long)arg1;

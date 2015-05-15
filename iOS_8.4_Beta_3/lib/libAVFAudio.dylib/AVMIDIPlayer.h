@@ -6,10 +6,10 @@
     void *_impl;
 }
 
-@property(assign,readwrite) double currentPosition;
-@property(assign,readonly) double duration;
-@property(getter=isPlaying,assign,readonly) bool playing;
-@property(assign,readwrite) float rate;
+@property (nonatomic) double currentPosition;
+@property (nonatomic, readonly) double duration;
+@property (getter=isPlaying, nonatomic, readonly) bool playing;
+@property (nonatomic) float rate;
 
 - (double)beatsForHostTime:(unsigned long long)arg1;
 - (double)currentPosition;

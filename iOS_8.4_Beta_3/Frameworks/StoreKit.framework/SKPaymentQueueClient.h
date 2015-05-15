@@ -15,16 +15,16 @@
     NSString *_vendorIdentifier;
 }
 
-@property(assign,readwrite) bool allowsBootstrapCellularData;
-@property(assign,copy) NSString * bundleIdentifier;
-@property(assign,copy) NSString * bundleVersion;
-@property(assign,readwrite) bool hidesConfirmationDialogs;
-@property(assign,readwrite) bool ignoresInAppPurchaseRestriction;
-@property(assign,copy) NSString * receiptDirectoryPath;
-@property(assign,readwrite) bool requiresAuthenticationForPayment;
-@property(assign,copy) NSNumber * storeExternalVersion;
-@property(assign,copy) NSNumber * storeItemIdentifier;
-@property(assign,copy) NSString * vendorIdentifier;
+@property (nonatomic) bool allowsBootstrapCellularData;
+@property (nonatomic, copy) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSString *bundleVersion;
+@property (nonatomic) bool hidesConfirmationDialogs;
+@property (nonatomic) bool ignoresInAppPurchaseRestriction;
+@property (nonatomic, copy) NSString *receiptDirectoryPath;
+@property (nonatomic) bool requiresAuthenticationForPayment;
+@property (nonatomic, copy) NSNumber *storeExternalVersion;
+@property (nonatomic, copy) NSNumber *storeItemIdentifier;
+@property (nonatomic, copy) NSString *vendorIdentifier;
 
 - (bool)allowsBootstrapCellularData;
 - (id)bundleIdentifier;

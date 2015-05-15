@@ -7,8 +7,8 @@
     NSString *_title;
 }
 
-@property(assign,readwrite) SEL action;
-@property(assign,copy) NSString * title;
+@property (nonatomic) SEL action;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (SEL)action;

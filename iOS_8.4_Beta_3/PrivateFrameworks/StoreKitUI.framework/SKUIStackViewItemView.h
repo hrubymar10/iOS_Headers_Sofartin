@@ -9,10 +9,10 @@
     bool _shouldFlipImageVertical;
 }
 
-@property(assign,copy) UIColor * borderColor;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) bool shouldFlipImageHorizontal;
-@property(assign,readwrite) bool shouldFlipImageVertical;
+@property (nonatomic, copy) UIColor *borderColor;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) bool shouldFlipImageHorizontal;
+@property (nonatomic) bool shouldFlipImageVertical;
 
 - (void).cxx_destruct;
 - (id)borderColor;

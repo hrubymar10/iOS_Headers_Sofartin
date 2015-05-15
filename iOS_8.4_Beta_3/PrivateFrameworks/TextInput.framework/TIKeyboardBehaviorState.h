@@ -14,15 +14,15 @@
     bool spaceConfirmation;
 }
 
-@property(assign,readwrite) bool followsZhuyin;
-@property(assign,readwrite) bool hasAutocorrection;
-@property(assign,readwrite) bool hasCandidateSelected;
-@property(assign,readwrite) bool hasCandidates;
-@property(assign,readwrite) bool hasInput;
-@property(assign,readwrite) bool hasNextPage;
-@property(assign,readwrite) bool showsCandidatesInLayout;
-@property(assign,readwrite) bool showsExtendedList;
-@property(assign,readwrite) bool spaceConfirmation;
+@property (nonatomic) bool followsZhuyin;
+@property (nonatomic) bool hasAutocorrection;
+@property (nonatomic) bool hasCandidateSelected;
+@property (nonatomic) bool hasCandidates;
+@property (nonatomic) bool hasInput;
+@property (nonatomic) bool hasNextPage;
+@property (nonatomic) bool showsCandidatesInLayout;
+@property (nonatomic) bool showsExtendedList;
+@property (nonatomic) bool spaceConfirmation;
 
 - (bool)followsZhuyin;
 - (bool)hasAutocorrection;

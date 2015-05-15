@@ -4,23 +4,23 @@
 
 @interface UIResponder : NSObject <UITextInputAdditions, UITextInput_Internal, _UIStateRestorationContinuation>
 
-@property(getter=_proxyTextInput,assign,readonly) UIResponder<UITextInput> * __content;
-@property(assign,readonly) UIResponder * _editingDelegate;
-@property(assign,readonly) UIResponder * _responderForEditing;
-@property(assign,readonly) UIView<UITextInputPrivate> * _textSelectingContainer;
-@property(getter=_caretRect,assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } caretRect;
-@property(getter=isEditable,assign,readonly) bool editable;
-@property(getter=isEditing,assign,readonly) bool editing;
-@property(assign,retain) UIView * inputAccessoryView;
-@property(assign,retain) UIInputViewController * inputAccessoryViewController;
-@property(assign,retain) UIView * inputView;
-@property(assign,retain) UIInputViewController * inputViewController;
-@property(assign,readonly) NSArray * keyCommands;
-@property(assign,copy) NSString * restorationIdentifier;
-@property(assign,retain) NSString * textInputContextIdentifier;
-@property(assign,retain) UITextInputMode * textInputMode;
-@property(assign,readonly) NSUndoManager * undoManager;
-@property(assign,retain) NSUserActivity * userActivity;
+@property (getter=_proxyTextInput, nonatomic, readonly) UIResponder<UITextInput> *__content;
+@property (nonatomic, readonly) UIResponder *_editingDelegate;
+@property (nonatomic, readonly) UIResponder *_responderForEditing;
+@property (nonatomic, readonly) UIView<UITextInputPrivate> *_textSelectingContainer;
+@property (getter=_caretRect, nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } caretRect;
+@property (getter=isEditable, nonatomic, readonly) bool editable;
+@property (getter=isEditing, nonatomic, readonly) bool editing;
+@property (nonatomic, readonly, retain) UIView *inputAccessoryView;
+@property (nonatomic, readonly, retain) UIInputViewController *inputAccessoryViewController;
+@property (nonatomic, readonly, retain) UIView *inputView;
+@property (nonatomic, readonly, retain) UIInputViewController *inputViewController;
+@property (nonatomic, readonly) NSArray *keyCommands;
+@property (nonatomic, copy) NSString *restorationIdentifier;
+@property (nonatomic, readonly, retain) NSString *textInputContextIdentifier;
+@property (nonatomic, readonly, retain) UITextInputMode *textInputMode;
+@property (nonatomic, readonly) NSUndoManager *undoManager;
+@property (nonatomic, retain) NSUserActivity *userActivity;
 
 + (void)_cleanupAllStateRestorationTables;
 + (void)_cleanupStateRestorationObjectIdentifierTrackingTables;

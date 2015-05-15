@@ -7,8 +7,8 @@
     NSMutableDictionary *_managedProperties;
 }
 
-@property(assign,readonly) IKAppContext * appContext;
-@property(assign,retain) NSMutableDictionary * managedProperties;
+@property (nonatomic, readonly) IKAppContext *appContext;
+@property (nonatomic, retain) NSMutableDictionary *managedProperties;
 
 - (void).cxx_destruct;
 - (id)appContext;

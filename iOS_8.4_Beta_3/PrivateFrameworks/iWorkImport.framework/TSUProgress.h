@@ -8,10 +8,10 @@
     NSObject<OS_dispatch_queue> *mProgressObserversQueue;
 }
 
-@property(getter=isIndeterminate,assign,readonly) bool indeterminate;
-@property(assign,readonly) double maxValue;
-@property(assign,copy) NSString * message;
-@property(assign,readonly) double value;
+@property (getter=isIndeterminate, readonly) bool indeterminate;
+@property (readonly) double maxValue;
+@property (copy) NSString *message;
+@property (readonly) double value;
 
 - (id)addProgressObserverWithValueInterval:(double)arg1 queue:(id)arg2 handler:(id)arg3;
 - (void)dealloc;

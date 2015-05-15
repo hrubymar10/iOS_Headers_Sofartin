@@ -13,13 +13,13 @@
     NSString *_storeID;
 }
 
-@property(assign,readwrite) double currentTime;
-@property(assign,readwrite) double duration;
-@property(assign,readwrite) long long playState;
-@property(assign,copy) NSString * playlistID;
-@property(assign,copy) NSString * radioStaionID;
-@property(assign,copy) NSString * storeAlbumID;
-@property(assign,copy) NSString * storeID;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double duration;
+@property (nonatomic) long long playState;
+@property (nonatomic, copy) NSString *playlistID;
+@property (nonatomic, copy) NSString *radioStaionID;
+@property (nonatomic, copy) NSString *storeAlbumID;
+@property (nonatomic, copy) NSString *storeID;
 
 - (void).cxx_destruct;
 - (double)currentTime;

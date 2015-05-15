@@ -10,12 +10,12 @@
     NSString *storyboardFileName;
 }
 
-@property(assign,readonly) NSBundle * bundle;
-@property(assign,readonly) NSString * designatedEntryPointIdentifier;
-@property(assign,readonly) NSDictionary * identifierToNibNameMap;
-@property(assign,readonly) NSMutableDictionary * identifierToUINibMap;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSString * storyboardFileName;
+@property (nonatomic, readonly) NSBundle *bundle;
+@property (nonatomic, readonly) NSString *designatedEntryPointIdentifier;
+@property (nonatomic, readonly) NSDictionary *identifierToNibNameMap;
+@property (nonatomic, readonly) NSMutableDictionary *identifierToUINibMap;
+@property (readonly) NSString *name;
+@property (nonatomic, readonly) NSString *storyboardFileName;
 
 + (id)storyboardWithName:(id)arg1 bundle:(id)arg2;
 

@@ -8,10 +8,10 @@
     long long _updateType;
 }
 
-@property(assign,readonly) bool preserveDocumentUUID;
-@property(assign,readwrite) int sampleID;
-@property(assign,readonly) bool shouldUpdate;
-@property(assign,readonly) long long updateType;
+@property (nonatomic, readonly) bool preserveDocumentUUID;
+@property (nonatomic) int sampleID;
+@property (nonatomic, readonly) bool shouldUpdate;
+@property (nonatomic, readonly) long long updateType;
 
 - (void).cxx_destruct;
 - (void)addNewStorage:(id)arg1 forData:(id)arg2;

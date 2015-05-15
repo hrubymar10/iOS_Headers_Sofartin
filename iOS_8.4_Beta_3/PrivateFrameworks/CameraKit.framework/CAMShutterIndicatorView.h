@@ -6,7 +6,7 @@
     NSAttributedString *__indicatorText;
 }
 
-@property(assign,readonly) NSAttributedString * _indicatorText;
+@property (nonatomic, readonly) NSAttributedString *_indicatorText;
 
 - (void).cxx_destruct;
 - (void)_commonCAMShutterIndicatorViewInitialization;

@@ -13,11 +13,11 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,retain) AVURLAsset * asset;
-@property(assign,readwrite) bool checkedVideoInfo;
-@property(assign,readwrite) bool hasVideoTrack;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } pxSize;
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic, retain) AVURLAsset *asset;
+@property (nonatomic) bool checkedVideoInfo;
+@property (nonatomic) bool hasVideoTrack;
+@property (nonatomic) struct CGSize { double x1; double x2; } pxSize;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 + (id)UTITypes;
 + (Class)__ck_attachmentItemClass;

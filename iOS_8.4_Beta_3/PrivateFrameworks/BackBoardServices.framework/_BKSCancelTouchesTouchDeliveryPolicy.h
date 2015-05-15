@@ -8,8 +8,8 @@
     double _initialTouchTimestamp;
 }
 
-@property(assign,readonly) unsigned int contextId;
-@property(assign,readonly) double initialTouchTimestamp;
+@property (nonatomic, readonly) unsigned int contextId;
+@property (nonatomic, readonly) double initialTouchTimestamp;
 
 + (bool)supportsSecureCoding;
 

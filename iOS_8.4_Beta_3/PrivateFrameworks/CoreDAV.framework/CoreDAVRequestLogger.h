@@ -8,7 +8,7 @@
     int _snippetsLogged;
 }
 
-@property(assign,retain) NSArray * headerSortDescriptors;
+@property (nonatomic, retain) NSArray *headerSortDescriptors;
 
 - (id)_inflateRequestBody:(id)arg1;
 - (void)dealloc;

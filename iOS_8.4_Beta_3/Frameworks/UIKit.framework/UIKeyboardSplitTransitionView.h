@@ -38,11 +38,11 @@
     <UIKeyboardKeyplaneTransitionDelegate> *_transitionDelegate;
 }
 
-@property(assign,readonly) NSArray * backgroundLayers;
-@property(assign,copy) id completionBlock;
-@property(assign,readonly) NSArray * shadowLayers;
-@property(assign,readwrite) <UIKeyboardSplitTransitionDataSource> * splitTransitionDataSource;
-@property(assign,readwrite) <UIKeyboardKeyplaneTransitionDelegate> * splitTransitionDelegate;
+@property (readonly) NSArray *backgroundLayers;
+@property (copy) id completionBlock;
+@property (readonly) NSArray *shadowLayers;
+@property (nonatomic) <UIKeyboardSplitTransitionDataSource> *splitTransitionDataSource;
+@property (nonatomic) <UIKeyboardKeyplaneTransitionDelegate> *splitTransitionDelegate;
 
 - (id)backgroundLayers;
 - (id)bottomDropShadow;

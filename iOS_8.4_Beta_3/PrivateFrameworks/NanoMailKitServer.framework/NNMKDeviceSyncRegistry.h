@@ -16,17 +16,17 @@
     NNMKSyncedMailbox *_syncedMailbox;
 }
 
-@property(assign,retain) NNMKSQLiteConnection * database;
-@property(assign,retain) NSDate * dateReceivedCapForAdding;
-@property(assign,readwrite) double deviceScreenScale;
-@property(assign,readwrite) double deviceScreenWidth;
-@property(assign,readwrite) unsigned long long fullMessagesSyncVersion;
-@property(assign,readwrite) bool isMessagesSyncActive;
-@property(assign,readwrite) bool isMoreMessagesRequestPending;
-@property(assign,readwrite) bool organizeByThread;
-@property(assign,readonly) NSString * path;
-@property(assign,readwrite) bool protectedChannelSupported;
-@property(assign,retain) NNMKSyncedMailbox * syncedMailbox;
+@property (nonatomic, retain) NNMKSQLiteConnection *database;
+@property (nonatomic, retain) NSDate *dateReceivedCapForAdding;
+@property (nonatomic) double deviceScreenScale;
+@property (nonatomic) double deviceScreenWidth;
+@property (nonatomic) unsigned long long fullMessagesSyncVersion;
+@property (nonatomic) bool isMessagesSyncActive;
+@property (nonatomic) bool isMoreMessagesRequestPending;
+@property (nonatomic) bool organizeByThread;
+@property (nonatomic, readonly) NSString *path;
+@property (nonatomic) bool protectedChannelSupported;
+@property (nonatomic, retain) NNMKSyncedMailbox *syncedMailbox;
 
 - (void).cxx_destruct;
 - (void)_deleteAllObjectsFromTable:(id)arg1;

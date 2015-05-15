@@ -9,10 +9,10 @@
     long long _timeStyle;
 }
 
-@property(assign,readwrite) long long dateStyle;
-@property(assign,readwrite) bool ignoresTimeZone;
-@property(assign,readwrite) bool isRelative;
-@property(assign,readwrite) long long timeStyle;
+@property (nonatomic) long long dateStyle;
+@property (nonatomic) bool ignoresTimeZone;
+@property (nonatomic) bool isRelative;
+@property (nonatomic) long long timeStyle;
 
 + (bool)supportsSecureCoding;
 

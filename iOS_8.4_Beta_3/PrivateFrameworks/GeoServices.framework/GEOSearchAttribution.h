@@ -8,9 +8,9 @@
     unsigned int _sourceVersion;
 }
 
-@property(assign,retain) NSMutableArray * attributionURLs;
-@property(assign,retain) NSString * sourceIdentifier;
-@property(assign,readwrite) unsigned int sourceVersion;
+@property (nonatomic, retain) NSMutableArray *attributionURLs;
+@property (nonatomic, retain) NSString *sourceIdentifier;
+@property (nonatomic) unsigned int sourceVersion;
 
 - (void)addAttributionURLs:(id)arg1;
 - (id)attributionURLs;

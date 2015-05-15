@@ -22,23 +22,23 @@
     NSString *_formatScientificStringWithParens;
 }
 
-@property(assign,readonly) NSString * formatCurrencyString;
-@property(assign,readonly) NSString * formatCurrencyStringMinus;
-@property(assign,readonly) NSString * formatCurrencyStringRedOnly;
-@property(assign,readonly) NSString * formatCurrencyStringWithParens;
-@property(assign,readonly) NSString * formatDateTimeString;
-@property(assign,readonly) NSString * formatDecimalString;
-@property(assign,readonly) NSString * formatDecimalStringMinus;
-@property(assign,readonly) NSString * formatDecimalStringRedOnly;
-@property(assign,readonly) NSString * formatDecimalStringWithParens;
-@property(assign,readonly) NSString * formatPercentageString;
-@property(assign,readonly) NSString * formatPercentageStringMinus;
-@property(assign,readonly) NSString * formatPercentageStringRedOnly;
-@property(assign,readonly) NSString * formatPercentageStringWithParens;
-@property(assign,readonly) NSString * formatScientificString;
-@property(assign,readonly) NSString * formatScientificStringMinus;
-@property(assign,readonly) NSString * formatScientificStringRedOnly;
-@property(assign,readonly) NSString * formatScientificStringWithParens;
+@property (readonly) NSString *formatCurrencyString;
+@property (readonly) NSString *formatCurrencyStringMinus;
+@property (readonly) NSString *formatCurrencyStringRedOnly;
+@property (readonly) NSString *formatCurrencyStringWithParens;
+@property (readonly) NSString *formatDateTimeString;
+@property (readonly) NSString *formatDecimalString;
+@property (readonly) NSString *formatDecimalStringMinus;
+@property (readonly) NSString *formatDecimalStringRedOnly;
+@property (readonly) NSString *formatDecimalStringWithParens;
+@property (readonly) NSString *formatPercentageString;
+@property (readonly) NSString *formatPercentageStringMinus;
+@property (readonly) NSString *formatPercentageStringRedOnly;
+@property (readonly) NSString *formatPercentageStringWithParens;
+@property (readonly) NSString *formatScientificString;
+@property (readonly) NSString *formatScientificStringMinus;
+@property (readonly) NSString *formatScientificStringRedOnly;
+@property (readonly) NSString *formatScientificStringWithParens;
 
 + (id)localeSpecificStorageForLocale:(id)arg1;
 

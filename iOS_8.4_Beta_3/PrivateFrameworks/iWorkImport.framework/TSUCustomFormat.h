@@ -10,11 +10,11 @@
     int mFormatType;
 }
 
-@property(assign,readonly) unsigned long long conditionCount;
-@property(assign,readonly) NSMutableArray * conditionList;
-@property(assign,readonly) TSUCustomFormatData * defaultFormatData;
-@property(assign,retain) NSString * formatName;
-@property(assign,readonly) int formatType;
+@property (nonatomic, readonly) unsigned long long conditionCount;
+@property (nonatomic, readonly) NSMutableArray *conditionList;
+@property (nonatomic, readonly) TSUCustomFormatData *defaultFormatData;
+@property (nonatomic, retain) NSString *formatName;
+@property (nonatomic, readonly) int formatType;
 
 - (unsigned long long)conditionCount;
 - (id)conditionList;

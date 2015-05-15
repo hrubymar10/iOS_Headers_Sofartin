@@ -15,16 +15,16 @@
     NoteContext *_noteDB;
 }
 
-@property(assign,readwrite) int abConnectionCount;
-@property(assign,readwrite) void* abDB;
-@property(assign,readwrite) int bookmarkConnectionCount;
-@property(assign,readwrite) void* bookmarkDB;
-@property(assign,readwrite) int calConnectionCount;
-@property(assign,readwrite) struct CalDatabase { }* calDB;
-@property(assign,copy) id calUnitTestCallbackBlock;
-@property(assign,retain) NSString * clientIdentifier;
-@property(assign,readwrite) int noteConnectionCount;
-@property(assign,retain) NoteContext * noteDB;
+@property (nonatomic) int abConnectionCount;
+@property (nonatomic) void*abDB;
+@property (nonatomic) int bookmarkConnectionCount;
+@property (nonatomic) void*bookmarkDB;
+@property (nonatomic) int calConnectionCount;
+@property (nonatomic) struct CalDatabase { }*calDB;
+@property (nonatomic, copy) id calUnitTestCallbackBlock;
+@property (nonatomic, retain) NSString *clientIdentifier;
+@property (nonatomic) int noteConnectionCount;
+@property (nonatomic, retain) NoteContext *noteDB;
 
 + (void)abSetTestABDBDir:(id)arg1;
 + (id)abTestABDBDir;

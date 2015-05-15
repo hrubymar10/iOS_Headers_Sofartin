@@ -8,9 +8,9 @@
     NSArray *_timedOccurrences;
 }
 
-@property(assign,readonly) NSArray * allDayOccurrences;
-@property(assign,readonly) NSArray * occurrences;
-@property(assign,readonly) NSArray * timedOccurrences;
+@property (nonatomic, readonly) NSArray *allDayOccurrences;
+@property (nonatomic, readonly) NSArray *occurrences;
+@property (nonatomic, readonly) NSArray *timedOccurrences;
 
 - (void).cxx_destruct;
 - (id)allDayOccurrences;

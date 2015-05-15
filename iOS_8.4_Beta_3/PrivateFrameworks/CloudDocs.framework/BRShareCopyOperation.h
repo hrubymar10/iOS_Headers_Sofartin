@@ -7,8 +7,8 @@
     NSURL *_url;
 }
 
-@property(assign,copy) id shareCopyCompletionBlock;
-@property(assign,retain) NSURL * url;
+@property (copy) id shareCopyCompletionBlock;
+@property (nonatomic, retain) NSURL *url;
 
 - (void)dealloc;
 - (void)finishWithResult:(id)arg1 error:(id)arg2;

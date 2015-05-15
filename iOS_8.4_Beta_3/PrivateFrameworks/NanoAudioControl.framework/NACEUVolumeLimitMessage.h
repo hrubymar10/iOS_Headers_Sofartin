@@ -10,10 +10,10 @@
     } _has;
 }
 
-@property(assign,retain) NSString * category;
-@property(assign,readwrite) float eUVolumeLimit;
-@property(assign,readonly) bool hasCategory;
-@property(assign,readwrite) bool hasEUVolumeLimit;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic) float eUVolumeLimit;
+@property (nonatomic, readonly) bool hasCategory;
+@property (nonatomic) bool hasEUVolumeLimit;
 
 - (void).cxx_destruct;
 - (id)category;

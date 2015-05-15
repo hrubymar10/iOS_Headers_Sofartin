@@ -44,24 +44,24 @@
     bool mTreeBuilt;
 }
 
-@property(assign,readonly) TSCHChartInfo * chartInfo;
-@property(assign,readonly) unsigned long long dataSetIndex;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } drawingOffset;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawingRect;
-@property(assign,readonly) struct CGSize { double x1; double x2; } drawingSize;
-@property(assign,readonly) bool isInResize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } layoutOffset;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } layoutRect;
-@property(assign,readwrite) struct { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; } layoutSettings;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } layoutSize;
-@property(assign,readonly) struct CGSize { double x1; double x2; } minSize;
-@property(assign,readonly) TSCHChartModel * model;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } overhangRect;
-@property(assign,readonly) TSCHChartLayoutItem * parent;
-@property(assign,readonly) TSCHChartRootLayoutItem * root;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rootedDrawingRect;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rootedLayoutRect;
-@property(assign,readonly) struct CGSize { double x1; double x2; } startingSize;
+@property (nonatomic, readonly) TSCHChartInfo *chartInfo;
+@property (nonatomic, readonly) unsigned long long dataSetIndex;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } drawingOffset;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } drawingRect;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } drawingSize;
+@property (nonatomic, readonly) bool isInResize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } layoutOffset;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } layoutRect;
+@property (nonatomic) struct { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; } layoutSettings;
+@property (nonatomic) struct CGSize { double x1; double x2; } layoutSize;
+@property (readonly) struct CGSize { double x1; double x2; } minSize;
+@property (nonatomic, readonly) TSCHChartModel *model;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } overhangRect;
+@property (nonatomic, readonly) TSCHChartLayoutItem *parent;
+@property (nonatomic, readonly) TSCHChartRootLayoutItem *root;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rootedDrawingRect;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } rootedLayoutRect;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } startingSize;
 
 + (id)chartLayoutWithChartInfo:(id)arg1;
 

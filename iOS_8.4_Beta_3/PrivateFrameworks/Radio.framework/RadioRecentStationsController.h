@@ -11,8 +11,8 @@
     NSArray *_stationGroups;
 }
 
-@property(assign,copy) NSArray * stationGroups;
-@property(assign,copy) NSArray * stations;
+@property (nonatomic, readonly, copy) NSArray *stationGroups;
+@property (nonatomic, readonly, copy) NSArray *stations;
 
 - (void).cxx_destruct;
 - (void)_createStationGroups;

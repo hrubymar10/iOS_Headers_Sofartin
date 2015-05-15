@@ -4,8 +4,8 @@
 
 @interface SAMPLoadPredefinedQueue : SADomainCommand
 
-@property(assign,readwrite) int mediaItemType;
-@property(assign,readwrite) bool shouldShuffle;
+@property (nonatomic) int mediaItemType;
+@property (nonatomic) bool shouldShuffle;
 
 + (id)loadPredefinedQueue;
 + (id)loadPredefinedQueueWithDictionary:(id)arg1 context:(id)arg2;

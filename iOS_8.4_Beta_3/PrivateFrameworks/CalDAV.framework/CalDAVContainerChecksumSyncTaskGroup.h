@@ -12,10 +12,10 @@
     NSString *_unusedSyncToken;
 }
 
-@property(assign,retain) CoreDAVItemParserMapping * bestServerChecksumVersion;
-@property(assign,readwrite) <CalDAVChecksumLocalDBInfoProvider> * delegate;
-@property(assign,readonly) bool mismatchDetected;
-@property(assign,retain) NSArray * preferredChecksumVersions;
+@property (nonatomic, retain) CoreDAVItemParserMapping *bestServerChecksumVersion;
+@property (nonatomic) <CalDAVChecksumLocalDBInfoProvider> *delegate;
+@property (nonatomic, readonly) bool mismatchDetected;
+@property (nonatomic, retain) NSArray *preferredChecksumVersions;
 
 - (id)_calculatedCalendarHome;
 - (bool)_hadOutOfDateCollectionToken;

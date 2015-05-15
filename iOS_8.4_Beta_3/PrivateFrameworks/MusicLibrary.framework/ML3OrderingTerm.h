@@ -8,9 +8,9 @@
     NSString *_property;
 }
 
-@property(assign,readonly) NSString * collation;
-@property(assign,readonly) int direction;
-@property(assign,readonly) NSString * property;
+@property (nonatomic, readonly) NSString *collation;
+@property (nonatomic, readonly) int direction;
+@property (nonatomic, readonly) NSString *property;
 
 + (id)orderingTermWithProperty:(id)arg1;
 + (id)orderingTermWithProperty:(id)arg1 direction:(int)arg2;

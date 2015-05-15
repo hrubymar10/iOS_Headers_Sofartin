@@ -9,7 +9,7 @@
     int _type;
 }
 
-@property(assign,readonly) int type;
+@property (nonatomic, readonly) int type;
 
 - (void)dealloc;
 - (void)getArrowPath:(id*)arg1 arrowStrokePath:(id*)arg2 intersectionBackgroundPath:(id*)arg3 strokePath:(id*)arg4 withSize:(struct CGSize { double x1; double x2; })arg5 metrics:(struct { struct CGSize { double x_1_1_1; double x_1_1_2; } x1; double x2; double x3; double x4; struct CGSize { double x_5_1_1; double x_5_1_2; } x5; double x6; double x7; double x8; long long x9; double x10; double x11; double x12; double x13; double x14; double x15; double x16; double x17; double x18; double x19; double x20; double x21; double x22; double x23; double x24; double x25; bool x26; double x27; double x28; double x29; bool x30; bool x31; })arg6 drivingSide:(int)arg7 visualCenter:(struct CGPoint { double x1; double x2; }*)arg8;

@@ -10,9 +10,9 @@
     PLPhotoLibrary *_photoLibrary;
 }
 
-@property(assign,readwrite) ALAssetsLibrary * assetsLibrary;
-@property(assign,readwrite) bool isValid;
-@property(assign,retain) PLPhotoLibrary * photoLibrary;
+@property (nonatomic) ALAssetsLibrary *assetsLibrary;
+@property (nonatomic) bool isValid;
+@property (nonatomic, readonly, retain) PLPhotoLibrary *photoLibrary;
 
 - (id)assetsLibrary;
 - (void)dealloc;

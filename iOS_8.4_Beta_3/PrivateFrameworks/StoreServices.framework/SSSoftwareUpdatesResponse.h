@@ -8,9 +8,9 @@
     NSArray *_updateItems;
 }
 
-@property(assign,readonly) NSError * error;
-@property(getter=isFailed,assign,readonly) bool failed;
-@property(assign,readonly) NSArray * updateItems;
+@property (readonly) NSError *error;
+@property (getter=isFailed, readonly) bool failed;
+@property (readonly) NSArray *updateItems;
 
 - (id)copyUpdateItemDictionaries;
 - (id)copyXPCEncoding;

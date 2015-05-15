@@ -20,15 +20,15 @@
     id _selectionSegueTemplate;
 }
 
-@property(assign,retain) UIView * backgroundView;
-@property(assign,readonly) UIView * contentView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,retain) UIView * selectedBackgroundView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIView *backgroundView;
+@property (nonatomic, readonly) UIView *contentView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic, retain) UIView *selectedBackgroundView;
+@property (readonly) Class superclass;
 
 + (Class)_contentViewClass;
 

@@ -4,19 +4,19 @@
 
 @interface EKSharee : EKObject <EKIdentityProtocol, NSCopying>
 
-@property(assign,readonly) NSString * UUID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * emailAddress;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * firstName;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * lastName;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) EKCalendar * owner;
-@property(assign,readwrite) int shareeAccessLevel;
-@property(assign,readwrite) int shareeStatus;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSString *UUID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *emailAddress;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *firstName;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) EKCalendar *owner;
+@property (nonatomic) int shareeAccessLevel;
+@property (nonatomic) int shareeStatus;
+@property (readonly) Class superclass;
 
 + (id)shareeWithEmailAddress:(id)arg1 name:(id)arg2;
 + (id)shareeWithName:(id)arg1 emailAddress:(id)arg2 externalID:(id)arg3;

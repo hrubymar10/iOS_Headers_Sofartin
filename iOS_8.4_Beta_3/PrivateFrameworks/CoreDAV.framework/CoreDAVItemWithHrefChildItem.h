@@ -6,7 +6,7 @@
     CoreDAVHrefItem *_href;
 }
 
-@property(assign,retain) CoreDAVHrefItem * href;
+@property (nonatomic, retain) CoreDAVHrefItem *href;
 
 + (id)copyParseRules;
 

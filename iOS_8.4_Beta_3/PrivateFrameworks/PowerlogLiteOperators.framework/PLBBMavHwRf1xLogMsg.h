@@ -16,17 +16,17 @@
     NSNumber *_logDuration;
 }
 
-@property(assign,retain) NSDate * bbDate;
-@property(assign,retain) NSNumber * bbSeqnum;
-@property(assign,readwrite) double* bbTimeCal;
-@property(assign,retain) NSArray * callTypeDur;
-@property(assign,retain) NSMutableDictionary * commonInfo;
-@property(assign,retain) NSNumber * dtxOff;
-@property(assign,retain) NSNumber * dtxOn;
-@property(assign,retain) NSString * error;
-@property(assign,readwrite) unsigned char inited;
-@property(assign,retain) NSMutableDictionary * kvPairs;
-@property(assign,retain) NSNumber * logDuration;
+@property (retain) NSDate *bbDate;
+@property (retain) NSNumber *bbSeqnum;
+@property double*bbTimeCal;
+@property (retain) NSArray *callTypeDur;
+@property (nonatomic, retain) NSMutableDictionary *commonInfo;
+@property (retain) NSNumber *dtxOff;
+@property (retain) NSNumber *dtxOn;
+@property (retain) NSString *error;
+@property (nonatomic) unsigned char inited;
+@property (nonatomic, retain) NSMutableDictionary *kvPairs;
+@property (retain) NSNumber *logDuration;
 
 + (id)entryEventBackwardDefinitionBBMavHwRf1x;
 

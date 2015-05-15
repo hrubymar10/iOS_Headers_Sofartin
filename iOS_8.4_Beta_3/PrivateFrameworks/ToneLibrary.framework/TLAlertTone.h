@@ -8,9 +8,9 @@
     TLSound *_previewSound;
 }
 
-@property(assign,retain) TLSound * actualSound;
-@property(assign,copy) NSString * filePath;
-@property(assign,retain) TLSound * previewSound;
+@property (nonatomic, retain) TLSound *actualSound;
+@property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, retain) TLSound *previewSound;
 
 - (void)_setActualSound:(id)arg1;
 - (void)_setFilePath:(id)arg1;

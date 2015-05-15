@@ -4,11 +4,11 @@
 
 @interface SASettingSetValueResponse : SASettingResponse <SASettingSupplier>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SASettingEntity * setting;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SASettingEntity *setting;
+@property (readonly) Class superclass;
 
 + (id)setValueResponse;
 + (id)setValueResponseWithDictionary:(id)arg1 context:(id)arg2;

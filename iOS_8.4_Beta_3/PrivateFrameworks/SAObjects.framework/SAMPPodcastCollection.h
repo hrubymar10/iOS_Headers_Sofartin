@@ -4,10 +4,10 @@
 
 @interface SAMPPodcastCollection : SAMPCollection
 
-@property(assign,copy) NSString * artist;
-@property(assign,copy) NSArray * preferredPlayOrder;
-@property(assign,copy) NSString * sortArtist;
-@property(assign,copy) NSNumber * subscribed;
+@property (nonatomic, copy) NSString *artist;
+@property (nonatomic, copy) NSArray *preferredPlayOrder;
+@property (nonatomic, copy) NSString *sortArtist;
+@property (nonatomic, copy) NSNumber *subscribed;
 
 + (id)podcastCollection;
 + (id)podcastCollectionWithDictionary:(id)arg1 context:(id)arg2;

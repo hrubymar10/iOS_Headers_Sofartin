@@ -4,9 +4,9 @@
 
 @interface DOMCounter : DOMObject
 
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * listStyle;
-@property(assign,copy) NSString * separator;
+@property (readonly, copy) NSString *identifier;
+@property (readonly, copy) NSString *listStyle;
+@property (readonly, copy) NSString *separator;
 
 - (void)dealloc;
 - (void)finalize;

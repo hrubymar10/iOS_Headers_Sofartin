@@ -14,7 +14,7 @@
     double _wifiTimeout;
 }
 
-@property(assign,readwrite) void* context;
+@property (nonatomic) void*context;
 
 - (void)_cancel;
 - (void)_setTimer;

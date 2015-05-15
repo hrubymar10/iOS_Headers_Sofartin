@@ -30,24 +30,24 @@
     unsigned int _transportType;
 }
 
-@property(assign,readonly) unsigned int* characteristicTypes;
-@property(assign,readonly) unsigned long long characteristicTypesCount;
-@property(assign,readwrite) unsigned int duration;
-@property(assign,retain) NSString * guid;
-@property(assign,readwrite) bool hasDuration;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasIsClient;
-@property(assign,readwrite) bool hasResultCode;
-@property(assign,readwrite) bool hasResultType;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,readwrite) unsigned int isClient;
-@property(assign,readwrite) int resultCode;
-@property(assign,readwrite) unsigned int resultType;
-@property(assign,readonly) unsigned int* serviceTypes;
-@property(assign,readonly) unsigned long long serviceTypesCount;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int transportType;
+@property (nonatomic, readonly) unsigned int*characteristicTypes;
+@property (nonatomic, readonly) unsigned long long characteristicTypesCount;
+@property (nonatomic) unsigned int duration;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic) bool hasDuration;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasIsClient;
+@property (nonatomic) bool hasResultCode;
+@property (nonatomic) bool hasResultType;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic) unsigned int isClient;
+@property (nonatomic) int resultCode;
+@property (nonatomic) unsigned int resultType;
+@property (nonatomic, readonly) unsigned int*serviceTypes;
+@property (nonatomic, readonly) unsigned long long serviceTypesCount;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int transportType;
 
 - (void)addCharacteristicType:(unsigned int)arg1;
 - (void)addServiceType:(unsigned int)arg1;

@@ -11,12 +11,12 @@
     PFUbiquityLocation *_ubiquityRootLocation;
 }
 
-@property(assign,retain) PFUbiquitySwitchboardCacheWrapper * cacheWrapper;
-@property(assign,readonly) NSString * localPeerID;
-@property(assign,retain) NSSQLCore * store;
-@property(assign,readonly) NSString * storeName;
-@property(assign,readonly) NSSet * transactionEntries;
-@property(assign,readonly) PFUbiquityLocation * ubiquityRootLocation;
+@property (nonatomic, retain) PFUbiquitySwitchboardCacheWrapper *cacheWrapper;
+@property (nonatomic, readonly) NSString *localPeerID;
+@property (nonatomic, retain) NSSQLCore *store;
+@property (nonatomic, readonly) NSString *storeName;
+@property (nonatomic, readonly) NSSet *transactionEntries;
+@property (nonatomic, readonly) PFUbiquityLocation *ubiquityRootLocation;
 
 - (id)addTransactionEntryForGlobalID:(id)arg1 andTransactionType:(int)arg2;
 - (id)cacheWrapper;

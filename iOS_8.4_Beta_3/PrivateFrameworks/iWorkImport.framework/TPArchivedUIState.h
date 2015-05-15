@@ -7,8 +7,8 @@
     TPArchivedViewState *_viewState;
 }
 
-@property(assign,readonly) TPArchivedLayoutState * layoutState;
-@property(assign,readonly) TPArchivedViewState * viewState;
+@property (nonatomic, readonly) TPArchivedLayoutState *layoutState;
+@property (nonatomic, readonly) TPArchivedViewState *viewState;
 
 - (void)dealloc;
 - (id)initFromUnarchiver:(id)arg1;

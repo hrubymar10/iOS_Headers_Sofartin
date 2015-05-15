@@ -16,12 +16,12 @@
     long long _titlePosition;
 }
 
-@property(assign,readonly) UIImageView * backgroundImageView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,copy) UIColor * fillColor;
-@property(assign,readwrite) double minimumDiameter;
-@property(assign,readonly) UILabel * titleLabel;
-@property(assign,readwrite) long long titlePosition;
+@property (nonatomic, readonly) UIImageView *backgroundImageView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, copy) UIColor *fillColor;
+@property (nonatomic) double minimumDiameter;
+@property (nonatomic, readonly) UILabel *titleLabel;
+@property (nonatomic) long long titlePosition;
 
 - (void).cxx_destruct;
 - (id)backgroundImageView;

@@ -10,8 +10,8 @@
     NSMutableArray *_lineViews;
 }
 
-@property(assign,readonly) SKUIClientContext * clientContext;
-@property(assign,readonly) SKUIDeveloperInfo * developerInfo;
+@property (nonatomic, readonly) SKUIClientContext *clientContext;
+@property (nonatomic, readonly) SKUIDeveloperInfo *developerInfo;
 
 - (void).cxx_destruct;
 - (id)clientContext;

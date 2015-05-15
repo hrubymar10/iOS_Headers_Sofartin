@@ -17,18 +17,18 @@
     FBWorkspace *_workspace;
 }
 
-@property(assign,copy) NSString * bundleIdentifier;
-@property(getter=_queue_delegate,assign,readwrite) <FBProcessDelegate> * delegate;
-@property(assign,copy) NSString * jobLabel;
-@property(assign,copy) NSString * name;
-@property(getter=_queue_jobLabel,setter=_queue_setJobLabel:,assign,copy) NSString * queue_jobLabel;
-@property(getter=_queue_name,setter=_queue_setName:,assign,copy) NSString * queue_name;
-@property(getter=_queue_pid,setter=_queue_setPid:,assign,readwrite) int queue_pid;
-@property(getter=_queue_isRunning,setter=_queue_setRunning:,assign,readwrite) bool queue_running;
-@property(getter=_queue_taskState,setter=_queue_setTaskState:,assign,readwrite) int queue_taskState;
-@property(getter=_queue_visibility,setter=_queue_setVisibility:,assign,readwrite) int queue_visibility;
-@property(assign,copy) FBProcessState * state;
-@property(assign,retain) FBWorkspace * workspace;
+@property (nonatomic, readonly, copy) NSString *bundleIdentifier;
+@property (getter=_queue_delegate, nonatomic) <FBProcessDelegate> *delegate;
+@property (nonatomic, readonly, copy) NSString *jobLabel;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (getter=_queue_jobLabel, setter=_queue_setJobLabel:, nonatomic, copy) NSString *queue_jobLabel;
+@property (getter=_queue_name, setter=_queue_setName:, nonatomic, copy) NSString *queue_name;
+@property (getter=_queue_pid, setter=_queue_setPid:, nonatomic) int queue_pid;
+@property (getter=_queue_isRunning, setter=_queue_setRunning:, nonatomic) bool queue_running;
+@property (getter=_queue_taskState, setter=_queue_setTaskState:, nonatomic) int queue_taskState;
+@property (getter=_queue_visibility, setter=_queue_setVisibility:, nonatomic) int queue_visibility;
+@property (nonatomic, readonly, copy) FBProcessState *state;
+@property (nonatomic, readonly, retain) FBWorkspace *workspace;
 
 - (id)_createWorkspace;
 - (id)_queue;

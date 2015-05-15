@@ -21,20 +21,20 @@
     unsigned int _version;
 }
 
-@property(assign,readwrite) int available;
-@property(assign,readwrite) unsigned int deviceIdentifierMap;
-@property(assign,readwrite) unsigned int flags;
-@property(assign,readwrite) bool hasAvailable;
-@property(assign,readwrite) bool hasDeviceIdentifierMap;
-@property(assign,readwrite) bool hasFlags;
-@property(assign,readwrite) bool hasReason;
-@property(assign,readwrite) bool hasSubreason;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasVersion;
-@property(assign,readwrite) int reason;
-@property(assign,readwrite) unsigned int subreason;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int version;
+@property (nonatomic) int available;
+@property (nonatomic) unsigned int deviceIdentifierMap;
+@property (nonatomic) unsigned int flags;
+@property (nonatomic) bool hasAvailable;
+@property (nonatomic) bool hasDeviceIdentifierMap;
+@property (nonatomic) bool hasFlags;
+@property (nonatomic) bool hasReason;
+@property (nonatomic) bool hasSubreason;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasVersion;
+@property (nonatomic) int reason;
+@property (nonatomic) unsigned int subreason;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int version;
 
 - (int)available;
 - (void)copyTo:(id)arg1;

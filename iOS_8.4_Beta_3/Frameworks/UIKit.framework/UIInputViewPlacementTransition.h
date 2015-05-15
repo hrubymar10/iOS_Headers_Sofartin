@@ -14,15 +14,15 @@
     UIInputViewSetPlacement *toPlacement;
 }
 
-@property(assign,retain) <NSObject> * animationContext;
-@property(assign,retain) <UIInputViewAnimationController> * animationController;
-@property(assign,readwrite) int animationState;
-@property(assign,retain) UIInputViewAnimationStyle * animationStyle;
-@property(assign,readwrite) bool cancelled;
-@property(assign,retain) UIInputViewSetPlacement * fromPlacement;
-@property(assign,retain) UIInputViewSetNotificationInfo * notificationInfo;
-@property(assign,readwrite) unsigned long long notifications;
-@property(assign,retain) UIInputViewSetPlacement * toPlacement;
+@property (nonatomic, retain) <NSObject> *animationContext;
+@property (nonatomic, retain) <UIInputViewAnimationController> *animationController;
+@property (nonatomic) int animationState;
+@property (nonatomic, retain) UIInputViewAnimationStyle *animationStyle;
+@property (nonatomic) bool cancelled;
+@property (nonatomic, retain) UIInputViewSetPlacement *fromPlacement;
+@property (nonatomic, retain) UIInputViewSetNotificationInfo *notificationInfo;
+@property (nonatomic) unsigned long long notifications;
+@property (nonatomic, retain) UIInputViewSetPlacement *toPlacement;
 
 + (id)transitionFromPlacement:(id)arg1 toPlacement:(id)arg2 withAnimationStyle:(id)arg3;
 

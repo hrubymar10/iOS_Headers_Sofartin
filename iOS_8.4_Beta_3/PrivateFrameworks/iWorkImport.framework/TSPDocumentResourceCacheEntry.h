@@ -11,12 +11,12 @@
     bool _wasDownloaded;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,readwrite) long long accessCount;
-@property(assign,retain) NSDate * contentAccessDate;
-@property(assign,readonly) NSString * digestString;
-@property(assign,readwrite) long long fileSize;
-@property(assign,readwrite) bool wasDownloaded;
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic) long long accessCount;
+@property (nonatomic, retain) NSDate *contentAccessDate;
+@property (nonatomic, readonly) NSString *digestString;
+@property (nonatomic) long long fileSize;
+@property (nonatomic) bool wasDownloaded;
 
 - (void).cxx_destruct;
 - (id)URL;

@@ -36,26 +36,26 @@
     UIView *_viewControllerTransitionView;
 }
 
-@property(setter=_setAccessoryView:,assign,retain) UIView * _accessoryView;
-@property(setter=_setAnimator:,assign,retain) <UIViewControllerAnimatedTransitioning> * _animator;
-@property(getter=_backdropGroupName,setter=_setBackdropGroupName:,assign,retain) NSString * _backdropGroupName;
-@property(setter=_setInteractor:,assign,retain) <UIViewControllerInteractiveTransitioning> * _interactor;
-@property(assign,copy) NSArray * customizableViewControllers;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UITabBarControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) NSMutableArray * moreChildViewControllers;
-@property(assign,readonly) UINavigationController * moreNavigationController;
-@property(assign,readwrite) unsigned long long selectedIndex;
-@property(assign,readwrite) UIViewController * selectedViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITabBar * tabBar;
-@property(assign,copy) NSArray * viewControllers;
+@property (setter=_setAccessoryView:, nonatomic, retain) UIView *_accessoryView;
+@property (setter=_setAnimator:, nonatomic, retain) <UIViewControllerAnimatedTransitioning> *_animator;
+@property (getter=_backdropGroupName, setter=_setBackdropGroupName:, nonatomic, retain) NSString *_backdropGroupName;
+@property (setter=_setInteractor:, nonatomic, retain) <UIViewControllerInteractiveTransitioning> *_interactor;
+@property (nonatomic, copy) NSArray *customizableViewControllers;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UITabBarControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) NSMutableArray *moreChildViewControllers;
+@property (nonatomic, readonly) UINavigationController *moreNavigationController;
+@property (nonatomic) unsigned long long selectedIndex;
+@property (nonatomic) UIViewController *selectedViewController;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITabBar *tabBar;
+@property (nonatomic, copy) NSArray *viewControllers;
 
 + (bool)_directlySetsContentOverlayInsetsForChildren;
 + (Class)_moreNavigationControllerClass;

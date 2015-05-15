@@ -8,7 +8,7 @@
     struct tsuSaPage { int (**x1)(); } *_topPage;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (readonly) unsigned long long count;
 
 - (void)clear;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

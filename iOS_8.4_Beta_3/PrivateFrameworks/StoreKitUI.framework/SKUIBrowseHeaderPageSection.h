@@ -4,7 +4,7 @@
 
 @interface SKUIBrowseHeaderPageSection : SKUIStorePageSection
 
-@property(assign,readonly) SKUIBrowseHeaderPageComponent * pageComponent;
+@property (nonatomic, readonly) SKUIBrowseHeaderPageComponent *pageComponent;
 
 - (void)addImpressionsForIndexPath:(id)arg1 toSession:(id)arg2;
 - (id)cellForIndexPath:(id)arg1;

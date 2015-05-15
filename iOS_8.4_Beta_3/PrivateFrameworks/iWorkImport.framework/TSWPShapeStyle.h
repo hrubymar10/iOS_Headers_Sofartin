@@ -4,7 +4,7 @@
 
 @interface TSWPShapeStyle : TSDShapeStyle <TSSPreset>
 
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, readonly) NSString *presetKind;
 
 + (int)defaultIntValueForProperty:(int)arg1;
 + (id)defaultValueForProperty:(int)arg1;

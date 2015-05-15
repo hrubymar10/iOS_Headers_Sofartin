@@ -12,8 +12,8 @@
     unsigned int _writeSizeDispositionParameter;
 }
 
-@property(assign,readonly) NSDictionary * compositionSpecification;
-@property(assign,readwrite) id delegate;
+@property (nonatomic, readonly) NSDictionary *compositionSpecification;
+@property (nonatomic) id delegate;
 
 - (bool)allows8BitMimeParts;
 - (bool)allowsBinaryMimeParts;

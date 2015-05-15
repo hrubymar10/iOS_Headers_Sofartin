@@ -18,21 +18,21 @@
     double _visitTime;
 }
 
-@property(assign,readwrite) long long databaseID;
-@property(assign,readonly) WBSHistoryVisit * endOfRedirectChain;
-@property(assign,readwrite) long long generation;
-@property(getter=wasHTTPNonGet,assign,readonly) bool httpNonGet;
-@property(assign,readwrite) WBSHistoryItem * item;
-@property(getter=loadWasSuccessful,assign,readwrite) bool loadSuccessful;
-@property(assign,readwrite) long long origin;
-@property(assign,retain) WBSHistoryVisit * redirectDestination;
-@property(assign,readwrite) long long redirectDestinationDatabaseID;
-@property(assign,retain) WBSHistoryVisit * redirectSource;
-@property(assign,readonly) unsigned long long redirectSourceChainLength;
-@property(assign,readwrite) long long redirectSourceDatabaseID;
-@property(getter=isSynthesized,assign,readonly) bool synthesized;
-@property(assign,copy) NSString * title;
-@property(assign,readonly) double visitTime;
+@property (nonatomic) long long databaseID;
+@property (nonatomic, readonly) WBSHistoryVisit *endOfRedirectChain;
+@property (nonatomic) long long generation;
+@property (getter=wasHTTPNonGet, nonatomic, readonly) bool httpNonGet;
+@property (nonatomic) WBSHistoryItem *item;
+@property (getter=loadWasSuccessful, nonatomic) bool loadSuccessful;
+@property (nonatomic) long long origin;
+@property (nonatomic, retain) WBSHistoryVisit *redirectDestination;
+@property (nonatomic) long long redirectDestinationDatabaseID;
+@property (nonatomic, retain) WBSHistoryVisit *redirectSource;
+@property (nonatomic, readonly) unsigned long long redirectSourceChainLength;
+@property (nonatomic) long long redirectSourceDatabaseID;
+@property (getter=isSynthesized, nonatomic, readonly) bool synthesized;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) double visitTime;
 
 + (id)synthesizedVisitWithHistoryItem:(id)arg1 visitTime:(double)arg2;
 

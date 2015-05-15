@@ -7,8 +7,8 @@
     NSString *_token;
 }
 
-@property(assign,readwrite) long long handle;
-@property(assign,retain) NSString * token;
+@property long long handle;
+@property (retain) NSString *token;
 
 - (void).cxx_destruct;
 - (void)consume;

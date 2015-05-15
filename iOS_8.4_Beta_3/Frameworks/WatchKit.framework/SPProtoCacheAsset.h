@@ -9,10 +9,10 @@
     unsigned int _state;
 }
 
-@property(assign,readwrite) double accessDate;
-@property(assign,retain) NSString * key;
-@property(assign,readwrite) unsigned long long size;
-@property(assign,readwrite) unsigned int state;
+@property (nonatomic) double accessDate;
+@property (nonatomic, retain) NSString *key;
+@property (nonatomic) unsigned long long size;
+@property (nonatomic) unsigned int state;
 
 - (void).cxx_destruct;
 - (double)accessDate;

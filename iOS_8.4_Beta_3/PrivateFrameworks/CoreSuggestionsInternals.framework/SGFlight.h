@@ -9,10 +9,10 @@
     NSString *_flightno;
 }
 
-@property(assign,readonly) NSString * airline;
-@property(assign,readonly) NSString * arrivalAirportDescription;
-@property(assign,readonly) NSString * departureAirportDescription;
-@property(assign,readonly) NSString * flightno;
+@property (nonatomic, readonly) NSString *airline;
+@property (nonatomic, readonly) NSString *arrivalAirportDescription;
+@property (nonatomic, readonly) NSString *departureAirportDescription;
+@property (nonatomic, readonly) NSString *flightno;
 
 - (void).cxx_destruct;
 - (id)airline;

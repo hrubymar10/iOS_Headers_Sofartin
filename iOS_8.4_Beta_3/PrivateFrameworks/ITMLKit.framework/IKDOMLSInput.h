@@ -9,10 +9,10 @@
     NSString *_stringData;
 }
 
-@property(assign,retain) id byteStream;
-@property(assign,readwrite) bool certifiedText;
-@property(assign,retain) NSString * encoding;
-@property(assign,retain) NSString * stringData;
+@property (nonatomic, retain) id byteStream;
+@property (nonatomic) bool certifiedText;
+@property (nonatomic, retain) NSString *encoding;
+@property (nonatomic, retain) NSString *stringData;
 
 - (void).cxx_destruct;
 - (id)byteStream;

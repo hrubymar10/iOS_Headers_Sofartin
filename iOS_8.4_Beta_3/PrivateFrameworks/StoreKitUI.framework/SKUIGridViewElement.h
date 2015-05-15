@@ -7,9 +7,9 @@
     bool _showsEditMode;
 }
 
-@property(assign,readonly) bool allowsMultipleSelectionDuringEditing;
-@property(assign,readonly) SKUICollectionDOMFeature * collectionFeature;
-@property(assign,readonly) bool showsEditMode;
+@property (nonatomic, readonly) bool allowsMultipleSelectionDuringEditing;
+@property (nonatomic, readonly) SKUICollectionDOMFeature *collectionFeature;
+@property (nonatomic, readonly) bool showsEditMode;
 
 + (id)supportedFeatures;
 

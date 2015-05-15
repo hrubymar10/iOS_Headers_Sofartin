@@ -17,14 +17,14 @@
     bool _useSplines;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; float x9; float x10; struct { unsigned int x_11_1_1 : 1; unsigned int x_11_1_2 : 1; unsigned int x_11_1_3 : 1; unsigned int x_11_1_4 : 1; unsigned int x_11_1_5 : 1; unsigned int x_11_1_6 : 1; unsigned int x_11_1_7 : 1; unsigned int x_11_1_8 : 1; unsigned int x_11_1_9 : 1; unsigned int x_11_1_10 : 1; } x11; }* cameraPaths;
-@property(assign,readonly) unsigned long long cameraPathsCount;
-@property(assign,readwrite) bool hasUseSplines;
-@property(assign,readonly) struct { float x1; unsigned int x2; float x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }* labelFrames;
-@property(assign,readonly) unsigned long long labelFramesCount;
-@property(assign,retain) NSMutableArray * labels;
-@property(assign,retain) NSMutableArray * notificationMessages;
-@property(assign,readwrite) bool useSplines;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; double x5; double x6; double x7; double x8; float x9; float x10; struct { unsigned int x_11_1_1 : 1; unsigned int x_11_1_2 : 1; unsigned int x_11_1_3 : 1; unsigned int x_11_1_4 : 1; unsigned int x_11_1_5 : 1; unsigned int x_11_1_6 : 1; unsigned int x_11_1_7 : 1; unsigned int x_11_1_8 : 1; unsigned int x_11_1_9 : 1; unsigned int x_11_1_10 : 1; } x11; }*cameraPaths;
+@property (nonatomic, readonly) unsigned long long cameraPathsCount;
+@property (nonatomic) bool hasUseSplines;
+@property (nonatomic, readonly) struct { float x1; unsigned int x2; float x3; struct { unsigned int x_4_1_1 : 1; unsigned int x_4_1_2 : 1; unsigned int x_4_1_3 : 1; } x4; }*labelFrames;
+@property (nonatomic, readonly) unsigned long long labelFramesCount;
+@property (nonatomic, retain) NSMutableArray *labels;
+@property (nonatomic, retain) NSMutableArray *notificationMessages;
+@property (nonatomic) bool useSplines;
 
 + (id)flyoverForPlaceData:(id)arg1;
 

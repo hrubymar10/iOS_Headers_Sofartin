@@ -9,12 +9,12 @@
     NSString *_personID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) struct __MMCSEngine { }* engine;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * personID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) struct __MMCSEngine { }*engine;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *personID;
+@property (readonly) Class superclass;
 
 + (id)computeItemIDForAsset:(id)arg1;
 

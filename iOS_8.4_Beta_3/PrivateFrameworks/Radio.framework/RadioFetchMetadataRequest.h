@@ -9,9 +9,9 @@
     NSArray *_tracks;
 }
 
-@property(assign,copy) NSArray * itemIDs;
-@property(assign,copy) NSData * timedMetadata;
-@property(assign,retain) NSArray * tracks;
+@property (nonatomic, copy) NSArray *itemIDs;
+@property (nonatomic, copy) NSData *timedMetadata;
+@property (nonatomic, retain) NSArray *tracks;
 
 - (void).cxx_destruct;
 - (id)_itemIDsToRadioTracks;

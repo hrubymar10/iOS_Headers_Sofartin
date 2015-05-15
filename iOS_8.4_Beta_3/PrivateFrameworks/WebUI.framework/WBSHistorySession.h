@@ -6,8 +6,8 @@
     NSDate *_startDate;
 }
 
-@property(assign,readonly) bool isCurrentSession;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) bool isCurrentSession;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (id)currentSession;
 

@@ -7,8 +7,8 @@
     UIButton *_termsButton;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,retain) UIButton * termsButton;
+@property (nonatomic) id delegate;
+@property (nonatomic, retain) UIButton *termsButton;
 
 - (void).cxx_destruct;
 - (id)delegate;

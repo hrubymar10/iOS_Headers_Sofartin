@@ -39,22 +39,22 @@
     int trackingID;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,readwrite) float faceAngle;
-@property(assign,readwrite) bool hasFaceAngle;
-@property(assign,readwrite) bool hasLeftEyePosition;
-@property(assign,readwrite) bool hasMouthPosition;
-@property(assign,readwrite) bool hasRightEyePosition;
-@property(assign,readwrite) bool hasSmile;
-@property(assign,readwrite) bool hasTrackingFrameCount;
-@property(assign,readwrite) bool hasTrackingID;
-@property(assign,readwrite) bool leftEyeClosed;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } leftEyePosition;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } mouthPosition;
-@property(assign,readwrite) bool rightEyeClosed;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } rightEyePosition;
-@property(assign,readwrite) int trackingFrameCount;
-@property(assign,readwrite) int trackingID;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property float faceAngle;
+@property bool hasFaceAngle;
+@property bool hasLeftEyePosition;
+@property bool hasMouthPosition;
+@property bool hasRightEyePosition;
+@property bool hasSmile;
+@property bool hasTrackingFrameCount;
+@property bool hasTrackingID;
+@property bool leftEyeClosed;
+@property struct CGPoint { double x1; double x2; } leftEyePosition;
+@property struct CGPoint { double x1; double x2; } mouthPosition;
+@property bool rightEyeClosed;
+@property struct CGPoint { double x1; double x2; } rightEyePosition;
+@property int trackingFrameCount;
+@property int trackingID;
 
 + (id)faceFeatureWithBounds:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 + (id)faceFeaturesWithBoundsArray:(const struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }*)arg1 count:(unsigned long long)arg2;

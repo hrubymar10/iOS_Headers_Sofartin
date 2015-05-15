@@ -12,10 +12,10 @@
     } _times;
 }
 
-@property(assign,readonly) double totalElapsedIdleTime;
-@property(assign,readonly) double totalElapsedSystemTime;
-@property(assign,readonly) double totalElapsedTime;
-@property(assign,readonly) double totalElapsedUserTime;
+@property (nonatomic, readonly) double totalElapsedIdleTime;
+@property (nonatomic, readonly) double totalElapsedSystemTime;
+@property (nonatomic, readonly) double totalElapsedTime;
+@property (nonatomic, readonly) double totalElapsedUserTime;
 
 - (double)_elapsedCPUTime;
 - (void)_getApplicationCPUTimesForUser:(double*)arg1 system:(double*)arg2 idle:(double*)arg3;

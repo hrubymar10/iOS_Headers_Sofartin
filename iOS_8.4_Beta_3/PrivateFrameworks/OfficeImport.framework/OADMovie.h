@@ -10,12 +10,12 @@
     float mStart;
 }
 
-@property(assign,retain) NSData * data;
-@property(assign,readonly) bool isAudioOnly;
-@property(assign,readwrite) bool loop;
-@property(assign,readwrite) float movieEndPoint;
-@property(assign,readwrite) float movieStartPoint;
-@property(assign,retain) NSString * name;
+@property (retain) NSData *data;
+@property (readonly) bool isAudioOnly;
+@property bool loop;
+@property float movieEndPoint;
+@property float movieStartPoint;
+@property (retain) NSString *name;
 
 - (id)data;
 - (void)dealloc;

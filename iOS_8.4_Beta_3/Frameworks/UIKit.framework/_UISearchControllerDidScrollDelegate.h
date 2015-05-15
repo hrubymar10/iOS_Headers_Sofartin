@@ -7,12 +7,12 @@
     UIScrollView *_scrollView;
 }
 
-@property(assign,readwrite) <_UIScrollNotification> * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIScrollView * scrollView;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <_UIScrollNotification> *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIScrollView *scrollView;
+@property (readonly) Class superclass;
 
 - (void)_didScroll;
 - (void)_updateBackdropMaskViewsInScrollView:(id)arg1;

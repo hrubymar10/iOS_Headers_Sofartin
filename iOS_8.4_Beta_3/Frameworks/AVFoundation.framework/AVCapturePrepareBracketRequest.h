@@ -7,8 +7,8 @@
     FigCaptureStillImageSettings *_settings;
 }
 
-@property(assign,readonly) id completionBlock;
-@property(assign,readonly) FigCaptureStillImageSettings * settings;
+@property (readonly) id completionBlock;
+@property (readonly) FigCaptureStillImageSettings *settings;
 
 + (id)prepareBracketRequestWithCompletionBlock:(id)arg1 settings:(id)arg2;
 

@@ -6,7 +6,7 @@
     NSArray *_shareURLsToFetch;
 }
 
-@property(assign,retain) NSArray * shareURLsToFetch;
+@property (nonatomic, retain) NSArray *shareURLsToFetch;
 
 + (bool)supportsSecureCoding;
 

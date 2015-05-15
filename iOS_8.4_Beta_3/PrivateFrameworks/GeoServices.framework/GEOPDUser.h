@@ -7,10 +7,10 @@
     NSString *_name;
 }
 
-@property(assign,readonly) bool hasImage;
-@property(assign,readonly) bool hasName;
-@property(assign,retain) GEOPDPhoto * image;
-@property(assign,retain) NSString * name;
+@property (nonatomic, readonly) bool hasImage;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, retain) GEOPDPhoto *image;
+@property (nonatomic, retain) NSString *name;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

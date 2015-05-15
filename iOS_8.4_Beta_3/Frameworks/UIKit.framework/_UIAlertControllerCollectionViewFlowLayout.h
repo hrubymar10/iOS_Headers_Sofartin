@@ -10,11 +10,11 @@
     UIAlertControllerVisualStyle *_visualStyle;
 }
 
-@property(assign,retain) NSArray * actionDelimiterIndices;
-@property(assign,readwrite) double alignedDescriptiveLabelTextWidth;
-@property(assign,readwrite) bool hideSeparators;
-@property(assign,readwrite) bool shouldRoundFirstCell;
-@property(assign,readwrite) UIAlertControllerVisualStyle * visualStyle;
+@property (nonatomic, retain) NSArray *actionDelimiterIndices;
+@property double alignedDescriptiveLabelTextWidth;
+@property bool hideSeparators;
+@property bool shouldRoundFirstCell;
+@property (nonatomic) UIAlertControllerVisualStyle *visualStyle;
 
 + (Class)layoutAttributesClass;
 

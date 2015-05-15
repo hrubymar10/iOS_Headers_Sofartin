@@ -8,9 +8,9 @@
     <CNFRegAccountAuthorizationDelegate> *_delegate;
 }
 
-@property(assign,copy) NSString * authID;
-@property(assign,copy) NSString * authToken;
-@property(assign,readwrite) <CNFRegAccountAuthorizationDelegate> * delegate;
+@property (nonatomic, copy) NSString *authID;
+@property (nonatomic, copy) NSString *authToken;
+@property (nonatomic) <CNFRegAccountAuthorizationDelegate> *delegate;
 
 - (id)authID;
 - (id)authIdHeaderValue;

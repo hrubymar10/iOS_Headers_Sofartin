@@ -6,7 +6,7 @@
     NSString *_subscript;
 }
 
-@property(assign,readonly) NSString * subscript;
+@property (nonatomic, readonly) NSString *subscript;
 
 - (void).cxx_destruct;
 - (id)initWithDictionary:(id)arg1;

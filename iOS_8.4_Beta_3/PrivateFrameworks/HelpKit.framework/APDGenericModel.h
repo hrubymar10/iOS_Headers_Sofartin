@@ -13,13 +13,13 @@
     NSURL *_requestURL;
 }
 
-@property(assign,retain) APDKVOManager * KVOManager;
-@property(assign,readwrite) APDDataManager * dataManager;
-@property(assign,readwrite) bool hasLoaded;
-@property(assign,readwrite) bool loading;
-@property(assign,retain) NSOperationQueue * localResourceOperationQueue;
-@property(assign,copy) NSURL * localResourceURL;
-@property(assign,copy) NSURL * requestURL;
+@property (nonatomic, retain) APDKVOManager *KVOManager;
+@property (nonatomic) APDDataManager *dataManager;
+@property (nonatomic) bool hasLoaded;
+@property (nonatomic) bool loading;
+@property (nonatomic, retain) NSOperationQueue *localResourceOperationQueue;
+@property (nonatomic, copy) NSURL *localResourceURL;
+@property (nonatomic, copy) NSURL *requestURL;
 
 - (void).cxx_destruct;
 - (id)KVOManager;

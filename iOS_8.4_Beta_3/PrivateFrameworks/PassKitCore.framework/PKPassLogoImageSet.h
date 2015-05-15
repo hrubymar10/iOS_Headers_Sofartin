@@ -14,15 +14,15 @@
     PKImage *_stripImage;
 }
 
-@property(assign,retain) PKImage * backgroundImage;
-@property(assign,retain) PKImage * bankLogoImage;
-@property(assign,retain) PKImage * cardBackgroundCombinedImage;
-@property(assign,retain) PKImage * cardBackgroundImage;
-@property(assign,retain) PKImage * cobrandLogoImage;
-@property(assign,retain) PKImage * footerImage;
-@property(assign,retain) PKImage * logoImage;
-@property(assign,retain) PKImage * networkLogoImage;
-@property(assign,retain) PKImage * stripImage;
+@property (nonatomic, retain) PKImage *backgroundImage;
+@property (nonatomic, retain) PKImage *bankLogoImage;
+@property (nonatomic, retain) PKImage *cardBackgroundCombinedImage;
+@property (nonatomic, retain) PKImage *cardBackgroundImage;
+@property (nonatomic, retain) PKImage *cobrandLogoImage;
+@property (nonatomic, retain) PKImage *footerImage;
+@property (nonatomic, retain) PKImage *logoImage;
+@property (nonatomic, retain) PKImage *networkLogoImage;
+@property (nonatomic, retain) PKImage *stripImage;
 
 + (long long)imageSetType;
 + (bool)shouldCache;

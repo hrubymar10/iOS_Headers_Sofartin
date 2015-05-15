@@ -8,9 +8,9 @@
     NSMutableDictionary *_tokenInfosByRequestID;
 }
 
-@property(assign,copy) id tokenInfoBlock;
-@property(assign,retain) NSArray * tokenInfos;
-@property(assign,retain) NSMutableDictionary * tokenInfosByRequestID;
+@property (nonatomic, copy) id tokenInfoBlock;
+@property (nonatomic, retain) NSArray *tokenInfos;
+@property (nonatomic, retain) NSMutableDictionary *tokenInfosByRequestID;
 
 - (void).cxx_destruct;
 - (id)initWithShortTokenInfos:(id)arg1;

@@ -6,19 +6,19 @@
     void *_private;
 }
 
-@property(assign,copy) NSData * data;
-@property(assign,readonly) NSURLRequest * initialRequest;
-@property(getter=isLoading,assign,readonly) bool loading;
-@property(assign,readonly) WebResource * mainResource;
-@property(assign,copy) NSString * pageTitle;
-@property(assign,readonly) <WebDocumentRepresentation> * representation;
-@property(assign,readonly) NSMutableURLRequest * request;
-@property(assign,readonly) NSURLResponse * response;
-@property(assign,copy) NSArray * subresources;
-@property(assign,copy) NSString * textEncodingName;
-@property(assign,readonly) NSURL * unreachableURL;
-@property(assign,readonly) WebArchive * webArchive;
-@property(assign,readonly) WebFrame * webFrame;
+@property (nonatomic, readonly, copy) NSData *data;
+@property (nonatomic, readonly) NSURLRequest *initialRequest;
+@property (getter=isLoading, nonatomic, readonly) bool loading;
+@property (nonatomic, readonly) WebResource *mainResource;
+@property (nonatomic, readonly, copy) NSString *pageTitle;
+@property (nonatomic, readonly) <WebDocumentRepresentation> *representation;
+@property (nonatomic, readonly) NSMutableURLRequest *request;
+@property (nonatomic, readonly) NSURLResponse *response;
+@property (nonatomic, readonly, copy) NSArray *subresources;
+@property (nonatomic, readonly, copy) NSString *textEncodingName;
+@property (nonatomic, readonly) NSURL *unreachableURL;
+@property (nonatomic, readonly) WebArchive *webArchive;
+@property (nonatomic, readonly) WebFrame *webFrame;
 
 + (id)_repTypesAllowImageTypeOmission:(bool)arg1;
 + (Class)_representationClassForMIMEType:(id)arg1 allowingPlugins:(bool)arg2;

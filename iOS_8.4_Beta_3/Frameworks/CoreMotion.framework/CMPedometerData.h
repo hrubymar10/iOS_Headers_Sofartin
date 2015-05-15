@@ -14,15 +14,15 @@
     NSDate *fStartDate;
 }
 
-@property(assign,readonly) NSNumber * distance;
-@property(assign,readonly) NSDate * endDate;
-@property(assign,readonly) NSNumber * floorsAscended;
-@property(assign,readonly) NSNumber * floorsDescended;
-@property(assign,readonly) NSNumber * numberOfSteps;
-@property(assign,readonly) NSNumber * pace;
-@property(assign,readonly) long long recordId;
-@property(assign,readonly) NSUUID * sourceId;
-@property(assign,readonly) NSDate * startDate;
+@property (nonatomic, readonly) NSNumber *distance;
+@property (nonatomic, readonly) NSDate *endDate;
+@property (nonatomic, readonly) NSNumber *floorsAscended;
+@property (nonatomic, readonly) NSNumber *floorsDescended;
+@property (nonatomic, readonly) NSNumber *numberOfSteps;
+@property (nonatomic, readonly) NSNumber *pace;
+@property (nonatomic, readonly) long long recordId;
+@property (nonatomic, readonly) NSUUID *sourceId;
+@property (nonatomic, readonly) NSDate *startDate;
 
 + (bool)supportsSecureCoding;
 

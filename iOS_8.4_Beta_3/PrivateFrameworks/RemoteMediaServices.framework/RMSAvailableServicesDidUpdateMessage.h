@@ -10,9 +10,9 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,retain) NSMutableArray * services;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic, retain) NSMutableArray *services;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (void)addServices:(id)arg1;

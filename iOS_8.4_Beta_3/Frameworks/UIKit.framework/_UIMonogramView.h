@@ -8,9 +8,9 @@
     NSString *_name;
 }
 
-@property(assign,retain) UILabel * label;
-@property(assign,copy) NSString * monogram;
-@property(assign,copy) NSString * name;
+@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, copy) NSString *monogram;
+@property (nonatomic, copy) NSString *name;
 
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (id)label;

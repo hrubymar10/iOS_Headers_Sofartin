@@ -6,7 +6,7 @@
     NSArray *_brushList;
 }
 
-@property(assign,retain) NSArray * brushList;
+@property (nonatomic, retain) NSArray *brushList;
 
 + (id)brushListWithBrushes:(id)arg1;
 

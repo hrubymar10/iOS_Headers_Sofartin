@@ -21,14 +21,14 @@
     bool m_wasShowingCommands;
 }
 
-@property(assign,readwrite) bool caretBlinks;
-@property(assign,readonly) UIView * caretView;
-@property(assign,readonly) UITextInteractionAssistant * interactionAssistant;
-@property(assign,readonly) UITextRangeView * rangeView;
-@property(assign,retain) NSArray * replacements;
-@property(assign,readonly) UITextSelection * selection;
-@property(assign,readonly) bool selectionCommandsShowing;
-@property(assign,readwrite) bool visible;
+@property (nonatomic) bool caretBlinks;
+@property (nonatomic, readonly) UIView *caretView;
+@property (nonatomic, readonly) UITextInteractionAssistant *interactionAssistant;
+@property (nonatomic, readonly) UITextRangeView *rangeView;
+@property (nonatomic, retain) NSArray *replacements;
+@property (nonatomic, readonly) UITextSelection *selection;
+@property (nonatomic, readonly) bool selectionCommandsShowing;
+@property (nonatomic) bool visible;
 
 - (void)activate;
 - (bool)affectedByScrollerNotification:(id)arg1;

@@ -21,21 +21,21 @@
     } _sessionID;
 }
 
-@property(assign,retain) GEOClientCapabilities * clientCapabilities;
-@property(assign,retain) GEOLocation * currentUserLocation;
-@property(assign,retain) NSMutableArray * destinationWaypointTypeds;
-@property(assign,retain) NSData * directionsResponseID;
-@property(assign,readonly) bool hasClientCapabilities;
-@property(assign,readonly) bool hasCurrentUserLocation;
-@property(assign,readonly) bool hasDirectionsResponseID;
-@property(assign,readwrite) bool hasIncludeBetterRouteSuggestion;
-@property(assign,readonly) bool hasRouteAttributes;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) bool includeBetterRouteSuggestion;
-@property(assign,retain) GEORouteAttributes * routeAttributes;
-@property(assign,retain) NSMutableArray * routes;
-@property(assign,retain) NSMutableArray * serviceTags;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic, retain) GEOClientCapabilities *clientCapabilities;
+@property (nonatomic, retain) GEOLocation *currentUserLocation;
+@property (nonatomic, retain) NSMutableArray *destinationWaypointTypeds;
+@property (nonatomic, retain) NSData *directionsResponseID;
+@property (nonatomic, readonly) bool hasClientCapabilities;
+@property (nonatomic, readonly) bool hasCurrentUserLocation;
+@property (nonatomic, readonly) bool hasDirectionsResponseID;
+@property (nonatomic) bool hasIncludeBetterRouteSuggestion;
+@property (nonatomic, readonly) bool hasRouteAttributes;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) bool includeBetterRouteSuggestion;
+@property (nonatomic, retain) GEORouteAttributes *routeAttributes;
+@property (nonatomic, retain) NSMutableArray *routes;
+@property (nonatomic, retain) NSMutableArray *serviceTags;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
 
 - (void)addDestinationWaypointTyped:(id)arg1;
 - (void)addRoute:(id)arg1;

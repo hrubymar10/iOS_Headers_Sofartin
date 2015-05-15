@@ -54,17 +54,17 @@
     double _startTimeStamp;
 }
 
-@property(assign,readwrite) bool arrivedAtDestination;
-@property(assign,retain) NSMutableArray * directionsFeedbacks;
-@property(assign,readwrite) double endTimeStamp;
-@property(assign,retain) GEOLocation * finalLocation;
-@property(assign,readwrite) bool hasArrivedAtDestination;
-@property(assign,readwrite) bool hasEndTimeStamp;
-@property(assign,readonly) bool hasFinalLocation;
-@property(assign,readwrite) bool hasNavigationAudioFeedback;
-@property(assign,readwrite) bool hasStartTimeStamp;
-@property(assign,readwrite) struct { int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; bool x6; bool x7; bool x8; bool x9; bool x10; bool x11; bool x12; bool x13; bool x14; bool x15; bool x16; bool x17; struct { unsigned int x_18_1_1 : 1; unsigned int x_18_1_2 : 1; unsigned int x_18_1_3 : 1; unsigned int x_18_1_4 : 1; unsigned int x_18_1_5 : 1; unsigned int x_18_1_6 : 1; unsigned int x_18_1_7 : 1; unsigned int x_18_1_8 : 1; unsigned int x_18_1_9 : 1; unsigned int x_18_1_10 : 1; unsigned int x_18_1_11 : 1; unsigned int x_18_1_12 : 1; unsigned int x_18_1_13 : 1; unsigned int x_18_1_14 : 1; unsigned int x_18_1_15 : 1; unsigned int x_18_1_16 : 1; unsigned int x_18_1_17 : 1; } x18; } navigationAudioFeedback;
-@property(assign,readwrite) double startTimeStamp;
+@property (nonatomic) bool arrivedAtDestination;
+@property (nonatomic, retain) NSMutableArray *directionsFeedbacks;
+@property (nonatomic) double endTimeStamp;
+@property (nonatomic, retain) GEOLocation *finalLocation;
+@property (nonatomic) bool hasArrivedAtDestination;
+@property (nonatomic) bool hasEndTimeStamp;
+@property (nonatomic, readonly) bool hasFinalLocation;
+@property (nonatomic) bool hasNavigationAudioFeedback;
+@property (nonatomic) bool hasStartTimeStamp;
+@property (nonatomic) struct { int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; bool x6; bool x7; bool x8; bool x9; bool x10; bool x11; bool x12; bool x13; bool x14; bool x15; bool x16; bool x17; struct { unsigned int x_18_1_1 : 1; unsigned int x_18_1_2 : 1; unsigned int x_18_1_3 : 1; unsigned int x_18_1_4 : 1; unsigned int x_18_1_5 : 1; unsigned int x_18_1_6 : 1; unsigned int x_18_1_7 : 1; unsigned int x_18_1_8 : 1; unsigned int x_18_1_9 : 1; unsigned int x_18_1_10 : 1; unsigned int x_18_1_11 : 1; unsigned int x_18_1_12 : 1; unsigned int x_18_1_13 : 1; unsigned int x_18_1_14 : 1; unsigned int x_18_1_15 : 1; unsigned int x_18_1_16 : 1; unsigned int x_18_1_17 : 1; } x18; } navigationAudioFeedback;
+@property (nonatomic) double startTimeStamp;
 
 - (void)addDirectionsFeedback:(id)arg1;
 - (bool)arrivedAtDestination;

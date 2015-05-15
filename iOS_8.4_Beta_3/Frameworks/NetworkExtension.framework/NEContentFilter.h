@@ -7,8 +7,8 @@
     NEContentFilterPlugin *_plugin;
 }
 
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NEContentFilterPlugin * plugin;
+@property (getter=isEnabled) bool enabled;
+@property (copy) NEContentFilterPlugin *plugin;
 
 + (bool)supportsSecureCoding;
 

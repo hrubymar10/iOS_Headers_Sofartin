@@ -19,18 +19,18 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) int connectionCellularFallbackCount;
-@property(assign,readwrite) int endpointsFetchTaskBadReplyCount;
-@property(assign,readwrite) int endpointsFetchTaskCount;
-@property(assign,readwrite) int endpointsFetchTaskFailureCount;
-@property(assign,readwrite) int endpointsFetchTaskSuccessCount;
-@property(assign,readwrite) bool hasConnectionCellularFallbackCount;
-@property(assign,readwrite) bool hasEndpointsFetchTaskBadReplyCount;
-@property(assign,readwrite) bool hasEndpointsFetchTaskCount;
-@property(assign,readwrite) bool hasEndpointsFetchTaskFailureCount;
-@property(assign,readwrite) bool hasEndpointsFetchTaskSuccessCount;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) int connectionCellularFallbackCount;
+@property (nonatomic) int endpointsFetchTaskBadReplyCount;
+@property (nonatomic) int endpointsFetchTaskCount;
+@property (nonatomic) int endpointsFetchTaskFailureCount;
+@property (nonatomic) int endpointsFetchTaskSuccessCount;
+@property (nonatomic) bool hasConnectionCellularFallbackCount;
+@property (nonatomic) bool hasEndpointsFetchTaskBadReplyCount;
+@property (nonatomic) bool hasEndpointsFetchTaskCount;
+@property (nonatomic) bool hasEndpointsFetchTaskFailureCount;
+@property (nonatomic) bool hasEndpointsFetchTaskSuccessCount;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (int)connectionCellularFallbackCount;
 - (void)copyTo:(id)arg1;

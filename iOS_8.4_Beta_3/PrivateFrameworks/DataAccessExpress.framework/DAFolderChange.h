@@ -13,14 +13,14 @@
     unsigned int _taskId;
 }
 
-@property(assign,readwrite) long long changeType;
-@property(assign,readwrite) <DAFolderChangeConsumer> * consumer;
-@property(assign,readwrite) long long dataclass;
-@property(assign,retain) NSString * displayName;
-@property(assign,retain) NSString * folderId;
-@property(assign,retain) NSString * parentFolderId;
-@property(assign,readwrite) bool renameOnCollision;
-@property(assign,readwrite) unsigned int taskId;
+@property (nonatomic) long long changeType;
+@property (nonatomic) <DAFolderChangeConsumer> *consumer;
+@property (nonatomic) long long dataclass;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic, retain) NSString *folderId;
+@property (nonatomic, retain) NSString *parentFolderId;
+@property (nonatomic) bool renameOnCollision;
+@property (nonatomic) unsigned int taskId;
 
 + (bool)supportsSecureCoding;
 

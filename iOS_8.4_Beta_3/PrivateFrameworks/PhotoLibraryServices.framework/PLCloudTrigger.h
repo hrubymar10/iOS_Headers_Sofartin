@@ -8,8 +8,8 @@
     unsigned long long _type;
 }
 
-@property(assign,retain) NSDictionary * subscriptions;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly, retain) NSDictionary *subscriptions;
+@property (nonatomic, readonly) unsigned long long type;
 
 - (void)activate;
 - (void)dealloc;

@@ -4,12 +4,12 @@
 
 @interface SASTCompetingTeamPlayDetailItem : AceObject <SASTTemplateItem>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool firstEntity;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAUIDecoratedText * playDetail;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool firstEntity;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAUIDecoratedText *playDetail;
+@property (readonly) Class superclass;
 
 + (id)competingTeamPlayDetailItem;
 + (id)competingTeamPlayDetailItemWithDictionary:(id)arg1 context:(id)arg2;

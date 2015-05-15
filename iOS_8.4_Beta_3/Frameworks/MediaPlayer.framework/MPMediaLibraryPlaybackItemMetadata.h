@@ -8,7 +8,7 @@
     NSDictionary *_mediaItemValuesForProperties;
 }
 
-@property(assign,retain) MPMediaItem * mediaItem;
+@property (nonatomic, retain) MPMediaItem *mediaItem;
 
 + (id)_highQualityCachedAssetDestinationDirectory;
 + (id)_lowQualityCachedAssetDestinationDirectory;

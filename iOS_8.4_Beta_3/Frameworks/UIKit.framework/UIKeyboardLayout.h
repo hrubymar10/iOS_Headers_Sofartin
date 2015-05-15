@@ -20,24 +20,24 @@
     double lastTouchUpTime;
 }
 
-@property(assign,retain) UITouch * activeTouch;
-@property(assign,readwrite) long long cursorLocation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) id deferredTouchDownTask;
-@property(assign,copy) id deferredTouchMovedTask;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool disableInteraction;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool hideKeysUnderIndicator;
-@property(assign,readonly) long long idiom;
-@property(assign,readwrite) bool isExecutingDeferredTouchTasks;
-@property(assign,readwrite) double lastTouchUpTime;
-@property(assign,retain) NSString * layoutTag;
-@property(assign,readonly) long long orientation;
-@property(assign,retain) _UIScreenEdgePanRecognizer * screenEdgePanRecognizer;
-@property(assign,retain) UITouch * shiftKeyTouch;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UIKeyboardTaskQueue * taskQueue;
+@property (nonatomic, retain) UITouch *activeTouch;
+@property (nonatomic) long long cursorLocation;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, copy) id deferredTouchDownTask;
+@property (nonatomic, copy) id deferredTouchMovedTask;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool disableInteraction;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool hideKeysUnderIndicator;
+@property (nonatomic, readonly) long long idiom;
+@property (nonatomic) bool isExecutingDeferredTouchTasks;
+@property (nonatomic) double lastTouchUpTime;
+@property (nonatomic, retain) NSString *layoutTag;
+@property (nonatomic, readonly) long long orientation;
+@property (nonatomic, retain) _UIScreenEdgePanRecognizer *screenEdgePanRecognizer;
+@property (nonatomic, retain) UITouch *shiftKeyTouch;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UIKeyboardTaskQueue *taskQueue;
 
 + (Class)_subclassForScreenTraits:(id)arg1;
 

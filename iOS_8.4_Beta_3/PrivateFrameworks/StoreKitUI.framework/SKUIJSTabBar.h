@@ -8,9 +8,9 @@
     SKUIJSTabBarItem *_transientTabBarItem;
 }
 
-@property(assign,retain) SKUIJSTabBarItem * selectedTab;
-@property(assign,readonly) NSArray * tabs;
-@property(assign,readonly) SKUIJSTabBarItem * transientTab;
+@property (nonatomic, retain) SKUIJSTabBarItem *selectedTab;
+@property (nonatomic, readonly) NSArray *tabs;
+@property (nonatomic, readonly) SKUIJSTabBarItem *transientTab;
 
 - (void).cxx_destruct;
 - (void)_reloadTabBarItemsWithPreludeMainThreadWork:(id)arg1;

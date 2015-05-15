@@ -13,14 +13,14 @@
     bool _minimumAutozooming;
 }
 
-@property(getter=_isAutozooming,setter=_setAutozooming:,assign,readwrite) bool _autozooming;
-@property(assign,readonly) UIView * _maxTrackMaskView;
-@property(assign,readonly) UIView * _minTrackMaskView;
-@property(assign,readonly) UIImageView * _thumbImageView;
-@property(assign,readonly) NSTimer * _visibilityTimer;
-@property(assign,readwrite) <CAMZoomSliderDelegate> * delegate;
-@property(getter=isMaximumAutozooming,assign,readwrite) bool maximumAutozooming;
-@property(getter=isMinimumAutozooming,assign,readwrite) bool minimumAutozooming;
+@property (getter=_isAutozooming, setter=_setAutozooming:, nonatomic) bool _autozooming;
+@property (nonatomic, readonly) UIView *_maxTrackMaskView;
+@property (nonatomic, readonly) UIView *_minTrackMaskView;
+@property (nonatomic, readonly) UIImageView *_thumbImageView;
+@property (nonatomic, readonly) NSTimer *_visibilityTimer;
+@property (nonatomic) <CAMZoomSliderDelegate> *delegate;
+@property (getter=isMaximumAutozooming, nonatomic) bool maximumAutozooming;
+@property (getter=isMinimumAutozooming, nonatomic) bool minimumAutozooming;
 
 - (void).cxx_destruct;
 - (void)_beginAutozooming;

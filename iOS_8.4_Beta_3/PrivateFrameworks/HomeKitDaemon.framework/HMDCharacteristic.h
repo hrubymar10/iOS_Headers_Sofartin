@@ -14,21 +14,21 @@
     HMDService *_service;
 }
 
-@property(assign,readonly) HMDAccessory * accessory;
-@property(assign,copy) NSData * authorizationData;
-@property(assign,readonly) HAPCharacteristic * characteristic;
-@property(assign,retain) NSNumber * characteristicInstanceID;
-@property(assign,retain) HMDCharacteristicMetadata * characteristicMetadata;
-@property(assign,readwrite) long long characteristicProperties;
-@property(assign,retain) NSString * characteristicType;
-@property(assign,retain) HAPCharacteristic * hapCharacteristic;
-@property(assign,copy) NSNumber * instanceID;
-@property(assign,readonly) HMDCharacteristicMetadata * metadata;
-@property(assign,readwrite) bool notificationEnabled;
-@property(assign,readonly) long long properties;
-@property(assign,readonly) HMDService * service;
-@property(assign,copy) NSString * type;
-@property(assign,copy) id value;
+@property (nonatomic, readonly) HMDAccessory *accessory;
+@property (nonatomic, copy) NSData *authorizationData;
+@property (nonatomic, readonly) HAPCharacteristic *characteristic;
+@property (nonatomic, retain) NSNumber *characteristicInstanceID;
+@property (nonatomic, retain) HMDCharacteristicMetadata *characteristicMetadata;
+@property (nonatomic) long long characteristicProperties;
+@property (nonatomic, retain) NSString *characteristicType;
+@property (nonatomic, retain) HAPCharacteristic *hapCharacteristic;
+@property (nonatomic, readonly, copy) NSNumber *instanceID;
+@property (nonatomic, readonly) HMDCharacteristicMetadata *metadata;
+@property (nonatomic) bool notificationEnabled;
+@property (nonatomic, readonly) long long properties;
+@property (nonatomic, readonly) HMDService *service;
+@property (nonatomic, readonly, copy) NSString *type;
+@property (nonatomic, readonly, copy) id value;
 
 + (bool)supportsSecureCoding;
 

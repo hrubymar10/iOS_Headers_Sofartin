@@ -9,10 +9,10 @@
     NSMutableDictionary *_imageCache;
 }
 
-@property(assign,readonly) GEOBusiness * business;
-@property(assign,retain) <MKMapItemVendorDeal> * deal;
-@property(assign,readwrite) bool hasCheckedForVendorDeal;
-@property(assign,retain) NSMutableDictionary * imageCache;
+@property (nonatomic, readonly) GEOBusiness *business;
+@property (nonatomic, retain) <MKMapItemVendorDeal> *deal;
+@property (nonatomic) bool hasCheckedForVendorDeal;
+@property (nonatomic, retain) NSMutableDictionary *imageCache;
 
 - (void).cxx_destruct;
 - (void)addImage:(id)arg1 forURL:(id)arg2;

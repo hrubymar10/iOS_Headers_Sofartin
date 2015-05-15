@@ -4,14 +4,14 @@
 
 @interface SASmsSearch : SADomainCommand
 
-@property(assign,copy) NSDate * end;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSNumber * outgoing;
-@property(assign,copy) NSArray * recipients;
-@property(assign,copy) NSArray * senders;
-@property(assign,copy) NSDate * start;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSNumber * unread;
+@property (nonatomic, copy) NSDate *end;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSNumber *outgoing;
+@property (nonatomic, copy) NSArray *recipients;
+@property (nonatomic, copy) NSArray *senders;
+@property (nonatomic, copy) NSDate *start;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSNumber *unread;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

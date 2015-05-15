@@ -11,10 +11,10 @@
     } _has;
 }
 
-@property(assign,readwrite) unsigned int componentIndex;
-@property(assign,readwrite) unsigned int componentValueIndex;
-@property(assign,readwrite) bool hasComponentIndex;
-@property(assign,readwrite) bool hasComponentValueIndex;
+@property (nonatomic) unsigned int componentIndex;
+@property (nonatomic) unsigned int componentValueIndex;
+@property (nonatomic) bool hasComponentIndex;
+@property (nonatomic) bool hasComponentValueIndex;
 
 - (unsigned int)componentIndex;
 - (unsigned int)componentValueIndex;

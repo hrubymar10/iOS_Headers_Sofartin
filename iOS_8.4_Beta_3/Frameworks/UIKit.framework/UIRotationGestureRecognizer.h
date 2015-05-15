@@ -20,8 +20,8 @@
     double _velocity;
 }
 
-@property(assign,readwrite) double rotation;
-@property(assign,readonly) double velocity;
+@property (nonatomic) double rotation;
+@property (nonatomic, readonly) double velocity;
 
 - (double)_postRecognitionWeight;
 - (double)_preRecognitionWeight;

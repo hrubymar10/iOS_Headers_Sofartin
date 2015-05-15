@@ -6,11 +6,11 @@
     MPDetailScrubController *_scrubController;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) MPDetailScrubController * scrubController;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) MPDetailScrubController *scrubController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)beginTrackingWithTouch:(id)arg1 withEvent:(id)arg2;

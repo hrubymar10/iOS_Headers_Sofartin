@@ -4,11 +4,11 @@
 
 @interface NoteBodyObject : NSManagedObject
 
-@property(assign,retain) NSString * content;
-@property(assign,readonly) NSString * contentAsPlainText;
-@property(assign,retain) NSString * externalContentRef;
-@property(assign,retain) NSData * externalRepresentation;
-@property(assign,retain) NoteObject * owner;
+@property (nonatomic, retain) NSString *content;
+@property (nonatomic, readonly) NSString *contentAsPlainText;
+@property (nonatomic, retain) NSString *externalContentRef;
+@property (nonatomic, retain) NSData *externalRepresentation;
+@property (nonatomic, retain) NoteObject *owner;
 
 - (id)contentAsPlainText;
 - (id)contentAsPlainTextPreservingNewlines;

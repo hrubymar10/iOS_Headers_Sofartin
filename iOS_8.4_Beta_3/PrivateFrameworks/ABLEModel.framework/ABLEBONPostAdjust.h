@@ -6,7 +6,7 @@
     ABLEStaticMapInclusiveDomainVectorRange *_bonPostAdjustDoubleMap;
 }
 
-@property(assign,retain) ABLEStaticMapInclusiveDomainVectorRange * bonPostAdjustDoubleMap;
+@property (retain) ABLEStaticMapInclusiveDomainVectorRange *bonPostAdjustDoubleMap;
 
 + (id)bonPostAdjust;
 + (id)bonPostAdjustWithArray:(id)arg1;

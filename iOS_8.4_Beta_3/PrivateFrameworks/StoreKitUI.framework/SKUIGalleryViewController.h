@@ -13,13 +13,13 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <SKUIEmbeddedMediaViewDelegate> * embeddedMediaDelegate;
-@property(assign,readonly) SKUIGalleryPageComponent * galleryComponent;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) SKUIMediaComponent * selectedMediaComponent;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <SKUIEmbeddedMediaViewDelegate> *embeddedMediaDelegate;
+@property (nonatomic, readonly) SKUIGalleryPageComponent *galleryComponent;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) SKUIMediaComponent *selectedMediaComponent;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_finishPaneAnimation;

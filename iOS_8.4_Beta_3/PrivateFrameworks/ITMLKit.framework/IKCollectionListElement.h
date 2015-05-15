@@ -4,7 +4,7 @@
 
 @interface IKCollectionListElement : IKViewElement
 
-@property(assign,retain) NSArray * collections;
+@property (nonatomic, readonly, retain) NSArray *collections;
 
 - (id)collections;
 

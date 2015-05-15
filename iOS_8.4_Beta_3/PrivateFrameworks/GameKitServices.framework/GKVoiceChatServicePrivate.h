@@ -100,23 +100,23 @@
     GKVoiceChatService *wrapperService;
 }
 
-@property(assign,readwrite) int chatMode;
-@property(assign,readwrite) id client;
-@property(getter=isFocus,assign,readwrite) bool focus;
-@property(assign,readonly) float inputMeterLevel;
-@property(getter=isInputMeteringEnabled,assign,readwrite) bool inputMeteringEnabled;
-@property(assign,readonly) double localBitrate;
-@property(assign,readonly) double localFramerate;
-@property(assign,readwrite) void* localVideoLayer;
-@property(getter=isMicrophoneMuted,assign,readwrite) bool microphoneMuted;
-@property(assign,readonly) float outputMeterLevel;
-@property(getter=isOutputMeteringEnabled,assign,readwrite) bool outputMeteringEnabled;
-@property(assign,readonly) double remoteBitrate;
-@property(assign,readonly) double remoteFramerate;
-@property(assign,readwrite) float remoteParticipantVolume;
-@property(assign,readwrite) void* remoteVideoLayer;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) GKVoiceChatService * wrapperService;
+@property int chatMode;
+@property (nonatomic) id client;
+@property (getter=isFocus) bool focus;
+@property (nonatomic, readonly) float inputMeterLevel;
+@property (getter=isInputMeteringEnabled) bool inputMeteringEnabled;
+@property (readonly) double localBitrate;
+@property (readonly) double localFramerate;
+@property (nonatomic) void*localVideoLayer;
+@property (getter=isMicrophoneMuted) bool microphoneMuted;
+@property (nonatomic, readonly) float outputMeterLevel;
+@property (getter=isOutputMeteringEnabled) bool outputMeteringEnabled;
+@property (readonly) double remoteBitrate;
+@property (readonly) double remoteFramerate;
+@property float remoteParticipantVolume;
+@property (nonatomic) void*remoteVideoLayer;
+@property int state;
+@property GKVoiceChatService *wrapperService;
 
 + (id)defaultVoiceChatService;
 

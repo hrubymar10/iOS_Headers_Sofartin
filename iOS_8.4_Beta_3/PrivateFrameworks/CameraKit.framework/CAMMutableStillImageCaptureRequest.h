@@ -4,14 +4,14 @@
 
 @interface CAMMutableStillImageCaptureRequest : CAMStillImageCaptureRequest
 
-@property(assign,readwrite) long long captureDevice;
-@property(assign,readwrite) <CAMStillImageCaptureRequestDelegate> * delegate;
-@property(assign,readwrite) long long deviceOrientation;
-@property(assign,readwrite) long long flashMode;
-@property(assign,readwrite) int hdrMode;
-@property(getter=isTransient,assign,readwrite) bool transient;
-@property(assign,readwrite) bool usesStillImageStabilization;
-@property(assign,readwrite) bool wantsAudioForCapture;
+@property (nonatomic) long long captureDevice;
+@property (nonatomic) <CAMStillImageCaptureRequestDelegate> *delegate;
+@property (nonatomic) long long deviceOrientation;
+@property (nonatomic) long long flashMode;
+@property (nonatomic) int hdrMode;
+@property (getter=isTransient, nonatomic) bool transient;
+@property (nonatomic) bool usesStillImageStabilization;
+@property (nonatomic) bool wantsAudioForCapture;
 
 - (void)setCaptureDevice:(long long)arg1;
 - (void)setDelegate:(id)arg1;

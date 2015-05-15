@@ -9,11 +9,11 @@
     NSData *_url;
 }
 
-@property(assign,retain) NSString * command;
-@property(assign,readonly) bool hasInfoDictionary;
-@property(assign,retain) NSData * infoDictionary;
-@property(assign,retain) NSString * seid;
-@property(assign,retain) NSData * url;
+@property (nonatomic, retain) NSString *command;
+@property (nonatomic, readonly) bool hasInfoDictionary;
+@property (nonatomic, retain) NSData *infoDictionary;
+@property (nonatomic, retain) NSString *seid;
+@property (nonatomic, retain) NSData *url;
 
 - (void).cxx_destruct;
 - (id)command;

@@ -7,7 +7,7 @@
     NSString *_validationRules;
 }
 
-@property(assign,retain) NSString * validationRules;
+@property (retain) NSString *validationRules;
 
 - (void)cancel;
 - (void)dealloc;

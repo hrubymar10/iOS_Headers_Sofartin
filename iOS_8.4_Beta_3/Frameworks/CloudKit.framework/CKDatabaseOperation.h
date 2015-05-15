@@ -6,7 +6,7 @@
     CKDatabase *_database;
 }
 
-@property(assign,retain) CKDatabase * database;
+@property (nonatomic, retain) CKDatabase *database;
 
 - (void).cxx_destruct;
 - (id)database;

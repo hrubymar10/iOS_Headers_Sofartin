@@ -8,9 +8,9 @@
     unsigned int _startOffset;
 }
 
-@property(assign,readwrite) unsigned int endOffset;
-@property(assign,retain) NSString * languageLocale;
-@property(assign,readwrite) unsigned int startOffset;
+@property (nonatomic) unsigned int endOffset;
+@property (nonatomic, retain) NSString *languageLocale;
+@property (nonatomic) unsigned int startOffset;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

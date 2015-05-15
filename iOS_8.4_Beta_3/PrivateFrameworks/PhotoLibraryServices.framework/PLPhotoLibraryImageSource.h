@@ -6,7 +6,7 @@
     int _imageFormat;
 }
 
-@property(assign,readonly) int imageFormat;
+@property (nonatomic, readonly) int imageFormat;
 
 - (id)description;
 - (unsigned long long)hash;

@@ -14,18 +14,18 @@
     CalendarEventAlarmTable *_table;
 }
 
-@property(assign,retain) EKUIAlarm * alarm;
-@property(assign,readwrite) unsigned long long alarmIndex;
-@property(assign,readwrite) bool allDay;
-@property(assign,retain) EKCalendar * calendar;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool eventHasTravelTime;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long presetIdentifier;
-@property(assign,readwrite) bool shouldAllowAlarmsTriggeringAfterStartDate;
-@property(assign,readwrite) bool shouldShowLeaveNowOption;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) EKUIAlarm *alarm;
+@property (nonatomic) unsigned long long alarmIndex;
+@property (nonatomic) bool allDay;
+@property (nonatomic, retain) EKCalendar *calendar;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool eventHasTravelTime;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long presetIdentifier;
+@property (nonatomic) bool shouldAllowAlarmsTriggeringAfterStartDate;
+@property (nonatomic) bool shouldShowLeaveNowOption;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_storeChanged:(id)arg1;

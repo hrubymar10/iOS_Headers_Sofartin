@@ -22,19 +22,19 @@
     UILabel *_tagLineLabel;
 }
 
-@property(assign,readwrite) bool alignOnBottom;
-@property(assign,retain) UIView * customMessageView;
-@property(assign,copy) NSString * headline;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * messageDetail;
-@property(assign,retain) UIFont * messageDetailFont;
-@property(assign,retain) UIFont * messageFont;
-@property(assign,readwrite) double minimumHeight;
-@property(assign,retain) ABNamePropertyGroup * namePropertyGroup;
-@property(assign,readwrite) int primaryProperty;
-@property(assign,copy) NSString * primaryPropertyFormattingCountryCode;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,copy) NSString * tagLine;
+@property (nonatomic) bool alignOnBottom;
+@property (nonatomic, retain) UIView *customMessageView;
+@property (nonatomic, copy) NSString *headline;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *messageDetail;
+@property (nonatomic, retain) UIFont *messageDetailFont;
+@property (nonatomic, retain) UIFont *messageFont;
+@property (nonatomic) double minimumHeight;
+@property (nonatomic, retain) ABNamePropertyGroup *namePropertyGroup;
+@property (nonatomic) int primaryProperty;
+@property (nonatomic, copy) NSString *primaryPropertyFormattingCountryCode;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (nonatomic, copy) NSString *tagLine;
 
 - (void)_adjustLabelTextColorForPasteboardSelection:(bool)arg1;
 - (void)_appendString:(id)arg1 withFormatKey:(id)arg2 toTagLine:(id)arg3;

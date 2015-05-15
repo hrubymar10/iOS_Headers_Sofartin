@@ -4,7 +4,7 @@
 
 @interface SASmsRecipientSearch : SADomainCommand
 
-@property(assign,copy) NSArray * recipients;
+@property (nonatomic, copy) NSArray *recipients;
 
 + (id)recipientSearch;
 + (id)recipientSearchWithDictionary:(id)arg1 context:(id)arg2;

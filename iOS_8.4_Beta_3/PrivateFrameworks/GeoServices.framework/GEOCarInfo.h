@@ -20,14 +20,14 @@
     } _screenResolution;
 }
 
-@property(assign,readwrite) bool hasInteractionModel;
-@property(assign,readonly) bool hasManufacturer;
-@property(assign,readonly) bool hasModel;
-@property(assign,readwrite) bool hasScreenResolution;
-@property(assign,readwrite) int interactionModel;
-@property(assign,retain) NSString * manufacturer;
-@property(assign,retain) NSString * model;
-@property(assign,readwrite) struct { double x1; double x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; } screenResolution;
+@property (nonatomic) bool hasInteractionModel;
+@property (nonatomic, readonly) bool hasManufacturer;
+@property (nonatomic, readonly) bool hasModel;
+@property (nonatomic) bool hasScreenResolution;
+@property (nonatomic) int interactionModel;
+@property (nonatomic, retain) NSString *manufacturer;
+@property (nonatomic, retain) NSString *model;
+@property (nonatomic) struct { double x1; double x2; struct { unsigned int x_3_1_1 : 1; unsigned int x_3_1_2 : 1; } x3; } screenResolution;
 
 + (id)carInfoWithTraits:(id)arg1;
 

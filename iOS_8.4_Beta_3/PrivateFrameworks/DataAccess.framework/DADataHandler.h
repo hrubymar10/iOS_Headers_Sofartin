@@ -7,8 +7,8 @@
     void *_container;
 }
 
-@property(assign,copy) NSString * changeTrackingID;
-@property(assign,readwrite) void* container;
+@property (nonatomic, copy) NSString *changeTrackingID;
+@property (nonatomic) void*container;
 
 + (id)newDataHandlerForDataclass:(long long)arg1 container:(void*)arg2 changeTrackingID:(id)arg3;
 

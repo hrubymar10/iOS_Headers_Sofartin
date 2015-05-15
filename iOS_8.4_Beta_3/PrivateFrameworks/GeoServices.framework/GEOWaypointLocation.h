@@ -6,8 +6,8 @@
     GEOLocation *_location;
 }
 
-@property(assign,readonly) bool hasLocation;
-@property(assign,retain) GEOLocation * location;
+@property (nonatomic, readonly) bool hasLocation;
+@property (nonatomic, retain) GEOLocation *location;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

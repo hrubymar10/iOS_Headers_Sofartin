@@ -8,10 +8,10 @@
     long long _sectionIndex;
 }
 
-@property(assign,readwrite) <SKUITableViewSectionDelegate> * delegate;
-@property(assign,readwrite) bool hidesHeaderView;
-@property(assign,readonly) long long numberOfRowsInSection;
-@property(assign,readwrite) long long sectionIndex;
+@property (nonatomic) <SKUITableViewSectionDelegate> *delegate;
+@property (nonatomic) bool hidesHeaderView;
+@property (nonatomic, readonly) long long numberOfRowsInSection;
+@property (nonatomic) long long sectionIndex;
 
 - (void).cxx_destruct;
 - (id)delegate;

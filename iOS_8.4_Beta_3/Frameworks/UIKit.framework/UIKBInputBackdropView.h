@@ -35,9 +35,9 @@
     double _transitionLeftOffset;
 }
 
-@property(assign,retain) UIKBBackdropView * inputBackdropFullView;
-@property(assign,retain) UIKBBackdropView * inputBackdropLeftView;
-@property(assign,retain) UIKBBackdropView * inputBackdropRightView;
+@property (nonatomic, retain) UIKBBackdropView *inputBackdropFullView;
+@property (nonatomic, retain) UIKBBackdropView *inputBackdropLeftView;
+@property (nonatomic, retain) UIKBBackdropView *inputBackdropRightView;
 
 + (bool)_retroactivelyRequiresConstraintBasedLayout;
 

@@ -7,8 +7,8 @@
     NSString *_label;
 }
 
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,readonly) NSString * label;
+@property (readonly) <MTLDevice> *device;
+@property (readonly) NSString *label;
 
 - (void)dealloc;
 - (id)description;

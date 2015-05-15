@@ -34,30 +34,30 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) unsigned long long byIDDiffs;
-@property(assign,readonly) BRCLocalItem * byIDLocalItem;
-@property(assign,readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } byIDMatch;
-@property(assign,readonly) BRCRelativePath * byIDRelpath;
-@property(assign,readonly) BRCServerItem * byIDServerItem;
-@property(assign,readonly) unsigned long long byPathDiffs;
-@property(assign,readonly) BRCLocalItem * byPathLocalItem;
-@property(assign,readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } byPathMatch;
-@property(assign,readonly) BRCRelativePath * byPathRelpath;
-@property(assign,readonly) BRCServerItem * byPathServerItem;
-@property(assign,readonly) BRCDocumentItem * bySharedEnclosureDocItem;
-@property(assign,readonly) unsigned long long faultedDiffs;
-@property(assign,readonly) BRCLocalItem * faultedLocalItem;
-@property(assign,readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } faultedMatch;
-@property(assign,readonly) BRCRelativePath * faultedRelpath;
-@property(assign,readonly) BRCServerItem * faultedServerItem;
-@property(assign,readonly) NSString * filename;
-@property(assign,readonly) BRCItemID * parentItemID;
-@property(assign,readonly) BRCRelativePath * parentRelpath;
-@property(assign,readonly) unsigned short pathType;
-@property(assign,readonly) BRCLocalItem * reservedLocalItem;
-@property(assign,readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } reservedMatch;
-@property(assign,readonly) BRCServerItem * reservedServerItem;
-@property(assign,readonly) NSURL * url;
+@property (nonatomic, readonly) unsigned long long byIDDiffs;
+@property (nonatomic, readonly) BRCLocalItem *byIDLocalItem;
+@property (nonatomic, readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } byIDMatch;
+@property (nonatomic, readonly) BRCRelativePath *byIDRelpath;
+@property (nonatomic, readonly) BRCServerItem *byIDServerItem;
+@property (nonatomic, readonly) unsigned long long byPathDiffs;
+@property (nonatomic, readonly) BRCLocalItem *byPathLocalItem;
+@property (nonatomic, readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } byPathMatch;
+@property (nonatomic, readonly) BRCRelativePath *byPathRelpath;
+@property (nonatomic, readonly) BRCServerItem *byPathServerItem;
+@property (nonatomic, readonly) BRCDocumentItem *bySharedEnclosureDocItem;
+@property (nonatomic, readonly) unsigned long long faultedDiffs;
+@property (nonatomic, readonly) BRCLocalItem *faultedLocalItem;
+@property (nonatomic, readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } faultedMatch;
+@property (nonatomic, readonly) BRCRelativePath *faultedRelpath;
+@property (nonatomic, readonly) BRCServerItem *faultedServerItem;
+@property (nonatomic, readonly) NSString *filename;
+@property (nonatomic, readonly) BRCItemID *parentItemID;
+@property (nonatomic, readonly) BRCRelativePath *parentRelpath;
+@property (nonatomic, readonly) unsigned short pathType;
+@property (nonatomic, readonly) BRCLocalItem *reservedLocalItem;
+@property (nonatomic, readonly) struct { id x1; id x2; id x3; id x4; unsigned long long x5; } reservedMatch;
+@property (nonatomic, readonly) BRCServerItem *reservedServerItem;
+@property (nonatomic, readonly) NSURL *url;
 
 + (bool)supportsSecureCoding;
 

@@ -6,8 +6,8 @@
     void *_impl;
 }
 
-@property(assign,readonly) NSArray * inputs;
-@property(assign,readonly) NSArray * outputs;
+@property (readonly) NSArray *inputs;
+@property (readonly) NSArray *outputs;
 
 + (id)privateCreateOrConfigure:(id)arg1 withRawDescription:(id)arg2;
 

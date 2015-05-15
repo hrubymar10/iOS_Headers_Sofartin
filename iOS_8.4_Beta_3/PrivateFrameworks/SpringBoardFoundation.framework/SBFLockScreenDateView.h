@@ -21,14 +21,14 @@
     bool _useLegibilityLabels;
 }
 
-@property(assign,retain) NSDate * date;
-@property(assign,readwrite) double dateAlphaPercentage;
-@property(getter=isDateHidden,assign,readwrite) bool dateHidden;
-@property(assign,readwrite) double dateStrength;
-@property(assign,retain) <SBFLockScreenDateFormatter> * formatter;
-@property(assign,retain) _UILegibilitySettings * legibilitySettings;
-@property(assign,retain) UIColor * textColor;
-@property(assign,readwrite) double timeStrength;
+@property (nonatomic, retain) NSDate *date;
+@property (nonatomic) double dateAlphaPercentage;
+@property (getter=isDateHidden, nonatomic) bool dateHidden;
+@property (nonatomic) double dateStrength;
+@property (nonatomic, retain) <SBFLockScreenDateFormatter> *formatter;
+@property (nonatomic, retain) _UILegibilitySettings *legibilitySettings;
+@property (nonatomic, retain) UIColor *textColor;
+@property (nonatomic) double timeStrength;
 
 + (double)defaultHeight;
 

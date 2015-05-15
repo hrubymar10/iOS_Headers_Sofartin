@@ -16,9 +16,9 @@
     NSObject<OS_dispatch_queue> *_webFeedSourceDataSynchronizationQueue;
 }
 
-@property(assign,readwrite) bool cloudSyncEnabled;
-@property(assign,readonly) WBSAutomaticReadingListTrackedRecordsInfo * items;
-@property(assign,retain) NSXPCConnection * webFeedParserConnection;
+@property (nonatomic) bool cloudSyncEnabled;
+@property (nonatomic, readonly) WBSAutomaticReadingListTrackedRecordsInfo *items;
+@property (nonatomic, retain) NSXPCConnection *webFeedParserConnection;
 
 + (id)sharedSource;
 

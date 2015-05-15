@@ -15,16 +15,16 @@
     CIColor *inputShadowColorOuter;
 }
 
-@property(assign,retain) CIImage * inputFill;
-@property(assign,retain) CIColor * inputGlowColorInner;
-@property(assign,retain) CIColor * inputGlowColorOuter;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,retain) CIVector * inputOffset;
-@property(assign,retain) NSNumber * inputRadius;
-@property(assign,retain) NSNumber * inputShadowBlurInner;
-@property(assign,retain) NSNumber * inputShadowBlurOuter;
-@property(assign,retain) CIColor * inputShadowColorInner;
-@property(assign,retain) CIColor * inputShadowColorOuter;
+@property (nonatomic, retain) CIImage *inputFill;
+@property (nonatomic, retain) CIColor *inputGlowColorInner;
+@property (nonatomic, retain) CIColor *inputGlowColorOuter;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, retain) CIVector *inputOffset;
+@property (nonatomic, retain) NSNumber *inputRadius;
+@property (nonatomic, retain) NSNumber *inputShadowBlurInner;
+@property (nonatomic, retain) NSNumber *inputShadowBlurOuter;
+@property (nonatomic, retain) CIColor *inputShadowColorInner;
+@property (nonatomic, retain) CIColor *inputShadowColorOuter;
 
 + (id)customAttributes;
 

@@ -12,13 +12,13 @@
     NSString *_variantIdentifier;
 }
 
-@property(assign,copy) NSString * buttonText;
-@property(assign,readonly) long long buttonType;
-@property(assign,copy) NSString * confirmationText;
-@property(assign,readonly) unsigned long long elementType;
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) SKUIStoreIdentifier * storeIdentifier;
-@property(assign,readonly) NSString * variantIdentifier;
+@property (nonatomic, readonly, copy) NSString *buttonText;
+@property (nonatomic, readonly) long long buttonType;
+@property (nonatomic, readonly, copy) NSString *confirmationText;
+@property (nonatomic, readonly) unsigned long long elementType;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) SKUIStoreIdentifier *storeIdentifier;
+@property (nonatomic, readonly) NSString *variantIdentifier;
 
 - (void).cxx_destruct;
 - (id)buttonText;

@@ -7,7 +7,7 @@
     UIWindow *_rotationDecider;
 }
 
-@property(assign,retain) UIWindow * rotationDecider;
+@property (nonatomic, retain) UIWindow *rotationDecider;
 
 - (void)_presentViewController:(id)arg1 sendingView:(id)arg2 animated:(bool)arg3;
 - (void)dealloc;

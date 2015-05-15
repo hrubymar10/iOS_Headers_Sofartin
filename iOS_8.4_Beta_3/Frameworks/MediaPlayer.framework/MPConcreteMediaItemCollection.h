@@ -10,7 +10,7 @@
     MPMediaItem *_representativeItem;
 }
 
-@property(assign,retain) MPConcreteMediaEntityPropertiesCache * cachedPropertyValues;
+@property (nonatomic, readonly, retain) MPConcreteMediaEntityPropertiesCache *cachedPropertyValues;
 
 - (void).cxx_destruct;
 - (id)_initWithIdentifier:(long long)arg1 valuesForProperties:(id)arg2 itemsQuery:(id)arg3 grouping:(long long)arg4 representativeItemIdentifier:(long long)arg5 propertiesCache:(id)arg6;

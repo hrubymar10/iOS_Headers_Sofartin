@@ -6,11 +6,11 @@
     SKUIPhysicalCirclesTemplateDOMFeature *_scriptInterface;
 }
 
-@property(assign,readonly) NSArray * circleItemElements;
-@property(assign,readonly) SKUIPaletteViewElement * footerPaletteElement;
-@property(assign,readonly) SKUIPhysicalCirclesTemplateDOMFeature * scriptInterface;
-@property(assign,readonly) SKUILabelViewElement * subtitleElement;
-@property(assign,readonly) SKUILabelViewElement * titleElement;
+@property (nonatomic, readonly) NSArray *circleItemElements;
+@property (nonatomic, readonly) SKUIPaletteViewElement *footerPaletteElement;
+@property (nonatomic, readonly) SKUIPhysicalCirclesTemplateDOMFeature *scriptInterface;
+@property (nonatomic, readonly) SKUILabelViewElement *subtitleElement;
+@property (nonatomic, readonly) SKUILabelViewElement *titleElement;
 
 + (id)supportedFeatures;
 

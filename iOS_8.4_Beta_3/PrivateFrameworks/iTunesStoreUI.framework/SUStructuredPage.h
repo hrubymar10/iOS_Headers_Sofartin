@@ -17,19 +17,19 @@
     bool _wantsIndexBar;
 }
 
-@property(assign,readonly) bool artworkShouldFitWidth;
-@property(assign,readonly) double artworkWidth;
-@property(assign,readonly) bool didShowDialog;
-@property(assign,readonly) long long displayStyle;
-@property(assign,readonly) bool hasDisplayableContent;
-@property(assign,retain) SUItem * item;
-@property(assign,retain) SUItemList * itemList;
-@property(assign,retain) SUStorePageProtocol * protocol;
-@property(assign,retain) SUPageSectionGroup * sectionsGroup;
-@property(assign,readonly) bool shouldHideSignInButton;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) long long type;
-@property(assign,readonly) bool wantsIndexBar;
+@property (nonatomic, readonly) bool artworkShouldFitWidth;
+@property (nonatomic, readonly) double artworkWidth;
+@property (nonatomic, readonly) bool didShowDialog;
+@property (nonatomic, readonly) long long displayStyle;
+@property (nonatomic, readonly) bool hasDisplayableContent;
+@property (nonatomic, retain) SUItem *item;
+@property (nonatomic, retain) SUItemList *itemList;
+@property (nonatomic, retain) SUStorePageProtocol *protocol;
+@property (nonatomic, retain) SUPageSectionGroup *sectionsGroup;
+@property (nonatomic, readonly) bool shouldHideSignInButton;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic) long long type;
+@property (nonatomic, readonly) bool wantsIndexBar;
 
 + (long long)pageTypeForStorePageDictionary:(id)arg1;
 + (long long)pageTypeForStorePageString:(id)arg1;

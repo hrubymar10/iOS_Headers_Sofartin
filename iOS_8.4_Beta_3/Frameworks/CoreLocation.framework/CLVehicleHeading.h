@@ -6,8 +6,8 @@
     id _internal;
 }
 
-@property(assign,readonly) NSDate * timestamp;
-@property(assign,readonly) double trueHeading;
+@property (nonatomic, readonly) NSDate *timestamp;
+@property (nonatomic, readonly) double trueHeading;
 
 + (bool)supportsSecureCoding;
 

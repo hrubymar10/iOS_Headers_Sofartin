@@ -6,7 +6,7 @@
     NSLayoutConstraint *_horizontalPositioningConstraint;
 }
 
-@property(assign,retain) NSLayoutConstraint * horizontalPositioningConstraint;
+@property (retain) NSLayoutConstraint *horizontalPositioningConstraint;
 
 - (void)dealloc;
 - (id)horizontalPositioningConstraint;

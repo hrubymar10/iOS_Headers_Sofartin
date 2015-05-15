@@ -10,11 +10,11 @@
     int _windowBits;
 }
 
-@property(assign,readwrite) int chunkSize;
-@property(assign,readwrite) int compressionLevel;
-@property(assign,readwrite) int memoryLevel;
-@property(assign,readwrite) int strategy;
-@property(assign,readwrite) int windowBits;
+@property (nonatomic) int chunkSize;
+@property (nonatomic) int compressionLevel;
+@property (nonatomic) int memoryLevel;
+@property (nonatomic) int strategy;
+@property (nonatomic) int windowBits;
 
 + (id)defaultOptions;
 

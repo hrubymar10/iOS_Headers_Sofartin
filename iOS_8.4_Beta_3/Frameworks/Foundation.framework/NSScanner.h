@@ -4,11 +4,11 @@
 
 @interface NSScanner : NSObject <NSCopying>
 
-@property(assign,readwrite) bool caseSensitive;
-@property(assign,copy) NSCharacterSet * charactersToBeSkipped;
-@property(assign,retain) id locale;
-@property(assign,readwrite) unsigned long long scanLocation;
-@property(assign,copy) NSString * string;
+@property bool caseSensitive;
+@property (copy) NSCharacterSet *charactersToBeSkipped;
+@property (retain) id locale;
+@property unsigned long long scanLocation;
+@property (readonly, copy) NSString *string;
 
 + (id)SQLParsingScannerWithSQL:(id)arg1;
 + (id)allocWithZone:(struct _NSZone { }*)arg1;

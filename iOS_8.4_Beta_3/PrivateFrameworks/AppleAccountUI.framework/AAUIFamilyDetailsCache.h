@@ -8,7 +8,7 @@
     unsigned long long _pendingInviteCount;
 }
 
-@property(assign,readonly) unsigned long long pendingInviteCount;
+@property (nonatomic, readonly) unsigned long long pendingInviteCount;
 
 + (id)sharedCache;
 

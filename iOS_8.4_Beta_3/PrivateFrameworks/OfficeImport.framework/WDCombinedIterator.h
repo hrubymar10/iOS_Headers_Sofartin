@@ -7,7 +7,7 @@
     WDIterator *mParentIterator;
 }
 
-@property(assign,retain) WDIterator * childIterator;
+@property (nonatomic, retain) WDIterator *childIterator;
 
 - (id)childIterator;
 - (id)childIteratorFrom:(id)arg1;

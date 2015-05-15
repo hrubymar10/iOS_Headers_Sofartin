@@ -8,19 +8,19 @@
     NSDictionary *_valueTextAttributes;
 }
 
-@property(assign,readonly) double bottomBaselineConstant;
-@property(assign,readonly) UIImageView * chevron;
-@property(assign,readonly) double chevronWidth;
-@property(assign,readonly) NSString * labelString;
-@property(assign,copy) NSDictionary * labelTextAttributes;
-@property(assign,readonly) UIView<ABText> * labelView;
-@property(assign,readonly) UIView * rightMostView;
-@property(assign,readonly) UILabel * standardLabelView;
-@property(assign,readonly) UILabel * standardValueView;
-@property(assign,readonly) double topBaselineConstant;
-@property(assign,readonly) NSString * valueString;
-@property(assign,copy) NSDictionary * valueTextAttributes;
-@property(assign,readonly) UIView<ABText> * valueView;
+@property (nonatomic, readonly) double bottomBaselineConstant;
+@property (nonatomic, readonly) UIImageView *chevron;
+@property (nonatomic, readonly) double chevronWidth;
+@property (nonatomic, readonly) NSString *labelString;
+@property (nonatomic, copy) NSDictionary *labelTextAttributes;
+@property (nonatomic, readonly) UIView<ABText> *labelView;
+@property (nonatomic, readonly) UIView *rightMostView;
+@property (nonatomic, readonly) UILabel *standardLabelView;
+@property (nonatomic, readonly) UILabel *standardValueView;
+@property (nonatomic, readonly) double topBaselineConstant;
+@property (nonatomic, readonly) NSString *valueString;
+@property (nonatomic, copy) NSDictionary *valueTextAttributes;
+@property (nonatomic, readonly) UIView<ABText> *valueView;
 
 + (bool)wantsChevron;
 + (bool)wantsHorizontalLayout;

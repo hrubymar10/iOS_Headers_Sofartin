@@ -7,12 +7,12 @@
     id _refreshHandler;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) HMMessageDispatcher * recvDispatcher;
-@property(assign,copy) id refreshHandler;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) HMMessageDispatcher *recvDispatcher;
+@property (nonatomic, copy) id refreshHandler;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)handleMessageWithName:(id)arg1 messageIdentifier:(id)arg2 messagePayload:(id)arg3 target:(id)arg4;

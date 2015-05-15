@@ -10,11 +10,11 @@
     bool _shouldArchive;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSString * displayName;
-@property(assign,readwrite) unsigned long long resendInterval;
-@property(assign,readwrite) bool resendRequested;
-@property(assign,readwrite) bool shouldArchive;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic) unsigned long long resendInterval;
+@property (nonatomic) bool resendRequested;
+@property (nonatomic) bool shouldArchive;
 
 - (void).cxx_destruct;
 - (id)accountId;

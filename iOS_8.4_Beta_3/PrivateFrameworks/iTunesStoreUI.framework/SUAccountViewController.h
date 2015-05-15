@@ -10,8 +10,8 @@
     long long _style;
 }
 
-@property(getter=_mescalSession,assign,readonly) SUMescalSession * _mescalSession;
-@property(assign,readwrite) long long style;
+@property (getter=_mescalSession, nonatomic, readonly) SUMescalSession *_mescalSession;
+@property (nonatomic) long long style;
 
 + (id)_latestAccountViewController;
 

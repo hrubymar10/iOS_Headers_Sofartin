@@ -15,16 +15,16 @@
     NSLayoutConstraint *_topMarginConstraint;
 }
 
-@property(assign,readwrite) double additionalLeftSidePadding;
-@property(assign,retain) NSLayoutConstraint * bottomMarginConstraint;
-@property(assign,retain) UIView * cellHeightStrut;
-@property(assign,copy) UIImage * customLocationImage;
-@property(assign,retain) NSLayoutConstraint * interLabelSpaceConstraint;
-@property(assign,readwrite) long long locationImageType;
-@property(assign,retain) UILabel * searchDetailTextLabel;
-@property(assign,retain) UIImageView * searchImageView;
-@property(assign,retain) UILabel * searchTextLabel;
-@property(assign,retain) NSLayoutConstraint * topMarginConstraint;
+@property (nonatomic) double additionalLeftSidePadding;
+@property (nonatomic, retain) NSLayoutConstraint *bottomMarginConstraint;
+@property (nonatomic, retain) UIView *cellHeightStrut;
+@property (nonatomic, copy) UIImage *customLocationImage;
+@property (nonatomic, retain) NSLayoutConstraint *interLabelSpaceConstraint;
+@property (nonatomic) long long locationImageType;
+@property (nonatomic, retain) UILabel *searchDetailTextLabel;
+@property (nonatomic, retain) UIImageView *searchImageView;
+@property (nonatomic, retain) UILabel *searchTextLabel;
+@property (nonatomic, retain) NSLayoutConstraint *topMarginConstraint;
 
 - (void)_applyLeftAndRightAlignmentConstraints:(id)arg1;
 - (double)_defaultCellBottomMargin;

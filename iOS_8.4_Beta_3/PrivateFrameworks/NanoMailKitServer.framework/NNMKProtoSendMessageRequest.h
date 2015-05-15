@@ -9,12 +9,12 @@
     NSMutableArray *_tos;
 }
 
-@property(assign,retain) NSString * body;
-@property(assign,retain) NSMutableArray * ccs;
-@property(assign,readonly) bool hasBody;
-@property(assign,readonly) bool hasSubject;
-@property(assign,retain) NSString * subject;
-@property(assign,retain) NSMutableArray * tos;
+@property (nonatomic, retain) NSString *body;
+@property (nonatomic, retain) NSMutableArray *ccs;
+@property (nonatomic, readonly) bool hasBody;
+@property (nonatomic, readonly) bool hasSubject;
+@property (nonatomic, retain) NSString *subject;
+@property (nonatomic, retain) NSMutableArray *tos;
 
 - (void).cxx_destruct;
 - (void)addCc:(id)arg1;

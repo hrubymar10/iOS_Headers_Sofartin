@@ -7,7 +7,7 @@
     NSMutableArray *_syncedCloudTabDevices;
 }
 
-@property(assign,copy) NSArray * syncedCloudTabDevices;
+@property (nonatomic, readonly, copy) NSArray *syncedCloudTabDevices;
 
 - (void).cxx_destruct;
 - (void)_addCloseRequestDictionary:(id)arg1 requestUUID:(id)arg2;

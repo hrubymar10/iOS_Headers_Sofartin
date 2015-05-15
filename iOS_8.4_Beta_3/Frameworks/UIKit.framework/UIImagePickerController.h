@@ -27,19 +27,19 @@
     long long _sourceType;
 }
 
-@property(assign,readwrite) bool allowsEditing;
-@property(assign,readwrite) bool allowsImageEditing;
-@property(assign,readwrite) long long cameraCaptureMode;
-@property(assign,readwrite) long long cameraDevice;
-@property(assign,readwrite) long long cameraFlashMode;
-@property(assign,retain) UIView * cameraOverlayView;
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } cameraViewTransform;
-@property(assign,readwrite) <UINavigationControllerDelegate><UIImagePickerControllerDelegate> * delegate;
-@property(assign,copy) NSArray * mediaTypes;
-@property(assign,readwrite) bool showsCameraControls;
-@property(assign,readwrite) long long sourceType;
-@property(assign,readwrite) double videoMaximumDuration;
-@property(assign,readwrite) long long videoQuality;
+@property (nonatomic) bool allowsEditing;
+@property (nonatomic) bool allowsImageEditing;
+@property (nonatomic) long long cameraCaptureMode;
+@property (nonatomic) long long cameraDevice;
+@property (nonatomic) long long cameraFlashMode;
+@property (nonatomic, retain) UIView *cameraOverlayView;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } cameraViewTransform;
+@property (nonatomic) <UINavigationControllerDelegate><UIImagePickerControllerDelegate> *delegate;
+@property (nonatomic, copy) NSArray *mediaTypes;
+@property (nonatomic) bool showsCameraControls;
+@property (nonatomic) long long sourceType;
+@property (nonatomic) double videoMaximumDuration;
+@property (nonatomic) long long videoQuality;
 
 + (bool)_isMediaTypeAvailable:(id)arg1 forSource:(long long)arg2;
 + (bool)_reviewCapturedItems;

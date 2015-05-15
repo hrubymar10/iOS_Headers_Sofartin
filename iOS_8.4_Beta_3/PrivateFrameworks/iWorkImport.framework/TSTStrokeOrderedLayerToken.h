@@ -13,15 +13,15 @@
     TSDStroke *_stroke;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <TSTStrokeLayerStrokeAndRange> * majorStrokeLayerToken;
-@property(assign,retain) <TSTStrokeLayerStrokeAndRange> * minorStrokeLayerToken;
-@property(assign,readwrite) int order;
-@property(assign,readwrite) struct TSTSimpleRange { long long x1; unsigned long long x2; } range;
-@property(assign,retain) TSDStroke * stroke;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <TSTStrokeLayerStrokeAndRange> *majorStrokeLayerToken;
+@property (nonatomic, retain) <TSTStrokeLayerStrokeAndRange> *minorStrokeLayerToken;
+@property (nonatomic) int order;
+@property (nonatomic) struct TSTSimpleRange { long long x1; unsigned long long x2; } range;
+@property (nonatomic, retain) TSDStroke *stroke;
+@property (readonly) Class superclass;
 
 + (id)tokenWithStroke:(id)arg1 range:(struct TSTSimpleRange { long long x1; unsigned long long x2; })arg2 order:(int)arg3 majorStrokeLayerToken:(id)arg4 minorStrokeLayerToken:(id)arg5;
 

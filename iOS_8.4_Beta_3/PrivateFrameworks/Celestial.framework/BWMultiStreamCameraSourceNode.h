@@ -73,15 +73,15 @@
     bool _videoStabilizationEnabled;
 }
 
-@property(assign,readonly) BWFigVideoCaptureDevice * captureDevice;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) BWNodeOutput * detectedFacesOutput;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) BWNodeOutput * previewOutput;
-@property(assign,readonly) BWNodeOutput * stillImageOutput;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) BWNodeOutput * videoCaptureOutput;
+@property (readonly) BWFigVideoCaptureDevice *captureDevice;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) BWNodeOutput *detectedFacesOutput;
+@property (readonly) unsigned long long hash;
+@property (readonly) BWNodeOutput *previewOutput;
+@property (readonly) BWNodeOutput *stillImageOutput;
+@property (readonly) Class superclass;
+@property (readonly) BWNodeOutput *videoCaptureOutput;
 
 + (id)cameraSourceNodeWithCaptureDevice:(id)arg1;
 + (void)initialize;

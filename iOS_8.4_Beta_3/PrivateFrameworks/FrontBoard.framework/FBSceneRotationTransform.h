@@ -7,8 +7,8 @@
     double _radians;
 }
 
-@property(assign,readwrite) long long degrees;
-@property(assign,readwrite) double radians;
+@property (nonatomic) long long degrees;
+@property (nonatomic) double radians;
 
 - (void)_updateTransform;
 - (long long)degrees;

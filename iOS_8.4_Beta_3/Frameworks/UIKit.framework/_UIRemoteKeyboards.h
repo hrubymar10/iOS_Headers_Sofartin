@@ -9,18 +9,18 @@
     NSHashTable *_windowControllers;
 }
 
-@property(assign,retain) NSXPCConnection * connection;
-@property(assign,readwrite) bool currentKeyboard;
-@property(assign,retain) _UIKeyboardChangedInformation * currentState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double intersectionHeight;
-@property(assign,readonly) bool keyboardActive;
-@property(assign,readonly) bool keyboardVisible;
-@property(assign,readonly) UIWindow * keyboardWindow;
-@property(assign,readonly) <_UIKeyboardArbitration> * proxy;
-@property(assign,readonly) Class superclass;
+@property (retain) NSXPCConnection *connection;
+@property bool currentKeyboard;
+@property (retain) _UIKeyboardChangedInformation *currentState;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) double intersectionHeight;
+@property (readonly) bool keyboardActive;
+@property (readonly) bool keyboardVisible;
+@property (readonly) UIWindow *keyboardWindow;
+@property (readonly) <_UIKeyboardArbitration> *proxy;
+@property (readonly) Class superclass;
 
 + (bool)enabled;
 + (id)sharedRemoteKeyboards;

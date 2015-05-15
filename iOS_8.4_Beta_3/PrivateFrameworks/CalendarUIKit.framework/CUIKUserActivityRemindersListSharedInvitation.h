@@ -6,7 +6,7 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (bool)_isMatchForSource:(id)arg1 andTitle:(id)arg2;

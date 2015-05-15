@@ -11,10 +11,10 @@
     double _verticalAccelerationBoostFactor;
 }
 
-@property(assign,readonly) NSString * keyPath;
-@property(assign,retain) id maximumRelativeValue;
-@property(assign,retain) id minimumRelativeValue;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) NSString *keyPath;
+@property (nonatomic, retain) id maximumRelativeValue;
+@property (nonatomic, retain) id minimumRelativeValue;
+@property (nonatomic, readonly) long long type;
 
 - (double)_horizontalAccelerationBoostFactor;
 - (id)_keyPathsAndRelativeValuesForPose:(id)arg1;

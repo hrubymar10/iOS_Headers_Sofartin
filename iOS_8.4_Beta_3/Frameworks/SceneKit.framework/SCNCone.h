@@ -12,11 +12,11 @@
     id _reserved;
 }
 
-@property(assign,readwrite) double bottomRadius;
-@property(assign,readwrite) double height;
-@property(assign,readwrite) long long heightSegmentCount;
-@property(assign,readwrite) long long radialSegmentCount;
-@property(assign,readwrite) double topRadius;
+@property (nonatomic) double bottomRadius;
+@property (nonatomic) double height;
+@property (nonatomic) long long heightSegmentCount;
+@property (nonatomic) long long radialSegmentCount;
+@property (nonatomic) double topRadius;
 
 + (id)SCNJSExportProtocol;
 + (id)coneWithTopRadius:(double)arg1 bottomRadius:(double)arg2 height:(double)arg3;

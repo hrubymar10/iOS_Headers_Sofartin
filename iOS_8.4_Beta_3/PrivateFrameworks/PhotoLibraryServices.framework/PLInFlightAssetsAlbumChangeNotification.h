@@ -10,9 +10,9 @@
     NSMutableSet *_uniquedOIDs;
 }
 
-@property(assign,retain) PLInFlightAssetsAlbum * album;
-@property(assign,retain) PLAssetContainerChangeNotification * backingNotification;
-@property(assign,retain) NSOrderedSet * oldOIDs;
+@property (nonatomic, readonly, retain) PLInFlightAssetsAlbum *album;
+@property (nonatomic, readonly, retain) PLAssetContainerChangeNotification *backingNotification;
+@property (nonatomic, readonly, retain) NSOrderedSet *oldOIDs;
 
 + (id)notificationForDerivedObject:(id)arg1 priorChangeState:(id)arg2 forBackingObjectNotification:(id)arg3;
 

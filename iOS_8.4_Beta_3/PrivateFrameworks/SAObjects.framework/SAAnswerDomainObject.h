@@ -4,11 +4,11 @@
 
 @interface SAAnswerDomainObject : SADomainObject
 
-@property(assign,retain) SAUIAppPunchOut * appPunchOut;
-@property(assign,copy) NSString * category;
-@property(assign,retain) SAAnswerDirectAnswer * directAnswer;
-@property(assign,copy) NSArray * linkedAnswerGroups;
-@property(assign,copy) NSArray * structuredAnswers;
+@property (nonatomic, retain) SAUIAppPunchOut *appPunchOut;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic, retain) SAAnswerDirectAnswer *directAnswer;
+@property (nonatomic, copy) NSArray *linkedAnswerGroups;
+@property (nonatomic, copy) NSArray *structuredAnswers;
 
 + (id)domainObject;
 + (id)domainObjectWithDictionary:(id)arg1 context:(id)arg2;

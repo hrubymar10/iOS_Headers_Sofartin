@@ -22,22 +22,22 @@
     UIKBRenderTraits *_variantTraits;
 }
 
-@property(assign,retain) UIKBGradient * backgroundGradient;
-@property(assign,readwrite) long long blendForm;
-@property(assign,readwrite) bool controlOpacities;
-@property(assign,retain) UIKBTextStyle * fallbackSymbolStyle;
-@property(assign,readwrite) double forceOpacity;
-@property(assign,readonly) NSArray * foregroundRenderEffects;
-@property(assign,retain) UIKBRenderGeometry * geometry;
-@property(assign,retain) NSString * hashString;
-@property(assign,retain) UIKBRenderTraits * highlightedVariantTraits;
-@property(assign,retain) UIKBGradient * layeredBackgroundGradient;
-@property(assign,retain) UIKBGradient * layeredForegroundGradient;
-@property(assign,readonly) NSArray * renderEffects;
-@property(assign,retain) UIKBTextStyle * secondarySymbolStyle;
-@property(assign,retain) UIKBTextStyle * symbolStyle;
-@property(assign,retain) NSArray * variantGeometries;
-@property(assign,retain) UIKBRenderTraits * variantTraits;
+@property (nonatomic, retain) UIKBGradient *backgroundGradient;
+@property (nonatomic) long long blendForm;
+@property (nonatomic) bool controlOpacities;
+@property (nonatomic, retain) UIKBTextStyle *fallbackSymbolStyle;
+@property (nonatomic) double forceOpacity;
+@property (nonatomic, readonly) NSArray *foregroundRenderEffects;
+@property (nonatomic, retain) UIKBRenderGeometry *geometry;
+@property (nonatomic, retain) NSString *hashString;
+@property (nonatomic, retain) UIKBRenderTraits *highlightedVariantTraits;
+@property (nonatomic, retain) UIKBGradient *layeredBackgroundGradient;
+@property (nonatomic, retain) UIKBGradient *layeredForegroundGradient;
+@property (nonatomic, readonly) NSArray *renderEffects;
+@property (nonatomic, retain) UIKBTextStyle *secondarySymbolStyle;
+@property (nonatomic, retain) UIKBTextStyle *symbolStyle;
+@property (nonatomic, retain) NSArray *variantGeometries;
+@property (nonatomic, retain) UIKBRenderTraits *variantTraits;
 
 + (id)emptyTraits;
 + (id)traitsWithGeometry:(id)arg1;

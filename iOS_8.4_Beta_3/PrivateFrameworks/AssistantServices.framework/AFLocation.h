@@ -10,15 +10,15 @@
     long long _resultType;
 }
 
-@property(assign,copy) NSURL * addressBookID;
-@property(assign,copy) NSString * addressLabel;
-@property(assign,copy) NSString * contactName;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSData * geoResult;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long resultType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSURL *addressBookID;
+@property (nonatomic, copy) NSString *addressLabel;
+@property (nonatomic, copy) NSString *contactName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSData *geoResult;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long resultType;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

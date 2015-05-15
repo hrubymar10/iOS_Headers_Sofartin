@@ -6,7 +6,7 @@
     BOOL _enabled;
 }
 
-@property(assign,readonly) long long cardType;
+@property (nonatomic, readonly) long long cardType;
 
 - (id)applyUpdatesWithElement:(id)arg1;
 - (long long)cardType;

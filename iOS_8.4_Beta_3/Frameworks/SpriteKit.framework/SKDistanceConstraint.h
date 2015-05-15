@@ -11,9 +11,9 @@
     } _point;
 }
 
-@property(assign,copy) SKRange * distanceRange;
-@property(assign,readwrite) SKNode * node;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } point;
+@property (copy) SKRange *distanceRange;
+@property SKNode *node;
+@property struct CGPoint { double x1; double x2; } point;
 
 + (id)constraintWithNode:(id)arg1 distanceRange:(id)arg2;
 + (id)constraintWithPoint:(struct CGPoint { double x1; double x2; })arg1 distanceRange:(id)arg2;

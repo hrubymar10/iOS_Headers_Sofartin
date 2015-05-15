@@ -7,12 +7,12 @@
     PTSRow *_row;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PTSRowTableViewCellDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PTSRow * row;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PTSRowTableViewCellDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PTSRow *row;
+@property (readonly) Class superclass;
 
 + (double)cellHeightForRow:(id)arg1;
 + (long long)cellStyleForRow:(id)arg1;

@@ -38,11 +38,11 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool statisticsEnabled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool statisticsEnabled;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)attachToDownloadCompletionHandler:(id)arg1 forResource:(id)arg2;

@@ -40,11 +40,11 @@
     } mOriginalContainingViewport;
 }
 
-@property(assign,readonly) TSCHChartInfo * chartInfo;
-@property(assign,readwrite) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } containingViewport;
-@property(assign,readonly) TSCH3DVector * containingViewportVector;
-@property(assign,readwrite) struct { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; } layoutSettings;
-@property(assign,readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } originalContainingViewport;
+@property (nonatomic, readonly) TSCHChartInfo *chartInfo;
+@property (nonatomic) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } containingViewport;
+@property (nonatomic, readonly) TSCH3DVector *containingViewportVector;
+@property (nonatomic) struct { bool x1; bool x2; bool x3; bool x4; bool x5; bool x6; unsigned long long x7; } layoutSettings;
+@property (nonatomic, readonly) struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; } originalContainingViewport;
 
 + (struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; })containingViewportForVector:(id)arg1;
 + (id)helperWithInfo:(id)arg1;

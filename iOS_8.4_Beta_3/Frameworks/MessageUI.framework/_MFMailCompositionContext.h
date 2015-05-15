@@ -26,26 +26,26 @@
     bool _usingDefaultAccount;
 }
 
-@property(assign,readonly) id autosaveIdentifier;
-@property(assign,copy) NSArray * bccRecipients;
-@property(assign,readwrite) unsigned long long caretPosition;
-@property(assign,copy) NSArray * ccRecipients;
-@property(assign,readonly) int composeType;
-@property(assign,readonly) NSString * contextID;
-@property(assign,readwrite) bool includeAttachments;
-@property(assign,readwrite) bool loadRest;
-@property(assign,retain) MFMessageViewingContext * loadingContext;
-@property(assign,retain) id originalContent;
-@property(assign,readonly) MFMailMessage * originalMessage;
-@property(assign,copy) NSString * originatingBundleID;
-@property(assign,readwrite) bool prefersFirstLineSelection;
-@property(assign,copy) NSString * sendingAddress;
-@property(assign,readwrite) bool showContentImmediately;
-@property(assign,readwrite) bool showKeyboardImmediately;
-@property(assign,readwrite) int sourceAccountManagement;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSArray * toRecipients;
-@property(assign,readwrite) bool usingDefaultAccount;
+@property (nonatomic, readonly) id autosaveIdentifier;
+@property (nonatomic, copy) NSArray *bccRecipients;
+@property (nonatomic) unsigned long long caretPosition;
+@property (nonatomic, copy) NSArray *ccRecipients;
+@property (nonatomic, readonly) int composeType;
+@property (nonatomic, readonly) NSString *contextID;
+@property (nonatomic) bool includeAttachments;
+@property (nonatomic) bool loadRest;
+@property (nonatomic, retain) MFMessageViewingContext *loadingContext;
+@property (nonatomic, retain) id originalContent;
+@property (nonatomic, readonly) MFMailMessage *originalMessage;
+@property (nonatomic, copy) NSString *originatingBundleID;
+@property (nonatomic) bool prefersFirstLineSelection;
+@property (nonatomic, copy) NSString *sendingAddress;
+@property (nonatomic) bool showContentImmediately;
+@property (nonatomic) bool showKeyboardImmediately;
+@property (nonatomic) int sourceAccountManagement;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSArray *toRecipients;
+@property (nonatomic) bool usingDefaultAccount;
 
 - (id)addAttachmentData:(id)arg1 mimeType:(id)arg2 fileName:(id)arg3;
 - (id)attachments;

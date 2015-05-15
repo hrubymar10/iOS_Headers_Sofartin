@@ -10,7 +10,7 @@
     double _sessionTimeout;
 }
 
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) int sessionIdentifier;
 
 - (void).cxx_destruct;
 - (void)_applicationDidBecomeActive:(id)arg1;

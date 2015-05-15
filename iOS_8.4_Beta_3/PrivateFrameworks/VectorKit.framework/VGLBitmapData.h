@@ -16,8 +16,8 @@
     struct __IOSurface { } *_surface;
 }
 
-@property(assign,readonly) struct VGLBitmapInfo { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; struct CGColorSpace {} *x6; unsigned int x7; } bitmapInfo;
-@property(assign,readonly) unsigned long long dataLength;
+@property (nonatomic, readonly) struct VGLBitmapInfo { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; struct CGColorSpace {} *x6; unsigned int x7; } bitmapInfo;
+@property (nonatomic, readonly) unsigned long long dataLength;
 
 - (void)_commonInitWithBytes:(void*)arg1 bitmapInfo:(const struct VGLBitmapInfo { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; struct CGColorSpace {} *x6; unsigned int x7; }*)arg2;
 - (struct VGLBitmapInfo { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; unsigned long long x5; struct CGColorSpace {} *x6; unsigned int x7; })bitmapInfo;

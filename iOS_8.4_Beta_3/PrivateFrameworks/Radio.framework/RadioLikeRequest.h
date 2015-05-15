@@ -11,8 +11,8 @@
     RadioStation *_station;
 }
 
-@property(assign,readwrite) bool isSeed;
-@property(assign,readwrite) int likeStatus;
+@property (nonatomic) bool isSeed;
+@property (nonatomic) int likeStatus;
 
 - (void).cxx_destruct;
 - (id)init;

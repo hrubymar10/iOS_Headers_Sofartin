@@ -9,13 +9,13 @@
     bool _isLoading;
 }
 
-@property(assign,readonly) NSArray * accounts;
-@property(assign,readonly) NSArray * activeAccounts;
-@property(assign,readonly) NSArray * activeSessions;
-@property(assign,readonly) NSArray * connectedAccounts;
-@property(assign,readonly) NSArray * connectingAccounts;
-@property(assign,readonly) bool isLoading;
-@property(assign,readonly) NSDictionary * loadOldStatusStore;
+@property (nonatomic, readonly) NSArray *accounts;
+@property (nonatomic, readonly) NSArray *activeAccounts;
+@property (nonatomic, readonly) NSArray *activeSessions;
+@property (nonatomic, readonly) NSArray *connectedAccounts;
+@property (nonatomic, readonly) NSArray *connectingAccounts;
+@property (nonatomic, readonly) bool isLoading;
+@property (nonatomic, readonly) NSDictionary *loadOldStatusStore;
 
 + (id)sharedAccountController;
 + (id)sharedInstance;

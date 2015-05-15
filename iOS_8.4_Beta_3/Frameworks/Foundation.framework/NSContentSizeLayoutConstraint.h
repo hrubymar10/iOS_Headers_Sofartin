@@ -7,8 +7,8 @@
     double _huggingPriority;
 }
 
-@property(assign,readonly) double compressionResistancePriority;
-@property(assign,readonly) double huggingPriority;
+@property (readonly) double compressionResistancePriority;
+@property (readonly) double huggingPriority;
 
 - (id)_priorityDescription;
 - (double)compressionResistancePriority;

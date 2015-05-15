@@ -6,7 +6,7 @@
     BWDroppedSample *_droppedSample;
 }
 
-@property(assign,readonly) BWDroppedSample * droppedSample;
+@property (readonly) BWDroppedSample *droppedSample;
 
 + (id)newMessageWithDroppedSample:(id)arg1;
 

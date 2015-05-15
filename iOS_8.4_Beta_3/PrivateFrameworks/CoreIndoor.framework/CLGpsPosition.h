@@ -36,13 +36,13 @@
     double _timestampGps;
 }
 
-@property(assign,readwrite) double deltaDistance;
-@property(assign,readwrite) double deltaDistanceAccuracy;
-@property(assign,readwrite) struct { int x1; struct { double x_2_1_1; double x_2_1_2; } x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; int x11; double x12; int x13; struct { double x_14_1_1; double x_14_1_2; } x14; double x15; int x16; unsigned int x17; } gpsLocation;
-@property(assign,readwrite) float horzUncSemiMaj;
-@property(assign,readwrite) float horzUncSemiMajAz;
-@property(assign,readwrite) float horzUncSemiMin;
-@property(assign,readwrite) double timestampGps;
+@property (nonatomic) double deltaDistance;
+@property (nonatomic) double deltaDistanceAccuracy;
+@property (nonatomic) struct { int x1; struct { double x_2_1_1; double x_2_1_2; } x2; double x3; double x4; double x5; double x6; double x7; double x8; double x9; double x10; int x11; double x12; int x13; struct { double x_14_1_1; double x_14_1_2; } x14; double x15; int x16; unsigned int x17; } gpsLocation;
+@property (nonatomic) float horzUncSemiMaj;
+@property (nonatomic) float horzUncSemiMajAz;
+@property (nonatomic) float horzUncSemiMin;
+@property (nonatomic) double timestampGps;
 
 + (bool)supportsSecureCoding;
 

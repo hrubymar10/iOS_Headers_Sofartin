@@ -4,16 +4,16 @@
 
 @interface SUScriptSplitViewController : SUScriptViewController
 
-@property(assign,retain) SUScriptViewController * firstViewController;
-@property(assign,retain) id minimumPaneSize;
-@property(assign,retain) SUScriptViewController * secondViewController;
-@property(assign,retain) id splitPosition;
-@property(assign,retain) id splitShadowColor;
-@property(assign,retain) NSNumber * splitShadowOpacity;
-@property(assign,retain) NSNumber * splitShadowRadius;
-@property(assign,retain) NSString * splitType;
-@property(assign,retain) NSString * title;
-@property(assign,readwrite) bool usesSharedPlaceholder;
+@property (retain) SUScriptViewController *firstViewController;
+@property (retain) id minimumPaneSize;
+@property (retain) SUScriptViewController *secondViewController;
+@property (retain) id splitPosition;
+@property (retain) id splitShadowColor;
+@property (retain) NSNumber *splitShadowOpacity;
+@property (retain) NSNumber *splitShadowRadius;
+@property (retain) NSString *splitType;
+@property (retain) NSString *title;
+@property bool usesSharedPlaceholder;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

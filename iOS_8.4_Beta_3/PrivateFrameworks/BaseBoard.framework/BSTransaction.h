@@ -20,21 +20,21 @@
     unsigned long long _state;
 }
 
-@property(assign,retain) NSArray * childTransactions;
-@property(getter=isComplete,assign,readonly) bool complete;
-@property(assign,copy) id completionBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isFailed,assign,readonly) bool failed;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInterruptable,assign,readonly) bool interruptable;
-@property(getter=isInterrupted,assign,readonly) bool interrupted;
-@property(assign,retain) NSSet * milestones;
-@property(assign,retain) BSTransaction * parentTransaction;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(getter=isRunning,assign,readonly) bool running;
-@property(assign,readonly) unsigned long long state;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSArray *childTransactions;
+@property (getter=isComplete, nonatomic, readonly) bool complete;
+@property (nonatomic, copy) id completionBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isFailed, nonatomic, readonly) bool failed;
+@property (readonly) unsigned long long hash;
+@property (getter=isInterruptable, nonatomic, readonly) bool interruptable;
+@property (getter=isInterrupted, nonatomic, readonly) bool interrupted;
+@property (nonatomic, readonly, retain) NSSet *milestones;
+@property (nonatomic, retain) BSTransaction *parentTransaction;
+@property (nonatomic, readonly, retain) NSObject<OS_dispatch_queue> *queue;
+@property (getter=isRunning, nonatomic, readonly) bool running;
+@property (nonatomic, readonly) unsigned long long state;
+@property (readonly) Class superclass;
 
 - (void)_addAuditHistory:(id)arg1;
 - (void)_addChildTransaction:(id)arg1;

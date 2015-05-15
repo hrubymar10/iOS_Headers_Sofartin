@@ -13,8 +13,8 @@
     id _reserved;
 }
 
-@property(assign,readonly) SCNNode * chainRootNode;
-@property(assign,readwrite) struct SCNVector3 { float x1; float x2; float x3; } targetPosition;
+@property (nonatomic, readonly) SCNNode *chainRootNode;
+@property (nonatomic) struct SCNVector3 { float x1; float x2; float x3; } targetPosition;
 
 + (id)SCNJSExportProtocol;
 + (id)inverseKinematicsConstraintWithChainRootNode:(id)arg1;

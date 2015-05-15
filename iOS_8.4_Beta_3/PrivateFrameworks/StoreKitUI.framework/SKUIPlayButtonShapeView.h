@@ -4,7 +4,7 @@
 
 @interface SKUIPlayButtonShapeView : UIView
 
-@property(assign,retain) CAShapeLayer * layer;
+@property (nonatomic, readonly, retain) CAShapeLayer *layer;
 
 + (Class)layerClass;
 

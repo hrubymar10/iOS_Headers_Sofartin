@@ -6,7 +6,7 @@
     PLNSNotificationOperatorComposition *_timeNotifications;
 }
 
-@property(assign,retain) PLNSNotificationOperatorComposition * timeNotifications;
+@property (retain) PLNSNotificationOperatorComposition *timeNotifications;
 
 + (id)accountingGroupDefinitions;
 + (id)entryEventBackwardDefinitions;

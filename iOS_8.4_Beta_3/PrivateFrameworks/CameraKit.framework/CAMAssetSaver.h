@@ -10,11 +10,11 @@
     NSMutableArray *__transientStillImageResponses;
 }
 
-@property(assign,retain) NSMutableDictionary * _inProgressAvalancheFileDescriptors;
-@property(assign,retain) NSMutableDictionary * _inProgressNebulaFileDescriptors;
-@property(assign,readonly) NSMutableDictionary * _inflightAssets;
-@property(assign,retain) NSMutableArray * _pendingImageJobs;
-@property(assign,readonly) NSMutableArray * _transientStillImageResponses;
+@property (nonatomic, retain) NSMutableDictionary *_inProgressAvalancheFileDescriptors;
+@property (nonatomic, retain) NSMutableDictionary *_inProgressNebulaFileDescriptors;
+@property (nonatomic, readonly) NSMutableDictionary *_inflightAssets;
+@property (nonatomic, retain) NSMutableArray *_pendingImageJobs;
+@property (nonatomic, readonly) NSMutableArray *_transientStillImageResponses;
 
 + (void)resetNebulaCaptureIsBusy;
 + (void)setNebulaCaptureIsBusy:(bool)arg1;

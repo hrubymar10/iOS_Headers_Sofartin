@@ -7,8 +7,8 @@
     NSAttributedString *_text;
 }
 
-@property(assign,readwrite) long long index;
-@property(assign,copy) NSAttributedString * text;
+@property (nonatomic) long long index;
+@property (nonatomic, readonly, copy) NSAttributedString *text;
 
 + (id)_messageItemWithPartsDeleted:(id)arg1 fromMessageItem:(id)arg2;
 + (id)_newMessagePartsForMessageItem:(id)arg1;

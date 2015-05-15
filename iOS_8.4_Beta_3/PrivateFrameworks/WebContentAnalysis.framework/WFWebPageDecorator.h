@@ -8,7 +8,7 @@
     NSObject<WFWebPageProtocol> *webPageStripper;
 }
 
-@property(assign,retain) NSString * URLString;
+@property (retain) NSString *URLString;
 
 + (id)_plainTextWithSelector:(SEL)arg1 object:(id)arg2;
 + (id)plainTextWithWebPageData:(id)arg1;

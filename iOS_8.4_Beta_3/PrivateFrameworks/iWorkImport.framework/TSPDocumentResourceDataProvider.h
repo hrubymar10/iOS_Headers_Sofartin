@@ -15,13 +15,13 @@
     NSHashTable *_storagesCache;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long estimatedDownloadSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isEstimatedDownloadSizePrecise;
-@property(assign,readonly) bool needsDownload;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long estimatedDownloadSize;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isEstimatedDownloadSizePrecise;
+@property (nonatomic, readonly) bool needsDownload;
+@property (readonly) Class superclass;
 
 + (void)didCompleteDocumentResourceDownloadWithDigestString:(id)arg1;
 + (void)registerDownloadNotificationClass:(Class)arg1;

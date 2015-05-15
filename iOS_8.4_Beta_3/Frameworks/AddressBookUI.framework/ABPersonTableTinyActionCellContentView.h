@@ -9,8 +9,8 @@
     UIButton *_highlightedButton;
 }
 
-@property(assign,readonly) NSArray * actions;
-@property(assign,readwrite) ABPersonTableTinyActionCell * cell;
+@property (nonatomic, readonly) NSArray *actions;
+@property (nonatomic) ABPersonTableTinyActionCell *cell;
 
 - (id)actions;
 - (id)cell;

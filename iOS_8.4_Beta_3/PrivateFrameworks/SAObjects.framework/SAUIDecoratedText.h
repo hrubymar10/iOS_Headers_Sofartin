@@ -4,13 +4,13 @@
 
 @interface SAUIDecoratedText : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * ducId;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * regions;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * text;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *ducId;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *regions;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *text;
 
 + (id)decoratedText;
 + (id)decoratedTextWithDictionary:(id)arg1 context:(id)arg2;

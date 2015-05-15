@@ -11,7 +11,7 @@
     } _position;
 }
 
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; } position;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; unsigned long long x3; unsigned long long x4; } position;
 
 + (id)copyDefaultContext;
 + (double)rowHeightForContext:(id)arg1 representedObject:(id)arg2;

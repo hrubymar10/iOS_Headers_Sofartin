@@ -4,11 +4,11 @@
 
 @interface SAValueCondition : AceObject <SASupportCondition>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * legalValues;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *legalValues;
+@property (readonly) Class superclass;
 
 + (id)valueCondition;
 + (id)valueConditionWithDictionary:(id)arg1 context:(id)arg2;

@@ -9,13 +9,13 @@
     bool _sentCancel;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long ident;
-@property(assign,retain) NSError * immediateError;
-@property(assign,retain) <NDBackgroundSessionProtocol> * remoteSession;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long ident;
+@property (retain) NSError *immediateError;
+@property (retain) <NDBackgroundSessionProtocol> *remoteSession;
+@property (readonly) Class superclass;
 
 - (void)_onqueue_adjustPoolPriority;
 - (void)_onqueue_adjustPriorityHint:(float)arg1;

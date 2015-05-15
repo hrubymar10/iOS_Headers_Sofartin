@@ -42,20 +42,20 @@
     bool _usesModernStyle;
 }
 
-@property(setter=_setInLayoutSubviews:,assign,readwrite) bool _isInLayoutSubviews;
-@property(setter=_setMagnifierEnabled:,assign,readwrite) bool _magnifierEnabled;
-@property(assign,readwrite) <UIPickerViewDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <UIPickerViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=_highlightColor,setter=_setHighlightColor:,assign,retain) UIColor * highlightColor;
-@property(assign,readonly) long long numberOfComponents;
-@property(assign,readwrite) bool showsSelectionIndicator;
-@property(assign,readonly) Class superclass;
-@property(getter=_textColor,setter=_setTextColor:,assign,retain) UIColor * textColor;
-@property(getter=_textShadowColor,setter=_setTextShadowColor:,assign,retain) UIColor * textShadowColor;
-@property(getter=_usesModernStyle,setter=_setUsesModernStyle:,assign,readwrite) bool usesModernStyle;
+@property (setter=_setInLayoutSubviews:, nonatomic) bool _isInLayoutSubviews;
+@property (setter=_setMagnifierEnabled:, nonatomic) bool _magnifierEnabled;
+@property (nonatomic) <UIPickerViewDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <UIPickerViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=_highlightColor, setter=_setHighlightColor:, nonatomic, retain) UIColor *highlightColor;
+@property (nonatomic, readonly) long long numberOfComponents;
+@property (nonatomic) bool showsSelectionIndicator;
+@property (readonly) Class superclass;
+@property (getter=_textColor, setter=_setTextColor:, nonatomic, retain) UIColor *textColor;
+@property (getter=_textShadowColor, setter=_setTextShadowColor:, nonatomic, retain) UIColor *textShadowColor;
+@property (getter=_usesModernStyle, setter=_setUsesModernStyle:) bool usesModernStyle;
 
 + (id)_modernCenterCellFont;
 + (id)_modernNonCenterCellFont;

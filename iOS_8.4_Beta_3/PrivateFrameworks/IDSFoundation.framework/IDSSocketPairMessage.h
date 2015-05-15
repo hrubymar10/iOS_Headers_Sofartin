@@ -9,11 +9,11 @@
     NSData *_underlyingData;
 }
 
-@property(assign,readonly) unsigned char command;
-@property(assign,retain) <NSObject> * context;
-@property(assign,retain) NSString * topic;
-@property(assign,retain) NSData * underlyingData;
-@property(assign,readonly) unsigned long long underlyingDataLength;
+@property (nonatomic, readonly) unsigned char command;
+@property (nonatomic, retain) <NSObject> *context;
+@property (nonatomic, retain) NSString *topic;
+@property (nonatomic, readonly, retain) NSData *underlyingData;
+@property (nonatomic, readonly) unsigned long long underlyingDataLength;
 
 + (unsigned int)dataLengthFromHeaderData:(id)arg1;
 + (unsigned int)headerDataSize;

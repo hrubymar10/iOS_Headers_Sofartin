@@ -8,9 +8,9 @@
     NSData *_shortSharingTokenHashData;
 }
 
-@property(assign,retain) NSString * routingKey;
-@property(assign,retain) CKShareID * shareID;
-@property(assign,retain) NSData * shortSharingTokenHashData;
+@property (nonatomic, retain) NSString *routingKey;
+@property (nonatomic, retain) CKShareID *shareID;
+@property (nonatomic, retain) NSData *shortSharingTokenHashData;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

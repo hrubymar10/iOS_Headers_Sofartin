@@ -6,7 +6,7 @@
     struct DOMObjectInternal { } *_internal;
 }
 
-@property(assign,readonly) DOMStyleSheet * sheet;
+@property (readonly) DOMStyleSheet *sheet;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

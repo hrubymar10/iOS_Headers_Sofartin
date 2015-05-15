@@ -6,12 +6,12 @@
     struct __CFPhoneNumber { } *_phoneNumberRef;
 }
 
-@property(assign,readonly) NSString * countryCode;
-@property(assign,readonly) NSString * digits;
-@property(assign,readonly) NSString * formattedInternationalRepresentation;
-@property(assign,readonly) NSString * formattedRepresentation;
-@property(assign,readwrite) struct __CFPhoneNumber { }* phoneNumberRef;
-@property(assign,readonly) NSString * unformattedInternationalRepresentation;
+@property (readonly) NSString *countryCode;
+@property (readonly) NSString *digits;
+@property (readonly) NSString *formattedInternationalRepresentation;
+@property (readonly) NSString *formattedRepresentation;
+@property struct __CFPhoneNumber { }*phoneNumberRef;
+@property (readonly) NSString *unformattedInternationalRepresentation;
 
 + (id)phoneNumberWithCFPhoneNumberRef:(struct __CFPhoneNumber { }*)arg1;
 + (id)phoneNumberWithDigits:(id)arg1 countryCode:(id)arg2;

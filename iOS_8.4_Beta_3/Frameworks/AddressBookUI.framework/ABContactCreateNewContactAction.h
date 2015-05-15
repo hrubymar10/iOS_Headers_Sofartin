@@ -7,12 +7,12 @@
     UIViewController *_presentingViewController;
 }
 
-@property(assign,retain) CNContact * createdContact;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIViewController * presentingViewController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) CNContact *createdContact;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIViewController *presentingViewController;
+@property (readonly) Class superclass;
 
 - (id)createdContact;
 - (void)dealloc;

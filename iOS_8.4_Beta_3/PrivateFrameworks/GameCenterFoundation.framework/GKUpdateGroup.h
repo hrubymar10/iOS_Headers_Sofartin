@@ -11,13 +11,13 @@
     NSObject<OS_dispatch_queue> *_targetQueue;
 }
 
-@property(assign,readwrite) NSObject<OS_dispatch_group> * dispatchGroup;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSLock * lock;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSMutableArray * notifiers;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * targetQueue;
-@property(assign,readonly) long long updateCount;
+@property (nonatomic) NSObject<OS_dispatch_group> *dispatchGroup;
+@property (retain) NSError *error;
+@property (retain) NSLock *lock;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSMutableArray *notifiers;
+@property (nonatomic) NSObject<OS_dispatch_queue> *targetQueue;
+@property (nonatomic, readonly) long long updateCount;
 
 + (id)updateGroup;
 + (id)updateGroupForTargetQueue:(id)arg1;

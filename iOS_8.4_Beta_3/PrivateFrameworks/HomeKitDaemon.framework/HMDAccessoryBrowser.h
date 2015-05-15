@@ -11,18 +11,18 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) HMDAccessoryManager * accessoryManager;
-@property(assign,retain) NSMutableSet * browsingXPCConnections;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long generationCounter;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) HMMessageDispatcher * messageDispatcher;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * messageReceiveQueue;
-@property(assign,readonly) NSUUID * messageTargetUUID;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSUUID * uuid;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) HMDAccessoryManager *accessoryManager;
+@property (nonatomic, retain) NSMutableSet *browsingXPCConnections;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) unsigned long long generationCounter;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) HMMessageDispatcher *messageDispatcher;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *messageReceiveQueue;
+@property (nonatomic, readonly) NSUUID *messageTargetUUID;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSUUID *uuid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_handleInvalidatedXPCConnection:(id)arg1;

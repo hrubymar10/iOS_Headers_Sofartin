@@ -7,8 +7,8 @@
     id _requiredCapabilities;
 }
 
-@property(assign,readonly) NSDictionary * mismatches;
-@property(assign,readonly) id requiredCapabilities;
+@property (readonly) NSDictionary *mismatches;
+@property (readonly) id requiredCapabilities;
 
 - (void)_postDefaultDialog;
 - (void)dealloc;

@@ -9,13 +9,13 @@
     id _propertyListRepresentation;
 }
 
-@property(assign,readonly) id _artificiallyRepeatingPropertyListRepresentation;
-@property(setter=_setComplexPatternDescription:,assign,retain) id _complexPatternDescription;
-@property(setter=_setDuration:,assign,readwrite) double _duration;
-@property(setter=_setPropertyListRepresentation:,assign,retain) id _propertyListRepresentation;
-@property(assign,readonly) double computedDuration;
-@property(assign,retain) id contextObject;
-@property(assign,readonly) id propertyListRepresentation;
+@property (nonatomic, readonly) id _artificiallyRepeatingPropertyListRepresentation;
+@property (setter=_setComplexPatternDescription:, nonatomic, retain) id _complexPatternDescription;
+@property (setter=_setDuration:, nonatomic) double _duration;
+@property (setter=_setPropertyListRepresentation:, nonatomic, retain) id _propertyListRepresentation;
+@property (nonatomic, readonly) double computedDuration;
+@property (nonatomic, retain) id contextObject;
+@property (nonatomic, readonly) id propertyListRepresentation;
 
 + (id)complexVibrationPatternWithDurationsForVibrationsAndPauses:(double)arg1;
 + (bool)isValidVibrationPatternPropertyListRepresentation:(id)arg1;

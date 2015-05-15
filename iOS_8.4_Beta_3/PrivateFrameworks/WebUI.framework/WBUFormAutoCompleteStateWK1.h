@@ -7,7 +7,7 @@
     WebFrame *_webFrame;
 }
 
-@property(assign,readonly) WebFrame * webFrame;
+@property (nonatomic, readonly) WebFrame *webFrame;
 
 - (void).cxx_destruct;
 - (void)autoFillGeneratedPassword:(id)arg1 inForm:(double)arg2;

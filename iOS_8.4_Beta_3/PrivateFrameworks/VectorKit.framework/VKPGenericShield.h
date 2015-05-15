@@ -7,8 +7,8 @@
     NSMutableArray *_variants;
 }
 
-@property(assign,readwrite) int style;
-@property(assign,retain) NSMutableArray * variants;
+@property (nonatomic) int style;
+@property (nonatomic, retain) NSMutableArray *variants;
 
 - (void)addVariant:(id)arg1;
 - (void)clearVariants;

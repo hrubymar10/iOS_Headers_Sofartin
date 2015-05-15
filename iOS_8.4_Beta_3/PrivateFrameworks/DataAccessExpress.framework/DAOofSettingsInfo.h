@@ -7,8 +7,8 @@
     NSString *_requestID;
 }
 
-@property(assign,readwrite) <DAOofResponseDelegate> * consumer;
-@property(assign,retain) NSString * requestID;
+@property (nonatomic) <DAOofResponseDelegate> *consumer;
+@property (nonatomic, retain) NSString *requestID;
 
 - (void).cxx_destruct;
 - (id)consumer;

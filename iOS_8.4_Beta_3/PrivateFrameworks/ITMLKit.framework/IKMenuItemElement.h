@@ -4,7 +4,7 @@
 
 @interface IKMenuItemElement : IKViewElement
 
-@property(assign,retain) IKTextElement * title;
+@property (nonatomic, readonly, retain) IKTextElement *title;
 
 - (id)title;
 

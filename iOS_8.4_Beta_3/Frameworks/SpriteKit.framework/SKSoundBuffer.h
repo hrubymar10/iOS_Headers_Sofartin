@@ -8,8 +8,8 @@
     NSString *_path;
 }
 
-@property(assign,readonly) unsigned int bufferId;
-@property(assign,readonly) double duration;
+@property (nonatomic, readonly) unsigned int bufferId;
+@property (nonatomic, readonly) double duration;
 
 + (id)bufferWithFileNamed:(id)arg1;
 

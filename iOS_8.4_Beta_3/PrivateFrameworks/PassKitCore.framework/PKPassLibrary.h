@@ -8,7 +8,7 @@
     PKXPCService *_remoteService;
 }
 
-@property(assign,readwrite) <PKPassLibraryDelegate> * delegate;
+@property (nonatomic) <PKPassLibraryDelegate> *delegate;
 
 + (bool)isPassLibraryAvailable;
 + (bool)isPaymentPassActivationAvailable;

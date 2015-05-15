@@ -7,7 +7,7 @@
     NSMutableArray *_itemIDs;
 }
 
-@property(assign,readonly) unsigned long long count;
+@property (nonatomic, readonly) unsigned long long count;
 
 + (bool)supportsSecureCoding;
 

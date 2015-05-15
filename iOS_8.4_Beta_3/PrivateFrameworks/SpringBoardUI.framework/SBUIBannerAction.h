@@ -8,9 +8,9 @@
     NSString *_remoteViewControllerClassName;
 }
 
-@property(assign,copy) id actionBlock;
-@property(assign,copy) NSString * remoteServiceBundleIdentifier;
-@property(assign,copy) NSString * remoteViewControllerClassName;
+@property (nonatomic, copy) id actionBlock;
+@property (nonatomic, copy) NSString *remoteServiceBundleIdentifier;
+@property (nonatomic, copy) NSString *remoteViewControllerClassName;
 
 + (id)actionWithBlock:(id)arg1;
 

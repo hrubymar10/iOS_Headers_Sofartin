@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_replyQueue;
 }
 
-@property(assign,retain) NSObject<OS_xpc_object> * pkd;
-@property(assign,readwrite) long long protocolVersion;
-@property(assign,retain) NSObject<OS_dispatch_queue> * replyQueue;
+@property (retain) NSObject<OS_xpc_object> *pkd;
+@property long long protocolVersion;
+@property (retain) NSObject<OS_dispatch_queue> *replyQueue;
 
 + (id)convertToXPC:(id)arg1 version:(unsigned long long)arg2;
 

@@ -7,8 +7,8 @@
     SSURLRequestProperties *_urlRequestProperties;
 }
 
-@property(assign,readonly) SSURLRequestProperties * URLRequestProperties;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) SSURLRequestProperties *URLRequestProperties;
+@property (nonatomic, readonly) NSString *title;
 
 - (id)URLRequestProperties;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

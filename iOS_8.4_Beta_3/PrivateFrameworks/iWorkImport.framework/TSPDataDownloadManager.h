@@ -8,7 +8,7 @@
     TSPDocumentResourceDataProvider *_docServerDataProvider;
 }
 
-@property(assign,readwrite) <TSPDataDownloadManagerDelegate> * delegate;
+@property (nonatomic) <TSPDataDownloadManagerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

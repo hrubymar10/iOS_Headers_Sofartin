@@ -10,16 +10,16 @@
     struct __SCDynamicStore { } *_store;
 }
 
-@property(assign,retain) IMConnectionMonitor * connectionMonitor;
-@property(assign,readonly) struct __SCDynamicStore { }* getDynamicStore;
-@property(assign,readonly) bool isNetworkUp;
-@property(assign,readwrite) bool lastPostedNetworkUp;
-@property(assign,readonly) NSString * myGatewayAddress;
-@property(assign,retain) NSString * myIP;
-@property(assign,readonly) NSString * myIPAddress;
-@property(assign,readonly) NSArray * myIPAddresses;
-@property(assign,retain) NSArray * myIPs;
-@property(assign,readwrite) struct __SCDynamicStore { }* store;
+@property (nonatomic, retain) IMConnectionMonitor *connectionMonitor;
+@property (nonatomic, readonly) struct __SCDynamicStore { }*getDynamicStore;
+@property (nonatomic, readonly) bool isNetworkUp;
+@property (nonatomic) bool lastPostedNetworkUp;
+@property (nonatomic, readonly) NSString *myGatewayAddress;
+@property (nonatomic, retain) NSString *myIP;
+@property (nonatomic, readonly) NSString *myIPAddress;
+@property (nonatomic, readonly) NSArray *myIPAddresses;
+@property (nonatomic, retain) NSArray *myIPs;
+@property (nonatomic) struct __SCDynamicStore { }*store;
 
 + (void)disableNotifications;
 + (bool)enableNotifications;

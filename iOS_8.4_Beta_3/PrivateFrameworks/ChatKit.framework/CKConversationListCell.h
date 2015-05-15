@@ -15,9 +15,9 @@
     UIImageView *_unreadIndicatorImageView;
 }
 
-@property(assign,retain) NSDate * searchMessageDate;
-@property(assign,copy) NSString * searchMessageGUID;
-@property(assign,copy) NSString * searchSummaryText;
+@property (nonatomic, retain) NSDate *searchMessageDate;
+@property (nonatomic, copy) NSString *searchMessageGUID;
+@property (nonatomic, copy) NSString *searchSummaryText;
 
 + (double)cellHeight;
 + (id)identifier;

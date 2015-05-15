@@ -4,10 +4,10 @@
 
 @interface SAGKEncyclopediaDomainObject : SAGKDomainObject
 
-@property(assign,copy) NSArray * linkedAnswerGroups;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * nameAnnotation;
-@property(assign,copy) NSArray * structuredAnswers;
+@property (nonatomic, copy) NSArray *linkedAnswerGroups;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *nameAnnotation;
+@property (nonatomic, copy) NSArray *structuredAnswers;
 
 + (id)encyclopediaDomainObject;
 + (id)encyclopediaDomainObjectWithDictionary:(id)arg1 context:(id)arg2;

@@ -9,10 +9,10 @@
     NSString *_transactionIdentifier;
 }
 
-@property(assign,copy) NSData * paymentData;
-@property(assign,copy) NSString * paymentInstrumentName;
-@property(assign,copy) NSString * paymentNetwork;
-@property(assign,copy) NSString * transactionIdentifier;
+@property (nonatomic, copy) NSData *paymentData;
+@property (nonatomic, copy) NSString *paymentInstrumentName;
+@property (nonatomic, copy) NSString *paymentNetwork;
+@property (nonatomic, copy) NSString *transactionIdentifier;
 
 + (bool)supportsSecureCoding;
 

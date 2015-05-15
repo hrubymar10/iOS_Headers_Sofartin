@@ -7,8 +7,8 @@
     id _internal;
 }
 
-@property(assign,readwrite) bool ignoreRead;
-@property(assign,retain) ALAssetRepresentationPrivate * internal;
+@property bool ignoreRead;
+@property (nonatomic, retain) ALAssetRepresentationPrivate *internal;
 
 + (void)_enableImageDataUsesMap;
 

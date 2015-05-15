@@ -7,10 +7,10 @@
     NSString *_title;
 }
 
-@property(assign,readonly) NSString * URLTarget;
-@property(assign,readonly) id actionParameter;
-@property(assign,readonly) NSString * buttonAction;
-@property(assign,copy) NSString * buttonTitle;
+@property (nonatomic, readonly) NSString *URLTarget;
+@property (nonatomic, readonly) id actionParameter;
+@property (nonatomic, readonly) NSString *buttonAction;
+@property (nonatomic, readonly, copy) NSString *buttonTitle;
 
 + (id)buttonWithTitle:(id)arg1;
 

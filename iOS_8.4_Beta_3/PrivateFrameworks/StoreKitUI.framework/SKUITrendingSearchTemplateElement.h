@@ -4,8 +4,8 @@
 
 @interface SKUITrendingSearchTemplateElement : SKUIViewElement
 
-@property(assign,readonly) NSArray * buttons;
-@property(assign,readonly) SKUILabelViewElement * titleLabel;
+@property (nonatomic, readonly) NSArray *buttons;
+@property (nonatomic, readonly) SKUILabelViewElement *titleLabel;
 
 - (id)buttons;
 - (id)titleLabel;

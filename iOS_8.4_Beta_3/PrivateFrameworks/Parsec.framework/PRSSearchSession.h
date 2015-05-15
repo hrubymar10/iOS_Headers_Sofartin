@@ -23,21 +23,21 @@
     bool _valid;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * clientQueue;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableFeedbackDebugLogging;
-@property(assign,readonly) NSString * fteLearnMoreString;
-@property(assign,readonly) NSString * fteLocString;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * lookupFirstUseDescription1;
-@property(assign,readonly) NSString * lookupFirstUseDescription2;
-@property(assign,readwrite) double retryAfter;
-@property(assign,readonly) double searchRenderTimeout;
-@property(assign,readwrite) double sessionStartTime;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * supportedServices;
-@property(getter=isValid,assign,readonly) bool valid;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *clientQueue;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property bool enableFeedbackDebugLogging;
+@property (nonatomic, readonly) NSString *fteLearnMoreString;
+@property (nonatomic, readonly) NSString *fteLocString;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *lookupFirstUseDescription1;
+@property (nonatomic, readonly) NSString *lookupFirstUseDescription2;
+@property double retryAfter;
+@property (nonatomic, readonly) double searchRenderTimeout;
+@property double sessionStartTime;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *supportedServices;
+@property (getter=isValid, nonatomic, readonly) bool valid;
 
 - (void).cxx_destruct;
 - (void)_endSession;

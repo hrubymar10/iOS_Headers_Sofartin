@@ -7,8 +7,8 @@
     id _weak_weakSelf;
 }
 
-@property(assign,copy) id handler;
-@property(assign,readwrite) id weakSelf;
+@property (nonatomic, copy) id handler;
+@property (nonatomic) id weakSelf;
 
 - (void)dealloc;
 - (id)handler;

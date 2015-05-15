@@ -7,8 +7,8 @@
     int _sectionLocation;
 }
 
-@property(assign,readwrite) int abCellStyle;
-@property(assign,readwrite) int sectionLocation;
+@property (nonatomic) int abCellStyle;
+@property (nonatomic) int sectionLocation;
 
 - (int)abCellStyle;
 - (int)sectionLocation;

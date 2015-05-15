@@ -6,7 +6,7 @@
     NSAttributedString *_transcriptButtonText;
 }
 
-@property(assign,copy) NSAttributedString * transcriptButtonText;
+@property (nonatomic, copy) NSAttributedString *transcriptButtonText;
 
 - (Class)cellClass;
 - (void)dealloc;

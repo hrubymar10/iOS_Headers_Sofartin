@@ -7,7 +7,7 @@
     int _printerState;
 }
 
-@property(assign,readwrite) int printerState;
+@property (nonatomic) int printerState;
 
 - (int)printerState;
 - (void)setPrinterState:(int)arg1;

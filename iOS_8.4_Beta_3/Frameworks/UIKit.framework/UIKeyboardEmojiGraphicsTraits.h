@@ -25,23 +25,23 @@
     double _sectionOffset;
 }
 
-@property(assign,readonly) double alertTextWidth;
-@property(assign,readonly) double categoryHeaderFontSize;
-@property(assign,readonly) double categoryHeaderHeight;
-@property(assign,readonly) double categoryHeaderLeftPadding;
-@property(assign,readonly) double categorySelectedCirPadding;
-@property(assign,readonly) double categorySelectedCirWidth;
-@property(assign,readonly) double columnOffset;
-@property(assign,readonly) double emojiKeyWidth;
-@property(assign,readonly) struct CGSize { double x1; double x2; } fakeEmojiKeySize;
-@property(assign,readonly) double inputViewLeftMostPadding;
-@property(assign,readonly) double inputViewRightMostPadding;
-@property(assign,readonly) double minimumInteritemSpacing;
-@property(assign,readonly) double minimumLineSpacing;
-@property(assign,readonly) long long prepolulatedRecentCount;
-@property(assign,readonly) double rightBiasPercentage;
-@property(assign,readonly) double scrubViewTopPadding;
-@property(assign,readonly) double sectionOffset;
+@property (nonatomic, readonly) double alertTextWidth;
+@property (nonatomic, readonly) double categoryHeaderFontSize;
+@property (nonatomic, readonly) double categoryHeaderHeight;
+@property (nonatomic, readonly) double categoryHeaderLeftPadding;
+@property (nonatomic, readonly) double categorySelectedCirPadding;
+@property (nonatomic, readonly) double categorySelectedCirWidth;
+@property (nonatomic, readonly) double columnOffset;
+@property (nonatomic, readonly) double emojiKeyWidth;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } fakeEmojiKeySize;
+@property (nonatomic, readonly) double inputViewLeftMostPadding;
+@property (nonatomic, readonly) double inputViewRightMostPadding;
+@property (nonatomic, readonly) double minimumInteritemSpacing;
+@property (nonatomic, readonly) double minimumLineSpacing;
+@property (nonatomic, readonly) long long prepolulatedRecentCount;
+@property (nonatomic, readonly) double rightBiasPercentage;
+@property (nonatomic, readonly) double scrubViewTopPadding;
+@property (nonatomic, readonly) double sectionOffset;
 
 + (id)emojiGraphicsTraitsWithScreenTraits:(id)arg1;
 

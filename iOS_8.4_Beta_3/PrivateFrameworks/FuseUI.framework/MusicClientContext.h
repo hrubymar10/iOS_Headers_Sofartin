@@ -13,12 +13,12 @@
     NSDictionary *_updatableLocalizedStrings;
 }
 
-@property(assign,readonly) MusicJSNativeViewEventRegistry * jsNativeViewEventRegistry;
-@property(assign,readonly) MusicJSNowPlayingController * jsNowPlayingController;
-@property(assign,readonly) MusicJSPlaybackCoordinator * jsPlaybackCoordinator;
-@property(assign,readonly) MusicJSRecentStationsManager * jsRecentStationsManager;
-@property(assign,readonly) MusicJSUserInterfaceStatusController * jsUserInterfaceStatusController;
-@property(assign,retain) RadioRecentStationsController * recentStationsController;
+@property (nonatomic, readonly) MusicJSNativeViewEventRegistry *jsNativeViewEventRegistry;
+@property (nonatomic, readonly) MusicJSNowPlayingController *jsNowPlayingController;
+@property (nonatomic, readonly) MusicJSPlaybackCoordinator *jsPlaybackCoordinator;
+@property (nonatomic, readonly) MusicJSRecentStationsManager *jsRecentStationsManager;
+@property (nonatomic, readonly) MusicJSUserInterfaceStatusController *jsUserInterfaceStatusController;
+@property (nonatomic, retain) RadioRecentStationsController *recentStationsController;
 
 - (void).cxx_destruct;
 - (id)JSONObjectForUpdatableAssetWithManifestExtraInfoKey:(id)arg1;

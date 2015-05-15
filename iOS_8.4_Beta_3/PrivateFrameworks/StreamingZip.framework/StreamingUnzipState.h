@@ -110,30 +110,30 @@
     } _zlibState;
 }
 
-@property(assign,readonly) unsigned long long bytesHashedInChunk;
-@property(assign,readwrite) unsigned long long currentCRC32;
-@property(assign,readwrite) unsigned short currentLFMode;
-@property(assign,readwrite) struct { unsigned char x1[4]; struct { unsigned short x_2_1_1; } x2; struct { unsigned short x_3_1_1; } x3; struct { unsigned short x_4_1_1; } x4; union { struct { struct { unsigned short x_1_3_1; } x_1_2_1; struct { unsigned short x_2_3_1; } x_1_2_2; } x_5_1_1; struct { unsigned int x_2_2_1; } x_5_1_2; } x5; struct { unsigned int x_6_1_1; } x6; struct { unsigned int x_7_1_1; } x7; struct { unsigned int x_8_1_1; } x8; struct { unsigned short x_9_1_1; } x9; struct { unsigned short x_10_1_1; } x10; unsigned char x11[0]; }* currentLFRecord;
-@property(assign,readwrite) unsigned long long currentLFRecordAllocationSize;
-@property(assign,readwrite) bool currentLFRequiresDataDescriptor;
-@property(assign,readwrite) unsigned long long currentOffset;
-@property(assign,readwrite) int currentOutputFD;
-@property(assign,readwrite) struct { unsigned char x1[4]; union { struct { struct { unsigned int x_1_3_1; } x_1_2_1; struct { unsigned long long x_2_3_1; } x_1_2_2; struct { unsigned long long x_3_3_1; } x_1_2_3; } x_2_1_1; struct { struct { unsigned int x_1_3_1; } x_2_2_1; struct { unsigned int x_2_3_1; } x_2_2_2; struct { unsigned int x_3_3_1; } x_2_2_3; } x_2_1_2; } x2; }* dataDescriptor;
-@property(assign,readonly) struct { int x1; union { struct CC_MD5state_st { unsigned int x_1_2_1; unsigned int x_1_2_2; unsigned int x_1_2_3; unsigned int x_1_2_4; unsigned int x_1_2_5; unsigned int x_1_2_6; unsigned int x_1_2_7[16]; int x_1_2_8; } x_2_1_1; struct CC_SHA1state_st { unsigned int x_2_2_1; unsigned int x_2_2_2; unsigned int x_2_2_3; unsigned int x_2_2_4; unsigned int x_2_2_5; unsigned int x_2_2_6; unsigned int x_2_2_7; unsigned int x_2_2_8[16]; int x_2_2_9; } x_2_1_2; struct CC_MD2state_st { int x_3_2_1; unsigned char x_3_2_2[16]; unsigned int x_3_2_3[16]; unsigned int x_3_2_4[16]; } x_2_1_3; struct CC_MD4state_st { unsigned int x_4_2_1; unsigned int x_4_2_2; unsigned int x_4_2_3; unsigned int x_4_2_4; unsigned int x_4_2_5; unsigned int x_4_2_6; unsigned int x_4_2_7[16]; unsigned int x_4_2_8; } x_2_1_4; struct CC_SHA256state_st { unsigned int x_5_2_1[2]; unsigned int x_5_2_2[8]; unsigned int x_5_2_3[16]; } x_2_1_5; struct CC_SHA256state_st { unsigned int x_6_2_1[2]; unsigned int x_6_2_2[8]; unsigned int x_6_2_3[16]; } x_2_1_6; struct CC_SHA512state_st { unsigned long long x_7_2_1[2]; unsigned long long x_7_2_2[8]; unsigned long long x_7_2_3[16]; } x_2_1_7; struct CC_SHA512state_st { unsigned long long x_8_2_1[2]; unsigned long long x_8_2_2[8]; unsigned long long x_8_2_3[16]; } x_2_1_8; } x2; } hashContext;
-@property(assign,readonly) unsigned long long hashedChunkSize;
-@property(assign,retain) NSMutableData * inMemoryFileData;
-@property(assign,retain) NSString * lastChunkPartialHash;
-@property(assign,readwrite) unsigned long long recordsProcessed;
-@property(assign,readwrite) bool storeCurrentFileInMemory;
-@property(assign,retain) NSDictionary * streamInfoDict;
-@property(assign,readwrite) unsigned char streamState;
-@property(assign,readwrite) unsigned long long thisStageBytesComplete;
-@property(assign,readwrite) unsigned long long totalRecordCount;
-@property(assign,readwrite) unsigned long long uncompressedBytesOutput;
-@property(assign,retain) NSMutableData * unfinishedCompressedData;
-@property(assign,retain) NSMutableData * unsureData;
-@property(assign,readonly) NSString * unzipPath;
-@property(assign,readonly) struct z_stream_s { char *x1; unsigned int x2; unsigned long long x3; char *x4; unsigned int x5; unsigned long long x6; char *x7; struct internal_state {} *x8; int (*x9)(); int (*x10)(); void *x11; int x12; unsigned long long x13; unsigned long long x14; }* zlibState;
+@property (nonatomic, readonly) unsigned long long bytesHashedInChunk;
+@property (nonatomic) unsigned long long currentCRC32;
+@property (nonatomic) unsigned short currentLFMode;
+@property (nonatomic) struct { unsigned char x1[4]; struct { unsigned short x_2_1_1; } x2; struct { unsigned short x_3_1_1; } x3; struct { unsigned short x_4_1_1; } x4; union { struct { struct { unsigned short x_1_3_1; } x_1_2_1; struct { unsigned short x_2_3_1; } x_1_2_2; } x_5_1_1; struct { unsigned int x_2_2_1; } x_5_1_2; } x5; struct { unsigned int x_6_1_1; } x6; struct { unsigned int x_7_1_1; } x7; struct { unsigned int x_8_1_1; } x8; struct { unsigned short x_9_1_1; } x9; struct { unsigned short x_10_1_1; } x10; unsigned char x11[0]; }*currentLFRecord;
+@property (nonatomic) unsigned long long currentLFRecordAllocationSize;
+@property (nonatomic) bool currentLFRequiresDataDescriptor;
+@property (nonatomic) unsigned long long currentOffset;
+@property (nonatomic) int currentOutputFD;
+@property (nonatomic) struct { unsigned char x1[4]; union { struct { struct { unsigned int x_1_3_1; } x_1_2_1; struct { unsigned long long x_2_3_1; } x_1_2_2; struct { unsigned long long x_3_3_1; } x_1_2_3; } x_2_1_1; struct { struct { unsigned int x_1_3_1; } x_2_2_1; struct { unsigned int x_2_3_1; } x_2_2_2; struct { unsigned int x_3_3_1; } x_2_2_3; } x_2_1_2; } x2; }*dataDescriptor;
+@property (nonatomic, readonly) struct { int x1; union { struct CC_MD5state_st { unsigned int x_1_2_1; unsigned int x_1_2_2; unsigned int x_1_2_3; unsigned int x_1_2_4; unsigned int x_1_2_5; unsigned int x_1_2_6; unsigned int x_1_2_7[16]; int x_1_2_8; } x_2_1_1; struct CC_SHA1state_st { unsigned int x_2_2_1; unsigned int x_2_2_2; unsigned int x_2_2_3; unsigned int x_2_2_4; unsigned int x_2_2_5; unsigned int x_2_2_6; unsigned int x_2_2_7; unsigned int x_2_2_8[16]; int x_2_2_9; } x_2_1_2; struct CC_MD2state_st { int x_3_2_1; unsigned char x_3_2_2[16]; unsigned int x_3_2_3[16]; unsigned int x_3_2_4[16]; } x_2_1_3; struct CC_MD4state_st { unsigned int x_4_2_1; unsigned int x_4_2_2; unsigned int x_4_2_3; unsigned int x_4_2_4; unsigned int x_4_2_5; unsigned int x_4_2_6; unsigned int x_4_2_7[16]; unsigned int x_4_2_8; } x_2_1_4; struct CC_SHA256state_st { unsigned int x_5_2_1[2]; unsigned int x_5_2_2[8]; unsigned int x_5_2_3[16]; } x_2_1_5; struct CC_SHA256state_st { unsigned int x_6_2_1[2]; unsigned int x_6_2_2[8]; unsigned int x_6_2_3[16]; } x_2_1_6; struct CC_SHA512state_st { unsigned long long x_7_2_1[2]; unsigned long long x_7_2_2[8]; unsigned long long x_7_2_3[16]; } x_2_1_7; struct CC_SHA512state_st { unsigned long long x_8_2_1[2]; unsigned long long x_8_2_2[8]; unsigned long long x_8_2_3[16]; } x_2_1_8; } x2; } hashContext;
+@property (nonatomic, readonly) unsigned long long hashedChunkSize;
+@property (nonatomic, retain) NSMutableData *inMemoryFileData;
+@property (nonatomic, retain) NSString *lastChunkPartialHash;
+@property (nonatomic) unsigned long long recordsProcessed;
+@property (nonatomic) bool storeCurrentFileInMemory;
+@property (nonatomic, retain) NSDictionary *streamInfoDict;
+@property (nonatomic) unsigned char streamState;
+@property (nonatomic) unsigned long long thisStageBytesComplete;
+@property (nonatomic) unsigned long long totalRecordCount;
+@property (nonatomic) unsigned long long uncompressedBytesOutput;
+@property (nonatomic, retain) NSMutableData *unfinishedCompressedData;
+@property (nonatomic, retain) NSMutableData *unsureData;
+@property (nonatomic, readonly) NSString *unzipPath;
+@property (nonatomic, readonly) struct z_stream_s { char *x1; unsigned int x2; unsigned long long x3; char *x4; unsigned int x5; unsigned long long x6; char *x7; struct internal_state {} *x8; int (*x9)(); int (*x10)(); void *x11; int x12; unsigned long long x13; unsigned long long x14; }*zlibState;
 
 + (id)unzipStateWithPath:(id)arg1 options:(id)arg2 error:(id*)arg3;
 

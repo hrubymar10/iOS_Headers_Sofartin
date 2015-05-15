@@ -11,13 +11,13 @@
     MusicLibraryAdaptiveViewConfiguration *_libraryViewConfiguration;
 }
 
-@property(assign,readonly) UIViewController<MusicLibraryViewConfigurationConsuming> * activeViewController;
-@property(assign,retain) MusicClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MusicLibraryAdaptiveViewConfiguration * libraryViewConfiguration;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) UIViewController<MusicLibraryViewConfigurationConsuming> *activeViewController;
+@property (nonatomic, retain) MusicClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MusicLibraryAdaptiveViewConfiguration *libraryViewConfiguration;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_activeViewControllerIndexBarDataSourceDidInvalidateNotification:(id)arg1;

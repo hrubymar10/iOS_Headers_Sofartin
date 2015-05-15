@@ -8,10 +8,10 @@
     unsigned int _version;
 }
 
-@property(assign,readonly) NSData * networkRepresentation;
-@property(assign,readwrite) unsigned int packetEventType;
-@property(assign,readonly) NSDictionary * payloadDictionary;
-@property(assign,readonly) unsigned int version;
+@property (nonatomic, readonly) NSData *networkRepresentation;
+@property (nonatomic) unsigned int packetEventType;
+@property (nonatomic, readonly) NSDictionary *payloadDictionary;
+@property (nonatomic, readonly) unsigned int version;
 
 + (Class)_packetClassForPacketEventType:(unsigned int)arg1;
 + (unsigned int)_packetEventType;

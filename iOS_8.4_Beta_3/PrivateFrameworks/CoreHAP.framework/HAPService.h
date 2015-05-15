@@ -10,11 +10,11 @@
     NSString *_type;
 }
 
-@property(assign,readwrite) HAPAccessory * accessory;
-@property(assign,retain) NSArray * characteristics;
-@property(assign,readonly) NSArray * includedServices;
-@property(assign,copy) NSNumber * instanceID;
-@property(assign,copy) NSString * type;
+@property (nonatomic) HAPAccessory *accessory;
+@property (nonatomic, retain) NSArray *characteristics;
+@property (nonatomic, readonly) NSArray *includedServices;
+@property (nonatomic, copy) NSNumber *instanceID;
+@property (nonatomic, copy) NSString *type;
 
 - (void).cxx_destruct;
 - (bool)_updateAndValidateCharacteristics;

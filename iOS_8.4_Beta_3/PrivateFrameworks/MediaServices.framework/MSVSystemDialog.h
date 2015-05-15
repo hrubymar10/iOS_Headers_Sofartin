@@ -10,11 +10,11 @@
     NSMutableArray *_textFields;
 }
 
-@property(assign,readwrite) struct __CFRunLoopSource { }* activeRunLoopSource;
-@property(assign,readonly) MSVSystemDialogOptions * options;
-@property(assign,copy) id pendingCompletion;
-@property(assign,readwrite) struct __CFUserNotification { }* presentedUserNotification;
-@property(assign,readonly) NSArray * textFields;
+@property (nonatomic) struct __CFRunLoopSource { }*activeRunLoopSource;
+@property (nonatomic, readonly) MSVSystemDialogOptions *options;
+@property (nonatomic, copy) id pendingCompletion;
+@property (nonatomic) struct __CFUserNotification { }*presentedUserNotification;
+@property (nonatomic, readonly) NSArray *textFields;
 
 + (id)passwordAlertWithOptions:(id)arg1;
 + (id)systemDialogWithOptions:(id)arg1;

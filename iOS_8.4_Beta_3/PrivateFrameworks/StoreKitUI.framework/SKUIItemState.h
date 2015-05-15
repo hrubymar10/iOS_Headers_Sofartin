@@ -14,17 +14,17 @@
     NSString *_variantIdentifier;
 }
 
-@property(assign,readonly) bool activeStateIsPreview;
-@property(assign,readonly) unsigned long long allContentFlags;
-@property(assign,readwrite) unsigned long long downloadContentFlags;
-@property(assign,copy) NSString * downloadPhase;
-@property(assign,readwrite) float downloadProgress;
-@property(assign,copy) NSNumber * itemIdentifier;
-@property(assign,readwrite) unsigned long long libraryContentFlags;
-@property(assign,readwrite) long long mediaCategory;
-@property(assign,readwrite) unsigned long long state;
-@property(assign,copy) SKUIStoreIdentifier * storeIdentifier;
-@property(assign,copy) NSString * variantIdentifier;
+@property (nonatomic, readonly) bool activeStateIsPreview;
+@property (nonatomic, readonly) unsigned long long allContentFlags;
+@property (nonatomic) unsigned long long downloadContentFlags;
+@property (nonatomic, copy) NSString *downloadPhase;
+@property (nonatomic) float downloadProgress;
+@property (nonatomic, copy) NSNumber *itemIdentifier;
+@property (nonatomic) unsigned long long libraryContentFlags;
+@property (nonatomic) long long mediaCategory;
+@property (nonatomic) unsigned long long state;
+@property (nonatomic, copy) SKUIStoreIdentifier *storeIdentifier;
+@property (nonatomic, copy) NSString *variantIdentifier;
 
 - (void).cxx_destruct;
 - (bool)activeStateIsPreview;

@@ -12,13 +12,13 @@
     int _totalCount;
 }
 
-@property(assign,retain) NSMutableArray * comments;
-@property(assign,retain) NSData * continuationMarker;
-@property(assign,readonly) bool hasContinuationMarker;
-@property(assign,readonly) bool hasSummary;
-@property(assign,readwrite) bool hasTotalCount;
-@property(assign,retain) CKDPCommentSummary * summary;
-@property(assign,readwrite) int totalCount;
+@property (nonatomic, retain) NSMutableArray *comments;
+@property (nonatomic, retain) NSData *continuationMarker;
+@property (nonatomic, readonly) bool hasContinuationMarker;
+@property (nonatomic, readonly) bool hasSummary;
+@property (nonatomic) bool hasTotalCount;
+@property (nonatomic, retain) CKDPCommentSummary *summary;
+@property (nonatomic) int totalCount;
 
 - (void).cxx_destruct;
 - (void)addComments:(id)arg1;

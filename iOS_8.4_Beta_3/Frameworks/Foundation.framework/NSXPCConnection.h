@@ -23,18 +23,18 @@
     void *_xconnection;
 }
 
-@property(assign,readonly) int auditSessionIdentifier;
-@property(assign,readonly) unsigned int effectiveGroupIdentifier;
-@property(assign,readonly) unsigned int effectiveUserIdentifier;
-@property(assign,retain) NSXPCListenerEndpoint * endpoint;
-@property(assign,retain) NSXPCInterface * exportedInterface;
-@property(assign,retain) id exportedObject;
-@property(assign,copy) id interruptionHandler;
-@property(assign,copy) id invalidationHandler;
-@property(assign,readonly) int processIdentifier;
-@property(assign,retain) NSXPCInterface * remoteObjectInterface;
-@property(assign,retain) id remoteObjectProxy;
-@property(assign,copy) NSString * serviceName;
+@property (readonly) int auditSessionIdentifier;
+@property (readonly) unsigned int effectiveGroupIdentifier;
+@property (readonly) unsigned int effectiveUserIdentifier;
+@property (readonly, retain) NSXPCListenerEndpoint *endpoint;
+@property (retain) NSXPCInterface *exportedInterface;
+@property (retain) id exportedObject;
+@property (copy) id interruptionHandler;
+@property (copy) id invalidationHandler;
+@property (readonly) int processIdentifier;
+@property (retain) NSXPCInterface *remoteObjectInterface;
+@property (readonly, retain) id remoteObjectProxy;
+@property (readonly, copy) NSString *serviceName;
 
 + (id)_currentBoost;
 + (void)beginTransaction;

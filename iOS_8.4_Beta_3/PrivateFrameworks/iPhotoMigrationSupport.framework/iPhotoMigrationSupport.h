@@ -7,8 +7,8 @@
     PLPhotoLibrary *_pl_library;
 }
 
-@property(assign,readonly) bool migrationWasInterrupted;
-@property(setter=setPL_library:,assign,retain) PLPhotoLibrary * pl_library;
+@property (nonatomic, readonly) bool migrationWasInterrupted;
+@property (setter=setPL_library:, nonatomic, retain) PLPhotoLibrary *pl_library;
 
 + (id)sharedInstance;
 

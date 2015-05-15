@@ -6,9 +6,9 @@
     NSString *_featureName;
 }
 
-@property(assign,readonly) NSString * featureName;
-@property(assign,readonly) NSArray * notificationNames;
-@property(assign,readonly) NSArray * requiredKeys;
+@property (nonatomic, readonly) NSString *featureName;
+@property (nonatomic, readonly) NSArray *notificationNames;
+@property (nonatomic, readonly) NSArray *requiredKeys;
 
 + (bool)supportsFeatureName:(id)arg1;
 

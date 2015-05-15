@@ -7,8 +7,8 @@
     NSDictionary *_loadedItems;
 }
 
-@property(assign,copy) NSSet * invalidItemIdentifiers;
-@property(assign,copy) NSDictionary * loadedItems;
+@property (nonatomic, copy) NSSet *invalidItemIdentifiers;
+@property (nonatomic, copy) NSDictionary *loadedItems;
 
 - (void).cxx_destruct;
 - (id)invalidItemIdentifiers;

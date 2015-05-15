@@ -7,9 +7,9 @@
     TSCH3DSession *mSession;
 }
 
-@property(assign,readonly) TSCH3DGLContext * context;
-@property(assign,retain) TSCH3DRenderProcessor * processor;
-@property(assign,readonly) TSCH3DSession * session;
+@property (nonatomic, readonly) TSCH3DGLContext *context;
+@property (nonatomic, retain) TSCH3DRenderProcessor *processor;
+@property (nonatomic, readonly) TSCH3DSession *session;
 
 + (id)clipRectForTargetSize:(const struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; }*)arg1 intermediateSize:(const struct tvec2<int> { union { int x_1_1_1; int x_1_1_2; int x_1_1_3; } x1; union { int x_2_1_1; int x_2_1_2; int x_2_1_3; } x2; }*)arg2;
 + (id)pipelineWithProcessor:(id)arg1 session:(id)arg2;

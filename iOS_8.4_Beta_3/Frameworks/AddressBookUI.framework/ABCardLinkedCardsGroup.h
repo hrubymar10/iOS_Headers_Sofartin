@@ -6,7 +6,7 @@
     NSArray *_linkedContacts;
 }
 
-@property(assign,retain) NSArray * linkedContacts;
+@property (nonatomic, retain) NSArray *linkedContacts;
 
 - (void)dealloc;
 - (id)displayItems;

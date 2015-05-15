@@ -7,11 +7,11 @@
     NSArray *_metadataForAllForms;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long formCount;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long formCount;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)metadataProviderWithFrames:(id)arg1 metadataForAllForms:(id)arg2;
 

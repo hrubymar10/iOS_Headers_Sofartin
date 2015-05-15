@@ -8,9 +8,9 @@
     NSMutableArray *_nearbyPlayers;
 }
 
-@property(assign,readwrite) bool browsingForNearbyPlayers;
-@property(assign,readwrite) <GKNearbyBrowserDelegate> * nearbyDelegate;
-@property(assign,retain) NSMutableArray * nearbyPlayers;
+@property (nonatomic) bool browsingForNearbyPlayers;
+@property (nonatomic) <GKNearbyBrowserDelegate> *nearbyDelegate;
+@property (nonatomic, retain) NSMutableArray *nearbyPlayers;
 
 - (bool)browsingForNearbyPlayers;
 - (void)dealloc;

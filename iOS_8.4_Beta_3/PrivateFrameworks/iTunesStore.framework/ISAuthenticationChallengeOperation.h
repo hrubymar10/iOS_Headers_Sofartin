@@ -7,8 +7,8 @@
     NSURLCredential *_credential;
 }
 
-@property(assign,retain) ISAuthenticationChallenge * challenge;
-@property(assign,retain) NSURLCredential * credential;
+@property (retain) ISAuthenticationChallenge *challenge;
+@property (retain) NSURLCredential *credential;
 
 + (id)operationWithChallenge:(id)arg1;
 

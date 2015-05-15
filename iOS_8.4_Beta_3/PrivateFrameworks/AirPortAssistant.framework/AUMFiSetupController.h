@@ -51,9 +51,9 @@
     int _waitingForLinkState;
 }
 
-@property(assign,copy) NSString * destinationNetworkPassword;
-@property(assign,retain) NSTimer * linkUpOnDestinationNetworkTimer;
-@property(assign,readonly) NSMutableSet * setupDelegates;
+@property (copy) NSString *destinationNetworkPassword;
+@property (retain) NSTimer *linkUpOnDestinationNetworkTimer;
+@property (nonatomic, readonly) NSMutableSet *setupDelegates;
 
 + (id)setupController;
 

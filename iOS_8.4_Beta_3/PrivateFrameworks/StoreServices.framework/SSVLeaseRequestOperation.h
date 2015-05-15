@@ -14,10 +14,10 @@
     SSURLBag *_urlBag;
 }
 
-@property(assign,copy) NSData * certificateData;
-@property(assign,copy) NSString * certificateURLBagKey;
-@property(assign,retain) SSVFairPlaySubscriptionController * fairPlaySubscriptionController;
-@property(assign,copy) id outputBlock;
+@property (copy) NSData *certificateData;
+@property (copy) NSString *certificateURLBagKey;
+@property (retain) SSVFairPlaySubscriptionController *fairPlaySubscriptionController;
+@property (copy) id outputBlock;
 
 - (void).cxx_destruct;
 - (void)_addRequestBodyToRequest:(id)arg1 withCertificateData:(id)arg2;

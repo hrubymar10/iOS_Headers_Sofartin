@@ -10,12 +10,12 @@
     id _value;
 }
 
-@property(assign,copy) NSDate * dateValue;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) NSString * label;
-@property(assign,copy) NSString * property;
-@property(assign,copy) NSString * stringValue;
+@property (nonatomic, copy) NSDate *dateValue;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) NSString *label;
+@property (nonatomic, copy) NSString *property;
+@property (nonatomic, copy) NSString *stringValue;
 
 - (void).cxx_destruct;
 - (void)_setValue:(id)arg1;

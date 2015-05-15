@@ -4,8 +4,8 @@
 
 @interface PLSearchData : PLManagedObject
 
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,retain) NSData * data;
-@property(assign,readwrite) bool valid;
+@property (nonatomic, retain) PLManagedAsset *asset;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic) bool valid;
 
 @end

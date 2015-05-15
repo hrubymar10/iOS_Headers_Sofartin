@@ -4,7 +4,7 @@
 
 @interface PKExtendedPhysicsWorld : PKPhysicsWorld
 
-@property(assign,readwrite) bool debugEnabled;
+@property (nonatomic) bool debugEnabled;
 
 - (bool)debugEnabled;
 - (id)debugPaths;

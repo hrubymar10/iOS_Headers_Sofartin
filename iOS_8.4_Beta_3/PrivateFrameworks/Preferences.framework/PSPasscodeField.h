@@ -12,21 +12,21 @@
     NSMutableString *_stringValue;
 }
 
-@property(assign,readwrite) long long autocapitalizationType;
-@property(assign,readwrite) long long autocorrectionType;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PSPasscodeFieldDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enablesReturnKeyAutomatically;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readwrite) long long keyboardType;
-@property(assign,readonly) unsigned long long numberOfEntryFields;
-@property(assign,readwrite) long long returnKeyType;
-@property(assign,readwrite) bool securePasscodeEntry;
-@property(getter=isSecureTextEntry,assign,readwrite) bool secureTextEntry;
-@property(assign,readwrite) long long spellCheckingType;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PSPasscodeFieldDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic, readonly) unsigned long long numberOfEntryFields;
+@property (nonatomic) long long returnKeyType;
+@property (nonatomic) bool securePasscodeEntry;
+@property (getter=isSecureTextEntry, nonatomic) bool secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
+@property (readonly) Class superclass;
 
 - (bool)becomeFirstResponder;
 - (bool)canBecomeFirstResponder;

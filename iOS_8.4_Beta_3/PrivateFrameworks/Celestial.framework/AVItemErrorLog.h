@@ -6,7 +6,7 @@
     AVItemErrorLogInternal *_playerItemErrorLog;
 }
 
-@property(assign,readonly) NSArray * events;
+@property (nonatomic, readonly) NSArray *events;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

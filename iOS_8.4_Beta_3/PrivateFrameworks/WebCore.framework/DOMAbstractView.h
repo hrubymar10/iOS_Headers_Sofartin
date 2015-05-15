@@ -4,7 +4,7 @@
 
 @interface DOMAbstractView : DOMObject
 
-@property(assign,readonly) DOMDocument * document;
+@property (readonly) DOMDocument *document;
 
 - (void)_disconnectFrame;
 - (void)dealloc;

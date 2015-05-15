@@ -7,8 +7,8 @@
     long long _tapCategory;
 }
 
-@property(assign,readwrite) bool failWhenTappingInBars;
-@property(assign,readonly) long long tapCategory;
+@property (nonatomic) bool failWhenTappingInBars;
+@property (nonatomic, readonly) long long tapCategory;
 
 - (long long)_categoryForTapLocation:(struct CGPoint { double x1; double x2; })arg1;
 - (void)_setDelegate:(id)arg1;

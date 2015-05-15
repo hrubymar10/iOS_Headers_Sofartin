@@ -8,8 +8,8 @@
     UIActivityIndicatorView *_spinner;
 }
 
-@property(assign,copy) SKUIColorScheme * colorScheme;
-@property(assign,copy) NSString * loadingText;
+@property (nonatomic, copy) SKUIColorScheme *colorScheme;
+@property (nonatomic, copy) NSString *loadingText;
 
 + (id)defaultLoadingTextWithClientContext:(id)arg1;
 

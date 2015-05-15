@@ -9,9 +9,9 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,readonly) unsigned long long nextItemRowID;
-@property(assign,readwrite) unsigned long long nextNotifRank;
-@property(assign,readwrite) unsigned long long nextPackageItemRank;
+@property (nonatomic, readonly) unsigned long long nextItemRowID;
+@property (nonatomic) unsigned long long nextNotifRank;
+@property (nonatomic) unsigned long long nextPackageItemRank;
 
 + (id)loadFromClientStateInSession:(id)arg1;
 + (bool)supportsSecureCoding;

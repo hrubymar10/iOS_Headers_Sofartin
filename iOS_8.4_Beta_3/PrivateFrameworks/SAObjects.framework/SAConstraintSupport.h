@@ -4,12 +4,12 @@
 
 @interface SAConstraintSupport : AceObject <SAAceSerializable>
 
-@property(assign,retain) <SASupportCondition> * condition;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * property;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) <SASupportCondition> *condition;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *property;
+@property (readonly) Class superclass;
 
 + (id)constraintSupport;
 + (id)constraintSupportWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,7 +6,7 @@
     RURadioStationPlaybackMetadata *_stationMetadata;
 }
 
-@property(assign,readonly) RURadioStationPlaybackMetadata * stationMetadata;
+@property (nonatomic, readonly) RURadioStationPlaybackMetadata *stationMetadata;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

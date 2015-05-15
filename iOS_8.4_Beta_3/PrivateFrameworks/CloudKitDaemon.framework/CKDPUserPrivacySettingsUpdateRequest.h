@@ -7,10 +7,10 @@
     CKDPUserPrivacySettings *_userPrivacySettings;
 }
 
-@property(assign,retain) NSString * bundleIdentifier;
-@property(assign,readonly) bool hasBundleIdentifier;
-@property(assign,readonly) bool hasUserPrivacySettings;
-@property(assign,retain) CKDPUserPrivacySettings * userPrivacySettings;
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, readonly) bool hasBundleIdentifier;
+@property (nonatomic, readonly) bool hasUserPrivacySettings;
+@property (nonatomic, retain) CKDPUserPrivacySettings *userPrivacySettings;
 
 + (id)options;
 

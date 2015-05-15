@@ -7,8 +7,8 @@
     <TrustCertificateViewControllerDelegate> *_trustCertificateDelegate;
 }
 
-@property(assign,retain) CertificateViewController * certificateViewController;
-@property(assign,readwrite) <TrustCertificateViewControllerDelegate> * trustCertificateDelegate;
+@property (nonatomic, retain) CertificateViewController *certificateViewController;
+@property (nonatomic) <TrustCertificateViewControllerDelegate> *trustCertificateDelegate;
 
 - (void).cxx_destruct;
 - (void)_accept;

@@ -14,16 +14,16 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,readwrite) bool hasMaxChanges;
-@property(assign,readwrite) bool hasRequestedChangeTypes;
-@property(assign,readonly) bool hasRequestedFields;
-@property(assign,readonly) bool hasSyncContinuationToken;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,readwrite) unsigned int maxChanges;
-@property(assign,readwrite) int requestedChangeTypes;
-@property(assign,retain) CKDPRequestedFields * requestedFields;
-@property(assign,retain) NSData * syncContinuationToken;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic) bool hasMaxChanges;
+@property (nonatomic) bool hasRequestedChangeTypes;
+@property (nonatomic, readonly) bool hasRequestedFields;
+@property (nonatomic, readonly) bool hasSyncContinuationToken;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic) unsigned int maxChanges;
+@property (nonatomic) int requestedChangeTypes;
+@property (nonatomic, retain) CKDPRequestedFields *requestedFields;
+@property (nonatomic, retain) NSData *syncContinuationToken;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 + (id)options;
 

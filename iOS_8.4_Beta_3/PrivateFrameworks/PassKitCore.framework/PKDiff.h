@@ -7,7 +7,7 @@
     NSString *_passUniqueID;
 }
 
-@property(assign,copy) NSString * passUniqueID;
+@property (nonatomic, copy) NSString *passUniqueID;
 
 + (bool)supportsSecureCoding;
 

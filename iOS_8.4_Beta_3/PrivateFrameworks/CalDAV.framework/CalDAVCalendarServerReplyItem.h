@@ -6,7 +6,7 @@
     CoreDAVLeafItem *_attendee;
 }
 
-@property(assign,retain) CoreDAVLeafItem * attendee;
+@property (nonatomic, retain) CoreDAVLeafItem *attendee;
 
 - (id)attendee;
 - (id)copyParseRules;

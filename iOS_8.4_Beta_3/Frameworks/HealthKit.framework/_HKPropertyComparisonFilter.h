@@ -8,9 +8,9 @@
     NSString *_rhPropertyName;
 }
 
-@property(assign,readonly) NSString * lhPropertyName;
-@property(assign,readonly) unsigned long long operatorType;
-@property(assign,readonly) NSString * rhPropertyName;
+@property (nonatomic, readonly) NSString *lhPropertyName;
+@property (nonatomic, readonly) unsigned long long operatorType;
+@property (nonatomic, readonly) NSString *rhPropertyName;
 
 + (id)filterWithLeftHandPropertyName:(id)arg1 rightHandPropertyName:(id)arg2 operator:(unsigned long long)arg3;
 + (bool)supportsSecureCoding;

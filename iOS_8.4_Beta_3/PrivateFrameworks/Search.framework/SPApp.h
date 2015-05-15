@@ -4,9 +4,9 @@
 
 @interface SPApp : SPProxyObject <PRSApp>
 
-@property(assign,retain) NSString * bundle_id;
-@property(assign,retain) NSURL * install_url;
-@property(assign,retain) NSString * name;
-@property(assign,retain) NSURL * punchout_uri;
+@property (nonatomic, retain) NSString *bundle_id;
+@property (nonatomic, retain) NSURL *install_url;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSURL *punchout_uri;
 
 @end

@@ -9,10 +9,10 @@
     UIView *_styledSeparatorView;
 }
 
-@property(assign,copy) PLCloudSharedComment * comment;
-@property(assign,retain) UILabel * commentBylineLabel;
-@property(assign,retain) UILabel * commentContentLabel;
-@property(assign,retain) UIView * styledSeparatorView;
+@property (nonatomic, copy) PLCloudSharedComment *comment;
+@property (nonatomic, readonly, retain) UILabel *commentBylineLabel;
+@property (nonatomic, readonly, retain) UILabel *commentContentLabel;
+@property (nonatomic, readonly, retain) UIView *styledSeparatorView;
 
 + (id)_attributionStringForComment:(id)arg1;
 + (id)_commentStringForComment:(id)arg1;

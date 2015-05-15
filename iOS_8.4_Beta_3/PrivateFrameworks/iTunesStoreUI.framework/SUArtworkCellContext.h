@@ -9,10 +9,10 @@
     UIImage *_placeholderImage;
 }
 
-@property(assign,retain) SUImageCache * imageCache;
-@property(assign,retain) ISURLOperationPool * imagePool;
-@property(assign,retain) SUImageDataProvider * imageProvider;
-@property(assign,retain) UIImage * placeholderImage;
+@property (nonatomic, retain) SUImageCache *imageCache;
+@property (nonatomic, retain) ISURLOperationPool *imagePool;
+@property (nonatomic, retain) SUImageDataProvider *imageProvider;
+@property (nonatomic, retain) UIImage *placeholderImage;
 
 - (void)dealloc;
 - (id)imageCache;

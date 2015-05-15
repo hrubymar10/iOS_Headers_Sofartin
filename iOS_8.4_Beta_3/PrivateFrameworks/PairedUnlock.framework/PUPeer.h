@@ -11,14 +11,14 @@
     bool _unlockEnabled;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUPeerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PUKeyStore * keyStore;
-@property(assign,retain) NSMutableDictionary * responseHandlers;
-@property(assign,readonly) Class superclass;
-@property(getter=isUnlockEnabled,assign,readwrite) bool unlockEnabled;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUPeerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) PUKeyStore *keyStore;
+@property (nonatomic, retain) NSMutableDictionary *responseHandlers;
+@property (readonly) Class superclass;
+@property (getter=isUnlockEnabled, nonatomic) bool unlockEnabled;
 
 - (void).cxx_destruct;
 - (id)_createAndStoreNewPasscodeWithCurrentPasscode:(id)arg1;

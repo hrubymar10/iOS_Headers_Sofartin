@@ -13,14 +13,14 @@
     NSData *_syncContinuationToken;
 }
 
-@property(assign,retain) NSMutableArray * changedRecords;
-@property(assign,retain) NSMutableArray * changedShares;
-@property(assign,retain) NSData * clientChangeToken;
-@property(assign,readonly) bool hasClientChangeToken;
-@property(assign,readwrite) bool hasStatus;
-@property(assign,readonly) bool hasSyncContinuationToken;
-@property(assign,readwrite) int status;
-@property(assign,retain) NSData * syncContinuationToken;
+@property (nonatomic, retain) NSMutableArray *changedRecords;
+@property (nonatomic, retain) NSMutableArray *changedShares;
+@property (nonatomic, retain) NSData *clientChangeToken;
+@property (nonatomic, readonly) bool hasClientChangeToken;
+@property (nonatomic) bool hasStatus;
+@property (nonatomic, readonly) bool hasSyncContinuationToken;
+@property (nonatomic) int status;
+@property (nonatomic, retain) NSData *syncContinuationToken;
 
 - (void).cxx_destruct;
 - (void)addChangedRecord:(id)arg1;

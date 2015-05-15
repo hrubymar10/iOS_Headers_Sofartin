@@ -10,9 +10,9 @@
     NPSManager *_syncManager;
 }
 
-@property(assign,readonly) bool hasSettings;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,copy) NSString * selectedGlanceIdentifier;
+@property (nonatomic, readonly) bool hasSettings;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, copy) NSString *selectedGlanceIdentifier;
 
 - (void).cxx_destruct;
 - (id)_localizedNameForGlance:(id)arg1;

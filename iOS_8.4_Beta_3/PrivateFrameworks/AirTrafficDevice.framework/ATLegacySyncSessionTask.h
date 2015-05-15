@@ -9,8 +9,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) NSString * dataClass;
-@property(assign,readwrite) unsigned int grappaSessionID;
+@property (nonatomic, readonly, copy) NSString *dataClass;
+@property (nonatomic) unsigned int grappaSessionID;
 
 - (void).cxx_destruct;
 - (void)_finishWithError:(id)arg1 shouldAddAssetTask:(bool)arg2;

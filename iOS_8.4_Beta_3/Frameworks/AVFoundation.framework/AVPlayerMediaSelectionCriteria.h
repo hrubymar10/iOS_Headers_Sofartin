@@ -6,8 +6,8 @@
     AVPlayerMediaSelectionCriteriaInternal *_criteria;
 }
 
-@property(assign,readonly) NSArray * preferredLanguages;
-@property(assign,readonly) NSArray * preferredMediaCharacteristics;
+@property (nonatomic, readonly) NSArray *preferredLanguages;
+@property (nonatomic, readonly) NSArray *preferredMediaCharacteristics;
 
 - (void)dealloc;
 - (id)description;

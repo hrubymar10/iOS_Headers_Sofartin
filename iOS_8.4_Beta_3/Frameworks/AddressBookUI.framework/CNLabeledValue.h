@@ -8,11 +8,11 @@
     id _value;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSString * localizedLabel;
-@property(assign,readonly) int multiValueIdentifier;
-@property(assign,copy) id value;
+@property (readonly, copy) NSString *identifier;
+@property (readonly, copy) NSString *label;
+@property (readonly, copy) NSString *localizedLabel;
+@property (readonly) int multiValueIdentifier;
+@property (readonly, copy) id value;
 
 + (void*)addressBook;
 + (id)allCustomLabels;

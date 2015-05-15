@@ -7,12 +7,12 @@
     UIDatePicker *_datePicker;
 }
 
-@property(assign,retain) UIViewController * contentViewController;
-@property(assign,retain) UIDatePicker * datePicker;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIViewController *contentViewController;
+@property (nonatomic, retain) UIDatePicker *datePicker;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (bool)_shouldUseYearlessPickerForDateComponents:(id)arg1;
 - (id)contentViewController;

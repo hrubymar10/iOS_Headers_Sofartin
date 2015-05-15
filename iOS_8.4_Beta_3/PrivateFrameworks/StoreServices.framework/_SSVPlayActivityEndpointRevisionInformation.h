@@ -8,9 +8,9 @@
     NSString *_revisionVersionToken;
 }
 
-@property(assign,copy) NSIndexSet * additionalPendingRevisionsIndexSet;
-@property(assign,readwrite) unsigned long long currentRevision;
-@property(assign,copy) NSString * revisionVersionToken;
+@property (nonatomic, copy) NSIndexSet *additionalPendingRevisionsIndexSet;
+@property (nonatomic) unsigned long long currentRevision;
+@property (nonatomic, copy) NSString *revisionVersionToken;
 
 + (bool)supportsSecureCoding;
 

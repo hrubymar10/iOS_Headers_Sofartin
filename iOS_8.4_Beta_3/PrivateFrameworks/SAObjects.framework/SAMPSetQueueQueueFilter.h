@@ -4,13 +4,13 @@
 
 @interface SAMPSetQueueQueueFilter : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * mediaItemProperty;
-@property(assign,copy) NSString * operation;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * value;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *mediaItemProperty;
+@property (nonatomic, copy) NSString *operation;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *value;
 
 + (id)setQueueQueueFilter;
 + (id)setQueueQueueFilterWithDictionary:(id)arg1 context:(id)arg2;

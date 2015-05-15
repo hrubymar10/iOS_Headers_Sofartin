@@ -14,7 +14,7 @@
     struct __CVBuffer { } *scaleBuffer;
 }
 
-@property(assign,retain) CIContext * context;
+@property (nonatomic, retain) CIContext *context;
 
 - (id)context;
 - (void)dealloc;

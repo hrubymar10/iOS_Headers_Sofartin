@@ -8,9 +8,9 @@
     CIImage *inputImage;
 }
 
-@property(assign,retain) CIImage * cachedGradientImage;
-@property(assign,retain) CIImage * inputGradientImage;
-@property(assign,retain) CIImage * inputImage;
+@property (nonatomic, retain) CIImage *cachedGradientImage;
+@property (nonatomic, retain) CIImage *inputGradientImage;
+@property (nonatomic, retain) CIImage *inputImage;
 
 + (id)customAttributes;
 

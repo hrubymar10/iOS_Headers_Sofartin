@@ -10,15 +10,15 @@
     int _type;
 }
 
-@property(assign,retain) _UIActionSlider * acceptButton;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <TPSlidingButtonDelegateProtocol> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIImageView * dialImageView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIButton * sideButtonRight;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) int type;
+@property (retain) _UIActionSlider *acceptButton;
+@property (readonly, copy) NSString *debugDescription;
+@property <TPSlidingButtonDelegateProtocol> *delegate;
+@property (readonly, copy) NSString *description;
+@property (retain) UIImageView *dialImageView;
+@property (readonly) unsigned long long hash;
+@property (retain) UIButton *sideButtonRight;
+@property (readonly) Class superclass;
+@property int type;
 
 - (struct CGSize { double x1; double x2; })_knobSize;
 - (id)acceptButton;

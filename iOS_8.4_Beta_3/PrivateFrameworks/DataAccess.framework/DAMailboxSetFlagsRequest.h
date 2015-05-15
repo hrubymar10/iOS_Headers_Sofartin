@@ -7,8 +7,8 @@
     unsigned long long _onFlags;
 }
 
-@property(assign,readwrite) unsigned long long offFlags;
-@property(assign,readwrite) unsigned long long onFlags;
+@property (nonatomic) unsigned long long offFlags;
+@property (nonatomic) unsigned long long onFlags;
 
 - (id)description;
 - (unsigned long long)hash;

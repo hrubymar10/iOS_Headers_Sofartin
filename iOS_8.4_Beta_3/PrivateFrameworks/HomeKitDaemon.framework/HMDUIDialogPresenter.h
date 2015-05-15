@@ -6,7 +6,7 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 + (id)sharedUIDialogPresenter;
 

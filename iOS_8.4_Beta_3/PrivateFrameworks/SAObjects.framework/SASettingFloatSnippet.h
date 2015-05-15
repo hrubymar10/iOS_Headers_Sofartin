@@ -4,7 +4,7 @@
 
 @interface SASettingFloatSnippet : SASettingNumericSnippet
 
-@property(assign,copy) NSNumber * value;
+@property (nonatomic, copy) NSNumber *value;
 
 + (id)floatSnippet;
 + (id)floatSnippetWithDictionary:(id)arg1 context:(id)arg2;

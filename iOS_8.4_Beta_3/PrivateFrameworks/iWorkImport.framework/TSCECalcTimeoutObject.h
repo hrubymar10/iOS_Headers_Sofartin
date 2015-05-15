@@ -7,8 +7,8 @@
     double _timeoutInterval;
 }
 
-@property(assign,readonly) NSString * blockingIdentifier;
-@property(assign,readonly) double timeoutInterval;
+@property (readonly) NSString *blockingIdentifier;
+@property (readonly) double timeoutInterval;
 
 - (id)blockingIdentifier;
 - (void)dealloc;

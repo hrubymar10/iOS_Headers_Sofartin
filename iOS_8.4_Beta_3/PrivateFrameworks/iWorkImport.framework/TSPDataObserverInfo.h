@@ -10,8 +10,8 @@
     unsigned long long _options;
 }
 
-@property(assign,readonly) bool isInternalObserver;
-@property(assign,readonly) unsigned long long options;
+@property (nonatomic, readonly) bool isInternalObserver;
+@property (nonatomic, readonly) unsigned long long options;
 
 - (void).cxx_destruct;
 - (id)init;

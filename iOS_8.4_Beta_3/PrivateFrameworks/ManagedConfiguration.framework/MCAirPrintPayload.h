@@ -7,8 +7,8 @@
     NSMutableArray *_ippAddresses;
 }
 
-@property(assign,readwrite) unsigned long long airPrintCount;
-@property(assign,retain) NSMutableArray * ippAddresses;
+@property (nonatomic) unsigned long long airPrintCount;
+@property (nonatomic, retain) NSMutableArray *ippAddresses;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

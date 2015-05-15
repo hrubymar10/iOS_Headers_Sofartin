@@ -7,9 +7,9 @@
     _UITextKitTextPosition *_start;
 }
 
-@property(assign,readonly) long long affinity;
-@property(assign,retain) UITextPosition * end;
-@property(assign,retain) UITextPosition * start;
+@property (nonatomic, readonly) long long affinity;
+@property (nonatomic, retain) UITextPosition *end;
+@property (nonatomic, retain) UITextPosition *start;
 
 + (id)defaultRange;
 + (id)rangeWithRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;

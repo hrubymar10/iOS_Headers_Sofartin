@@ -24,9 +24,9 @@
     } _transitionViewFlags;
 }
 
-@property(assign,readwrite) long long animationTimingCurve;
-@property(assign,readwrite) bool ignoreDirectTouchEvents;
-@property(assign,readwrite) bool shouldNotifyDidCompleteImmediately;
+@property (nonatomic) long long animationTimingCurve;
+@property (nonatomic) bool ignoreDirectTouchEvents;
+@property (nonatomic) bool shouldNotifyDidCompleteImmediately;
 
 + (double)defaultDurationForTransition:(int)arg1;
 

@@ -15,20 +15,20 @@
     bool _validatedSuccessfully;
 }
 
-@property(assign,retain) DAAccount * account;
-@property(assign,readwrite) bool accountNeedsAdd;
-@property(assign,readwrite) bool attemptedValidation;
-@property(assign,readwrite) bool confirmedUnvalidatedAccount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool didSetFullHostURL;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool haveRegisteredForAccountsChanged;
-@property(assign,readwrite) bool isSettingUpNewAccount;
-@property(assign,readwrite) bool needsSave;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool transitioningToFinishedAccountSetup;
-@property(assign,readwrite) bool validatedSuccessfully;
+@property (nonatomic, retain) DAAccount *account;
+@property (nonatomic) bool accountNeedsAdd;
+@property (nonatomic) bool attemptedValidation;
+@property (nonatomic) bool confirmedUnvalidatedAccount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool didSetFullHostURL;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool haveRegisteredForAccountsChanged;
+@property (nonatomic) bool isSettingUpNewAccount;
+@property (nonatomic) bool needsSave;
+@property (readonly) Class superclass;
+@property (nonatomic) bool transitioningToFinishedAccountSetup;
+@property (nonatomic) bool validatedSuccessfully;
 
 - (void).cxx_destruct;
 - (void)_accountsChanged:(id)arg1;

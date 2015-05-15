@@ -6,12 +6,12 @@
     HKQuantity *_quantity;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) HKQuantity * quantity;
-@property(assign,readonly) HKQuantityType * quantityType;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) HKQuantity *quantity;
+@property (readonly) HKQuantityType *quantityType;
+@property (readonly) Class superclass;
 
 + (bool)_isConcreteObjectClass;
 + (id)_quantitySampleWithUUID:(id)arg1 metadata:(id)arg2 sourceBundleIdentifier:(id)arg3 creationDate:(id)arg4 quantityType:(id)arg5 startDate:(id)arg6 endDate:(id)arg7 quantity:(id)arg8;

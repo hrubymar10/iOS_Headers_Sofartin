@@ -44,29 +44,29 @@
     unsigned long long _vertexIndexB;
 }
 
-@property(assign,readwrite) bool areLabelsDisabled;
-@property(assign,readonly) const char * cstrName;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  direction; /* unknown property attribute:  1>=[2f]} */
-@property(assign,readwrite) long long intraRoadPriority;
-@property(assign,readonly) bool isAwayFromRoute;
-@property(assign,readwrite) bool isGuidanceStepStart;
-@property(assign,readwrite) bool isInGuidance;
-@property(assign,readwrite) bool isOnRoute;
-@property(assign,readonly) bool isOnewayToJunction;
-@property(assign,readonly) bool isRamp;
-@property(assign,readwrite) bool isRoadLabelUnique;
-@property(assign,readwrite) bool isStartOfRoadName;
-@property(assign,readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { /* ? */ } *x5; }* junctionB;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) VKLabelNavJunction * navJunctionA;
-@property(assign,readonly) int roadClass;
-@property(assign,readonly) long long roadSignAlignment;
-@property(assign,readwrite) float routeCrossProduct;
-@property(assign,readwrite) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
-@property(assign,readonly) NSString * shieldDisplayGroup;
-@property(assign,readonly) NSString * shieldGroup;
-@property(assign,readonly) bool suppressRoadSignIfShieldPresent;
-@property(assign,readonly) VKLabelTile * tile;
+@property (nonatomic) bool areLabelsDisabled;
+@property (nonatomic, readonly) const char *cstrName;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Matrix<float' */ struct  direction; /* unknown property attribute:  1>=[2f]} */
+@property (nonatomic) long long intraRoadPriority;
+@property (nonatomic, readonly) bool isAwayFromRoute;
+@property (nonatomic) bool isGuidanceStepStart;
+@property (nonatomic) bool isInGuidance;
+@property (nonatomic) bool isOnRoute;
+@property (nonatomic, readonly) bool isOnewayToJunction;
+@property (nonatomic, readonly) bool isRamp;
+@property (nonatomic) bool isRoadLabelUnique;
+@property (nonatomic) bool isStartOfRoadName;
+@property (nonatomic, readonly) struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; struct { /* ? */ } *x5; }*junctionB;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) VKLabelNavJunction *navJunctionA;
+@property (nonatomic, readonly) int roadClass;
+@property (nonatomic, readonly) long long roadSignAlignment;
+@property (nonatomic) float routeCrossProduct;
+@property (nonatomic) struct PolylineCoordinate { unsigned int x1; float x2; } routeOffset;
+@property (nonatomic, readonly) NSString *shieldDisplayGroup;
+@property (nonatomic, readonly) NSString *shieldGroup;
+@property (nonatomic, readonly) bool suppressRoadSignIfShieldPresent;
+@property (nonatomic, readonly) VKLabelTile *tile;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

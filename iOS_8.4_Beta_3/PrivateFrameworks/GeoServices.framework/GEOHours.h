@@ -11,9 +11,9 @@
     NSMutableArray *_timeRanges;
 }
 
-@property(assign,readonly) int* days;
-@property(assign,readonly) unsigned long long daysCount;
-@property(assign,retain) NSMutableArray * timeRanges;
+@property (nonatomic, readonly) int*days;
+@property (nonatomic, readonly) unsigned long long daysCount;
+@property (nonatomic, retain) NSMutableArray *timeRanges;
 
 - (void)addDay:(int)arg1;
 - (void)addTimeRange:(id)arg1;

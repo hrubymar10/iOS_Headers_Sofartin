@@ -4,7 +4,7 @@
 
 @interface SAHAIntegerValue : SAHAAttributeValue
 
-@property(assign,readwrite) long long value;
+@property (nonatomic) long long value;
 
 + (id)integerValue;
 + (id)integerValueWithDictionary:(id)arg1 context:(id)arg2;

@@ -6,8 +6,8 @@
     CKDPTokenRegistrationBody *_tokenRegistrationBody;
 }
 
-@property(assign,readonly) bool hasTokenRegistrationBody;
-@property(assign,retain) CKDPTokenRegistrationBody * tokenRegistrationBody;
+@property (nonatomic, readonly) bool hasTokenRegistrationBody;
+@property (nonatomic, retain) CKDPTokenRegistrationBody *tokenRegistrationBody;
 
 + (id)options;
 

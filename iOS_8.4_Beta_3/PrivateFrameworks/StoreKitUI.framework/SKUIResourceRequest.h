@@ -7,9 +7,9 @@
     unsigned long long _requestID;
 }
 
-@property(assign,retain) id cacheKey;
-@property(assign,readonly) bool cachesInMemory;
-@property(assign,readwrite) unsigned long long requestIdentifier;
+@property (nonatomic, retain) id cacheKey;
+@property (nonatomic, readonly) bool cachesInMemory;
+@property (nonatomic) unsigned long long requestIdentifier;
 
 - (void).cxx_destruct;
 - (id)_initSKUIResourceRequest;

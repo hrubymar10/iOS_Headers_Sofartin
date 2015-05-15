@@ -22,16 +22,16 @@
     NSArray *_touches;
 }
 
-@property(setter=_setButtonType:,assign,readwrite) long long _buttonType;
-@property(assign,readwrite) double allowableMovement;
-@property(assign,readwrite) bool cancelPastAllowableMovement;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } centroid;
-@property(assign,readwrite) double delay;
-@property(assign,readwrite) double minimumPressDuration;
-@property(assign,readwrite) unsigned long long numberOfTapsRequired;
-@property(assign,readwrite) unsigned long long numberOfTouchesRequired;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } startPoint;
-@property(assign,retain) NSArray * touches;
+@property (setter=_setButtonType:, nonatomic) long long _buttonType;
+@property (nonatomic) double allowableMovement;
+@property (nonatomic) bool cancelPastAllowableMovement;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } centroid;
+@property (nonatomic) double delay;
+@property (nonatomic) double minimumPressDuration;
+@property (nonatomic) unsigned long long numberOfTapsRequired;
+@property (nonatomic) unsigned long long numberOfTouchesRequired;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } startPoint;
+@property (nonatomic, readonly, retain) NSArray *touches;
 
 - (long long)_buttonType;
 - (void)_interactionsEndedWithValidTouches:(bool)arg1;

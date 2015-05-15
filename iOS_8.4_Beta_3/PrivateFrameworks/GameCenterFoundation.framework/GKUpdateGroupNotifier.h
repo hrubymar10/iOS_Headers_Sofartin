@@ -9,10 +9,10 @@
     NSMutableArray *_updateQueue;
 }
 
-@property(assign,retain) NSError * error;
-@property(assign,readwrite) GKUpdateGroup * group;
-@property(assign,retain) NSLock * lock;
-@property(assign,retain) NSMutableArray * updateQueue;
+@property (retain) NSError *error;
+@property (nonatomic) GKUpdateGroup *group;
+@property (retain) NSLock *lock;
+@property (nonatomic, retain) NSMutableArray *updateQueue;
 
 - (void)addUpdate:(id)arg1 error:(id)arg2;
 - (void)addUpdatesFromGroup:(id)arg1;

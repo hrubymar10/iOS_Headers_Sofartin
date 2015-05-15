@@ -15,14 +15,14 @@
     UIScreen *_screen;
 }
 
-@property(assign,retain) FBWindowContextManager * contextManager;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FBWindowContextHostViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSSet * hiddenContexts;
-@property(assign,retain) FBScene * scene;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) FBWindowContextManager *contextManager;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <FBWindowContextHostViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSSet *hiddenContexts;
+@property (nonatomic, readonly, retain) FBScene *scene;
+@property (readonly) Class superclass;
 
 - (void)_adjustLayerFrameAndTransform:(id)arg1;
 - (id)_hitTest:(struct CGPoint { double x1; double x2; })arg1 withEvent:(id)arg2 windowServerHitTestWindow:(id)arg3;

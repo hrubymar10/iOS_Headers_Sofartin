@@ -11,10 +11,10 @@
     } _has;
 }
 
-@property(assign,readwrite) int entryStandardDeviation;
-@property(assign,readwrite) int exitStandardDeviation;
-@property(assign,readwrite) bool hasEntryStandardDeviation;
-@property(assign,readwrite) bool hasExitStandardDeviation;
+@property (nonatomic) int entryStandardDeviation;
+@property (nonatomic) int exitStandardDeviation;
+@property (nonatomic) bool hasEntryStandardDeviation;
+@property (nonatomic) bool hasExitStandardDeviation;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

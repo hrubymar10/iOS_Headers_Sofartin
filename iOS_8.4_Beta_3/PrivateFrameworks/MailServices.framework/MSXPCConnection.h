@@ -17,8 +17,8 @@
     unsigned int _state;
 }
 
-@property(assign,retain) Protocol * protocol;
-@property(assign,readwrite) bool shouldLaunchMobileMail;
+@property (nonatomic, readonly, retain) Protocol *protocol;
+@property (nonatomic) bool shouldLaunchMobileMail;
 
 - (id)_connection;
 - (id)_connectionForFuture:(id)arg1;

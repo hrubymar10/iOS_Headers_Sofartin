@@ -12,13 +12,13 @@
     UIView *_outlineView;
 }
 
-@property(assign,retain) UIImageView * backgroundView;
-@property(assign,readwrite) bool dimmed;
-@property(assign,retain) UIImage * dimmedIconImage;
-@property(assign,retain) UIImage * iconImage;
-@property(assign,retain) UIImageView * iconView;
-@property(assign,retain) CAShapeLayer * outlineProgressLayer;
-@property(assign,retain) UIView * outlineView;
+@property (nonatomic, retain) UIImageView *backgroundView;
+@property (nonatomic) bool dimmed;
+@property (nonatomic, retain) UIImage *dimmedIconImage;
+@property (nonatomic, retain) UIImage *iconImage;
+@property (nonatomic, retain) UIImageView *iconView;
+@property (nonatomic, retain) CAShapeLayer *outlineProgressLayer;
+@property (nonatomic, retain) UIView *outlineView;
 
 + (id)_closeBoxImage;
 + (id)_inactiveCloseBoxImage;

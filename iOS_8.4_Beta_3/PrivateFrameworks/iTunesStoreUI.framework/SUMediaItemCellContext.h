@@ -8,9 +8,9 @@
     bool _itemsHaveArtwork;
 }
 
-@property(assign,readwrite) double artworkWidth;
-@property(assign,readwrite) long long hiddenMediaIconTypes;
-@property(assign,readwrite) bool itemsHaveArtwork;
+@property (nonatomic) double artworkWidth;
+@property (nonatomic) long long hiddenMediaIconTypes;
+@property (nonatomic) bool itemsHaveArtwork;
 
 - (double)artworkWidth;
 - (long long)hiddenMediaIconTypes;

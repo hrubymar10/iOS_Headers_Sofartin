@@ -15,9 +15,9 @@
     unsigned int totalCountRemaining;
 }
 
-@property(assign,readwrite) unsigned long long maximumDistance;
-@property(assign,readwrite) unsigned long long maximumDistanceForEmails;
-@property(assign,readonly) unsigned int totalCountRemaining;
+@property unsigned long long maximumDistance;
+@property unsigned long long maximumDistanceForEmails;
+@property (readonly) unsigned int totalCountRemaining;
 
 - (bool)addResultIfAppropriate:(struct __DDResult { }*)arg1;
 - (void)dealloc;

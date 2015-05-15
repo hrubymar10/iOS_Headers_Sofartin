@@ -9,14 +9,14 @@
     NSString *_passcode;
 }
 
-@property(assign,retain) NSString * appName;
-@property(assign,retain) NSString * deviceModel;
-@property(assign,retain) NSString * deviceName;
-@property(assign,readonly) bool hasAppName;
-@property(assign,readonly) bool hasDeviceModel;
-@property(assign,readonly) bool hasDeviceName;
-@property(assign,readonly) bool hasPasscode;
-@property(assign,retain) NSString * passcode;
+@property (nonatomic, retain) NSString *appName;
+@property (nonatomic, retain) NSString *deviceModel;
+@property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, readonly) bool hasAppName;
+@property (nonatomic, readonly) bool hasDeviceModel;
+@property (nonatomic, readonly) bool hasDeviceName;
+@property (nonatomic, readonly) bool hasPasscode;
+@property (nonatomic, retain) NSString *passcode;
 
 - (void).cxx_destruct;
 - (id)appName;

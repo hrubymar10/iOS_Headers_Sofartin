@@ -11,12 +11,12 @@
     NSDictionary *_trackInfo;
 }
 
-@property(getter=isCurrent,assign,readonly) bool current;
-@property(assign,readonly) NSDate * expirationDate;
-@property(assign,readonly) double pauseTime;
-@property(assign,readonly) NSDate * skipDate;
-@property(assign,readonly) long long storeID;
-@property(assign,copy) NSDictionary * trackInfo;
+@property (getter=isCurrent, nonatomic, readonly) bool current;
+@property (nonatomic, readonly) NSDate *expirationDate;
+@property (nonatomic, readonly) double pauseTime;
+@property (nonatomic, readonly) NSDate *skipDate;
+@property (nonatomic, readonly) long long storeID;
+@property (nonatomic, readonly, copy) NSDictionary *trackInfo;
 
 + (bool)supportsSecureCoding;
 

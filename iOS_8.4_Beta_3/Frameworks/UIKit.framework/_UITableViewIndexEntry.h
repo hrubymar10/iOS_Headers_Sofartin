@@ -31,11 +31,11 @@
     } _typeBounds;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } baselinePoint;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) id line;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } typeBounds;
+@property (nonatomic) struct CGPoint { double x1; double x2; } baselinePoint;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } bounds;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) id line;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } typeBounds;
 
 - (struct CGPoint { double x1; double x2; })baselinePoint;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })bounds;

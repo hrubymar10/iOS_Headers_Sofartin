@@ -9,7 +9,7 @@
     bool _triedGettingNewCredentials;
 }
 
-@property(assign,retain) IMAccount * account;
+@property (nonatomic, retain) IMAccount *account;
 
 - (void)_handleTimeout;
 - (void)_incrementSigninFailureCount;

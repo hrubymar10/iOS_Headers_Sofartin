@@ -11,12 +11,12 @@
     double _touchDownTime;
 }
 
-@property(assign,readwrite) <CKInlineAudioReplyButtonDelegate> * delegate;
-@property(assign,readwrite) double holdThreshold;
-@property(assign,retain) UIButton * startButton;
-@property(getter=isStarted,assign,readwrite) bool started;
-@property(assign,retain) UIButton * stopButton;
-@property(assign,readwrite) double touchDownTime;
+@property (nonatomic) <CKInlineAudioReplyButtonDelegate> *delegate;
+@property (nonatomic) double holdThreshold;
+@property (nonatomic, retain) UIButton *startButton;
+@property (getter=isStarted, nonatomic) bool started;
+@property (nonatomic, retain) UIButton *stopButton;
+@property (nonatomic) double touchDownTime;
 
 - (void)dealloc;
 - (id)delegate;

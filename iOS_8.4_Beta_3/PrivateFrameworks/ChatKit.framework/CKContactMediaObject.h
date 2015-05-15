@@ -7,8 +7,8 @@
     UIImage *_vCardImage;
 }
 
-@property(assign,retain) ABVCardRecord * vCard;
-@property(assign,retain) UIImage * vCardImage;
+@property (nonatomic, retain) ABVCardRecord *vCard;
+@property (nonatomic, retain) UIImage *vCardImage;
 
 + (id)UTITypes;
 + (id)attachmentSummary:(unsigned long long)arg1;

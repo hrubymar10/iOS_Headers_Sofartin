@@ -10,9 +10,9 @@
     NSMutableDictionary *_playerInfo;
 }
 
-@property(assign,readonly) bool isEnabled;
-@property(assign,readonly) NSString * messageFormat;
-@property(assign,readonly) NSDictionary * playerInfo;
+@property (nonatomic, readonly) bool isEnabled;
+@property (nonatomic, readonly) NSString *messageFormat;
+@property (nonatomic, readonly) NSDictionary *playerInfo;
 
 + (id)sharedTunesController;
 

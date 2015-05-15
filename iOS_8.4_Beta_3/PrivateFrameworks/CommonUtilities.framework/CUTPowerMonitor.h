@@ -15,9 +15,9 @@
     struct IONotificationPort { } *_pmPort;
 }
 
-@property(assign,readonly) double batteryPercentRemaining;
-@property(assign,readwrite) double currentLevel;
-@property(assign,readwrite) bool isExternalPowerConnected;
+@property (nonatomic, readonly) double batteryPercentRemaining;
+@property (nonatomic) double currentLevel;
+@property (nonatomic) bool isExternalPowerConnected;
 
 + (id)sharedInstance;
 

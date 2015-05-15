@@ -7,9 +7,9 @@
     CoreDAVBulkRequestsItem *_simpleItem;
 }
 
-@property(assign,retain) CoreDAVBulkRequestsItem * crudItem;
-@property(assign,readonly) NSDictionary * dictRepresentation;
-@property(assign,retain) CoreDAVBulkRequestsItem * simpleItem;
+@property (nonatomic, retain) CoreDAVBulkRequestsItem *crudItem;
+@property (nonatomic, readonly) NSDictionary *dictRepresentation;
+@property (nonatomic, retain) CoreDAVBulkRequestsItem *simpleItem;
 
 + (id)copyParseRules;
 

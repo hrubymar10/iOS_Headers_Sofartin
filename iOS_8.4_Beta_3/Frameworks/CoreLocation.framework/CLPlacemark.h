@@ -6,22 +6,22 @@
     CLPlacemarkInternal *_internal;
 }
 
-@property(assign,copy) NSString * ISOcountryCode;
-@property(assign,copy) NSDictionary * addressDictionary;
-@property(assign,copy) NSString * administrativeArea;
-@property(assign,copy) NSArray * areasOfInterest;
-@property(assign,copy) NSString * country;
-@property(assign,copy) NSString * inlandWater;
-@property(assign,copy) NSString * locality;
-@property(assign,copy) CLLocation * location;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSString * ocean;
-@property(assign,copy) NSString * postalCode;
-@property(assign,copy) CLRegion * region;
-@property(assign,copy) NSString * subAdministrativeArea;
-@property(assign,copy) NSString * subLocality;
-@property(assign,copy) NSString * subThoroughfare;
-@property(assign,copy) NSString * thoroughfare;
+@property (nonatomic, readonly, copy) NSString *ISOcountryCode;
+@property (nonatomic, readonly, copy) NSDictionary *addressDictionary;
+@property (nonatomic, readonly, copy) NSString *administrativeArea;
+@property (nonatomic, readonly, copy) NSArray *areasOfInterest;
+@property (nonatomic, readonly, copy) NSString *country;
+@property (nonatomic, readonly, copy) NSString *inlandWater;
+@property (nonatomic, readonly, copy) NSString *locality;
+@property (nonatomic, readonly, copy) CLLocation *location;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *ocean;
+@property (nonatomic, readonly, copy) NSString *postalCode;
+@property (nonatomic, readonly, copy) CLRegion *region;
+@property (nonatomic, readonly, copy) NSString *subAdministrativeArea;
+@property (nonatomic, readonly, copy) NSString *subLocality;
+@property (nonatomic, readonly, copy) NSString *subThoroughfare;
+@property (nonatomic, readonly, copy) NSString *thoroughfare;
 
 + (id)placemarkWithGEOMapItem:(id)arg1;
 + (bool)supportsSecureCoding;

@@ -13,11 +13,11 @@
     NSMutableSet *_removed;
 }
 
-@property(assign,copy) NSArray * descriptors;
-@property(assign,copy) id handler;
-@property(assign,retain) NSOrderedSet * lastSnapshot;
-@property(assign,retain) NSDate * lastSnapshotDate;
-@property(assign,retain) NSPredicate * predicate;
+@property (nonatomic, copy) NSArray *descriptors;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, retain) NSOrderedSet *lastSnapshot;
+@property (nonatomic, retain) NSDate *lastSnapshotDate;
+@property (nonatomic, retain) NSPredicate *predicate;
 
 + (id)_observerForDirectories:(id)arg1 sortedWithDescriptors:(id)arg2 updateHandler:(id)arg3;
 

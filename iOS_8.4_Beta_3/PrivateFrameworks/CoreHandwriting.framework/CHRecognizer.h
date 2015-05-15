@@ -44,30 +44,30 @@
     struct VariantMap { int *x1; int *x2; int *x3; int x4; int *x5; unsigned long long x6; } *_tcVariantMap;
 }
 
-@property(assign,retain) NSCharacterSet * activeCharacterSet;
-@property(assign,copy) CHDrawing * cachedDrawing;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{map<std::__1::set<unsigned long' */ struct  cachedResults; /* unknown property attribute:  true> >=Q}}} */
-@property(assign,readwrite) struct __LMCharacterNgramModel { }* characterLanguageModel;
-@property(assign,readwrite) struct CHNeuralNetwork { int (**x1)(); int x2; char *x3; unsigned long long x4; unsigned int *x5; unsigned int x6; unsigned int x7; unsigned int x8; unsigned int x9; unsigned int x10; }* engine;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Network=II{basic_string<char' */ struct * formatGrammarFST; /* unknown property attribute:  std::__1::less<uint128> >=Q}}}} */
-@property(assign,readwrite) void** icuTransliterator;
-@property(assign,readwrite) unsigned long long lastCharacterStrokeCount;
-@property(assign,readwrite) NSMutableIndexSet * lastCharacterStrokeIndexes;
-@property(assign,retain) NSURL * learningDictionaryURL;
-@property(assign,readwrite) unsigned long long maxRecognitionResultCount;
-@property(assign,readwrite) struct __Mecabra { }* mecabra;
-@property(assign,readwrite) void* mecabraDynamicLexicon;
-@property(assign,readwrite) void* mecabraStaticLexicon;
-@property(assign,readonly) struct CGSize { double x1; double x2; } minimumDrawingSize;
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{Network=II{basic_string<char' */ struct * radicalClusterFST; /* unknown property attribute:  std::__1::less<uint128> >=Q}}}} */
-@property(assign,readwrite) int recognitionMode;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * recognitionQueue;
-@property(assign,readwrite) int recognitionType;
-@property(assign,readwrite) bool saveDrawingUntilNextCandidateAccepted;
-@property(assign,copy) CHDrawing * savedDrawing;
-@property(assign,copy) NSString * savedTop1CandidateString;
-@property(assign,readwrite) struct VariantMap { int *x1; int *x2; int *x3; int x4; int *x5; unsigned long long x6; }* scVariantMap;
-@property(assign,readwrite) struct VariantMap { int *x1; int *x2; int *x3; int x4; int *x5; unsigned long long x6; }* tcVariantMap;
+@property (nonatomic, retain) NSCharacterSet *activeCharacterSet;
+@property (nonatomic, copy) CHDrawing *cachedDrawing;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{map<std::__1::set<unsigned long' */ struct  cachedResults; /* unknown property attribute:  true> >=Q}}} */
+@property (nonatomic) struct __LMCharacterNgramModel { }*characterLanguageModel;
+@property (nonatomic) struct CHNeuralNetwork { int (**x1)(); int x2; char *x3; unsigned long long x4; unsigned int *x5; unsigned int x6; unsigned int x7; unsigned int x8; unsigned int x9; unsigned int x10; }*engine;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Network=II{basic_string<char' */ struct *formatGrammarFST; /* unknown property attribute:  std::__1::less<uint128> >=Q}}}} */
+@property (nonatomic) void**icuTransliterator;
+@property (nonatomic) unsigned long long lastCharacterStrokeCount;
+@property (nonatomic) NSMutableIndexSet *lastCharacterStrokeIndexes;
+@property (nonatomic, retain) NSURL *learningDictionaryURL;
+@property (nonatomic) unsigned long long maxRecognitionResultCount;
+@property (nonatomic) struct __Mecabra { }*mecabra;
+@property (nonatomic) void*mecabraDynamicLexicon;
+@property (nonatomic) void*mecabraStaticLexicon;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } minimumDrawingSize;
+@property (nonatomic) /* Warning: unhandled struct encoding: '{Network=II{basic_string<char' */ struct *radicalClusterFST; /* unknown property attribute:  std::__1::less<uint128> >=Q}}}} */
+@property (nonatomic) int recognitionMode;
+@property (nonatomic) NSObject<OS_dispatch_queue> *recognitionQueue;
+@property (nonatomic) int recognitionType;
+@property (nonatomic) bool saveDrawingUntilNextCandidateAccepted;
+@property (nonatomic, copy) CHDrawing *savedDrawing;
+@property (nonatomic, copy) NSString *savedTop1CandidateString;
+@property (nonatomic) struct VariantMap { int *x1; int *x2; int *x3; int x4; int *x5; unsigned long long x6; }*scVariantMap;
+@property (nonatomic) struct VariantMap { int *x1; int *x2; int *x3; int x4; int *x5; unsigned long long x6; }*tcVariantMap;
 
 + (id)defaultPunctuationResultsForRecognitionType:(int)arg1;
 

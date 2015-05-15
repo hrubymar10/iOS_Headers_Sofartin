@@ -8,8 +8,8 @@
     WebAppController *_webAppController;
 }
 
-@property(assign,readwrite) long long statusBarStyle;
-@property(assign,readwrite) WebAppController * webAppController;
+@property (nonatomic) long long statusBarStyle;
+@property (nonatomic) WebAppController *webAppController;
 
 - (long long)preferredStatusBarStyle;
 - (void)setStatusBarStyle:(long long)arg1;

@@ -13,8 +13,8 @@
     NSObject<OS_dispatch_queue> *_logRequestQueue;
 }
 
-@property(assign,retain) NSFileHandle * fh;
-@property(assign,retain) NSDate * lastStatDate;
+@property (retain) NSFileHandle *fh;
+@property (retain) NSDate *lastStatDate;
 
 + (id)_filenameWithBase:(id)arg1 generationalFormat:(id)arg2 generation:(int)arg3;
 + (id)_generationalFormatFromBase:(id)arg1;

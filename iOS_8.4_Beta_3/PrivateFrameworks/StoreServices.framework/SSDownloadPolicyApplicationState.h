@@ -7,12 +7,12 @@
     NSSet *_applicationStates;
 }
 
-@property(assign,copy) NSString * applicationIdentifier;
-@property(assign,copy) NSSet * applicationStates;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, copy) NSString *applicationIdentifier;
+@property (nonatomic, copy) NSSet *applicationStates;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)addApplicationState:(long long)arg1;
 - (id)applicationIdentifier;

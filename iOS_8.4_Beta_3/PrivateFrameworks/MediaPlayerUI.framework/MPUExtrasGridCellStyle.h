@@ -20,18 +20,18 @@
     NSString *_titleTextStyle;
 }
 
-@property(assign,readwrite) long long defaultTextAlignment;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageSize;
-@property(assign,copy) NSDictionary * subtitleDefaultFontAttributes;
-@property(assign,readwrite) double subtitleFirstBaselineHeight;
-@property(assign,copy) UIColor * subtitleTextColor;
-@property(assign,copy) NSString * subtitleTextStyle;
-@property(assign,readwrite) double textFirstBaselineToBottom;
-@property(assign,readwrite) double textLastBaselineToBottom;
-@property(assign,copy) NSDictionary * titleDefaultFontAttributes;
-@property(assign,readwrite) double titleFirstBaselineHeight;
-@property(assign,copy) UIColor * titleTextColor;
-@property(assign,copy) NSString * titleTextStyle;
+@property (nonatomic) long long defaultTextAlignment;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageSize;
+@property (nonatomic, copy) NSDictionary *subtitleDefaultFontAttributes;
+@property (nonatomic) double subtitleFirstBaselineHeight;
+@property (nonatomic, copy) UIColor *subtitleTextColor;
+@property (nonatomic, copy) NSString *subtitleTextStyle;
+@property (nonatomic) double textFirstBaselineToBottom;
+@property (nonatomic) double textLastBaselineToBottom;
+@property (nonatomic, copy) NSDictionary *titleDefaultFontAttributes;
+@property (nonatomic) double titleFirstBaselineHeight;
+@property (nonatomic, copy) UIColor *titleTextColor;
+@property (nonatomic, copy) NSString *titleTextStyle;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

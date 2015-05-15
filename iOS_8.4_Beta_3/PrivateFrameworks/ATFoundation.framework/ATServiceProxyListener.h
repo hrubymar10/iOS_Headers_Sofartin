@@ -7,11 +7,11 @@
     ATService *_service;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ATService * service;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ATService *service;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)initWithService:(id)arg1;

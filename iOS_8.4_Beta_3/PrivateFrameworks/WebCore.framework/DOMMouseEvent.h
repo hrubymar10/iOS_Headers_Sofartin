@@ -4,22 +4,22 @@
 
 @interface DOMMouseEvent : DOMUIEvent
 
-@property(assign,readonly) bool altKey;
-@property(assign,readonly) unsigned short button;
-@property(assign,readonly) int clientX;
-@property(assign,readonly) int clientY;
-@property(assign,readonly) bool ctrlKey;
-@property(assign,readonly) DOMNode * fromElement;
-@property(assign,readonly) bool metaKey;
-@property(assign,readonly) int offsetX;
-@property(assign,readonly) int offsetY;
-@property(assign,readonly) <DOMEventTarget> * relatedTarget;
-@property(assign,readonly) int screenX;
-@property(assign,readonly) int screenY;
-@property(assign,readonly) bool shiftKey;
-@property(assign,readonly) DOMNode * toElement;
-@property(assign,readonly) int x;
-@property(assign,readonly) int y;
+@property (readonly) bool altKey;
+@property (readonly) unsigned short button;
+@property (readonly) int clientX;
+@property (readonly) int clientY;
+@property (readonly) bool ctrlKey;
+@property (readonly) DOMNode *fromElement;
+@property (readonly) bool metaKey;
+@property (readonly) int offsetX;
+@property (readonly) int offsetY;
+@property (readonly) <DOMEventTarget> *relatedTarget;
+@property (readonly) int screenX;
+@property (readonly) int screenY;
+@property (readonly) bool shiftKey;
+@property (readonly) DOMNode *toElement;
+@property (readonly) int x;
+@property (readonly) int y;
 
 - (bool)altKey;
 - (unsigned short)button;

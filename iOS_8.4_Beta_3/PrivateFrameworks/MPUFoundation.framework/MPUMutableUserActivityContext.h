@@ -6,9 +6,9 @@
     NSMutableArray *_containerItems;
 }
 
-@property(assign,copy) NSArray * containerItems;
-@property(assign,readwrite) long long originatorType;
-@property(assign,readwrite) long long originatorVersion;
+@property (nonatomic, copy) NSArray *containerItems;
+@property (nonatomic) long long originatorType;
+@property (nonatomic) long long originatorVersion;
 
 - (void).cxx_destruct;
 - (void)addContainerItem:(id)arg1;

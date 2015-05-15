@@ -6,7 +6,7 @@
     <NNMKFetchesSyncServiceServerDelegate> *_delegate;
 }
 
-@property(assign,readwrite) <NNMKFetchesSyncServiceServerDelegate> * delegate;
+@property (nonatomic) <NNMKFetchesSyncServiceServerDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (id)delegate;

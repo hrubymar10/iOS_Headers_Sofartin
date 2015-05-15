@@ -9,10 +9,10 @@
     long long _versionID;
 }
 
-@property(assign,readwrite) NSString * currentText;
-@property(assign,readwrite) long long currentVersionIdentifier;
-@property(assign,readonly) bool requiresAuthentication;
-@property(getter=isUserAccepted,assign,readwrite) bool userAccepted;
+@property (nonatomic) NSString *currentText;
+@property (nonatomic) long long currentVersionIdentifier;
+@property (nonatomic, readonly) bool requiresAuthentication;
+@property (getter=isUserAccepted, nonatomic) bool userAccepted;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)currentText;

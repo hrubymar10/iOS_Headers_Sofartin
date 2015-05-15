@@ -17,14 +17,14 @@
     NSString *_stationStringID;
 }
 
-@property(assign,readonly) bool _canUseStoreAdamIDForSubscriptionAdamID;
-@property(getter=isHeartbeatInvalid,assign,readwrite) bool heartbeatInvalid;
-@property(assign,readwrite) bool isInWishList;
-@property(assign,retain) RadioStation * station;
-@property(assign,readonly) NSString * stationHash;
-@property(assign,readonly) long long stationID;
-@property(assign,readonly) NSString * stationName;
-@property(assign,readonly) NSString * stationStringID;
+@property (nonatomic, readonly) bool _canUseStoreAdamIDForSubscriptionAdamID;
+@property (getter=isHeartbeatInvalid, nonatomic) bool heartbeatInvalid;
+@property (nonatomic) bool isInWishList;
+@property (nonatomic, retain) RadioStation *station;
+@property (nonatomic, readonly) NSString *stationHash;
+@property (nonatomic, readonly) long long stationID;
+@property (nonatomic, readonly) NSString *stationName;
+@property (nonatomic, readonly) NSString *stationStringID;
 
 - (void).cxx_destruct;
 - (id)MPU_contentItemIdentifierCollection;

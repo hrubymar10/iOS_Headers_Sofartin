@@ -15,15 +15,15 @@
     NSURL *_releaseNotesURL;
 }
 
-@property(assign,retain) NSURL * baseDocumentationURL;
-@property(assign,retain) NSString * humanReadableUpdateName;
-@property(assign,retain) NSString * licenseAgreementFileName;
-@property(assign,retain) NSURL * licenseAgreementURL;
-@property(assign,retain) NSString * primaryLanguage;
-@property(assign,retain) NSString * releaseNotesFileName;
-@property(assign,retain) NSString * releaseNotesSummaryFileName;
-@property(assign,retain) NSURL * releaseNotesSummaryURL;
-@property(assign,retain) NSURL * releaseNotesURL;
+@property (nonatomic, retain) NSURL *baseDocumentationURL;
+@property (nonatomic, retain) NSString *humanReadableUpdateName;
+@property (nonatomic, retain) NSString *licenseAgreementFileName;
+@property (nonatomic, retain) NSURL *licenseAgreementURL;
+@property (nonatomic, retain) NSString *primaryLanguage;
+@property (nonatomic, retain) NSString *releaseNotesFileName;
+@property (nonatomic, retain) NSString *releaseNotesSummaryFileName;
+@property (nonatomic, retain) NSURL *releaseNotesSummaryURL;
+@property (nonatomic, retain) NSURL *releaseNotesURL;
 
 + (bool)supportsSecureCoding;
 

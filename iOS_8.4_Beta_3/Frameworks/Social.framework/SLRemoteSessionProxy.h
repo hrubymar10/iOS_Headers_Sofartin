@@ -14,9 +14,9 @@
     NSString *_serviceName;
 }
 
-@property(assign,copy) id connectionResetBlock;
-@property(assign,retain) NSXPCInterface * exportedInterface;
-@property(assign,readwrite) NSObject * exportedObject;
+@property (copy) id connectionResetBlock;
+@property (retain) NSXPCInterface *exportedInterface;
+@property NSObject *exportedObject;
 
 - (void).cxx_destruct;
 - (void)_remoteSessionConnectionWasInterrupted;

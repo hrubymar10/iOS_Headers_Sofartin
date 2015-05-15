@@ -15,16 +15,16 @@
     NSIndexSet *_sectionIndices;
 }
 
-@property(assign,retain) CKDMMCSRequestOptions * MMCSRequestOptions;
-@property(assign,retain) CKDCancelTokenGroup * cancelTokens;
-@property(assign,retain) NSError * error;
-@property(assign,retain) NSObject<OS_dispatch_group> * group;
-@property(assign,retain) id itemIndices;
-@property(assign,retain) CKAsset * manifestAsset;
-@property(assign,readonly) CKPackage * package;
-@property(assign,retain) CKDProgressTracker * progressTracker;
-@property(assign,retain) NSArray * sectionAssets;
-@property(assign,retain) NSIndexSet * sectionIndices;
+@property (nonatomic, retain) CKDMMCSRequestOptions *MMCSRequestOptions;
+@property (nonatomic, retain) CKDCancelTokenGroup *cancelTokens;
+@property (retain) NSError *error;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *group;
+@property (nonatomic, retain) id itemIndices;
+@property (nonatomic, retain) CKAsset *manifestAsset;
+@property (nonatomic, readonly) CKPackage *package;
+@property (nonatomic, retain) CKDProgressTracker *progressTracker;
+@property (nonatomic, retain) NSArray *sectionAssets;
+@property (nonatomic, retain) NSIndexSet *sectionIndices;
 
 - (void).cxx_destruct;
 - (id)MMCSRequestOptions;

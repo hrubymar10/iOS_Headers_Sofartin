@@ -11,21 +11,21 @@
     NSUUID *mUUID;
 }
 
-@property(assign,readonly) TSCHChartAxis * axis;
-@property(assign,copy) TSCHChartAxisID * axisID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool labelShowing;
-@property(assign,readonly) bool lineShowing;
-@property(assign,readonly) unsigned long long styleSwapIndex;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSUUID * uuid;
-@property(assign,readonly) bool valueLabelShowing;
+@property (nonatomic, readonly) TSCHChartAxis *axis;
+@property (nonatomic, readonly, copy) TSCHChartAxisID *axisID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool labelShowing;
+@property (nonatomic, readonly) bool lineShowing;
+@property (nonatomic, readonly) unsigned long long styleSwapIndex;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSUUID *uuid;
+@property (nonatomic, readonly) bool valueLabelShowing;
 
 + (id)axisIDFromStyleSwapOrStyleOwnerIndex:(unsigned long long)arg1;
 + (id)defaultNonStyleWithContext:(id)arg1 referenceLineType:(unsigned long long)arg2 axis:(id)arg3;

@@ -25,25 +25,25 @@
     double _volume;
 }
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,readwrite) unsigned int audioQueueFlags;
-@property(assign,readwrite) unsigned int audioSessionID;
-@property(assign,readwrite) bool audioSessionIDIsValid;
-@property(assign,readwrite) double dispatchTime;
-@property(assign,readwrite) long long footprint;
-@property(assign,readwrite) long long gender;
-@property(assign,readwrite) double handledTime;
-@property(assign,copy) NSString * languageCode;
-@property(assign,readwrite) double latency;
-@property(assign,readwrite) bool maintainsInput;
-@property(assign,copy) NSURL * outputPath;
-@property(assign,readwrite) double pitch;
-@property(assign,readwrite) double rate;
-@property(assign,retain) TTSSpeechChannel * speechChannel;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) bool useCustomVoice;
-@property(assign,readwrite) bool useVoiceBooster;
-@property(assign,readwrite) double volume;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic) unsigned int audioQueueFlags;
+@property (nonatomic) unsigned int audioSessionID;
+@property (nonatomic) bool audioSessionIDIsValid;
+@property (nonatomic) double dispatchTime;
+@property (nonatomic) long long footprint;
+@property (nonatomic) long long gender;
+@property (nonatomic) double handledTime;
+@property (nonatomic, copy) NSString *languageCode;
+@property (nonatomic) double latency;
+@property (nonatomic) bool maintainsInput;
+@property (nonatomic, copy) NSURL *outputPath;
+@property (nonatomic) double pitch;
+@property (nonatomic) double rate;
+@property (nonatomic, retain) TTSSpeechChannel *speechChannel;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) bool useCustomVoice;
+@property (nonatomic) bool useVoiceBooster;
+@property (nonatomic) double volume;
 
 + (bool)supportsSecureCoding;
 

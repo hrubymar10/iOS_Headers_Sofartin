@@ -4,8 +4,8 @@
 
 @interface ICSTravelDuration : ICSProperty
 
-@property(assign,retain) ICSDuration * duration;
-@property(assign,retain) NSString * transparency;
+@property (nonatomic, retain) ICSDuration *duration;
+@property (nonatomic, retain) NSString *transparency;
 
 - (void)_ICSStringWithOptions:(unsigned long long)arg1 appendingToString:(id)arg2 additionalParameters:(id)arg3;
 - (bool)alwaysHasParametersToSerialize;

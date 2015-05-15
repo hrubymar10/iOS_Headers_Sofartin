@@ -4,13 +4,13 @@
 
 @interface SAEmailSearch : SADomainCommand
 
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSString * fromEmail;
-@property(assign,copy) NSDate * startDate;
-@property(assign,readwrite) int status;
-@property(assign,copy) NSString * subject;
-@property(assign,copy) NSString * timeZoneId;
-@property(assign,copy) NSString * toEmail;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSString *fromEmail;
+@property (nonatomic, copy) NSDate *startDate;
+@property (nonatomic) int status;
+@property (nonatomic, copy) NSString *subject;
+@property (nonatomic, copy) NSString *timeZoneId;
+@property (nonatomic, copy) NSString *toEmail;
 
 + (id)search;
 + (id)searchWithDictionary:(id)arg1 context:(id)arg2;

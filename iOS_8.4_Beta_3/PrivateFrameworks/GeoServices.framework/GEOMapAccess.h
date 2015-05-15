@@ -8,9 +8,9 @@
     id _tileErrorHandler;
 }
 
-@property(assign,readonly) bool allowsNetworkTileLoad;
-@property(assign,readwrite) <GEOMapAccessRestrictions> * restrictions;
-@property(assign,copy) id tileErrorHandler;
+@property (nonatomic, readonly) bool allowsNetworkTileLoad;
+@property (nonatomic) <GEOMapAccessRestrictions> *restrictions;
+@property (nonatomic, copy) id tileErrorHandler;
 
 + (id)realisticMap;
 + (bool)supportsRealisticMap;

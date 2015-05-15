@@ -7,9 +7,9 @@
     long long _persistentID;
 }
 
-@property(assign,readonly) bool existsInLibrary;
-@property(assign,readwrite) ML3MusicLibrary * library;
-@property(assign,readonly) long long persistentID;
+@property (readonly) bool existsInLibrary;
+@property ML3MusicLibrary *library;
+@property (readonly) long long persistentID;
 
 + (bool)_deleteRowForPersistentIDs:(const long long*)arg1 count:(unsigned long long)arg2 library:(id)arg3 table:(id)arg4 usingColumn:(id)arg5 usingConnection:(id)arg6;
 + (void)_didChangeValueForProperties:(id)arg1 inLibrary:(id)arg2;

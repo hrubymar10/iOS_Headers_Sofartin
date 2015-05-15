@@ -9,9 +9,9 @@
     unsigned short _streamID;
 }
 
-@property(assign,retain) NSString * peerResponseIdentifier;
-@property(assign,readwrite) unsigned int sequenceNumber;
-@property(assign,readonly) unsigned short streamID;
+@property (nonatomic, readonly, retain) NSString *peerResponseIdentifier;
+@property (nonatomic) unsigned int sequenceNumber;
+@property (nonatomic, readonly) unsigned short streamID;
 
 - (id)_nonHeaderData;
 - (unsigned char)command;

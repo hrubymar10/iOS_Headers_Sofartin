@@ -11,12 +11,12 @@
     NSSet *_terms;
 }
 
-@property(assign,readwrite) bool findGroups;
-@property(assign,readwrite) bool findLocations;
-@property(assign,readwrite) bool findResources;
-@property(assign,readwrite) bool findUsers;
-@property(assign,readwrite) unsigned long long resultLimit;
-@property(assign,retain) NSSet * terms;
+@property (nonatomic) bool findGroups;
+@property (nonatomic) bool findLocations;
+@property (nonatomic) bool findResources;
+@property (nonatomic) bool findUsers;
+@property (nonatomic) unsigned long long resultLimit;
+@property (nonatomic, retain) NSSet *terms;
 
 - (bool)findGroups;
 - (bool)findLocations;

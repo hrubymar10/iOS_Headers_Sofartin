@@ -8,9 +8,9 @@
     NSObject<OS_dispatch_queue> *_renderQueue;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * homeQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * layoutQueue;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * renderQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *homeQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *layoutQueue;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *renderQueue;
 
 + (id)defaultDispatch;
 + (id)iconRenderQueue;

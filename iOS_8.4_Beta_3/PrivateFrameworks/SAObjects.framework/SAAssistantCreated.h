@@ -4,8 +4,8 @@
 
 @interface SAAssistantCreated : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * assistantId;
-@property(assign,copy) NSString * speechId;
+@property (nonatomic, copy) NSString *assistantId;
+@property (nonatomic, copy) NSString *speechId;
 
 + (id)assistantCreated;
 + (id)assistantCreatedWithDictionary:(id)arg1 context:(id)arg2;

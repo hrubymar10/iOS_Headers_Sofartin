@@ -4,7 +4,7 @@
 
 @interface RUIBarButtonItem : RUIElement
 
-@property(assign,retain) NSDictionary * attributes;
+@property (nonatomic, retain) NSDictionary *attributes;
 
 - (id)newBarButtonItemWithTarget:(id)arg1 action:(SEL)arg2;
 

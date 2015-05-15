@@ -12,10 +12,10 @@
     MPAVRoute *_route;
 }
 
-@property(getter=isDebugCell,assign,readwrite) bool debugCell;
-@property(assign,readwrite) <MPAVRoutingTableViewCellDelegate> * delegate;
-@property(assign,readwrite) bool mirroringSwitchVisible;
-@property(assign,retain) MPAVRoute * route;
+@property (getter=isDebugCell, nonatomic) bool debugCell;
+@property (nonatomic) <MPAVRoutingTableViewCellDelegate> *delegate;
+@property (nonatomic) bool mirroringSwitchVisible;
+@property (nonatomic, retain) MPAVRoute *route;
 
 - (void).cxx_destruct;
 - (void)_configureLabel:(id)arg1;

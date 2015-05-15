@@ -8,9 +8,9 @@
     NSData *_token;
 }
 
-@property(assign,retain) NSString * apsEnvironmentString;
-@property(assign,retain) NSString * bundleID;
-@property(assign,retain) NSData * token;
+@property (nonatomic, retain) NSString *apsEnvironmentString;
+@property (nonatomic, retain) NSString *bundleID;
+@property (nonatomic, retain) NSData *token;
 
 - (void).cxx_destruct;
 - (id)apsEnvironmentString;

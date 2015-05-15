@@ -6,7 +6,7 @@
     SBKSyncResponseData *_syncResponseData;
 }
 
-@property(assign,readonly) SBKSyncResponseData * syncResponseData;
+@property (readonly) SBKSyncResponseData *syncResponseData;
 
 + (id)responseWithResponse:(id)arg1 transaction:(id)arg2;
 

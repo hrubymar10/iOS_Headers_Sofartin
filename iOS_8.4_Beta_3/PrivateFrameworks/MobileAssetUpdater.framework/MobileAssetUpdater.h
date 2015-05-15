@@ -13,15 +13,15 @@
     bool _requireAssetMetadata;
 }
 
-@property(assign,retain) ASAsset * asset;
-@property(assign,readonly) bool assetAvailable;
-@property(assign,readonly) bool assetDownloaded;
-@property(assign,retain) NSString * assetType;
-@property(assign,copy) id logger;
-@property(assign,retain) NSString * overrideFile;
-@property(assign,retain) NSString * purgeOverrideFile;
-@property(assign,retain) ASAssetQuery * query;
-@property(assign,readwrite) bool requireAssetMetadata;
+@property (retain) ASAsset *asset;
+@property (readonly) bool assetAvailable;
+@property (readonly) bool assetDownloaded;
+@property (retain) NSString *assetType;
+@property (copy) id logger;
+@property (retain) NSString *overrideFile;
+@property (retain) NSString *purgeOverrideFile;
+@property (retain) ASAssetQuery *query;
+@property bool requireAssetMetadata;
 
 - (id)asset;
 - (bool)assetAvailable;

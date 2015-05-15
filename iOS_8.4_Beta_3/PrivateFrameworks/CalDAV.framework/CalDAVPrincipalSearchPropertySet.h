@@ -6,8 +6,8 @@
     NSSet *_properties;
 }
 
-@property(assign,readonly) NSSet * stringProperties;
-@property(assign,readonly) bool supportsPropertySearch;
+@property (nonatomic, readonly) NSSet *stringProperties;
+@property (nonatomic, readonly) bool supportsPropertySearch;
 
 + (id)searchSetWithProperties:(id)arg1;
 

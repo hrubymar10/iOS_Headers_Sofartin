@@ -4,17 +4,17 @@
 
 @interface SAReminderRecurrence : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSArray * daysOfTheMonth;
-@property(assign,copy) NSArray * daysOfTheWeek;
-@property(assign,copy) NSArray * daysOfTheYear;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * frequencyTimeUnit;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) long long interval;
-@property(assign,copy) NSArray * monthsOfTheYear;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSArray * weeksOfTheYear;
+@property (nonatomic, copy) NSArray *daysOfTheMonth;
+@property (nonatomic, copy) NSArray *daysOfTheWeek;
+@property (nonatomic, copy) NSArray *daysOfTheYear;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, copy) NSString *frequencyTimeUnit;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) long long interval;
+@property (nonatomic, copy) NSArray *monthsOfTheYear;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSArray *weeksOfTheYear;
 
 + (id)recurrence;
 + (id)recurrenceWithDictionary:(id)arg1 context:(id)arg2;

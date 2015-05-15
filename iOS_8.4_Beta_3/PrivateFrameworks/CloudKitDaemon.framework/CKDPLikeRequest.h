@@ -6,8 +6,8 @@
     CKDPLikedId *_identifier;
 }
 
-@property(assign,readonly) bool hasIdentifier;
-@property(assign,retain) CKDPLikedId * identifier;
+@property (nonatomic, readonly) bool hasIdentifier;
+@property (nonatomic, retain) CKDPLikedId *identifier;
 
 + (id)options;
 

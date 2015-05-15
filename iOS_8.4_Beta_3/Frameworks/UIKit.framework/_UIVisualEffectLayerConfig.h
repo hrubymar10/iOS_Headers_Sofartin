@@ -8,9 +8,9 @@
     double _opacity;
 }
 
-@property(assign,readonly) UIColor * fillColor;
-@property(assign,readonly) NSString * filterType;
-@property(assign,readonly) double opacity;
+@property (nonatomic, readonly) UIColor *fillColor;
+@property (nonatomic, readonly) NSString *filterType;
+@property (nonatomic, readonly) double opacity;
 
 + (id)layerWithFillColor:(id)arg1 opacity:(double)arg2 filterType:(id)arg3;
 

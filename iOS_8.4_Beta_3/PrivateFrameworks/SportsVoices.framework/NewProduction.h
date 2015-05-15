@@ -7,8 +7,8 @@
     SimpleSlotSequence *_overlays;
 }
 
-@property(assign,retain) NSArray * indices;
-@property(assign,retain) SimpleSlotSequence * overlays;
+@property (retain) NSArray *indices;
+@property (retain) SimpleSlotSequence *overlays;
 
 + (id)instanceFromPlist:(id)arg1;
 + (id)productionWithSimpleSlotSequence:(id)arg1;

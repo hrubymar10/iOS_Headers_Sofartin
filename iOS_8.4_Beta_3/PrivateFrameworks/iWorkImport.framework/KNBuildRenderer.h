@@ -27,17 +27,17 @@
     bool mUsingFinalTexture;
 }
 
-@property(assign,readonly) KNAnimatedBuild * animatedBuild;
-@property(assign,readonly) NSArray * animatedBuildsToStartAtEnd;
-@property(assign,readonly) KNBuildChunk * buildStage;
-@property(assign,readonly) TSDDrawableInfo * info;
-@property(assign,readonly) bool isTextDrawable;
-@property(assign,readonly) TSDTextureSet * nonCachedTextureSet;
-@property(assign,retain) CALayer * parentLayer;
-@property(assign,readonly) TSDRep * rep;
-@property(assign,retain) TSDTextureContext * textureContext;
-@property(assign,readonly) unsigned long long textureDeliveryStyle;
-@property(assign,readonly) TSDTextureSet * textureSet;
+@property (nonatomic, readonly) KNAnimatedBuild *animatedBuild;
+@property (nonatomic, readonly) NSArray *animatedBuildsToStartAtEnd;
+@property (nonatomic, readonly) KNBuildChunk *buildStage;
+@property (nonatomic, readonly) TSDDrawableInfo *info;
+@property (nonatomic, readonly) bool isTextDrawable;
+@property (nonatomic, readonly) TSDTextureSet *nonCachedTextureSet;
+@property (nonatomic, retain) CALayer *parentLayer;
+@property (nonatomic, readonly) TSDRep *rep;
+@property (nonatomic, retain) TSDTextureContext *textureContext;
+@property (nonatomic, readonly) unsigned long long textureDeliveryStyle;
+@property (nonatomic, readonly) TSDTextureSet *textureSet;
 
 - (bool)addAnimationsAtLayerTime:(double)arg1;
 - (void)addBuildToStartAtEnd:(id)arg1;

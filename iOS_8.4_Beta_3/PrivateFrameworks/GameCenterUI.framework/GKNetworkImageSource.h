@@ -6,7 +6,7 @@
     NSMutableDictionary *_loadingGroups;
 }
 
-@property(assign,readwrite) NSMutableDictionary * loadingGroups;
+@property (nonatomic) NSMutableDictionary *loadingGroups;
 
 - (void)dealloc;
 - (bool)imageNeedsRefresh:(id)arg1;

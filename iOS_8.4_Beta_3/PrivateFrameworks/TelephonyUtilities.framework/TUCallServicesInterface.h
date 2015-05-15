@@ -13,18 +13,18 @@
     NSXPCConnection *_xpcConnection;
 }
 
-@property(assign,retain) TUCallCenterCallsCache * callsCache;
-@property(assign,copy) NSArray * currentProxyCalls;
-@property(assign,readwrite) <TUCallServicesDaemonDelegate> * daemonDelegate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSData * localFrequency;
-@property(getter=isMuted,assign,readwrite) bool muted;
-@property(assign,retain) TUProxyCallModel * proxyCallModel;
-@property(assign,retain) NSData * remoteFrequency;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSXPCConnection * xpcConnection;
+@property (nonatomic, retain) TUCallCenterCallsCache *callsCache;
+@property (nonatomic, copy) NSArray *currentProxyCalls;
+@property (nonatomic) <TUCallServicesDaemonDelegate> *daemonDelegate;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSData *localFrequency;
+@property (getter=isMuted, nonatomic) bool muted;
+@property (nonatomic, retain) TUProxyCallModel *proxyCallModel;
+@property (nonatomic, retain) NSData *remoteFrequency;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSXPCConnection *xpcConnection;
 
 + (bool)launchesCallServicesDaemonOnDemand;
 + (id)sharedInstance;

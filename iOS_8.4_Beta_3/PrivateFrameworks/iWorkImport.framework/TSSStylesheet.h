@@ -13,17 +13,17 @@
     TSUMutableRetainedPointerSet *mStyles;
 }
 
-@property(assign,readonly) NSSet * baseStyles;
-@property(assign,readwrite) bool canCullStyles;
-@property(assign,readonly) TSSStylesheet * child;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) TSWPParagraphStyle * defaultPresenterNotesParagraphStyle;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isLocked;
-@property(assign,readonly) TSSStylesheet * parent;
-@property(assign,readonly) NSSet * styles;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSSet *baseStyles;
+@property (nonatomic) bool canCullStyles;
+@property (nonatomic, readonly) TSSStylesheet *child;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) TSWPParagraphStyle *defaultPresenterNotesParagraphStyle;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isLocked;
+@property (nonatomic, readonly) TSSStylesheet *parent;
+@property (nonatomic, readonly) NSSet *styles;
+@property (readonly) Class superclass;
 
 + (id)p_presenterNotesListStyleIdentifierForListLabelType:(int)arg1;
 + (id)presenterNotesParagraphStyleIdentifier;

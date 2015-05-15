@@ -8,9 +8,9 @@
     bool _focusLocked;
 }
 
-@property(assign,readonly) NSDictionary * _indicatorTextAttributes;
-@property(getter=isExposureLocked,assign,readwrite) bool exposureLocked;
-@property(getter=isFocusLocked,assign,readwrite) bool focusLocked;
+@property (nonatomic, readonly) NSDictionary *_indicatorTextAttributes;
+@property (getter=isExposureLocked, nonatomic) bool exposureLocked;
+@property (getter=isFocusLocked, nonatomic) bool focusLocked;
 
 - (void).cxx_destruct;
 - (void)_commonCAMHardwareLockIndicatorViewInitialization;

@@ -9,11 +9,11 @@
     long long _rangeStart;
 }
 
-@property(assign,copy) NSString * actualHashString;
-@property(assign,copy) NSString * expectedHashString;
-@property(assign,readonly) NSString * hashFailureHeaderString;
-@property(assign,readwrite) long long rangeEnd;
-@property(assign,readwrite) long long rangeStart;
+@property (nonatomic, copy) NSString *actualHashString;
+@property (nonatomic, copy) NSString *expectedHashString;
+@property (nonatomic, readonly) NSString *hashFailureHeaderString;
+@property (nonatomic) long long rangeEnd;
+@property (nonatomic) long long rangeStart;
 
 - (id)actualHashString;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

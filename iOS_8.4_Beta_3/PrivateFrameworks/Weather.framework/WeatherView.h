@@ -9,7 +9,7 @@
     UIView *_windView;
 }
 
-@property(setter=showCity:,assign,retain) City * city;
+@property (setter=showCity:, nonatomic, retain) City *city;
 
 - (bool)_setCity:(id)arg1 associateAsDelegate:(bool)arg2;
 - (id)bundle;

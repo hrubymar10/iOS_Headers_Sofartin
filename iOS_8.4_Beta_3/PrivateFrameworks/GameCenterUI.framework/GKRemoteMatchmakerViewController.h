@@ -6,12 +6,12 @@
     GKMatchmakerViewController *_delegateWeak;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) GKMatchmakerViewController * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) GKGame * game;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) GKMatchmakerViewController *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) GKGame *game;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)exportedInterface;
 + (id)serviceViewControllerInterface;

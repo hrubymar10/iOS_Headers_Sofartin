@@ -22,16 +22,16 @@
     NSMutableArray *_touches;
 }
 
-@property(assign,readwrite) unsigned long long direction;
-@property(assign,readwrite) double maximumDuration;
-@property(assign,readwrite) double maximumPrimaryMovement;
-@property(assign,readwrite) double maximumSecondaryMovement;
-@property(assign,readwrite) double minimumPrimaryMovement;
-@property(assign,readwrite) double minimumSecondaryMovement;
-@property(assign,readwrite) unsigned long long numberOfTouchesRequired;
-@property(assign,readwrite) double rateOfMaximumMovementDecay;
-@property(assign,readwrite) double rateOfMinimumMovementDecay;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } startPoint;
+@property (nonatomic) unsigned long long direction;
+@property (nonatomic) double maximumDuration;
+@property (nonatomic) double maximumPrimaryMovement;
+@property (nonatomic) double maximumSecondaryMovement;
+@property (nonatomic) double minimumPrimaryMovement;
+@property (nonatomic) double minimumSecondaryMovement;
+@property (nonatomic) unsigned long long numberOfTouchesRequired;
+@property (nonatomic) double rateOfMaximumMovementDecay;
+@property (nonatomic) double rateOfMinimumMovementDecay;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } startPoint;
 
 - (void)_appendSubclassDescription:(id)arg1;
 - (bool)_checkForSwipeWithDelta:(struct CGPoint { double x1; double x2; })arg1 time:(double)arg2;

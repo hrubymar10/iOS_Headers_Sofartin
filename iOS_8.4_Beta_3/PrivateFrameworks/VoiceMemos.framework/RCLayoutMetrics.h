@@ -29,23 +29,23 @@
     } _metricInfo;
 }
 
-@property(assign,readonly) double hDeltaAcousticAnnotationLabelToWaveformRight;
-@property(assign,readonly) double hDeltaAdditionalInsetFromWaveformEdge;
-@property(assign,readonly) double hDeltaControlButtonsSpacing;
-@property(assign,readonly) double hDeltaTrimProgressInset;
-@property(assign,readonly) double hDetailNavigationBarInset;
-@property(assign,readonly) bool hIsWaveformFlushToEdges;
-@property(assign,readwrite) double hPresentedRecordMemoHeight;
-@property(assign,readonly) double hTrimModeInset;
-@property(assign,readonly) double vDeltaControlsBottomToBottom;
-@property(assign,readonly) double vDeltaControlsTopToNavigationBottom;
-@property(assign,readonly) double vDeltaDateBaselineToControlsTop;
-@property(assign,readonly) double vDeltaLockAbsoluteTopToWaveformTop;
-@property(assign,readonly) double vDeltaLockNotificationListBottom;
-@property(assign,readonly) double vDeltaLockNotificationListBottomToRecordingTimeBaseline;
-@property(assign,readonly) double vDeltaTimeBaselineToTitleBaseline;
-@property(assign,readonly) double vDeltaTitleBaselineToDateBaseline;
-@property(assign,readonly) double vDeltaWaveformToTimeBaseline;
+@property (nonatomic, readonly) double hDeltaAcousticAnnotationLabelToWaveformRight;
+@property (nonatomic, readonly) double hDeltaAdditionalInsetFromWaveformEdge;
+@property (nonatomic, readonly) double hDeltaControlButtonsSpacing;
+@property (nonatomic, readonly) double hDeltaTrimProgressInset;
+@property (nonatomic, readonly) double hDetailNavigationBarInset;
+@property (nonatomic, readonly) bool hIsWaveformFlushToEdges;
+@property (nonatomic) double hPresentedRecordMemoHeight;
+@property (nonatomic, readonly) double hTrimModeInset;
+@property (nonatomic, readonly) double vDeltaControlsBottomToBottom;
+@property (nonatomic, readonly) double vDeltaControlsTopToNavigationBottom;
+@property (nonatomic, readonly) double vDeltaDateBaselineToControlsTop;
+@property (nonatomic, readonly) double vDeltaLockAbsoluteTopToWaveformTop;
+@property (nonatomic, readonly) double vDeltaLockNotificationListBottom;
+@property (nonatomic, readonly) double vDeltaLockNotificationListBottomToRecordingTimeBaseline;
+@property (nonatomic, readonly) double vDeltaTimeBaselineToTitleBaseline;
+@property (nonatomic, readonly) double vDeltaTitleBaselineToDateBaseline;
+@property (nonatomic, readonly) double vDeltaWaveformToTimeBaseline;
 
 + (id)defaultMetrics;
 + (id)largeHorizontalMetrics;

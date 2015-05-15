@@ -6,7 +6,7 @@
     bool _enabled;
 }
 
-@property(assign,readwrite) bool enabled;
+@property (nonatomic) bool enabled;
 
 - (void)disable;
 - (void)enable;

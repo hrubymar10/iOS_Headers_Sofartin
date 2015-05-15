@@ -9,10 +9,10 @@
     id _touchUpHandler;
 }
 
-@property(assign,readwrite) long long finalTrackingID;
-@property(assign,copy) id touchDownHandler;
-@property(assign,copy) id touchMovedHandler;
-@property(assign,copy) id touchUpHandler;
+@property (nonatomic) long long finalTrackingID;
+@property (nonatomic, copy) id touchDownHandler;
+@property (nonatomic, copy) id touchMovedHandler;
+@property (nonatomic, copy) id touchUpHandler;
 
 - (void)dealloc;
 - (long long)finalTrackingID;

@@ -7,7 +7,7 @@
     NSArray *_textures;
 }
 
-@property(assign,readwrite) double timePerFrame;
+@property (nonatomic) double timePerFrame;
 
 + (id)animateWithTextures:(id)arg1 timePerFrame:(double)arg2 resize:(bool)arg3 restore:(bool)arg4;
 

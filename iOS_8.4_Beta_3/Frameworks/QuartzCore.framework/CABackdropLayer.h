@@ -4,14 +4,14 @@
 
 @interface CABackdropLayer : CALayer
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } backdropRect;
-@property(assign,readwrite) bool disablesOccludedBackdropBlurs;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSString * groupName;
-@property(assign,readwrite) double marginWidth;
-@property(assign,readwrite) double scale;
-@property(assign,readwrite) double statisticsInterval;
-@property(assign,copy) NSString * statisticsType;
+@property struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } backdropRect;
+@property bool disablesOccludedBackdropBlurs;
+@property (getter=isEnabled) bool enabled;
+@property (copy) NSString *groupName;
+@property double marginWidth;
+@property double scale;
+@property double statisticsInterval;
+@property (copy) NSString *statisticsType;
 
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;
 + (bool)_hasRenderLayerSubclass;

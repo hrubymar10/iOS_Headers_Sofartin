@@ -15,11 +15,11 @@
     long long _updateAnimationCount;
 }
 
-@property(getter=_collectionView,setter=_setCollectionView:,assign,readwrite) UICollectionView * collectionView;
-@property(getter=_isInUpdateAnimation,assign,readonly) bool inUpdateAnimation;
-@property(getter=_layoutAttributes,setter=_setLayoutAttributes:,assign,copy) UICollectionViewLayoutAttributes * layoutAttributes;
-@property(getter=_arePreferredAttributesValid,assign,readwrite) bool preferredAttributesValid;
-@property(assign,copy) NSString * reuseIdentifier;
+@property (getter=_collectionView, setter=_setCollectionView:, nonatomic) UICollectionView *collectionView;
+@property (getter=_isInUpdateAnimation, nonatomic, readonly) bool inUpdateAnimation;
+@property (getter=_layoutAttributes, setter=_setLayoutAttributes:, nonatomic, copy) UICollectionViewLayoutAttributes *layoutAttributes;
+@property (getter=_arePreferredAttributesValid, nonatomic) bool preferredAttributesValid;
+@property (nonatomic, copy) NSString *reuseIdentifier;
 
 + (void)_gkAdjustConstraintMargins:(id)arg1 leading:(double)arg2 trailing:(double)arg3;
 + (void)_gkSetupSelectableThreeLineLayoutWithCell:(id)arg1 icon:(id)arg2 selectionView:(id)arg3 upperLine:(id)arg4 middleLine:(id)arg5 lowerLine:(id)arg6 metricOverrides:(id)arg7;

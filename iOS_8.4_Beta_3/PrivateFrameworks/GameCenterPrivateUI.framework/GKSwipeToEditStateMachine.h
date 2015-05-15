@@ -13,18 +13,18 @@
     double _startTrackingX;
 }
 
-@property(assign,retain) UICollectionView * collectionView;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) GKCancelSwipeToEditGestureRecognizer * editModeCancelRecognizer;
-@property(assign,retain) GKCollectionViewCell * editingCell;
-@property(assign,retain) GKCollectionViewDataSource * gkDataSource;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) _UIDynamicAnimation * openAnimation;
-@property(assign,retain) UIPanGestureRecognizer * panGestureRecognizer;
-@property(assign,readwrite) double startTrackingX;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSIndexPath * trackedIndexPath;
+@property (nonatomic, retain) UICollectionView *collectionView;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) GKCancelSwipeToEditGestureRecognizer *editModeCancelRecognizer;
+@property (nonatomic, retain) GKCollectionViewCell *editingCell;
+@property (nonatomic, retain) GKCollectionViewDataSource *gkDataSource;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) _UIDynamicAnimation *openAnimation;
+@property (nonatomic, retain) UIPanGestureRecognizer *panGestureRecognizer;
+@property (nonatomic) double startTrackingX;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSIndexPath *trackedIndexPath;
 
 - (id)collectionView;
 - (void)dealloc;

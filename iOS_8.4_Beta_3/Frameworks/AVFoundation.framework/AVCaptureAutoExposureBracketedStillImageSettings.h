@@ -6,7 +6,7 @@
     float _exposureTargetBias;
 }
 
-@property(assign,readonly) float exposureTargetBias;
+@property (readonly) float exposureTargetBias;
 
 + (id)autoExposureSettingsWithExposureTargetBias:(float)arg1;
 

@@ -9,10 +9,10 @@
     bool vibranceEnabled;
 }
 
-@property(assign,readwrite) bool curvesEnabled;
-@property(assign,readwrite) bool faceBalanceEnabled;
-@property(assign,readwrite) bool shadowsEnabled;
-@property(assign,readwrite) bool vibranceEnabled;
+@property bool curvesEnabled;
+@property bool faceBalanceEnabled;
+@property bool shadowsEnabled;
+@property bool vibranceEnabled;
 
 - (void)analyzeFeatures:(id)arg1 usingContext:(id)arg2 baseImage:(id)arg3;
 - (bool)curvesEnabled;

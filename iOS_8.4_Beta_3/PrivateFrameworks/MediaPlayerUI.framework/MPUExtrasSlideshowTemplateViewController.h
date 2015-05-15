@@ -10,14 +10,14 @@
     UITapGestureRecognizer *_tapGestureRecognizer;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSArray * imageElements;
-@property(assign,retain) MPUExtrasSlideshowViewController * slideshowViewController;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UITapGestureRecognizer * tapGestureRecognizer;
-@property(assign,readonly) IKSlideshowElement * templateElement;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSArray *imageElements;
+@property (nonatomic, retain) MPUExtrasSlideshowViewController *slideshowViewController;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UITapGestureRecognizer *tapGestureRecognizer;
+@property (nonatomic, readonly) IKSlideshowElement *templateElement;
 
 - (void).cxx_destruct;
 - (void)_firstImageLoadedHideNavigationBar;

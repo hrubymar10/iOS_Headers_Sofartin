@@ -9,10 +9,10 @@
     NSMutableDictionary *_responseCatalogNonEditable;
 }
 
-@property(assign,retain) NSString * context;
-@property(assign,retain) NSMutableDictionary * phraseMap;
-@property(assign,retain) NSMutableDictionary * responseCatalogEditable;
-@property(assign,retain) NSMutableDictionary * responseCatalogNonEditable;
+@property (retain) NSString *context;
+@property (retain) NSMutableDictionary *phraseMap;
+@property (retain) NSMutableDictionary *responseCatalogEditable;
+@property (retain) NSMutableDictionary *responseCatalogNonEditable;
 
 + (id)responseCollectionWithContext:(id)arg1;
 

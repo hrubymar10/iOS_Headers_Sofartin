@@ -4,7 +4,7 @@
 
 @interface IKBadgeElement : IKImageElement
 
-@property(assign,retain) NSString * textContent;
+@property (nonatomic, readonly, retain) NSString *textContent;
 
 + (bool)shouldParseChildDOMElements;
 

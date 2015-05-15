@@ -8,11 +8,11 @@
     unsigned long long _offset;
 }
 
-@property(assign,readonly) const char * bytes;
-@property(assign,readonly) const char * currentPosition;
-@property(assign,retain) NSData * data;
-@property(assign,retain) NSMutableData * mutableData;
-@property(assign,readwrite) unsigned long long offset;
+@property (nonatomic, readonly) const char *bytes;
+@property (nonatomic, readonly) const char *currentPosition;
+@property (nonatomic, retain) NSData *data;
+@property (nonatomic, retain) NSMutableData *mutableData;
+@property (nonatomic) unsigned long long offset;
 
 + (id)candidateTypeToClassNameMap;
 + (Class)classFromCandidateType:(int)arg1;

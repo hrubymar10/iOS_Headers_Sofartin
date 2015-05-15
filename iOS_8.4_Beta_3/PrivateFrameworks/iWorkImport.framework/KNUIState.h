@@ -39,26 +39,26 @@
     bool mSlideViewFitsContentInWindow;
 }
 
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } canvasOffset;
-@property(assign,readwrite) double canvasViewScale;
-@property(assign,copy) NSSet * collapsedSlideNodes;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } desktopMainContentSize;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } desktopMainWindowOrigin;
-@property(assign,readwrite) double desktopNavigatorViewWidth;
-@property(assign,readwrite) double desktopOutlineViewWidth;
-@property(assign,readwrite) double desktopPresenterNotesHeight;
-@property(assign,copy) KNMacUILayout * documentUILayout;
-@property(assign,readwrite) bool lightTableHidesSkippedSlides;
-@property(assign,readwrite) double lightTableZoomScale;
-@property(assign,copy) NSSet * outlineCollapsedSlideNodes;
-@property(assign,copy) NSSet * outlineHasBodySlideNodes;
-@property(assign,retain) TSKSelectionPath * selectionPath;
-@property(assign,readwrite) bool showMasterGuides;
-@property(assign,readwrite) bool showSlideGuides;
-@property(assign,readwrite) bool showsComments;
-@property(assign,readwrite) bool showsRuler;
-@property(assign,readonly) KNSlideCollectionSelection * slideTreeSelection;
-@property(assign,readwrite) bool slideViewFitsContentInWindow;
+@property (nonatomic) struct CGPoint { double x1; double x2; } canvasOffset;
+@property (nonatomic) double canvasViewScale;
+@property (nonatomic, copy) NSSet *collapsedSlideNodes;
+@property (nonatomic) struct CGSize { double x1; double x2; } desktopMainContentSize;
+@property (nonatomic) struct CGPoint { double x1; double x2; } desktopMainWindowOrigin;
+@property (nonatomic) double desktopNavigatorViewWidth;
+@property (nonatomic) double desktopOutlineViewWidth;
+@property (nonatomic) double desktopPresenterNotesHeight;
+@property (nonatomic, copy) KNMacUILayout *documentUILayout;
+@property (nonatomic) bool lightTableHidesSkippedSlides;
+@property (nonatomic) double lightTableZoomScale;
+@property (nonatomic, copy) NSSet *outlineCollapsedSlideNodes;
+@property (nonatomic, copy) NSSet *outlineHasBodySlideNodes;
+@property (nonatomic, retain) TSKSelectionPath *selectionPath;
+@property (nonatomic) bool showMasterGuides;
+@property (nonatomic) bool showSlideGuides;
+@property (nonatomic) bool showsComments;
+@property (nonatomic) bool showsRuler;
+@property (nonatomic, readonly) KNSlideCollectionSelection *slideTreeSelection;
+@property (nonatomic) bool slideViewFitsContentInWindow;
 
 - (id).cxx_construct;
 - (id)UIStateForChart:(id)arg1;

@@ -9,8 +9,8 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,retain) UIImage * image;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (bool)_canDrawContent;
 - (void)dealloc;

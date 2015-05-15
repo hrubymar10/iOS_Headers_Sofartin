@@ -8,9 +8,9 @@
     NSDictionary *_adaptedVideoCompressionProperties;
 }
 
-@property(assign,readonly) unsigned int videoCodecType;
-@property(assign,readonly) NSDictionary * videoCompressionProperties;
-@property(assign,readonly) NSDictionary * videoEncoderSpecification;
+@property (nonatomic, readonly) unsigned int videoCodecType;
+@property (nonatomic, readonly) NSDictionary *videoCompressionProperties;
+@property (nonatomic, readonly) NSDictionary *videoEncoderSpecification;
 
 + (bool)_validateVideoCompressionProperties:(id)arg1 againstSupportedPropertyDictionary:(id)arg2 forCodecType:(id)arg3 exceptionReason:(id*)arg4;
 + (id)_videoOutputSettingsWithVideoSettingsDictionary:(id)arg1 exceptionReason:(id*)arg2;

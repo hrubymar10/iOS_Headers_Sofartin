@@ -4,7 +4,7 @@
 
 @interface SASAbortSpeechRequest : SABaseClientBoundCommand
 
-@property(assign,copy) NSString * reason;
+@property (nonatomic, copy) NSString *reason;
 
 + (id)abortSpeechRequest;
 + (id)abortSpeechRequestWithDictionary:(id)arg1 context:(id)arg2;

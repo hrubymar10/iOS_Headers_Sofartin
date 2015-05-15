@@ -7,8 +7,8 @@
     bool _selected;
 }
 
-@property(assign,retain) UIImageView * checkmarkImageView;
-@property(getter=isSelected,assign,readwrite) bool selected;
+@property (nonatomic, retain) UIImageView *checkmarkImageView;
+@property (getter=isSelected, nonatomic) bool selected;
 
 - (id)checkmarkImageView;
 - (void)dealloc;

@@ -17,18 +17,18 @@
     bool _shouldReplaceRootViewController;
 }
 
-@property(assign,retain) NSArray * allowedOrientations;
-@property(assign,retain) NSString * copyright;
-@property(assign,copy) NSArray * expectedClientIdentifiers;
-@property(assign,retain) NSNumber * focusedItemIdentifier;
-@property(assign,copy) NSArray * navigationButtons;
-@property(assign,retain) NSArray * navigationHistoryItems;
-@property(assign,copy) NSArray * navigationMenus;
-@property(assign,retain) SSURLRequestProperties * overlayBackgroundURLRequestProperties;
-@property(assign,retain) NSString * rootSectionIdentifier;
-@property(assign,readwrite) bool shouldDisplayInOverlay;
-@property(assign,readwrite) bool shouldExcludeFromNavigationHistory;
-@property(assign,readwrite) bool shouldReplaceRootViewController;
+@property (nonatomic, retain) NSArray *allowedOrientations;
+@property (nonatomic, retain) NSString *copyright;
+@property (nonatomic, copy) NSArray *expectedClientIdentifiers;
+@property (nonatomic, retain) NSNumber *focusedItemIdentifier;
+@property (nonatomic, copy) NSArray *navigationButtons;
+@property (nonatomic, retain) NSArray *navigationHistoryItems;
+@property (nonatomic, copy) NSArray *navigationMenus;
+@property (nonatomic, retain) SSURLRequestProperties *overlayBackgroundURLRequestProperties;
+@property (nonatomic, retain) NSString *rootSectionIdentifier;
+@property (nonatomic) bool shouldDisplayInOverlay;
+@property (nonatomic) bool shouldExcludeFromNavigationHistory;
+@property (nonatomic) bool shouldReplaceRootViewController;
 
 - (id)_initCommon;
 - (id)_newNavigationButtonsFromArray:(id)arg1;

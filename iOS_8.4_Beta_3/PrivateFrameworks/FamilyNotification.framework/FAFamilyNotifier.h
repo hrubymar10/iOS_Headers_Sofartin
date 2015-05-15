@@ -11,13 +11,13 @@
     NSString *_serviceName;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <FAFamilyNotificationDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) NSString * serviceName;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property <FAFamilyNotificationDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) NSString *identifier;
+@property (readonly) NSString *serviceName;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_agentConnectionFailedToBootstrap;

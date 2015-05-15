@@ -9,9 +9,9 @@
     NSArray *_sortDescriptors;
 }
 
-@property(assign,readonly) unsigned long long limit;
-@property(assign,readonly) id resultHandler;
-@property(assign,copy) NSArray * sortDescriptors;
+@property (readonly) unsigned long long limit;
+@property (nonatomic, readonly) id resultHandler;
+@property (readonly, copy) NSArray *sortDescriptors;
 
 + (Class)_queryServerDataObjectClass;
 

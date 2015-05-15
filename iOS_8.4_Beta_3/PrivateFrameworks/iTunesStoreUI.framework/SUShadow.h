@@ -12,10 +12,10 @@
     double _radius;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } offset;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) double radius;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) struct CGSize { double x1; double x2; } offset;
+@property (nonatomic) double opacity;
+@property (nonatomic) double radius;
 
 - (void)applyToLayer:(id)arg1;
 - (id)color;

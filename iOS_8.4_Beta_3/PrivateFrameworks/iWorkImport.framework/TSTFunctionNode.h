@@ -11,15 +11,15 @@
     NSString *mWhitespaceAfterLeftParen;
 }
 
-@property(assign,retain) TSTFunctionEndNode * functionEndNode;
-@property(assign,readonly) int functionIndex;
-@property(assign,retain) NSString * invalidFunctionName;
-@property(assign,readonly) short maxArguments;
-@property(assign,readonly) short minArguments;
-@property(assign,readonly) unsigned long long numArguments;
-@property(assign,retain) NSArray * whitespaceAfterDelimiters;
-@property(assign,retain) NSString * whitespaceAfterFunctionName;
-@property(assign,retain) NSString * whitespaceAfterLeftParen;
+@property (nonatomic, retain) TSTFunctionEndNode *functionEndNode;
+@property (nonatomic, readonly) int functionIndex;
+@property (nonatomic, retain) NSString *invalidFunctionName;
+@property (nonatomic, readonly) short maxArguments;
+@property (nonatomic, readonly) short minArguments;
+@property (nonatomic, readonly) unsigned long long numArguments;
+@property (nonatomic, retain) NSArray *whitespaceAfterDelimiters;
+@property (nonatomic, retain) NSString *whitespaceAfterFunctionName;
+@property (retain) NSString *whitespaceAfterLeftParen;
 
 + (id)newDefaultFunctionNodeWithContext:(id)arg1 functionIndex:(int)arg2;
 + (id)newSumNodeWithContext:(id)arg1 children:(id)arg2;

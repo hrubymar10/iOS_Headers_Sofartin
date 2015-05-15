@@ -7,12 +7,12 @@
     NSURL *_homeURL;
 }
 
-@property(assign,readonly) NSURL * cardURL;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSURL * homeURL;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *cardURL;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSURL *homeURL;
+@property (readonly) Class superclass;
 
 - (id)_newPropPatchTask;
 - (id)cardURL;

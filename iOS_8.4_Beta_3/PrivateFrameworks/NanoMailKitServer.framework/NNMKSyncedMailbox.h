@@ -9,10 +9,10 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSString * accountId;
-@property(assign,retain) NSString * customName;
-@property(assign,readwrite) unsigned long long type;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) NSString *accountId;
+@property (nonatomic, retain) NSString *customName;
+@property (nonatomic) unsigned long long type;
+@property (nonatomic, retain) NSURL *url;
 
 - (void).cxx_destruct;
 - (id)accountId;

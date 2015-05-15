@@ -11,8 +11,8 @@
     BRCAccountSession *_session;
 }
 
-@property(assign,readwrite) <BRCAccountHandlerDelegate> * delegate;
-@property(assign,readonly) BRCAccountSession * session;
+@property (nonatomic) <BRCAccountHandlerDelegate> *delegate;
+@property (nonatomic, readonly) BRCAccountSession *session;
 
 + (void)_migrateAccountIfNecessaryForAccountID:(id)arg1;
 + (id)inSystemStoreAccountIDForUbiquityDataclass;

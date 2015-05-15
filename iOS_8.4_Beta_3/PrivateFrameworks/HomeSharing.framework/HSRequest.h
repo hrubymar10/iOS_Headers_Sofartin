@@ -14,15 +14,15 @@
     bool _shouldPromptForAuthentication;
 }
 
-@property(assign,readwrite) bool acceptsGzipEncoding;
-@property(assign,readonly) NSString * action;
-@property(assign,copy) NSData * bodyData;
-@property(getter=isConcurrent,assign,readonly) bool concurrent;
-@property(assign,readwrite) bool excludeSessionIDFromURL;
-@property(assign,readwrite) long long method;
-@property(assign,copy) NSURL * responseDataDestinationFileURL;
-@property(assign,readwrite) bool shouldPromptForAuthentication;
-@property(assign,readonly) double timeoutInterval;
+@property (nonatomic) bool acceptsGzipEncoding;
+@property (nonatomic, readonly) NSString *action;
+@property (nonatomic, copy) NSData *bodyData;
+@property (getter=isConcurrent, nonatomic, readonly) bool concurrent;
+@property (nonatomic) bool excludeSessionIDFromURL;
+@property (nonatomic) long long method;
+@property (nonatomic, copy) NSURL *responseDataDestinationFileURL;
+@property (nonatomic) bool shouldPromptForAuthentication;
+@property (nonatomic, readonly) double timeoutInterval;
 
 + (id)request;
 

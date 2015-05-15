@@ -9,15 +9,15 @@
     ABStyleProvider *_styleProvider;
 }
 
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) ABPersonViewControllerHelper * helper;
-@property(assign,readonly) ABImagePickerController * imagePicker;
-@property(assign,readwrite) bool popoverSizeUpdatesDisabled;
-@property(assign,retain) ABStyleProvider * styleProvider;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) ABPersonViewControllerHelper *helper;
+@property (nonatomic, readonly) ABImagePickerController *imagePicker;
+@property (nonatomic) bool popoverSizeUpdatesDisabled;
+@property (nonatomic, retain) ABStyleProvider *styleProvider;
+@property (readonly) Class superclass;
 
 - (id)_contentViewForPicker:(id)arg1;
 - (void)_dismissCountryPicker:(id)arg1 afterSelectingItem:(id)arg2;

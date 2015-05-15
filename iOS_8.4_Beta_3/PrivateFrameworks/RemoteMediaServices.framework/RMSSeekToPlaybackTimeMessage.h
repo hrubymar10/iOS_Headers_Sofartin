@@ -11,10 +11,10 @@
     int _sessionIdentifier;
 }
 
-@property(assign,readwrite) bool hasPlaybackTime;
-@property(assign,readwrite) bool hasSessionIdentifier;
-@property(assign,readwrite) int playbackTime;
-@property(assign,readwrite) int sessionIdentifier;
+@property (nonatomic) bool hasPlaybackTime;
+@property (nonatomic) bool hasSessionIdentifier;
+@property (nonatomic) int playbackTime;
+@property (nonatomic) int sessionIdentifier;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -8,9 +8,9 @@
     <MFMailComposeToFieldDelegate> *_toFieldDelegate;
 }
 
-@property(assign,readonly) MFComposeSMIMELockButton * SMIMEButton;
-@property(assign,readwrite) bool smimeButtonVisible;
-@property(assign,readwrite) <MFMailComposeToFieldDelegate> * toFieldDelegate;
+@property (nonatomic, readonly) MFComposeSMIMELockButton *SMIMEButton;
+@property (nonatomic) bool smimeButtonVisible;
+@property (nonatomic) <MFMailComposeToFieldDelegate> *toFieldDelegate;
 
 - (id)SMIMEButton;
 - (void)_setSMIMEButtonVisible:(bool)arg1 animated:(bool)arg2;

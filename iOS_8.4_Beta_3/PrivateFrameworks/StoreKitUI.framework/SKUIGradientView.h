@@ -4,7 +4,7 @@
 
 @interface SKUIGradientView : UIView
 
-@property(assign,retain) CAGradientLayer * layer;
+@property (nonatomic, readonly, retain) CAGradientLayer *layer;
 
 + (Class)layerClass;
 

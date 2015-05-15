@@ -8,8 +8,8 @@
     NSObject<OS_dispatch_queue> *_requestQueue;
 }
 
-@property(assign,readwrite) <AVAssetWriterInputMediaDataRequesterDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * requestQueue;
+@property <AVAssetWriterInputMediaDataRequesterDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *requestQueue;
 
 - (void)_collectUncollectables_invokedFromDeallocAndFinalize;
 - (void)dealloc;

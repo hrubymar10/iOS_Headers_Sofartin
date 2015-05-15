@@ -13,8 +13,8 @@
     FigStateMachine *_stateMachine;
 }
 
-@property(assign,readonly) NSString * currentStateDebugString;
-@property(assign,readonly) long long liveConfigurationID;
+@property (readonly) NSString *currentStateDebugString;
+@property (readonly) long long liveConfigurationID;
 
 + (void)initialize;
 

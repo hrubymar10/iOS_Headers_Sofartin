@@ -4,8 +4,8 @@
 
 @interface SPSection : SPProxyObject <PRSSection>
 
-@property(assign,retain) NSURL * attribution_url;
-@property(assign,retain) NSString * type;
-@property(assign,retain) NSURL * url;
+@property (nonatomic, retain) NSURL *attribution_url;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSURL *url;
 
 @end

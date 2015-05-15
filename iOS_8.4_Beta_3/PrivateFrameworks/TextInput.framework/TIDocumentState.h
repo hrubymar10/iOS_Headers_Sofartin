@@ -13,11 +13,11 @@
     NSString *_selectedText;
 }
 
-@property(assign,readonly) NSString * contextAfterInput;
-@property(assign,readonly) NSString * contextBeforeInput;
-@property(assign,readonly) NSString * markedText;
-@property(assign,readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } selectedRangeInMarkedText;
-@property(assign,readonly) NSString * selectedText;
+@property (nonatomic, readonly) NSString *contextAfterInput;
+@property (nonatomic, readonly) NSString *contextBeforeInput;
+@property (nonatomic, readonly) NSString *markedText;
+@property (nonatomic, readonly) struct _NSRange { unsigned long long x1; unsigned long long x2; } selectedRangeInMarkedText;
+@property (nonatomic, readonly) NSString *selectedText;
 
 + (id)documentStateOfDocument:(id)arg1;
 + (id)documentStateOfSecureTextDocument:(id)arg1;

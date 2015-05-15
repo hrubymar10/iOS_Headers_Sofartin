@@ -12,12 +12,12 @@
     SSRentalCheckoutRequest *_request;
 }
 
-@property(assign,retain) MPHomeSharingML3DataProvider * dataProvider;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long itemID;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MPHomeSharingML3DataProvider *dataProvider;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long itemID;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (bool)_errorIsFairPlayError:(id)arg1;

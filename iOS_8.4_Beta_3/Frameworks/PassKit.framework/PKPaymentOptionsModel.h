@@ -9,8 +9,8 @@
     PKPaymentOptionsRecents *_recents;
 }
 
-@property(assign,copy) id modelChangedHandler;
-@property(assign,readonly) NSArray * optionGroups;
+@property (nonatomic, copy) id modelChangedHandler;
+@property (nonatomic, readonly) NSArray *optionGroups;
 
 + (id)_detailForReferenceObject:(id)arg1 withGroupType:(id)arg2;
 + (int)_propertyIDForGroupType:(id)arg1;

@@ -9,14 +9,14 @@
     SKUISettingValueStore *_valueStore;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(getter=isEditing,assign,readonly) bool editing;
-@property(assign,copy) NSString * handle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * name;
-@property(assign,copy) UIImage * photo;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (getter=isEditing, nonatomic, readonly) bool editing;
+@property (nonatomic, copy) NSString *handle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly, copy) UIImage *photo;
+@property (readonly) Class superclass;
 
 + (Class)_viewClassForSettingDescription:(id)arg1;
 + (bool)allowsEdit;

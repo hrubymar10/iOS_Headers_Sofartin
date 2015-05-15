@@ -8,9 +8,9 @@
     NSString *_sourceServerId;
 }
 
-@property(assign,retain) NSString * destinationContainerId;
-@property(assign,retain) NSString * sourceContainerId;
-@property(assign,retain) NSString * sourceServerId;
+@property (nonatomic, retain) NSString *destinationContainerId;
+@property (nonatomic, retain) NSString *sourceContainerId;
+@property (nonatomic, retain) NSString *sourceServerId;
 
 - (void).cxx_destruct;
 - (id)destinationContainerId;

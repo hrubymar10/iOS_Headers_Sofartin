@@ -7,8 +7,8 @@
     UIScreen *_screen;
 }
 
-@property(assign,readwrite) int activationEvent;
-@property(assign,retain) UIScreen * screen;
+@property (nonatomic) int activationEvent;
+@property (nonatomic, retain) UIScreen *screen;
 
 - (int)activationEvent;
 - (void)dealloc;

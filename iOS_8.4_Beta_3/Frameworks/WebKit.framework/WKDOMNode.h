@@ -8,13 +8,13 @@
     } _impl;
 }
 
-@property(assign,readonly) WKDOMDocument * document;
-@property(assign,readonly) WKDOMNode * firstChild;
-@property(assign,readonly) WKDOMNode * lastChild;
-@property(assign,readonly) WKDOMNode * nextSibling;
-@property(assign,readonly) WKDOMNode * parentNode;
-@property(assign,readonly) WKDOMNode * previousSibling;
-@property(assign,readonly) NSArray * textRects;
+@property (readonly) WKDOMDocument *document;
+@property (readonly) WKDOMNode *firstChild;
+@property (readonly) WKDOMNode *lastChild;
+@property (readonly) WKDOMNode *nextSibling;
+@property (readonly) WKDOMNode *parentNode;
+@property (readonly) WKDOMNode *previousSibling;
+@property (readonly) NSArray *textRects;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

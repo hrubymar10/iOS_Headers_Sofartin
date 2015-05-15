@@ -8,9 +8,9 @@
     long long _usesAPSPublicToken;
 }
 
-@property(assign,readwrite) long long darkWakeEnabled;
-@property(assign,readwrite) long long tokenRegistered;
-@property(assign,readwrite) long long usesAPSPublicToken;
+@property (nonatomic) long long darkWakeEnabled;
+@property (nonatomic) long long tokenRegistered;
+@property (nonatomic) long long usesAPSPublicToken;
 
 - (long long)darkWakeEnabled;
 - (id)init;

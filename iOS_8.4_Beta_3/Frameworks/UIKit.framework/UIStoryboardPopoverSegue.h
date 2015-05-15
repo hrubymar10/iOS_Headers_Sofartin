@@ -20,12 +20,12 @@
     UIPopoverController *_popoverController;
 }
 
-@property(setter=_setAnchorBarButtonItem:,assign,retain) UIBarButtonItem * _anchorBarButtonItem;
-@property(setter=_setAnchorRect:,assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } _anchorRect;
-@property(setter=_setAnchorView:,assign,retain) UIView * _anchorView;
-@property(setter=_setPassthroughViews:,assign,copy) NSArray * _passthroughViews;
-@property(setter=_setPermittedArrowDirections:,assign,readwrite) unsigned long long _permittedArrowDirections;
-@property(assign,retain) UIPopoverController * popoverController;
+@property (setter=_setAnchorBarButtonItem:, nonatomic, retain) UIBarButtonItem *_anchorBarButtonItem;
+@property (setter=_setAnchorRect:, nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } _anchorRect;
+@property (setter=_setAnchorView:, nonatomic, retain) UIView *_anchorView;
+@property (setter=_setPassthroughViews:, nonatomic, copy) NSArray *_passthroughViews;
+@property (setter=_setPermittedArrowDirections:, nonatomic) unsigned long long _permittedArrowDirections;
+@property (nonatomic, readonly, retain) UIPopoverController *popoverController;
 
 - (id)_anchorBarButtonItem;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_anchorRect;

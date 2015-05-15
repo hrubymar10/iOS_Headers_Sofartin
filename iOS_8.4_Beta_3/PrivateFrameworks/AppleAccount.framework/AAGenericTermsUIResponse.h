@@ -8,9 +8,9 @@
     NSDictionary *_responseTermsDictionary;
 }
 
-@property(assign,readonly) NSString * agreeURL;
-@property(assign,readonly) NSData * responseData;
-@property(assign,readonly) NSDictionary * termsDictionary;
+@property (nonatomic, readonly) NSString *agreeURL;
+@property (nonatomic, readonly) NSData *responseData;
+@property (nonatomic, readonly) NSDictionary *termsDictionary;
 
 - (void).cxx_destruct;
 - (id)agreeURL;

@@ -7,9 +7,9 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,copy) NSString * name;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (bool)acceptMessage:(id)arg1 target:(id)arg2 errorReason:(id*)arg3;

@@ -9,10 +9,10 @@
     long long _workImageVersion;
 }
 
-@property(assign,retain) PHAdjustmentData * adjustmentData;
-@property(assign,retain) NSData * baseImageData;
-@property(assign,retain) NSData * imageData;
-@property(assign,readwrite) long long workImageVersion;
+@property (nonatomic, retain) PHAdjustmentData *adjustmentData;
+@property (nonatomic, retain) NSData *baseImageData;
+@property (nonatomic, retain) NSData *imageData;
+@property (nonatomic) long long workImageVersion;
 
 - (void).cxx_destruct;
 - (id)_copyData:(id)arg1;

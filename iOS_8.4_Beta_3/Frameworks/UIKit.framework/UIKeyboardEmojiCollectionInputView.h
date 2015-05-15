@@ -14,15 +14,15 @@
     NSIndexPath *_tappedSkinToneEmoji;
 }
 
-@property(assign,readwrite) int category;
-@property(assign,copy) id completionBlock;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) UIResponder<UIKBEmojiHitTestResponder> * hitTestResponder;
-@property(assign,readonly) bool isDraggingInputView;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) NSIndexPath * tappedSkinToneEmoji;
+@property int category;
+@property (nonatomic, copy) id completionBlock;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) UIResponder<UIKBEmojiHitTestResponder> *hitTestResponder;
+@property (readonly) bool isDraggingInputView;
+@property (readonly) Class superclass;
+@property (nonatomic) NSIndexPath *tappedSkinToneEmoji;
 
 - (void)_setUserHasSelectedSkinToneEmoji:(bool)arg1;
 - (bool)_userHasSelectedSkinToneEmoji;

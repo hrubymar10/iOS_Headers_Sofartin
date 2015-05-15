@@ -9,10 +9,10 @@
     NSString *_identifier;
 }
 
-@property(assign,readwrite) CKDClientContext * context;
-@property(assign,retain) PQLConnection * db;
-@property(assign,readwrite) double expirationTimeout;
-@property(assign,retain) NSString * identifier;
+@property (nonatomic) CKDClientContext *context;
+@property (nonatomic, retain) PQLConnection *db;
+@property (nonatomic) double expirationTimeout;
+@property (nonatomic, retain) NSString *identifier;
 
 - (void).cxx_destruct;
 - (void)_garbageCollectExpiredEntries;

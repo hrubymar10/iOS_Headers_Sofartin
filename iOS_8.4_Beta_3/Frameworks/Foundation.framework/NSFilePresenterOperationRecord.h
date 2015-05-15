@@ -8,9 +8,9 @@
     long long state;
 }
 
-@property(assign,readonly) NSString * operationDescription;
-@property(assign,readwrite) id reactor;
-@property(assign,readonly) long long state;
+@property (readonly) NSString *operationDescription;
+@property id reactor;
+@property (readonly) long long state;
 
 + (id)operationRecordWithDescription:(id)arg1;
 

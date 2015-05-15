@@ -14,13 +14,13 @@
     int _uniqueID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <TRTCPConnectionDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) int uniqueID;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <TRTCPConnectionDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) int uniqueID;
 
 - (void).cxx_destruct;
 - (void)_handleReceivedPacketEvent:(id)arg1;

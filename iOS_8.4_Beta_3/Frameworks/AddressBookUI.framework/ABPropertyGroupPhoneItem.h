@@ -4,7 +4,7 @@
 
 @interface ABPropertyGroupPhoneItem : ABPropertyGroupItem
 
-@property(assign,readonly) CNPhoneNumber * phoneNumber;
+@property (nonatomic, readonly) CNPhoneNumber *phoneNumber;
 
 - (id)bestLabel:(id)arg1;
 - (id)defaultActionURL;

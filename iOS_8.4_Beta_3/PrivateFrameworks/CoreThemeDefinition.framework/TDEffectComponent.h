@@ -4,10 +4,10 @@
 
 @interface TDEffectComponent : NSManagedObject
 
-@property(assign,retain) TDEffectType * effectType;
-@property(assign,readwrite) bool isEnabled;
-@property(assign,retain) NSSet * parameters;
-@property(assign,retain) TDEffectRenditionSpec * rendition;
+@property (nonatomic, retain) TDEffectType *effectType;
+@property (nonatomic) bool isEnabled;
+@property (nonatomic, retain) NSSet *parameters;
+@property (nonatomic, retain) TDEffectRenditionSpec *rendition;
 
 - (void)setEffectParametersFromPreset:(id)arg1 atIndex:(unsigned long long)arg2 withDocument:(id)arg3;
 - (void)updatePresetParameters:(id)arg1 atIndex:(unsigned long long)arg2;

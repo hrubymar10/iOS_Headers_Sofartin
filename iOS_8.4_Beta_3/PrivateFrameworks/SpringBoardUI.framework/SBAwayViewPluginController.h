@@ -13,12 +13,12 @@
     bool _viewCanBeDisplayed;
 }
 
-@property(getter=isAlwaysFullscreen,assign,readwrite) bool alwaysFullscreen;
-@property(getter=_effectivePresentationStyle,setter=_setEffectivePresentationStyle:,assign,readwrite) unsigned long long effectivePresentationStyle;
-@property(assign,copy) NSString * enablingApplicationBundleIdentifier;
-@property(assign,readwrite) long long orientation;
-@property(assign,retain) UIView * view;
-@property(assign,readwrite) bool viewCanBeDisplayed;
+@property (getter=isAlwaysFullscreen, nonatomic) bool alwaysFullscreen;
+@property (getter=_effectivePresentationStyle, setter=_setEffectivePresentationStyle:, nonatomic) unsigned long long effectivePresentationStyle;
+@property (nonatomic, copy) NSString *enablingApplicationBundleIdentifier;
+@property (nonatomic) long long orientation;
+@property (nonatomic, retain) UIView *view;
+@property (nonatomic) bool viewCanBeDisplayed;
 
 + (void)disableBundleNamed:(id)arg1;
 + (void)disableBundleNamed:(id)arg1 deactivationContext:(id)arg2;

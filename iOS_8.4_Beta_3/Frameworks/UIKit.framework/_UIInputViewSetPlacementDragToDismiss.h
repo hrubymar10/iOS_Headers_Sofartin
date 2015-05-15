@@ -6,7 +6,7 @@
     double _offset;
 }
 
-@property(assign,readwrite) double offset;
+@property (nonatomic) double offset;
 
 + (id)placementWithOffset:(double)arg1;
 

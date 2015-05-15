@@ -26,10 +26,10 @@
     bool _webViewReadyForThumbnailing;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (id)_copyPreviewConverterForPreviewItem:(id)arg1;
 - (struct CGPDFDocument { }*)_getCGPDFDocumentRef;

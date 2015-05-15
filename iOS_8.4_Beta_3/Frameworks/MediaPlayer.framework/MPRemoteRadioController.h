@@ -11,12 +11,12 @@
     RadioRecentStationsController *_recentStationsController;
 }
 
-@property(assign,retain) RadioAvailabilityController * availabilityController;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) RadioRecentStationsController * recentStationsController;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) RadioAvailabilityController *availabilityController;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) RadioRecentStationsController *recentStationsController;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_addConnection:(id)arg1;

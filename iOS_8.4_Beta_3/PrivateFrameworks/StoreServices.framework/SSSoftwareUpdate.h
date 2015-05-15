@@ -8,12 +8,12 @@
     long long _updateState;
 }
 
-@property(assign,readonly) NSString * bundleIdentifier;
-@property(assign,copy) NSDate * installDate;
-@property(assign,readonly) long long parentalControlsRank;
-@property(assign,readonly) long long storeItemIdentifier;
-@property(assign,readonly) NSDictionary * updateDictionary;
-@property(assign,readwrite) long long updateState;
+@property (nonatomic, readonly) NSString *bundleIdentifier;
+@property (nonatomic, copy) NSDate *installDate;
+@property (nonatomic, readonly) long long parentalControlsRank;
+@property (nonatomic, readonly) long long storeItemIdentifier;
+@property (nonatomic, readonly) NSDictionary *updateDictionary;
+@property (nonatomic) long long updateState;
 
 - (id)bundleIdentifier;
 - (void)dealloc;

@@ -6,7 +6,7 @@
     NSArray *_keysToEncode;
 }
 
-@property(assign,retain) NSArray * keysToEncode;
+@property (nonatomic, retain) NSArray *keysToEncode;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (void)dealloc;

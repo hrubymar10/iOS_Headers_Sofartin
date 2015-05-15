@@ -35,24 +35,24 @@
     bool _usesDrawRectPath;
 }
 
-@property(assign,copy) UIColor * cloudTintColor;
-@property(assign,copy) NSString * confirmationTitle;
-@property(assign,readwrite) long long confirmationTitleStyle;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIItemOfferButtonDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long fillStyle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImage * image;
-@property(assign,readwrite) <SKUIItemOfferButtonDelegate> * itemOfferDelegate;
-@property(assign,readwrite) double progress;
-@property(assign,readwrite) long long progressType;
-@property(getter=isShowingConfirmation,assign,readonly) bool showingConfirmation;
-@property(assign,readwrite) bool showsConfirmationState;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
-@property(assign,readwrite) long long titleStyle;
-@property(getter=isUniversal,assign,readwrite) bool universal;
+@property (nonatomic, copy) UIColor *cloudTintColor;
+@property (nonatomic, copy) NSString *confirmationTitle;
+@property (nonatomic) long long confirmationTitleStyle;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIItemOfferButtonDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long fillStyle;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic) <SKUIItemOfferButtonDelegate> *itemOfferDelegate;
+@property (nonatomic) double progress;
+@property (nonatomic) long long progressType;
+@property (getter=isShowingConfirmation, nonatomic, readonly) bool showingConfirmation;
+@property (nonatomic) bool showsConfirmationState;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic) long long titleStyle;
+@property (getter=isUniversal, nonatomic) bool universal;
 
 + (id)_basicAnimationWithKeyPath:(id)arg1;
 + (id)_cachedImageForAttributedTitle:(id)arg1 titleStyle:(long long)arg2 size:(struct CGSize { double x1; double x2; })arg3 fillStyle:(long long)arg4 universal:(bool)arg5 tintColor:(id)arg6;

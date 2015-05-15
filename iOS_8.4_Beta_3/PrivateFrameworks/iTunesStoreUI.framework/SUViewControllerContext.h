@@ -8,8 +8,8 @@
     long long _type;
 }
 
-@property(assign,retain) NSString * sectionIdentifier;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) NSString *sectionIdentifier;
+@property (nonatomic) long long type;
 
 - (long long)_typeForTypeString:(id)arg1;
 - (id)_typeStringForType:(long long)arg1;

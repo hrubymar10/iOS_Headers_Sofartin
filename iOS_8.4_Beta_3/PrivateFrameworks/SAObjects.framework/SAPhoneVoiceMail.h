@@ -4,8 +4,8 @@
 
 @interface SAPhoneVoiceMail : SAPhoneCallSearchResult
 
-@property(assign,copy) NSString * filePath;
-@property(assign,copy) NSNumber * length;
+@property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, copy) NSNumber *length;
 
 + (id)voiceMail;
 + (id)voiceMailWithDictionary:(id)arg1 context:(id)arg2;

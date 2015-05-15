@@ -9,8 +9,8 @@
     bool _useLocalWrite;
 }
 
-@property(getter=isLocalReadable,assign,readonly) bool localReadable;
-@property(getter=isLocalWritable,assign,readonly) bool localWritable;
+@property (getter=isLocalReadable, readonly) bool localReadable;
+@property (getter=isLocalWritable, readonly) bool localWritable;
 
 + (bool)isLocalReadable;
 

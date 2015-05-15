@@ -6,7 +6,7 @@
     ACAccount *_account;
 }
 
-@property(assign,retain) ACAccount * account;
+@property (nonatomic, retain) ACAccount *account;
 
 - (void).cxx_destruct;
 - (id)account;

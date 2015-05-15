@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,copy) id completion;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, copy) id completion;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)tupleWithQueue:(id)arg1 completion:(id)arg2;
 

@@ -7,8 +7,8 @@
     NSArray *_topology;
 }
 
-@property(assign,retain) NSDictionary * details;
-@property(assign,retain) NSArray * topology;
+@property (nonatomic, retain) NSDictionary *details;
+@property (nonatomic, retain) NSArray *topology;
 
 - (void)dealloc;
 - (id)details;

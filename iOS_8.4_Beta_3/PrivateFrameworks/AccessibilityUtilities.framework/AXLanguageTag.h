@@ -13,15 +13,15 @@
     bool _wasPredicted;
 }
 
-@property(assign,retain) NSMutableOrderedSet * ambiguousDialects;
-@property(assign,readwrite) NSString * content;
-@property(assign,readonly) NSString * contentSubstring;
-@property(assign,readonly) AXDialectMap * dialect;
-@property(assign,readonly) AXDialectMap * preferredAmbiguousDialect;
-@property(assign,readonly) AXDialectMap * preferredUnambiguousDialect;
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,retain) NSMutableOrderedSet * unambiguousDialects;
-@property(assign,readwrite) bool wasPredicted;
+@property (nonatomic, retain) NSMutableOrderedSet *ambiguousDialects;
+@property (nonatomic) NSString *content;
+@property (nonatomic, readonly) NSString *contentSubstring;
+@property (nonatomic, readonly) AXDialectMap *dialect;
+@property (nonatomic, readonly) AXDialectMap *preferredAmbiguousDialect;
+@property (nonatomic, readonly) AXDialectMap *preferredUnambiguousDialect;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic, retain) NSMutableOrderedSet *unambiguousDialects;
+@property (nonatomic) bool wasPredicted;
 
 + (id)tagWithDialects:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2 content:(id)arg3 predictedByTagger:(bool)arg4;
 

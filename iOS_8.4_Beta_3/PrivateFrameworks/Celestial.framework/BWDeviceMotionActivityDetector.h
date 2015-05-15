@@ -9,7 +9,7 @@
     bool _stationary;
 }
 
-@property(getter=isStationary,assign,readonly) bool stationary;
+@property (getter=isStationary, nonatomic, readonly) bool stationary;
 
 + (void)initialize;
 

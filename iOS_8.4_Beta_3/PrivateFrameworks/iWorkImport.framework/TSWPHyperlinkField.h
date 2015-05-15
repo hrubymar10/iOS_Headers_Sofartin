@@ -6,8 +6,8 @@
     NSURL *_url;
 }
 
-@property(assign,readonly) NSString * displayText;
-@property(setter=setURL:,assign,retain) NSURL * url;
+@property (nonatomic, readonly) NSString *displayText;
+@property (setter=setURL:, nonatomic, retain) NSURL *url;
 
 + (id)defaultFieldStyleIdentifier;
 + (id)defaultFileURL;

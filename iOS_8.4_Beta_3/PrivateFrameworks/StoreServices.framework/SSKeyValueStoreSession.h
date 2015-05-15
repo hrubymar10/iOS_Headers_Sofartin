@@ -6,7 +6,7 @@
     SSSQLiteDatabase *_database;
 }
 
-@property(assign,readonly) SSSQLiteDatabase * database;
+@property (nonatomic, readonly) SSSQLiteDatabase *database;
 
 - (id)copyAccountDictionaryForDomain:(id)arg1;
 - (id)copyDataForDomain:(id)arg1 key:(id)arg2;

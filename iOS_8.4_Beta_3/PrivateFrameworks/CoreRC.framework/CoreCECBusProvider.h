@@ -8,14 +8,14 @@
     unsigned char _powerStatus;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CECInterface * interface;
-@property(assign,retain) CECBusPollingOperation * pollingOperation;
-@property(assign,readwrite) unsigned char powerStatus;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * serialQueue;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) CECInterface *interface;
+@property (nonatomic, retain) CECBusPollingOperation *pollingOperation;
+@property (nonatomic) unsigned char powerStatus;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *serialQueue;
+@property (readonly) Class superclass;
 
 + (bool)supportsSecureCoding;
 

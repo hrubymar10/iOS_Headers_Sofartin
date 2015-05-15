@@ -14,17 +14,17 @@
     UINavigationController *_pluginNavigationController;
 }
 
-@property(setter=_setHostViewController:,assign,readwrite) UIViewController * _hostViewController;
-@property(assign,readwrite) long long adjustmentType;
-@property(assign,retain) PHAsset * asset;
-@property(assign,readwrite) <PUEditPluginSessionDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PUEditPluginSessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAvailable;
-@property(assign,readonly) long long mediaType;
-@property(assign,readonly) Class superclass;
+@property (setter=_setHostViewController:, nonatomic) UIViewController *_hostViewController;
+@property (nonatomic) long long adjustmentType;
+@property (nonatomic, retain) PHAsset *asset;
+@property (nonatomic) <PUEditPluginSessionDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PUEditPluginSessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAvailable;
+@property (nonatomic, readonly) long long mediaType;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)_beginSessionWithAsset:(id)arg1 fromViewController:(id)arg2 sourceElement:(id)arg3;

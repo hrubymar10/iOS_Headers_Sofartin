@@ -6,7 +6,7 @@
     id _notificationObservationToken;
 }
 
-@property(assign,retain) id notificationObservationToken;
+@property (nonatomic, retain) id notificationObservationToken;
 
 + (id)observerWithName:(id)arg1 object:(id)arg2 queue:(id)arg3 observationHandler:(id)arg4;
 

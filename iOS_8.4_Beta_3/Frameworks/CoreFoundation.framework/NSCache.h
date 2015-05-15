@@ -8,11 +8,11 @@
     void *_reserved;
 }
 
-@property(assign,readwrite) unsigned long long countLimit;
-@property(assign,readwrite) <NSCacheDelegate> * delegate;
-@property(assign,readwrite) bool evictsObjectsWithDiscardedContent;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) unsigned long long totalCostLimit;
+@property unsigned long long countLimit;
+@property <NSCacheDelegate> *delegate;
+@property bool evictsObjectsWithDiscardedContent;
+@property (copy) NSString *name;
+@property unsigned long long totalCostLimit;
 
 - (id)CALobjectForKey:(id)arg1 calculatedWithBlock:(id)arg2;
 - (id)allObjects;

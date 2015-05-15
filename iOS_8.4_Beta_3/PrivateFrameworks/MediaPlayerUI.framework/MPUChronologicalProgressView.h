@@ -22,20 +22,20 @@
     double _totalDuration;
 }
 
-@property(getter=isAlwaysLive,assign,readwrite) bool alwaysLive;
-@property(assign,readwrite) double currentTime;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPUChronologicalProgressViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool scrubbingEnabled;
-@property(assign,readwrite) bool showIsPlaying;
-@property(assign,readwrite) bool showTimeLabels;
-@property(assign,readonly) long long style;
-@property(assign,readwrite) long long substyle;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double totalDuration;
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } trackRect;
+@property (getter=isAlwaysLive, nonatomic) bool alwaysLive;
+@property (nonatomic) double currentTime;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPUChronologicalProgressViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool scrubbingEnabled;
+@property (nonatomic) bool showIsPlaying;
+@property (nonatomic) bool showTimeLabels;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic) long long substyle;
+@property (readonly) Class superclass;
+@property (nonatomic) double totalDuration;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } trackRect;
 
 - (void).cxx_destruct;
 - (id)_createIndicatorViewWithStyle:(long long)arg1;

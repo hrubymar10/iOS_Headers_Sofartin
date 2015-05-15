@@ -7,10 +7,10 @@
     NSData *_objectUuids;
 }
 
-@property(assign,retain) NSData * associationUuid;
-@property(assign,readonly) bool hasAssociationUuid;
-@property(assign,readonly) bool hasObjectUuids;
-@property(assign,retain) NSData * objectUuids;
+@property (nonatomic, retain) NSData *associationUuid;
+@property (nonatomic, readonly) bool hasAssociationUuid;
+@property (nonatomic, readonly) bool hasObjectUuids;
+@property (nonatomic, retain) NSData *objectUuids;
 
 - (void).cxx_destruct;
 - (id)associationUuid;

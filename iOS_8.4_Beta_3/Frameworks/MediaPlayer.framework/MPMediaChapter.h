@@ -14,15 +14,15 @@
     id _valueLoader;
 }
 
-@property(assign,readwrite) MPMediaLibraryArtworkDataSource * artworkDataSource;
-@property(assign,retain) MPMediaLibraryArtworkRequest * artworkRequest;
-@property(assign,readwrite) long long chapterType;
-@property(assign,readwrite) unsigned long long indexInChaptersWithAnyType;
-@property(assign,readwrite) unsigned long long indexInChaptersWithSameType;
-@property(assign,readwrite) double playbackDuration;
-@property(assign,readwrite) double playbackTime;
-@property(assign,retain) id value;
-@property(assign,copy) id valueLoader;
+@property (nonatomic) MPMediaLibraryArtworkDataSource *artworkDataSource;
+@property (nonatomic, retain) MPMediaLibraryArtworkRequest *artworkRequest;
+@property (nonatomic) long long chapterType;
+@property (nonatomic) unsigned long long indexInChaptersWithAnyType;
+@property (nonatomic) unsigned long long indexInChaptersWithSameType;
+@property (nonatomic) double playbackDuration;
+@property (nonatomic) double playbackTime;
+@property (nonatomic, retain) id value;
+@property (nonatomic, copy) id valueLoader;
 
 - (void).cxx_destruct;
 - (long long)_sortByChapterIndex:(id)arg1;

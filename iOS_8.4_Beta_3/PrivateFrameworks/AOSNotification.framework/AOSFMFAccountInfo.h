@@ -17,18 +17,18 @@
     NSString *_username;
 }
 
-@property(assign,retain) NSDictionary * additionalInfo;
-@property(assign,retain) NSString * aosAPSEnvironment;
-@property(assign,retain) NSString * aosServerHost;
-@property(assign,retain) NSString * aosServerProtocolScheme;
-@property(assign,retain) NSString * appAuthToken;
-@property(assign,readwrite) long long appAuthTokenStatus;
-@property(assign,retain) NSString * appServerHost;
-@property(assign,retain) NSString * dsid;
-@property(assign,retain) NSString * internalAuthToken;
-@property(assign,retain) NSString * legacyDsid;
-@property(assign,retain) NSString * legacyUsername;
-@property(assign,retain) NSString * username;
+@property (nonatomic, retain) NSDictionary *additionalInfo;
+@property (nonatomic, retain) NSString *aosAPSEnvironment;
+@property (nonatomic, retain) NSString *aosServerHost;
+@property (nonatomic, retain) NSString *aosServerProtocolScheme;
+@property (nonatomic, retain) NSString *appAuthToken;
+@property (nonatomic) long long appAuthTokenStatus;
+@property (nonatomic, retain) NSString *appServerHost;
+@property (nonatomic, retain) NSString *dsid;
+@property (nonatomic, retain) NSString *internalAuthToken;
+@property (nonatomic, retain) NSString *legacyDsid;
+@property (nonatomic, retain) NSString *legacyUsername;
+@property (nonatomic, retain) NSString *username;
 
 + (bool)supportsSecureCoding;
 

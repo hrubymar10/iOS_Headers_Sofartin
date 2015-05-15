@@ -11,11 +11,11 @@
     bool _useStartSoundEffect;
 }
 
-@property(assign,readonly) RCCaptureInputDevice * captureInputDevice;
-@property(assign,retain) RCCaptureSession * captureSession;
-@property(assign,readwrite) bool captureSessionWasActivated;
-@property(assign,copy) id sessionPreparedBlock;
-@property(assign,readwrite) bool useStartSoundEffect;
+@property (nonatomic, readonly) RCCaptureInputDevice *captureInputDevice;
+@property (nonatomic, retain) RCCaptureSession *captureSession;
+@property (nonatomic) bool captureSessionWasActivated;
+@property (nonatomic, copy) id sessionPreparedBlock;
+@property (nonatomic) bool useStartSoundEffect;
 
 - (void).cxx_destruct;
 - (void)addSessionFinishedBlock:(id)arg1;

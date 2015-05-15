@@ -14,18 +14,18 @@
     double _topContentInset;
 }
 
-@property(assign,copy) NSString * actionButtonTitle;
-@property(assign,copy) NSString * backdropGroupName;
-@property(assign,retain) UIColor * backgroundColorForNonFloatingState;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MusicLibraryBrowseSectionHeaderViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long hairlineStyleForNonFloatingState;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSString * headerText;
-@property(assign,retain) UIColor * headerTextColorForNonFloatingState;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double topContentInset;
+@property (nonatomic, copy) NSString *actionButtonTitle;
+@property (nonatomic, copy) NSString *backdropGroupName;
+@property (nonatomic, retain) UIColor *backgroundColorForNonFloatingState;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MusicLibraryBrowseSectionHeaderViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long hairlineStyleForNonFloatingState;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSString *headerText;
+@property (nonatomic, retain) UIColor *headerTextColorForNonFloatingState;
+@property (readonly) Class superclass;
+@property (nonatomic) double topContentInset;
 
 + (struct { long long x1; double x2; double x3; })_actionableHeaderMetrics;
 + (double)heightForTraitCollection:(id)arg1;

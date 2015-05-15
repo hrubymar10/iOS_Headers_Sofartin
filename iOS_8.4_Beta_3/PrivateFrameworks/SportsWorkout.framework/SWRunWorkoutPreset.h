@@ -18,17 +18,17 @@
     NSString *_workoutName;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * distanceDisplayUnits;
-@property(assign,readonly) float goal;
-@property(assign,readonly) NSString * goalType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSString * presetGoal;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long templateId;
-@property(assign,readonly) NSString * templateName;
-@property(assign,readonly) NSString * workoutName;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *distanceDisplayUnits;
+@property (nonatomic, readonly) float goal;
+@property (nonatomic, readonly) NSString *goalType;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSString *presetGoal;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long templateId;
+@property (nonatomic, readonly) NSString *templateName;
+@property (nonatomic, readonly) NSString *workoutName;
 
 + (id)presetForCustomGoalWithAmount:(id)arg1 units:(id)arg2;
 + (id)presetForGoal:(id)arg1;

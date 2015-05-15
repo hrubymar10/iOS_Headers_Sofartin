@@ -16,18 +16,18 @@
     UIView *tableHeaderContainerView;
 }
 
-@property(assign,retain) UIImageView * cablingImageLastFrame;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) UIView * descriptionContainerView;
-@property(assign,retain) UIView * diagramContainerView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) unsigned long long internetFlow;
-@property(assign,retain) UIView * spinnerWithStatusAdjacentView;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSString * swapDescriptionText;
-@property(assign,retain) NSString * swapSourceLabelText;
-@property(assign,retain) UIView * tableHeaderContainerView;
+@property (nonatomic, retain) UIImageView *cablingImageLastFrame;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) UIView *descriptionContainerView;
+@property (nonatomic, retain) UIView *diagramContainerView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) unsigned long long internetFlow;
+@property (nonatomic, retain) UIView *spinnerWithStatusAdjacentView;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSString *swapDescriptionText;
+@property (nonatomic, retain) NSString *swapSourceLabelText;
+@property (nonatomic, retain) UIView *tableHeaderContainerView;
 
 - (void)addInformationalDiagramWithWANConnectedBaseProductID:(unsigned int)arg1 replacementProductID:(unsigned int)arg2;
 - (void)addInternetNotWorkingUI;

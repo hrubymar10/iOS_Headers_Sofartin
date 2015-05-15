@@ -22,13 +22,13 @@
     bool _suppressRemoteUpdates;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKGroupsControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isReorderingEnabled,assign,readonly) bool reorderingEnabled;
-@property(assign,readwrite) bool shouldSeparatePaymentPasses;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKGroupsControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (getter=isReorderingEnabled, nonatomic, readonly) bool reorderingEnabled;
+@property (nonatomic) bool shouldSeparatePaymentPasses;
+@property (readonly) Class superclass;
 
 - (id)_copyRemoteCatalog;
 - (unsigned long long)_destinationIndexForGroupID:(id)arg1 catalogGroups:(id)arg2 skippingNewGroupsAfterIndex:(unsigned long long)arg3;

@@ -11,12 +11,12 @@
     NSMutableSet *_remainingEmailsToFetch;
 }
 
-@property(assign,retain) NSMutableDictionary * emailsToProtectionInfo;
-@property(assign,retain) NSMutableDictionary * emailsToUserInfo;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,copy) id lookupCompletionBlock;
-@property(assign,copy) id perEmailProgressBlock;
-@property(assign,retain) NSMutableSet * remainingEmailsToFetch;
+@property (nonatomic, retain) NSMutableDictionary *emailsToProtectionInfo;
+@property (nonatomic, retain) NSMutableDictionary *emailsToUserInfo;
+@property (nonatomic) bool isCancelled;
+@property (nonatomic, copy) id lookupCompletionBlock;
+@property (nonatomic, copy) id perEmailProgressBlock;
+@property (nonatomic, retain) NSMutableSet *remainingEmailsToFetch;
 
 - (void).cxx_destruct;
 - (void)cancel;

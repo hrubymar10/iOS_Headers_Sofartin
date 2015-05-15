@@ -6,7 +6,7 @@
     NSArray *_policies;
 }
 
-@property(assign,readonly) NSArray * policies;
+@property (nonatomic, readonly) NSArray *policies;
 
 + (bool)supportsSecureCoding;
 

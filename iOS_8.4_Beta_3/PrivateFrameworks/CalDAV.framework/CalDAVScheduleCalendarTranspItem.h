@@ -6,8 +6,8 @@
     CoreDAVItemWithNoChildren *_transparent;
 }
 
-@property(assign,readonly) bool isScheduleTransparent;
-@property(assign,retain) CoreDAVItemWithNoChildren * transparent;
+@property (nonatomic, readonly) bool isScheduleTransparent;
+@property (nonatomic, retain) CoreDAVItemWithNoChildren *transparent;
 
 - (id)copyParseRules;
 - (void)dealloc;

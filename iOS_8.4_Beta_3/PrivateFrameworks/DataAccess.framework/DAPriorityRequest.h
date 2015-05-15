@@ -7,8 +7,8 @@
     long long _refreshDataclasses;
 }
 
-@property(assign,readwrite) long long UIDataclasses;
-@property(assign,readwrite) long long refreshDataclasses;
+@property (nonatomic) long long UIDataclasses;
+@property (nonatomic) long long refreshDataclasses;
 
 - (long long)UIDataclasses;
 - (long long)refreshDataclasses;

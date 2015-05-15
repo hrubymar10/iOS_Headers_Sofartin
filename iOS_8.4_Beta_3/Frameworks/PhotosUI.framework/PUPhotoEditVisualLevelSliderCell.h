@@ -8,8 +8,8 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,readwrite) unsigned long long roundedCornersEdge;
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic) unsigned long long roundedCornersEdge;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 - (void).cxx_destruct;
 - (void)layoutSubviews;

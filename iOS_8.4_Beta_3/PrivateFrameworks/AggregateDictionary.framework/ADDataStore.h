@@ -7,7 +7,7 @@
     NSString *_path;
 }
 
-@property(assign,readonly) NSString * path;
+@property (nonatomic, readonly) NSString *path;
 
 - (void)dealloc;
 - (bool)distributionsForKeyPrefix:(id)arg1 minDaysSince1970:(int)arg2 maxDaysSince1970:(int)arg3 rowHandler:(id)arg4;

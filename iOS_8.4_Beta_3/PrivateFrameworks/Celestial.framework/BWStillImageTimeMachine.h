@@ -9,7 +9,7 @@
     struct OpaqueFigSimpleMutex { } *_timeMachineMutex;
 }
 
-@property(assign,readonly) int capacity;
+@property (nonatomic, readonly) int capacity;
 
 + (bool)afComplete:(struct opaqueCMSampleBuffer { }*)arg1;
 + (void)initialize;

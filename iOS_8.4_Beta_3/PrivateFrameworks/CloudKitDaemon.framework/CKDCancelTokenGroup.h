@@ -6,7 +6,7 @@
     NSMutableArray *_cancelTokens;
 }
 
-@property(assign,retain) NSMutableArray * cancelTokens;
+@property (nonatomic, retain) NSMutableArray *cancelTokens;
 
 - (void).cxx_destruct;
 - (void)addCancelToken:(id)arg1;

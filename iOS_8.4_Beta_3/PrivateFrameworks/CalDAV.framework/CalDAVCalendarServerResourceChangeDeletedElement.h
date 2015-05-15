@@ -10,11 +10,11 @@
     NSString *_summary;
 }
 
-@property(assign,retain) NSString * componentType;
-@property(assign,retain) NSString * displayName;
-@property(assign,readwrite) bool hadMoreInstances;
-@property(assign,retain) ICSDateValue * nextInstance;
-@property(assign,retain) NSString * summary;
+@property (nonatomic, retain) NSString *componentType;
+@property (nonatomic, retain) NSString *displayName;
+@property (nonatomic) bool hadMoreInstances;
+@property (nonatomic, retain) ICSDateValue *nextInstance;
+@property (nonatomic, retain) NSString *summary;
 
 - (id)componentType;
 - (id)copyParseRules;

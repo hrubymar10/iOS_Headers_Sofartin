@@ -13,14 +13,14 @@
     TSTLayoutSpace *mSpace;
 }
 
-@property(assign,retain) TSTLayoutSpace * frozenHeaderColumnsSpace;
-@property(assign,retain) TSTLayoutSpace * frozenHeaderCornerSpace;
-@property(assign,retain) TSTLayoutSpace * frozenHeaderRowsSpace;
-@property(assign,readwrite) TSTLayout * layout;
-@property(assign,retain) TSTLayoutSpace * repeatHeaderColumnsSpace;
-@property(assign,retain) TSTLayoutSpace * repeatHeaderCornerSpace;
-@property(assign,retain) TSTLayoutSpace * repeatHeaderRowsSpace;
-@property(assign,retain) TSTLayoutSpace * space;
+@property (nonatomic, retain) TSTLayoutSpace *frozenHeaderColumnsSpace;
+@property (nonatomic, retain) TSTLayoutSpace *frozenHeaderCornerSpace;
+@property (nonatomic, retain) TSTLayoutSpace *frozenHeaderRowsSpace;
+@property (nonatomic) TSTLayout *layout;
+@property (nonatomic, retain) TSTLayoutSpace *repeatHeaderColumnsSpace;
+@property (nonatomic, retain) TSTLayoutSpace *repeatHeaderCornerSpace;
+@property (nonatomic, retain) TSTLayoutSpace *repeatHeaderRowsSpace;
+@property (nonatomic, retain) TSTLayoutSpace *space;
 
 - (void)dealloc;
 - (id)description;

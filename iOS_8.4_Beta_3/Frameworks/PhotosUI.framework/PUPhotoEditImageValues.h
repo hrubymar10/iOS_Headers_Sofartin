@@ -11,12 +11,12 @@
     NSDictionary *_smartToneStatistics;
 }
 
-@property(getter=isComplete,assign,readwrite) bool complete;
-@property(assign,copy) NSDictionary * smartBlackAndWhiteStatistics;
-@property(assign,readwrite) double smartColorAutoSuggestion;
-@property(assign,copy) NSDictionary * smartColorStatistics;
-@property(assign,readwrite) double smartToneAutoSuggestion;
-@property(assign,copy) NSDictionary * smartToneStatistics;
+@property (getter=isComplete) bool complete;
+@property (copy) NSDictionary *smartBlackAndWhiteStatistics;
+@property double smartColorAutoSuggestion;
+@property (copy) NSDictionary *smartColorStatistics;
+@property double smartToneAutoSuggestion;
+@property (copy) NSDictionary *smartToneStatistics;
 
 - (void).cxx_destruct;
 - (bool)isComplete;

@@ -7,7 +7,7 @@
     SSURLConnectionRequest *_request;
 }
 
-@property(assign,readwrite) unsigned long long maxNumberOfTracks;
+@property (nonatomic) unsigned long long maxNumberOfTracks;
 
 - (void).cxx_destruct;
 - (void)cancel;

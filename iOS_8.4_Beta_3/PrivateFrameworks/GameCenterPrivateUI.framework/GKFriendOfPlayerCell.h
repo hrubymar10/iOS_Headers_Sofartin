@@ -6,7 +6,7 @@
     UILabel *_commonalitiesLabel;
 }
 
-@property(assign,retain) UILabel * commonalitiesLabel;
+@property (nonatomic, retain) UILabel *commonalitiesLabel;
 
 - (id)commonalitiesLabel;
 - (void)dealloc;

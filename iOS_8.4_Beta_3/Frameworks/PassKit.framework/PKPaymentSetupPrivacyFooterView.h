@@ -8,13 +8,13 @@
     UITextView *_message;
 }
 
-@property(assign,readwrite) long long context;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPaymentSetupPrivacyFooterViewDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UITextView * message;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long context;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPaymentSetupPrivacyFooterViewDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UITextView *message;
+@property (readonly) Class superclass;
 
 - (id)_linkColor;
 - (id)_linkTextAttributes;

@@ -9,14 +9,14 @@
     MSASStateMachine *_stateMachine;
 }
 
-@property(assign,retain) MSASAlbum * album;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) IDSService * idsService;
-@property(assign,retain) NSMutableDictionary * sendMessageIdentifierToPhone;
-@property(assign,retain) MSASStateMachine * stateMachine;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) MSASAlbum *album;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) IDSService *idsService;
+@property (nonatomic, retain) NSMutableDictionary *sendMessageIdentifierToPhone;
+@property (nonatomic, retain) MSASStateMachine *stateMachine;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (void)addPendingPhoneInvitations:(id)arg1 toOwnedAlbum:(id)arg2 inStateMachin:(id)arg3;

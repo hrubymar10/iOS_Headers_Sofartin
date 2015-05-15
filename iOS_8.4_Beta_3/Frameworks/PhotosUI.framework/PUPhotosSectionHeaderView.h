@@ -54,23 +54,23 @@
     bool _usingBackgroundBlur;
 }
 
-@property(assign,copy) NSString * actionButtonTitle;
-@property(assign,readwrite) bool allowsLocationInteraction;
-@property(assign,copy) NSString * backdropViewGroupName;
-@property(assign,readwrite) unsigned long long backgroundStyle;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,readwrite) <PUPhotosSectionHeaderViewDelegate> * delegate;
-@property(assign,readonly) bool generateDefaultTitleFromDates;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } highlightInsets;
-@property(assign,readonly) NSDate * sectionEndDate;
-@property(assign,readwrite) long long sectionIndex;
-@property(assign,retain) NSArray * sectionLocations;
-@property(assign,readonly) NSDate * sectionStartDate;
-@property(assign,retain) NSString * sectionTitle;
-@property(assign,readwrite) bool showsActionButton;
-@property(assign,readwrite) long long style;
-@property(assign,readonly) NSString * synthesizedSectionTitle;
-@property(assign,readonly) bool useYearOnlyForDefaultTitle;
+@property (nonatomic, copy) NSString *actionButtonTitle;
+@property (nonatomic) bool allowsLocationInteraction;
+@property (nonatomic, copy) NSString *backdropViewGroupName;
+@property (nonatomic) unsigned long long backgroundStyle;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic) <PUPhotosSectionHeaderViewDelegate> *delegate;
+@property (nonatomic, readonly) bool generateDefaultTitleFromDates;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } highlightInsets;
+@property (nonatomic, readonly) NSDate *sectionEndDate;
+@property (nonatomic) long long sectionIndex;
+@property (nonatomic, retain) NSArray *sectionLocations;
+@property (nonatomic, readonly) NSDate *sectionStartDate;
+@property (nonatomic, retain) NSString *sectionTitle;
+@property (nonatomic) bool showsActionButton;
+@property (nonatomic) long long style;
+@property (nonatomic, readonly) NSString *synthesizedSectionTitle;
+@property (nonatomic, readonly) bool useYearOnlyForDefaultTitle;
 
 + (void)_updateLabelGlobalCachedSizes;
 + (void)initialize;

@@ -4,7 +4,7 @@
 
 @interface SAHAIdentifierListFilter : SAHAFilter
 
-@property(assign,copy) NSArray * identifiers;
+@property (nonatomic, copy) NSArray *identifiers;
 
 + (id)identifierListFilter;
 + (id)identifierListFilterWithDictionary:(id)arg1 context:(id)arg2;

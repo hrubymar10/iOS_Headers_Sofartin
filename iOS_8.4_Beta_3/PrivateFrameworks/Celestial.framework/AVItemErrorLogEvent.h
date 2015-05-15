@@ -6,13 +6,13 @@
     AVItemErrorLogEventInternal *_playerItemErrorLogEvent;
 }
 
-@property(assign,readonly) NSString * URI;
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * errorComment;
-@property(assign,readonly) NSString * errorDomain;
-@property(assign,readonly) long long errorStatusCode;
-@property(assign,readonly) NSString * playbackSessionID;
-@property(assign,readonly) NSString * serverAddress;
+@property (nonatomic, readonly) NSString *URI;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *errorComment;
+@property (nonatomic, readonly) NSString *errorDomain;
+@property (nonatomic, readonly) long long errorStatusCode;
+@property (nonatomic, readonly) NSString *playbackSessionID;
+@property (nonatomic, readonly) NSString *serverAddress;
 
 - (id)URI;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -13,12 +13,12 @@
     int _rAT;
 }
 
-@property(assign,readwrite) bool hasPowerConnSetupMicroWatt;
-@property(assign,readwrite) bool hasPowerConnectedMicroWatt;
-@property(assign,readwrite) bool hasRAT;
-@property(assign,readwrite) unsigned int powerConnSetupMicroWatt;
-@property(assign,readwrite) unsigned int powerConnectedMicroWatt;
-@property(assign,readwrite) int rAT;
+@property (nonatomic) bool hasPowerConnSetupMicroWatt;
+@property (nonatomic) bool hasPowerConnectedMicroWatt;
+@property (nonatomic) bool hasRAT;
+@property (nonatomic) unsigned int powerConnSetupMicroWatt;
+@property (nonatomic) unsigned int powerConnectedMicroWatt;
+@property (nonatomic) int rAT;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

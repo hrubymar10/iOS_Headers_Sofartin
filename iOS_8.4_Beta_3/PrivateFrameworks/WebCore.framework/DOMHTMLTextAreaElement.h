@@ -4,20 +4,20 @@
 
 @interface DOMHTMLTextAreaElement : DOMHTMLElement
 
-@property(assign,copy) NSString * accessKey;
-@property(assign,readwrite) bool autofocus;
-@property(assign,readwrite) int cols;
-@property(assign,copy) NSString * defaultValue;
-@property(assign,readwrite) bool disabled;
-@property(assign,readonly) DOMHTMLFormElement * form;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) bool readOnly;
-@property(assign,readwrite) int rows;
-@property(assign,readwrite) int selectionEnd;
-@property(assign,readwrite) int selectionStart;
-@property(assign,copy) NSString * type;
-@property(assign,copy) NSString * value;
-@property(assign,readonly) bool willValidate;
+@property (copy) NSString *accessKey;
+@property bool autofocus;
+@property int cols;
+@property (copy) NSString *defaultValue;
+@property bool disabled;
+@property (readonly) DOMHTMLFormElement *form;
+@property (copy) NSString *name;
+@property bool readOnly;
+@property int rows;
+@property int selectionEnd;
+@property int selectionStart;
+@property (readonly, copy) NSString *type;
+@property (copy) NSString *value;
+@property (readonly) bool willValidate;
 
 - (int)_autocapitalizeType;
 - (bool)_isEdited;

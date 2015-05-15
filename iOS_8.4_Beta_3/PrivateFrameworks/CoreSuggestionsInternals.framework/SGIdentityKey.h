@@ -7,8 +7,8 @@
     unsigned long long _type;
 }
 
-@property(assign,readonly) NSString * externalId;
-@property(assign,readonly) unsigned long long type;
+@property (nonatomic, readonly) NSString *externalId;
+@property (nonatomic, readonly) unsigned long long type;
 
 + (unsigned long long)identityTypeForKeyPart:(id)arg1;
 + (bool)isSupportedEntityType:(long long)arg1;

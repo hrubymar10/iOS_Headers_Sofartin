@@ -52,10 +52,10 @@
     bool mStacked;
 }
 
-@property(assign,readonly) <TSCH3DBarChartAppearance> * appearance;
-@property(assign,readonly) int barShape;
-@property(assign,readonly) bool hasBevelEdges;
-@property(assign,retain) TSCH3DLabelResources * seriesLabels;
+@property (nonatomic, readonly) <TSCH3DBarChartAppearance> *appearance;
+@property (nonatomic, readonly) int barShape;
+@property (nonatomic, readonly) bool hasBevelEdges;
+@property (nonatomic, retain) TSCH3DLabelResources *seriesLabels;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) <MFContentProtectionObserver> * observer;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic, readonly) <MFContentProtectionObserver> *observer;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *queue;
 
 - (void)dealloc;
 - (id)initWithObserver:(id)arg1 queue:(id)arg2;

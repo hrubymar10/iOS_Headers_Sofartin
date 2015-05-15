@@ -14,16 +14,16 @@
     long long _storeId;
 }
 
-@property(assign,retain) NSString * artworkId;
-@property(assign,readonly) bool hasArtworkId;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasPersistentId;
-@property(assign,readonly) bool hasSortName;
-@property(assign,readwrite) bool hasStoreId;
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) long long persistentId;
-@property(assign,retain) NSString * sortName;
-@property(assign,readwrite) long long storeId;
+@property (nonatomic, retain) NSString *artworkId;
+@property (nonatomic, readonly) bool hasArtworkId;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasPersistentId;
+@property (nonatomic, readonly) bool hasSortName;
+@property (nonatomic) bool hasStoreId;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic) long long persistentId;
+@property (nonatomic, retain) NSString *sortName;
+@property (nonatomic) long long storeId;
 
 - (void).cxx_destruct;
 - (id)artworkId;

@@ -4,9 +4,9 @@
 
 @interface SAMicroblogMicroblogSearchResultNews : SAMicroblogMicroblogSearchResultPost
 
-@property(assign,copy) NSURL * articleURL;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSURL *articleURL;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, copy) NSString *title;
 
 + (id)microblogSearchResultNews;
 + (id)microblogSearchResultNewsWithDictionary:(id)arg1 context:(id)arg2;

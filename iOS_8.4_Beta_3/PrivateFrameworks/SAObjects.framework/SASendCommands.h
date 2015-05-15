@@ -4,7 +4,7 @@
 
 @interface SASendCommands : SABaseClientBoundCommand
 
-@property(assign,copy) NSArray * commands;
+@property (nonatomic, copy) NSArray *commands;
 
 + (id)sendCommands;
 + (id)sendCommandsWithDictionary:(id)arg1 context:(id)arg2;

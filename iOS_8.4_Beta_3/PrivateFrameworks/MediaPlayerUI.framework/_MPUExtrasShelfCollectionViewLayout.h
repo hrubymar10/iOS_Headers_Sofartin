@@ -10,7 +10,7 @@
     NSDictionary *_rects;
 }
 
-@property(assign,readonly) struct CGSize { double x1; double x2; } calculatedContentSize;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } calculatedContentSize;
 
 - (void).cxx_destruct;
 - (void)_calculateSizes;

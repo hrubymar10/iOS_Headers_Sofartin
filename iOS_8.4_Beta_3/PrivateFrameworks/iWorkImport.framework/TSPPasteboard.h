@@ -6,18 +6,18 @@
     id _pasteboard;
 }
 
-@property(assign,readonly) NSArray * URLs;
-@property(assign,readonly) long long changeCount;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isSmartCopy;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) long long numberOfItems;
-@property(assign,readonly) NSArray * richTextStrings;
-@property(assign,copy) NSString * string;
-@property(assign,readonly) NSArray * strings;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *URLs;
+@property (nonatomic, readonly) long long changeCount;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isSmartCopy;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) long long numberOfItems;
+@property (nonatomic, readonly) NSArray *richTextStrings;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic, readonly) NSArray *strings;
+@property (readonly) Class superclass;
 
 + (id)activePasteboardForName:(id)arg1;
 + (id)activePasteboards;

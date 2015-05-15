@@ -6,7 +6,7 @@
     NSString *inputCorrectionLevel;
 }
 
-@property(assign,copy) NSString * inputCorrectionLevel;
+@property (nonatomic, copy) NSString *inputCorrectionLevel;
 
 + (id)customAttributes;
 

@@ -10,9 +10,9 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,retain) BKSProcessAssertion * bkProcessAssertion;
-@property(assign,retain) id expirationObserver;
-@property(assign,readonly) unsigned long long identifier;
+@property (retain) BKSProcessAssertion *bkProcessAssertion;
+@property (retain) id expirationObserver;
+@property (readonly) unsigned long long identifier;
 
 - (void).cxx_destruct;
 - (void)_expireBackgroundTask;

@@ -6,7 +6,7 @@
     UIImage *_thumbnail;
 }
 
-@property(assign,retain) UIImage * thumbnail;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 + (id)newAttachmentImageWithAssetURL:(id)arg1 andThumbnail:(id)arg2;
 + (id)newAttachmentImageWithURL:(id)arg1;

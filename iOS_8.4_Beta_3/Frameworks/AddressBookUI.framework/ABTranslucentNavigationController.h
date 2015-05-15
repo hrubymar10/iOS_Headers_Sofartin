@@ -7,8 +7,8 @@
     <ABStyleProvider> *_styleProvider;
 }
 
-@property(assign,readwrite) bool overridesNavigationBarInset;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (nonatomic) bool overridesNavigationBarInset;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 - (bool)_shouldNavigationBarInsetViewController:(id)arg1;
 - (bool)overridesNavigationBarInset;

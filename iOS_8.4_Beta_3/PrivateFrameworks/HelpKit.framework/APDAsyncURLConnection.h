@@ -10,10 +10,10 @@
     id mErrorBlock;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)requestURL:(id)arg1 cachePolicy:(unsigned long long)arg2 completeBlock:(id)arg3 errorBlock:(id)arg4;
 + (id)requestURL:(id)arg1 completeBlock:(id)arg2 errorBlock:(id)arg3;

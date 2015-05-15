@@ -14,9 +14,9 @@
     double remainderUnpluggedTime;
 }
 
-@property(assign,retain) PLNSTimerOperatorComposition * dailyTaskTimer;
-@property(assign,readwrite) struct AggState { int x1; double x2; double x3; } last_state;
-@property(assign,retain) NSMutableArray * registeredNotifications;
+@property (retain) PLNSTimerOperatorComposition *dailyTaskTimer;
+@property struct AggState { int x1; double x2; double x3; } last_state;
+@property (retain) NSMutableArray *registeredNotifications;
 
 + (void)load;
 

@@ -4,8 +4,8 @@
 
 @interface AVAudioIONode : AVAudioNode
 
-@property(assign,readonly) struct OpaqueAudioComponentInstance { }* audioUnit;
-@property(assign,readonly) double presentationLatency;
+@property (nonatomic, readonly) struct OpaqueAudioComponentInstance { }*audioUnit;
+@property (nonatomic, readonly) double presentationLatency;
 
 - (struct OpaqueAudioComponentInstance { }*)audioUnit;
 - (double)presentationLatency;

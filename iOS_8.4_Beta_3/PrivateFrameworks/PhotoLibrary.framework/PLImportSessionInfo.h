@@ -12,13 +12,13 @@
     bool _importingSelection;
 }
 
-@property(assign,readonly) NSIndexSet * completedIndexes;
-@property(assign,readonly) NSIndexSet * errorIndexes;
-@property(assign,readwrite) bool importComplete;
-@property(assign,readonly) NSIndexSet * importIndexes;
-@property(assign,readwrite) bool importStopped;
-@property(assign,readwrite) bool importingSelection;
-@property(assign,readonly) NSIndexSet * inProgressIndexes;
+@property (nonatomic, readonly) NSIndexSet *completedIndexes;
+@property (nonatomic, readonly) NSIndexSet *errorIndexes;
+@property (nonatomic) bool importComplete;
+@property (nonatomic, readonly) NSIndexSet *importIndexes;
+@property (nonatomic) bool importStopped;
+@property (nonatomic) bool importingSelection;
+@property (nonatomic, readonly) NSIndexSet *inProgressIndexes;
 
 - (bool)_isImportCompleteForIndex:(unsigned long long)arg1;
 - (void)addIndexToImport:(unsigned long long)arg1;

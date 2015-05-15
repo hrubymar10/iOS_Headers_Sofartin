@@ -16,17 +16,17 @@
     int _originalUserVersion;
 }
 
-@property(assign,readwrite) int currentUserVersion;
-@property(assign,readwrite) bool forceUpdateOriginals;
-@property(assign,readwrite) bool needsAnalyze;
-@property(assign,readwrite) bool needsToAutogenerateArtworkVariants;
-@property(assign,readwrite) bool needsToRecreateIndexes;
-@property(assign,readwrite) bool needsToRecreateTriggers;
-@property(assign,readwrite) bool needsToReloadContainerMediaTypes;
-@property(assign,readwrite) bool needsToReloadStoreBookmarkMetadataIdentifiers;
-@property(assign,readwrite) bool needsToRemoveLocationsForItemsMissingAssets;
-@property(assign,readwrite) bool needsToUpdateSortMap;
-@property(assign,readonly) int originalUserVersion;
+@property (nonatomic) int currentUserVersion;
+@property (nonatomic) bool forceUpdateOriginals;
+@property (nonatomic) bool needsAnalyze;
+@property (nonatomic) bool needsToAutogenerateArtworkVariants;
+@property (nonatomic) bool needsToRecreateIndexes;
+@property (nonatomic) bool needsToRecreateTriggers;
+@property (nonatomic) bool needsToReloadContainerMediaTypes;
+@property (nonatomic) bool needsToReloadStoreBookmarkMetadataIdentifiers;
+@property (nonatomic) bool needsToRemoveLocationsForItemsMissingAssets;
+@property (nonatomic) bool needsToUpdateSortMap;
+@property (nonatomic, readonly) int originalUserVersion;
 
 - (int)currentUserVersion;
 - (bool)forceUpdateOriginals;

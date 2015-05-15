@@ -6,7 +6,7 @@
     unsigned int mValue;
 }
 
-@property(assign,readonly) unsigned int value;
+@property (nonatomic, readonly) unsigned int value;
 
 + (id)handleWithGLHandle:(unsigned int)arg1;
 

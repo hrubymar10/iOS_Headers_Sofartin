@@ -8,9 +8,9 @@
     double mInflection;
 }
 
-@property(assign,copy) TSUColor * color;
-@property(assign,readonly) double fraction;
-@property(assign,readonly) double inflection;
+@property (nonatomic, readonly, copy) TSUColor *color;
+@property (nonatomic, readonly) double fraction;
+@property (nonatomic, readonly) double inflection;
 
 + (id)gradientStopWithColor:(id)arg1 fraction:(double)arg2;
 + (id)gradientStopWithColor:(id)arg1 fraction:(double)arg2 inflection:(double)arg3;

@@ -6,7 +6,7 @@
     unsigned long long _badgeValue;
 }
 
-@property(assign,readwrite) unsigned long long badgeValue;
+@property (nonatomic) unsigned long long badgeValue;
 
 + (bool)supportsSecureCoding;
 

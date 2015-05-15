@@ -17,17 +17,17 @@
     NSMutableDictionary *_values;
 }
 
-@property(assign,retain) NSData * ITMLData;
-@property(assign,retain) NSHTTPURLResponse * ITMLResponse;
-@property(assign,retain) SKUIArtwork * backgroundArtwork;
-@property(assign,retain) SSMetricsConfiguration * metricsConfiguration;
-@property(assign,copy) NSString * metricsPageDescription;
-@property(assign,copy) NSArray * pageComponents;
-@property(assign,copy) NSString * pageType;
-@property(assign,copy) NSURL * pageURL;
-@property(assign,copy) SKUIProductPage * productPage;
-@property(assign,copy) NSString * title;
-@property(assign,retain) SKUIUber * uber;
+@property (nonatomic, retain) NSData *ITMLData;
+@property (nonatomic, retain) NSHTTPURLResponse *ITMLResponse;
+@property (nonatomic, retain) SKUIArtwork *backgroundArtwork;
+@property (nonatomic, retain) SSMetricsConfiguration *metricsConfiguration;
+@property (nonatomic, copy) NSString *metricsPageDescription;
+@property (nonatomic, copy) NSArray *pageComponents;
+@property (nonatomic, copy) NSString *pageType;
+@property (nonatomic, copy) NSURL *pageURL;
+@property (nonatomic, copy) SKUIProductPage *productPage;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, retain) SKUIUber *uber;
 
 - (void).cxx_destruct;
 - (id)ITMLData;

@@ -10,11 +10,11 @@
     bool _providePreBracketedEV0;
 }
 
-@property(assign,copy) NSDictionary * bracketedCaptureOverrides;
-@property(assign,copy) NSArray * exposureValues;
-@property(assign,copy) NSArray * manualExposureBracketedCaptureParams;
-@property(assign,copy) NSDictionary * oisBracketedCaptureParams;
-@property(assign,readwrite) bool providePreBracketedEV0;
+@property (nonatomic, copy) NSDictionary *bracketedCaptureOverrides;
+@property (nonatomic, copy) NSArray *exposureValues;
+@property (nonatomic, copy) NSArray *manualExposureBracketedCaptureParams;
+@property (nonatomic, copy) NSDictionary *oisBracketedCaptureParams;
+@property (nonatomic) bool providePreBracketedEV0;
 
 + (id)bracketSettings;
 

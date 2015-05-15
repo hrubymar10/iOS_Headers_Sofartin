@@ -39,21 +39,21 @@
     bool _wantsWhiteBackgroundBeyondRightEdgeWhenBouncing;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIScrollingSegmentedControllerDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long focusedViewControllerIndex;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) UIView * navigationBarTitleView;
-@property(assign,readonly) UIScrollView * scrollingTabNestedPagingScrollView;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } segmentedControlContentEdgeInsets;
-@property(assign,readwrite) double segmentedControlHeight;
-@property(assign,readwrite) long long segmentedControlLayoutStyle;
-@property(assign,readonly) Class superclass;
-@property(getter=_titlesSegmentedControl,assign,readonly) SKUIInteractiveSegmentedControl * titlesSegmentedControl;
-@property(assign,copy) NSArray * viewControllers;
-@property(assign,readwrite) bool wantsWhiteBackgroundBeyondLeftEdgeWhenBouncing;
-@property(assign,readwrite) bool wantsWhiteBackgroundBeyondRightEdgeWhenBouncing;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIScrollingSegmentedControllerDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) unsigned long long focusedViewControllerIndex;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) UIView *navigationBarTitleView;
+@property (nonatomic, readonly) UIScrollView *scrollingTabNestedPagingScrollView;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } segmentedControlContentEdgeInsets;
+@property (nonatomic) double segmentedControlHeight;
+@property (nonatomic) long long segmentedControlLayoutStyle;
+@property (readonly) Class superclass;
+@property (getter=_titlesSegmentedControl, nonatomic, readonly) SKUIInteractiveSegmentedControl *titlesSegmentedControl;
+@property (nonatomic, copy) NSArray *viewControllers;
+@property (nonatomic) bool wantsWhiteBackgroundBeyondLeftEdgeWhenBouncing;
+@property (nonatomic) bool wantsWhiteBackgroundBeyondRightEdgeWhenBouncing;
 
 + (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })defaultSegmentedControlContentEdgeInsetsForLayoutStyle:(long long)arg1;
 + (double)defaultSegmentedControlHeight;

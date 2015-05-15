@@ -10,11 +10,11 @@
     NSString *_low;
 }
 
-@property(assign,readwrite) unsigned long long dayNumber;
-@property(assign,readwrite) unsigned long long dayOfWeek;
-@property(assign,copy) NSString * high;
-@property(assign,readwrite) unsigned long long icon;
-@property(assign,copy) NSString * low;
+@property (nonatomic) unsigned long long dayNumber;
+@property (nonatomic) unsigned long long dayOfWeek;
+@property (nonatomic, copy) NSString *high;
+@property (nonatomic) unsigned long long icon;
+@property (nonatomic, copy) NSString *low;
 
 - (long long)compareDayNumberToDayForecast:(id)arg1;
 - (unsigned long long)dayNumber;

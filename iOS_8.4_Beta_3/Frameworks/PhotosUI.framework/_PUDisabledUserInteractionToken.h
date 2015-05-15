@@ -7,8 +7,8 @@
     long long _reason;
 }
 
-@property(assign,copy) NSString * identifier;
-@property(assign,readwrite) long long reason;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic) long long reason;
 
 - (void).cxx_destruct;
 - (id)description;

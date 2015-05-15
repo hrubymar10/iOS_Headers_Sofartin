@@ -147,14 +147,14 @@
     bool _wasInRealisticMode;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) VKPolylineOverlay * polyline;
-@property(assign,retain) VKPolylineOverlay * routeOverlay;
-@property(assign,readwrite) bool selected;
-@property(assign,readwrite) bool showTraffic;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) VKPolylineOverlay *polyline;
+@property (nonatomic, retain) VKPolylineOverlay *routeOverlay;
+@property (nonatomic) bool selected;
+@property (nonatomic) bool showTraffic;
+@property (readonly) Class superclass;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

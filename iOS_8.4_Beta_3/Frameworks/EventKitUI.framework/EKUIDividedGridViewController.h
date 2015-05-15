@@ -11,11 +11,11 @@
     NSArray *_weekViews;
 }
 
-@property(assign,retain) NSArray * allCells;
-@property(assign,retain) NSArray * buttonTitles;
-@property(assign,readwrite) <EKUIDividedGridViewControllerDelegate> * delegate;
-@property(assign,readwrite) double preferredWidth;
-@property(assign,retain) NSArray * weekViews;
+@property (retain) NSArray *allCells;
+@property (nonatomic, retain) NSArray *buttonTitles;
+@property <EKUIDividedGridViewControllerDelegate> *delegate;
+@property (nonatomic) double preferredWidth;
+@property (retain) NSArray *weekViews;
 
 + (id)dividerColor;
 

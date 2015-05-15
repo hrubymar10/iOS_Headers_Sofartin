@@ -4,8 +4,8 @@
 
 @interface ABPropertyGroupAlertItem : ABPropertyGroupItem
 
-@property(getter=isTone,assign,readonly) bool tone;
-@property(getter=isVibration,assign,readonly) bool vibration;
+@property (getter=isTone, nonatomic, readonly) bool tone;
+@property (getter=isVibration, nonatomic, readonly) bool vibration;
 
 - (id)_toneManager;
 - (id)_vibrationManager;

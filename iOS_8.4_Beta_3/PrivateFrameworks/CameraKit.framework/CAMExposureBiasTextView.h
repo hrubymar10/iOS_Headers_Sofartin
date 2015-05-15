@@ -7,8 +7,8 @@
     float _exposureBias;
 }
 
-@property(assign,retain) NSString * _lastText;
-@property(assign,readwrite) float exposureBias;
+@property (nonatomic, retain) NSString *_lastText;
+@property (nonatomic) float exposureBias;
 
 - (void).cxx_destruct;
 - (id)_lastText;

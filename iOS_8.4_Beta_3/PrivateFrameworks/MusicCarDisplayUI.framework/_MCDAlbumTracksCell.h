@@ -9,10 +9,10 @@
     UILabel *_trackNumberLabel;
 }
 
-@property(assign,copy) NSString * durationText;
-@property(assign,readwrite) double maximumDurationWidth;
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * trackNumberText;
+@property (nonatomic, copy) NSString *durationText;
+@property (nonatomic) double maximumDurationWidth;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *trackNumberText;
 
 - (void).cxx_destruct;
 - (id)durationText;

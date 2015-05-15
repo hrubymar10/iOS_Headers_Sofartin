@@ -35,17 +35,17 @@
     UIAlertView *_wifiDisabledAlert;
 }
 
-@property(assign,readwrite) long long alarmProximity;
-@property(assign,readwrite) unsigned long long alertType;
-@property(assign,retain) NSDate * date;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isAtALocation;
-@property(assign,readwrite) bool isOnADay;
-@property(assign,readwrite) bool showsLocation;
-@property(assign,copy) EKStructuredLocation * structuredLocation;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) long long alarmProximity;
+@property unsigned long long alertType;
+@property (nonatomic, retain) NSDate *date;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isAtALocation;
+@property (nonatomic) bool isOnADay;
+@property (nonatomic) bool showsLocation;
+@property (nonatomic, copy) EKStructuredLocation *structuredLocation;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)_alarmDateFromReminder:(id)arg1 withAlarm:(id)arg2;

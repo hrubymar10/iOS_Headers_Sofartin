@@ -12,13 +12,13 @@
     NSMutableSet *_unavailableItems;
 }
 
-@property(assign,copy) NSSet * allUnavailableItemIdentifiers;
-@property(assign,copy) NSDictionary * componentDictionary;
-@property(assign,copy) NSArray * ineligibleGratisIdentifiers;
-@property(assign,copy) NSDictionary * items;
-@property(assign,readwrite) long long layoutStyle;
-@property(assign,readonly) double pageGenerationTime;
-@property(assign,copy) NSDictionary * platformKeyProfileOverrides;
+@property (nonatomic, readonly, copy) NSSet *allUnavailableItemIdentifiers;
+@property (nonatomic, copy) NSDictionary *componentDictionary;
+@property (nonatomic, copy) NSArray *ineligibleGratisIdentifiers;
+@property (nonatomic, copy) NSDictionary *items;
+@property (nonatomic) long long layoutStyle;
+@property (nonatomic, readonly) double pageGenerationTime;
+@property (nonatomic, copy) NSDictionary *platformKeyProfileOverrides;
 
 - (void).cxx_destruct;
 - (void)addUnavailableItemIdentifiers:(id)arg1;

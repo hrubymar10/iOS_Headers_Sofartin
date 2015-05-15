@@ -18,22 +18,22 @@
     CKDPIdentifier *_user;
 }
 
-@property(assign,readwrite) long long customState;
-@property(assign,readwrite) bool hasCustomState;
-@property(assign,readonly) bool hasLastCustom;
-@property(assign,readonly) bool hasLastEdited;
-@property(assign,readonly) bool hasLastInvisible;
-@property(assign,readonly) bool hasLastViewed;
-@property(assign,readwrite) bool hasState;
-@property(assign,readwrite) bool hasStateTTLMillis;
-@property(assign,readonly) bool hasUser;
-@property(assign,retain) CKDPDate * lastCustom;
-@property(assign,retain) CKDPDate * lastEdited;
-@property(assign,retain) CKDPDate * lastInvisible;
-@property(assign,retain) CKDPDate * lastViewed;
-@property(assign,readwrite) int state;
-@property(assign,readwrite) long long stateTTLMillis;
-@property(assign,retain) CKDPIdentifier * user;
+@property (nonatomic) long long customState;
+@property (nonatomic) bool hasCustomState;
+@property (nonatomic, readonly) bool hasLastCustom;
+@property (nonatomic, readonly) bool hasLastEdited;
+@property (nonatomic, readonly) bool hasLastInvisible;
+@property (nonatomic, readonly) bool hasLastViewed;
+@property (nonatomic) bool hasState;
+@property (nonatomic) bool hasStateTTLMillis;
+@property (nonatomic, readonly) bool hasUser;
+@property (nonatomic, retain) CKDPDate *lastCustom;
+@property (nonatomic, retain) CKDPDate *lastEdited;
+@property (nonatomic, retain) CKDPDate *lastInvisible;
+@property (nonatomic, retain) CKDPDate *lastViewed;
+@property (nonatomic) int state;
+@property (nonatomic) long long stateTTLMillis;
+@property (nonatomic, retain) CKDPIdentifier *user;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

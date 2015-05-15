@@ -4,22 +4,22 @@
 
 @interface PLCloudResource : PLManagedObject
 
-@property(assign,retain) PLManagedAsset * asset;
-@property(assign,retain) PLAdditionalAssetAttributes * assetAttributes;
-@property(assign,retain) NSString * assetUuid;
-@property(assign,retain) PLCloudMaster * cloudMaster;
-@property(assign,retain) NSString * filePath;
-@property(assign,readwrite) long long fileSize;
-@property(assign,retain) NSString * fingerprint;
-@property(assign,readwrite) int height;
-@property(assign,readwrite) bool isAvailable;
-@property(assign,readwrite) bool isFlattened;
-@property(assign,readwrite) bool isLocallyAvailable;
-@property(assign,retain) NSDate * lastOnDemandDownloadDate;
-@property(assign,retain) NSDate * prunedAt;
-@property(assign,readwrite) int type;
-@property(assign,retain) NSString * uniformTypeIdentifier;
-@property(assign,readwrite) int width;
+@property (nonatomic, readonly, retain) PLManagedAsset *asset;
+@property (nonatomic, retain) PLAdditionalAssetAttributes *assetAttributes;
+@property (nonatomic, retain) NSString *assetUuid;
+@property (nonatomic, retain) PLCloudMaster *cloudMaster;
+@property (nonatomic, retain) NSString *filePath;
+@property (nonatomic) long long fileSize;
+@property (nonatomic, retain) NSString *fingerprint;
+@property (nonatomic) int height;
+@property (nonatomic) bool isAvailable;
+@property (nonatomic) bool isFlattened;
+@property (nonatomic) bool isLocallyAvailable;
+@property (nonatomic, retain) NSDate *lastOnDemandDownloadDate;
+@property (nonatomic, retain) NSDate *prunedAt;
+@property (nonatomic) int type;
+@property (nonatomic, retain) NSString *uniformTypeIdentifier;
+@property (nonatomic) int width;
 
 + (id)allCloudResourcesInManagedObjectContext:(id)arg1;
 + (long long)bytesNeededToDownloadOriginalResourcesInLibrary:(id)arg1;

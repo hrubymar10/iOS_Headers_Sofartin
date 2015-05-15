@@ -13,13 +13,13 @@
     int _zilchIndex;
 }
 
-@property(assign,readwrite) bool hasManeuverType;
-@property(assign,readonly) bool hasName;
-@property(assign,readwrite) bool hasZilchIndex;
-@property(assign,readwrite) int maneuverType;
-@property(assign,retain) GEONameInfo * name;
-@property(assign,retain) NSMutableArray * signposts;
-@property(assign,readwrite) int zilchIndex;
+@property (nonatomic) bool hasManeuverType;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic) bool hasZilchIndex;
+@property (nonatomic) int maneuverType;
+@property (nonatomic, retain) GEONameInfo *name;
+@property (nonatomic, retain) NSMutableArray *signposts;
+@property (nonatomic) int zilchIndex;
 
 - (void)addSignpost:(id)arg1;
 - (void)clearSignposts;

@@ -16,22 +16,22 @@
     NSData *_zoneProtectionInfo;
 }
 
-@property(assign,readwrite) unsigned long long bounceNo;
-@property(assign,retain) NSData * encryptedBasename;
-@property(assign,retain) NSString * etag;
-@property(assign,retain) NSString * extension;
-@property(assign,readwrite) bool hasBounceNo;
-@property(assign,readonly) bool hasEncryptedBasename;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasExtension;
-@property(assign,readonly) bool hasRecordID;
-@property(assign,readonly) bool hasRecordProtectionInfo;
-@property(assign,readonly) bool hasZoneName;
-@property(assign,readonly) bool hasZoneProtectionInfo;
-@property(assign,retain) NSString * recordID;
-@property(assign,retain) NSData * recordProtectionInfo;
-@property(assign,retain) NSString * zoneName;
-@property(assign,retain) NSData * zoneProtectionInfo;
+@property (nonatomic) unsigned long long bounceNo;
+@property (nonatomic, retain) NSData *encryptedBasename;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, retain) NSString *extension;
+@property (nonatomic) bool hasBounceNo;
+@property (nonatomic, readonly) bool hasEncryptedBasename;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasExtension;
+@property (nonatomic, readonly) bool hasRecordID;
+@property (nonatomic, readonly) bool hasRecordProtectionInfo;
+@property (nonatomic, readonly) bool hasZoneName;
+@property (nonatomic, readonly) bool hasZoneProtectionInfo;
+@property (nonatomic, retain) NSString *recordID;
+@property (nonatomic, retain) NSData *recordProtectionInfo;
+@property (nonatomic, retain) NSString *zoneName;
+@property (nonatomic, retain) NSData *zoneProtectionInfo;
 
 - (unsigned long long)bounceNo;
 - (void)copyTo:(id)arg1;

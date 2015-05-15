@@ -15,22 +15,22 @@
     unsigned long long mStyleIndex;
 }
 
-@property(assign,readonly) TSCHChartAxisID * axisID;
-@property(assign,readonly) int currentAxisScaleSetting;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isCategory;
-@property(assign,readonly) bool isRangeContinuous;
-@property(assign,readonly) TSULocale * locale;
-@property(assign,readonly) TSCHChartModel * model;
-@property(assign,readonly) NSArray * referenceLines;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool supportsReferenceLines;
+@property (nonatomic, readonly) TSCHChartAxisID *axisID;
+@property (nonatomic, readonly) int currentAxisScaleSetting;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long hash;
+@property (readonly) bool isCategory;
+@property (readonly) bool isRangeContinuous;
+@property (nonatomic, readonly) TSULocale *locale;
+@property (nonatomic, readonly) TSCHChartModel *model;
+@property (nonatomic, readonly) NSArray *referenceLines;
+@property (readonly) Class superclass;
+@property (readonly) Class superclass;
+@property (readonly) bool supportsReferenceLines;
 
 + (id)axisForInfo:(id)arg1;
 + (id)defaultNumberFormat;

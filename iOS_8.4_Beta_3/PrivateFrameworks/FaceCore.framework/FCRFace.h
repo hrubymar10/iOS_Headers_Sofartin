@@ -78,22 +78,22 @@
     long long trackID;
 }
 
-@property(assign,retain) NSDictionary * additionalInfo;
-@property(assign,retain) NSDictionary * expressionFeatures;
-@property(assign,readwrite) struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } face;
-@property(assign,readwrite) double faceAngle;
-@property(assign,retain) NSDictionary * faceLandmarkPoints;
-@property(assign,readwrite) double faceSize;
-@property(assign,readwrite) int faceType;
-@property(assign,retain) NSData * faceprint;
-@property(assign,readonly) bool hasLeftEyeBounds;
-@property(assign,readonly) bool hasMouthBounds;
-@property(assign,readonly) bool hasRightEyeBounds;
-@property(assign,readwrite) struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } leftEye;
-@property(assign,readwrite) struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } mouth;
-@property(assign,readwrite) struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } rightEye;
-@property(assign,readwrite) unsigned long long trackDuration;
-@property(assign,readwrite) long long trackID;
+@property (retain) NSDictionary *additionalInfo;
+@property (retain) NSDictionary *expressionFeatures;
+@property struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } face;
+@property double faceAngle;
+@property (retain) NSDictionary *faceLandmarkPoints;
+@property double faceSize;
+@property int faceType;
+@property (retain) NSData *faceprint;
+@property (readonly) bool hasLeftEyeBounds;
+@property (readonly) bool hasMouthBounds;
+@property (readonly) bool hasRightEyeBounds;
+@property struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } leftEye;
+@property struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } mouth;
+@property struct { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGRect { struct CGPoint { double x_1_2_1; double x_1_2_2; } x_2_1_1; struct CGSize { double x_2_2_1; double x_2_2_2; } x_2_1_2; } x2; } rightEye;
+@property unsigned long long trackDuration;
+@property long long trackID;
 
 - (id)additionalInfo;
 - (void)dealloc;

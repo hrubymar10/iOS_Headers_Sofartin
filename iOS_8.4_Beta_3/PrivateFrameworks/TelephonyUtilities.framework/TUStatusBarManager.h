@@ -9,11 +9,11 @@
     bool _inCallServiceActive;
 }
 
-@property(assign,retain) NSTimer * callDurationUpdateTimer;
-@property(assign,retain) NSString * currentStatusBarString;
-@property(assign,readwrite) <TUStatusBarManagerDelegate> * delegate;
-@property(assign,retain) TUCall * displayedCall;
-@property(getter=isInCallServiceActive,assign,readwrite) bool inCallServiceActive;
+@property (nonatomic, retain) NSTimer *callDurationUpdateTimer;
+@property (nonatomic, retain) NSString *currentStatusBarString;
+@property (nonatomic) <TUStatusBarManagerDelegate> *delegate;
+@property (nonatomic, readonly, retain) TUCall *displayedCall;
+@property (getter=isInCallServiceActive, nonatomic) bool inCallServiceActive;
 
 - (id)callDurationUpdateTimer;
 - (void)clearStatusBarInCallState;

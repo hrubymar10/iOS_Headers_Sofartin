@@ -11,14 +11,14 @@
     Reachability *_reachability;
 }
 
-@property(assign,readonly) NSArray * availableServices;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <RMSDiscoverySessionDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) long long discoveryTypes;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isNetworkAvailable,assign,readonly) bool networkAvailable;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *availableServices;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <RMSDiscoverySessionDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) long long discoveryTypes;
+@property (readonly) unsigned long long hash;
+@property (getter=isNetworkAvailable, nonatomic, readonly) bool networkAvailable;
+@property (readonly) Class superclass;
 
 + (id)localDiscoverySession;
 + (id)proxyDiscoverySession;

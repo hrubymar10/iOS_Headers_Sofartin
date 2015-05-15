@@ -12,7 +12,7 @@
     id _start;
 }
 
-@property(assign,readonly) bool _allowsUserInteraction;
+@property (nonatomic, readonly) bool _allowsUserInteraction;
 
 + (void)setAnimationBlockDelegateWithDuration:(double)arg1 options:(unsigned long long)arg2 start:(id)arg3 completion:(id)arg4;
 

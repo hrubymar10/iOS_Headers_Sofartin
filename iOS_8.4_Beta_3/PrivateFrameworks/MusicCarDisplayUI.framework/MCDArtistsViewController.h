@@ -6,7 +6,7 @@
     bool _allowsActions;
 }
 
-@property(assign,readwrite) bool allowsActions;
+@property (nonatomic) bool allowsActions;
 
 + (id)actionCellConfigurationClassesForLocation:(unsigned long long)arg1;
 + (long long)groupingType;

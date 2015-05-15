@@ -4,7 +4,7 @@
 
 @interface SAGKVideoPod : SAGKPodView
 
-@property(assign,copy) NSArray * videos;
+@property (nonatomic, copy) NSArray *videos;
 
 + (id)videoPod;
 + (id)videoPodWithDictionary:(id)arg1 context:(id)arg2;

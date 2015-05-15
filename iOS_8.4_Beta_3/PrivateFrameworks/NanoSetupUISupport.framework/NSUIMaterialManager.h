@@ -6,7 +6,7 @@
     unsigned long long _material;
 }
 
-@property(assign,readwrite) unsigned long long material;
+@property (nonatomic) unsigned long long material;
 
 + (id)sharedManager;
 

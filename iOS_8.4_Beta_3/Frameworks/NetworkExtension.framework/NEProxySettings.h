@@ -26,27 +26,27 @@
     bool _usePassiveFTP;
 }
 
-@property(assign,readwrite) bool FTPEnabled;
-@property(assign,copy) NEProxyServer * FTPServer;
-@property(assign,readwrite) bool HTTPEnabled;
-@property(assign,readwrite) bool HTTPSEnabled;
-@property(assign,copy) NEProxyServer * HTTPSServer;
-@property(assign,copy) NEProxyServer * HTTPServer;
-@property(assign,readwrite) bool RTSPEnabled;
-@property(assign,copy) NEProxyServer * RTSPServer;
-@property(assign,readwrite) bool SOCKSEnabled;
-@property(assign,copy) NEProxyServer * SOCKSServer;
-@property(assign,readwrite) bool autoProxyConfigurationEnabled;
-@property(assign,readwrite) bool autoProxyDiscovery;
-@property(assign,copy) NSArray * exceptionList;
-@property(assign,readwrite) bool excludeSimpleHostnames;
-@property(assign,readwrite) bool gopherEnabled;
-@property(assign,copy) NEProxyServer * gopherServer;
-@property(assign,copy) NSString * proxyAutoConfigJavaScript;
-@property(assign,copy) NSURL * proxyAutoConfigURL;
-@property(assign,copy) NSArray * supplementalMatchDomains;
-@property(assign,copy) NSArray * supplementalMatchOrders;
-@property(assign,readwrite) bool usePassiveFTP;
+@property bool FTPEnabled;
+@property (copy) NEProxyServer *FTPServer;
+@property bool HTTPEnabled;
+@property bool HTTPSEnabled;
+@property (copy) NEProxyServer *HTTPSServer;
+@property (copy) NEProxyServer *HTTPServer;
+@property bool RTSPEnabled;
+@property (copy) NEProxyServer *RTSPServer;
+@property bool SOCKSEnabled;
+@property (copy) NEProxyServer *SOCKSServer;
+@property bool autoProxyConfigurationEnabled;
+@property bool autoProxyDiscovery;
+@property (copy) NSArray *exceptionList;
+@property bool excludeSimpleHostnames;
+@property bool gopherEnabled;
+@property (copy) NEProxyServer *gopherServer;
+@property (copy) NSString *proxyAutoConfigJavaScript;
+@property (copy) NSURL *proxyAutoConfigURL;
+@property (copy) NSArray *supplementalMatchDomains;
+@property (copy) NSArray *supplementalMatchOrders;
+@property bool usePassiveFTP;
 
 + (bool)supportsSecureCoding;
 

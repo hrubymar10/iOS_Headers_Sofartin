@@ -6,8 +6,8 @@
     CalDAVUpdateOwnerItem *_changedBy;
 }
 
-@property(assign,retain) CalDAVUpdateOwnerItem * changedBy;
-@property(assign,readonly) NSURL * fullHrefURL;
+@property (nonatomic, retain) CalDAVUpdateOwnerItem *changedBy;
+@property (nonatomic, readonly) NSURL *fullHrefURL;
 
 - (id)changedBy;
 - (id)copyParseRules;

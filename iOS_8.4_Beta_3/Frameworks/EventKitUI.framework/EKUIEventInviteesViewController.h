@@ -22,30 +22,30 @@
     bool _viewIsVisible;
 }
 
-@property(assign,retain) EKUIInviteesViewAllInviteesCanAttendSection * allInviteesCanAttendSection;
-@property(assign,retain) EKUIInviteeAlternativeTimeSearcher * availabilitySearcher;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <EKEditItemViewControllerDelegate> * editDelegate;
-@property(assign,readwrite) bool editItemShouldBeAskedForInjectableViewController;
-@property(assign,readwrite) bool editable;
-@property(assign,retain) EKEvent * event;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) EKUIInviteesViewInvisibleInviteeStatusSection * invisibleInviteeStatusSection;
-@property(assign,retain) EKUIEventInviteesView * inviteesView;
-@property(assign,retain) EKUIInviteesViewNotRespondedInviteesSection * notRespondedSection;
-@property(assign,retain) EKUIInviteesViewOriginalConflictSection * originalConflictSection;
-@property(assign,readwrite) EKUIEventInviteesEditViewController * parentController;
-@property(assign,readwrite) bool presentModally;
-@property(assign,readwrite) bool resetAttendeesSections;
-@property(assign,readwrite) bool resetConflictResolutionSections;
-@property(assign,retain) EKUIInviteesViewRespondedInviteesSection * respondedSection;
-@property(assign,retain) NSArray * sections;
-@property(assign,retain) NSDate * selectedEndDate;
-@property(assign,retain) NSDate * selectedStartDate;
-@property(assign,retain) EKUIInviteesViewSomeInviteesCanAttendSection * someInviteesCanAttendSection;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool viewIsVisible;
+@property (nonatomic, retain) EKUIInviteesViewAllInviteesCanAttendSection *allInviteesCanAttendSection;
+@property (nonatomic, retain) EKUIInviteeAlternativeTimeSearcher *availabilitySearcher;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <EKEditItemViewControllerDelegate> *editDelegate;
+@property (nonatomic) bool editItemShouldBeAskedForInjectableViewController;
+@property (nonatomic) bool editable;
+@property (nonatomic, retain) EKEvent *event;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) EKUIInviteesViewInvisibleInviteeStatusSection *invisibleInviteeStatusSection;
+@property (nonatomic, retain) EKUIEventInviteesView *inviteesView;
+@property (nonatomic, retain) EKUIInviteesViewNotRespondedInviteesSection *notRespondedSection;
+@property (nonatomic, retain) EKUIInviteesViewOriginalConflictSection *originalConflictSection;
+@property (nonatomic) EKUIEventInviteesEditViewController *parentController;
+@property (nonatomic) bool presentModally;
+@property (nonatomic) bool resetAttendeesSections;
+@property (nonatomic) bool resetConflictResolutionSections;
+@property (nonatomic, retain) EKUIInviteesViewRespondedInviteesSection *respondedSection;
+@property (nonatomic, retain) NSArray *sections;
+@property (nonatomic, retain) NSDate *selectedEndDate;
+@property (nonatomic, retain) NSDate *selectedStartDate;
+@property (nonatomic, retain) EKUIInviteesViewSomeInviteesCanAttendSection *someInviteesCanAttendSection;
+@property (readonly) Class superclass;
+@property (nonatomic) bool viewIsVisible;
 
 + (id)_participantsInArray:(id)arg1 thatAreNotInArray:(id)arg2;
 

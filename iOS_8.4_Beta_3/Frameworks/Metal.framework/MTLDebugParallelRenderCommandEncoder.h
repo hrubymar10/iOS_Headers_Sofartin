@@ -6,7 +6,7 @@
     MTLRenderPassDescriptor *_descriptor;
 }
 
-@property(assign,copy) MTLRenderPassDescriptor * descriptor;
+@property (nonatomic, readonly, copy) MTLRenderPassDescriptor *descriptor;
 
 - (void).cxx_destruct;
 - (id)description;

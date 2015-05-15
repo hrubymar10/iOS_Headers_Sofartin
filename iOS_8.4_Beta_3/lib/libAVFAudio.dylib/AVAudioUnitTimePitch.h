@@ -4,9 +4,9 @@
 
 @interface AVAudioUnitTimePitch : AVAudioUnitTimeEffect
 
-@property(assign,readwrite) float overlap;
-@property(assign,readwrite) float pitch;
-@property(assign,readwrite) float rate;
+@property (nonatomic) float overlap;
+@property (nonatomic) float pitch;
+@property (nonatomic) float rate;
 
 - (id)init;
 - (float)overlap;

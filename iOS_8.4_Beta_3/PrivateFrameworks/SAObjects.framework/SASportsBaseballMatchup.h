@@ -4,17 +4,17 @@
 
 @interface SASportsBaseballMatchup : SASportsMatchup
 
-@property(assign,copy) NSNumber * awayErrors;
-@property(assign,copy) NSNumber * awayHits;
-@property(assign,copy) NSNumber * balls;
-@property(assign,copy) NSNumber * homeErrors;
-@property(assign,copy) NSNumber * homeHits;
-@property(assign,copy) NSString * inningStatus;
-@property(assign,copy) NSNumber * onFirst;
-@property(assign,copy) NSNumber * onSecond;
-@property(assign,copy) NSNumber * onThird;
-@property(assign,copy) NSNumber * outs;
-@property(assign,copy) NSNumber * strikes;
+@property (nonatomic, copy) NSNumber *awayErrors;
+@property (nonatomic, copy) NSNumber *awayHits;
+@property (nonatomic, copy) NSNumber *balls;
+@property (nonatomic, copy) NSNumber *homeErrors;
+@property (nonatomic, copy) NSNumber *homeHits;
+@property (nonatomic, copy) NSString *inningStatus;
+@property (nonatomic, copy) NSNumber *onFirst;
+@property (nonatomic, copy) NSNumber *onSecond;
+@property (nonatomic, copy) NSNumber *onThird;
+@property (nonatomic, copy) NSNumber *outs;
+@property (nonatomic, copy) NSNumber *strikes;
 
 + (id)baseballMatchup;
 + (id)baseballMatchupWithDictionary:(id)arg1 context:(id)arg2;

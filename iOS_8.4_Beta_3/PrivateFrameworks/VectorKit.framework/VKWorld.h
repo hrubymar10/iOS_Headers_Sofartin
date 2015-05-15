@@ -7,8 +7,8 @@
     VKModelObject *_modelRoot;
 }
 
-@property(assign,readwrite) <VKWorldDelegate> * delegate;
-@property(assign,readonly) VKModelObject * modelRoot;
+@property (nonatomic) <VKWorldDelegate> *delegate;
+@property (nonatomic, readonly) VKModelObject *modelRoot;
 
 - (void)dealloc;
 - (id)delegate;

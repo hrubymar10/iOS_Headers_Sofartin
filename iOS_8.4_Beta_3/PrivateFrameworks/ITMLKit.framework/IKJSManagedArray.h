@@ -7,8 +7,8 @@
     id _ownerObject;
 }
 
-@property(assign,retain) NSArray * managedArray;
-@property(assign,retain) id ownerObject;
+@property (nonatomic, retain) NSArray *managedArray;
+@property (nonatomic, retain) id ownerObject;
 
 - (void).cxx_destruct;
 - (void)dealloc;

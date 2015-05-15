@@ -19,7 +19,7 @@
     } _inputColor;
 }
 
-@property(assign,readwrite) struct { unsigned char x1; unsigned char x2; unsigned char x3; unsigned char x4; } inputColor;
+@property struct { unsigned char x1; unsigned char x2; unsigned char x3; unsigned char x4; } inputColor;
 
 - (void).cxx_destruct;
 - (id)cubeData;

@@ -10,15 +10,15 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) UILabel * actionLabel;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) UIImageView * iconImageView;
-@property(assign,retain) CKMediaObject * mediaObject;
-@property(assign,retain) UILabel * subtitleLabel;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) UILabel * titleLabel;
+@property (nonatomic, retain) UILabel *actionLabel;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) UIImageView *iconImageView;
+@property (nonatomic, retain) CKMediaObject *mediaObject;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) UILabel *titleLabel;
 
 - (id)action;
 - (id)actionLabel;

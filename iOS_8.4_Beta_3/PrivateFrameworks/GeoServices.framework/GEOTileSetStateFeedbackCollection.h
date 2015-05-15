@@ -22,18 +22,18 @@
     int _tileSetStateType;
 }
 
-@property(assign,readwrite) double durationInOldState;
-@property(assign,readwrite) bool hasDurationInOldState;
-@property(assign,readwrite) bool hasNewCoverage;
-@property(assign,readwrite) bool hasOldCoverage;
-@property(assign,readwrite) bool hasSessionID;
-@property(assign,readwrite) bool hasSessionRelativeTimestamp;
-@property(assign,readwrite) bool hasTileSetStateType;
-@property(assign,readwrite) double newCoverage;
-@property(assign,readwrite) double oldCoverage;
-@property(assign,readwrite) struct { unsigned long long x1; unsigned long long x2; } sessionID;
-@property(assign,readwrite) double sessionRelativeTimestamp;
-@property(assign,readwrite) int tileSetStateType;
+@property (nonatomic) double durationInOldState;
+@property (nonatomic) bool hasDurationInOldState;
+@property (nonatomic) bool hasNewCoverage;
+@property (nonatomic) bool hasOldCoverage;
+@property (nonatomic) bool hasSessionID;
+@property (nonatomic) bool hasSessionRelativeTimestamp;
+@property (nonatomic) bool hasTileSetStateType;
+@property (nonatomic) double newCoverage;
+@property (nonatomic) double oldCoverage;
+@property (nonatomic) struct { unsigned long long x1; unsigned long long x2; } sessionID;
+@property (nonatomic) double sessionRelativeTimestamp;
+@property (nonatomic) int tileSetStateType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

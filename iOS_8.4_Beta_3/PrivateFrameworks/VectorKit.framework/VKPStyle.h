@@ -15,16 +15,16 @@
     NSMutableArray *_zooms;
 }
 
-@property(assign,retain) NSMutableArray * attributes;
-@property(assign,retain) NSData * contents;
-@property(assign,readonly) bool hasContents;
-@property(assign,readonly) bool hasName;
-@property(assign,readonly) bool hasProperties;
-@property(assign,readonly) unsigned int* inherits;
-@property(assign,readonly) unsigned long long inheritsCount;
-@property(assign,retain) NSString * name;
-@property(assign,retain) VKPStyleProperties * properties;
-@property(assign,retain) NSMutableArray * zooms;
+@property (nonatomic, retain) NSMutableArray *attributes;
+@property (nonatomic, retain) NSData *contents;
+@property (nonatomic, readonly) bool hasContents;
+@property (nonatomic, readonly) bool hasName;
+@property (nonatomic, readonly) bool hasProperties;
+@property (nonatomic, readonly) unsigned int*inherits;
+@property (nonatomic, readonly) unsigned long long inheritsCount;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) VKPStyleProperties *properties;
+@property (nonatomic, retain) NSMutableArray *zooms;
 
 - (void)addAttributes:(id)arg1;
 - (void)addInherit:(unsigned int)arg1;

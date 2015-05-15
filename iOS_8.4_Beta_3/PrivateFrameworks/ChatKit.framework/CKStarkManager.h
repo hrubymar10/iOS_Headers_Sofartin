@@ -9,10 +9,10 @@
     UIWindow *_starkWindow;
 }
 
-@property(assign,readonly) bool isStarkConnected;
-@property(assign,retain) UIViewController * starkRootViewController;
-@property(assign,retain) UIScreen * starkScreen;
-@property(assign,retain) UIWindow * starkWindow;
+@property (nonatomic, readonly) bool isStarkConnected;
+@property (nonatomic, retain) UIViewController *starkRootViewController;
+@property (nonatomic, retain) UIScreen *starkScreen;
+@property (nonatomic, retain) UIWindow *starkWindow;
 
 + (id)sharedInstance;
 

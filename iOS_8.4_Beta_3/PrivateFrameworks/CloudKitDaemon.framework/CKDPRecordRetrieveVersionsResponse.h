@@ -10,9 +10,9 @@
     NSMutableArray *_recordVersions;
 }
 
-@property(assign,readwrite) bool hasIsDeleted;
-@property(assign,readwrite) bool isDeleted;
-@property(assign,retain) NSMutableArray * recordVersions;
+@property (nonatomic) bool hasIsDeleted;
+@property (nonatomic) bool isDeleted;
+@property (nonatomic, retain) NSMutableArray *recordVersions;
 
 - (void).cxx_destruct;
 - (void)addRecordVersions:(id)arg1;

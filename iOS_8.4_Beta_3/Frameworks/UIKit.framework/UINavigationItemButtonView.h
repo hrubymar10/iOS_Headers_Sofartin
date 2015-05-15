@@ -13,13 +13,13 @@
     bool _wantsBlendModeForAccessibilityBackgrounds;
 }
 
-@property(setter=_setAbbreviatedTitleIndex:,assign,readwrite) unsigned long long _abbreviatedTitleIndex;
-@property(setter=_setTintColor:,assign,retain) UIColor * _tintColor;
-@property(setter=_setWantsBlendModeForAccessibilityBackgrounds:,assign,readwrite) bool _wantsBlendModeForAccessibilityBackgrounds;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (setter=_setAbbreviatedTitleIndex:, nonatomic) unsigned long long _abbreviatedTitleIndex;
+@property (setter=_setTintColor:, nonatomic, retain) UIColor *_tintColor;
+@property (setter=_setWantsBlendModeForAccessibilityBackgrounds:, nonatomic) bool _wantsBlendModeForAccessibilityBackgrounds;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_UIAppearance_setBackButtonBackgroundImage:(id)arg1 forState:(unsigned long long)arg2 barMetrics:(long long)arg3;
 - (void)_UIAppearance_setBackButtonBackgroundVerticalPositionAdjustment:(double)arg1 forBarMetrics:(long long)arg2;

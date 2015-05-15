@@ -11,20 +11,20 @@
     NSString *_title;
 }
 
-@property(assign,retain) EKCalendar * calendar;
-@property(assign,retain) UIColor * color;
-@property(assign,readwrite) int customGroupType;
-@property(assign,readonly) int displayOrder;
-@property(assign,readonly) bool excludeFromSelectAll;
-@property(assign,readwrite) EKGroupInfo * group;
-@property(assign,readonly) UIImage * highlightedIcon;
-@property(assign,readonly) UIImage * icon;
-@property(assign,readonly) bool isEditable;
-@property(assign,readonly) bool isPublished;
-@property(assign,readonly) bool isShared;
-@property(assign,readonly) bool isSubscribed;
-@property(assign,readwrite) bool selected;
-@property(assign,copy) NSString * title;
+@property (nonatomic, retain) EKCalendar *calendar;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic) int customGroupType;
+@property (nonatomic, readonly) int displayOrder;
+@property (nonatomic, readonly) bool excludeFromSelectAll;
+@property (nonatomic) EKGroupInfo *group;
+@property (nonatomic, readonly) UIImage *highlightedIcon;
+@property (nonatomic, readonly) UIImage *icon;
+@property (nonatomic, readonly) bool isEditable;
+@property (nonatomic, readonly) bool isPublished;
+@property (nonatomic, readonly) bool isShared;
+@property (nonatomic, readonly) bool isSubscribed;
+@property (nonatomic) bool selected;
+@property (nonatomic, readonly, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (void)_updateCustomGroupType;

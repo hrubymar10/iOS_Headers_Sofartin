@@ -6,7 +6,7 @@
     double _textEdgePadding;
 }
 
-@property(assign,readwrite) double textEdgePadding;
+@property (nonatomic) double textEdgePadding;
 
 - (id)copyWithZone:(struct _NSZone { }*)arg1;
 - (id)init;

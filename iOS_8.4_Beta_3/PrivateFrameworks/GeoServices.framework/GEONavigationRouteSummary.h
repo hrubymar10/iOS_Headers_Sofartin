@@ -12,14 +12,14 @@
     int _transportType;
 }
 
-@property(assign,retain) GEOComposedWaypoint * destination;
-@property(assign,retain) NSString * destinationName;
-@property(assign,readonly) bool hasDestination;
-@property(assign,readonly) bool hasDestinationName;
-@property(assign,readonly) bool hasOrigin;
-@property(assign,readwrite) bool hasTransportType;
-@property(assign,retain) GEOComposedWaypoint * origin;
-@property(assign,readwrite) int transportType;
+@property (nonatomic, retain) GEOComposedWaypoint *destination;
+@property (nonatomic, retain) NSString *destinationName;
+@property (nonatomic, readonly) bool hasDestination;
+@property (nonatomic, readonly) bool hasDestinationName;
+@property (nonatomic, readonly) bool hasOrigin;
+@property (nonatomic) bool hasTransportType;
+@property (nonatomic, retain) GEOComposedWaypoint *origin;
+@property (nonatomic) int transportType;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

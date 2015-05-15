@@ -6,13 +6,13 @@
     id _voiceChatService;
 }
 
-@property(assign,readwrite) <GKVoiceChatClient> * client;
-@property(assign,readonly) float inputMeterLevel;
-@property(getter=isInputMeteringEnabled,assign,readwrite) bool inputMeteringEnabled;
-@property(getter=isMicrophoneMuted,assign,readwrite) bool microphoneMuted;
-@property(assign,readonly) float outputMeterLevel;
-@property(getter=isOutputMeteringEnabled,assign,readwrite) bool outputMeteringEnabled;
-@property(assign,readwrite) float remoteParticipantVolume;
+@property <GKVoiceChatClient> *client;
+@property (readonly) float inputMeterLevel;
+@property (getter=isInputMeteringEnabled, nonatomic) bool inputMeteringEnabled;
+@property (getter=isMicrophoneMuted, nonatomic) bool microphoneMuted;
+@property (readonly) float outputMeterLevel;
+@property (getter=isOutputMeteringEnabled, nonatomic) bool outputMeteringEnabled;
+@property (nonatomic) float remoteParticipantVolume;
 
 + (id)defaultVoiceChatService;
 + (void)initialize;

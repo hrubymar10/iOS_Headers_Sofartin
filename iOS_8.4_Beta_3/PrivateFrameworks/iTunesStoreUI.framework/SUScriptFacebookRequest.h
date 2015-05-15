@@ -9,12 +9,12 @@
     NSURL *_url;
 }
 
-@property(assign,copy) NSURL * URL;
-@property(assign,retain) SUScriptAppleAccount * account;
-@property(assign,readonly) long long requestMethod;
-@property(assign,readonly) long long requestMethodDelete;
-@property(assign,readonly) long long requestMethodGet;
-@property(assign,readonly) long long requestMethodPost;
+@property (readonly, copy) NSURL *URL;
+@property (retain) SUScriptAppleAccount *account;
+@property (readonly) long long requestMethod;
+@property (readonly) long long requestMethodDelete;
+@property (readonly) long long requestMethodGet;
+@property (readonly) long long requestMethodPost;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

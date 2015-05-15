@@ -7,9 +7,9 @@
     PBUnknownFields *_unknownFields;
 }
 
-@property(assign,readonly) bool hasRouteRequestStorage;
-@property(assign,retain) GEOStorageRouteRequestStorage * routeRequestStorage;
-@property(assign,readonly) PBUnknownFields * unknownFields;
+@property (nonatomic, readonly) bool hasRouteRequestStorage;
+@property (nonatomic, retain) GEOStorageRouteRequestStorage *routeRequestStorage;
+@property (nonatomic, readonly) PBUnknownFields *unknownFields;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

@@ -6,9 +6,9 @@
     <GKLeaderboardViewControllerDelegate> *_leaderboardDelegate;
 }
 
-@property(assign,copy) NSString * category;
-@property(assign,readwrite) <GKLeaderboardViewControllerDelegate> * leaderboardDelegate;
-@property(assign,readwrite) long long timeScope;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic) <GKLeaderboardViewControllerDelegate> *leaderboardDelegate;
+@property (nonatomic) long long timeScope;
 
 - (id)category;
 - (id)init;

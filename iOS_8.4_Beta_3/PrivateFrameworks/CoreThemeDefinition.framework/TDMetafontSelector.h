@@ -4,6 +4,6 @@
 
 @interface TDMetafontSelector : TDThemeConstant
 
-@property(assign,retain) TDFontDefinition * definition;
+@property (nonatomic, retain) TDFontDefinition *definition;
 
 @end

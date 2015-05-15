@@ -12,12 +12,12 @@
     MSVXPCTransaction *_xpcTransaction;
 }
 
-@property(assign,readwrite) unsigned long long connectionState;
-@property(assign,retain) IDSDevice * device;
-@property(assign,readwrite) unsigned int failureCount;
-@property(assign,readwrite) long long priority;
-@property(assign,retain) ATIDSSocket * socket;
-@property(assign,readwrite) double wakeupTimestamp;
+@property (nonatomic) unsigned long long connectionState;
+@property (nonatomic, retain) IDSDevice *device;
+@property (nonatomic) unsigned int failureCount;
+@property (nonatomic) long long priority;
+@property (nonatomic, retain) ATIDSSocket *socket;
+@property (nonatomic) double wakeupTimestamp;
 
 - (void).cxx_destruct;
 - (unsigned long long)connectionState;

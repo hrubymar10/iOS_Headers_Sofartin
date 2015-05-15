@@ -32,12 +32,12 @@
     void *_selectedPerson;
 }
 
-@property(assign,readwrite) void* addressBook;
-@property(assign,retain) ABContactsFilter * displayedContactsFilter;
-@property(assign,readonly) void* groupForNewRecords;
-@property(assign,readonly) ABContactsFilter * lastSelectedContactsFilter;
-@property(assign,readonly) ABContactsFilter * selectedContactsFilter;
-@property(assign,readonly) void* sourceForNewRecords;
+@property (nonatomic) void*addressBook;
+@property (nonatomic, retain) ABContactsFilter *displayedContactsFilter;
+@property (nonatomic, readonly) void*groupForNewRecords;
+@property (nonatomic, readonly) ABContactsFilter *lastSelectedContactsFilter;
+@property (nonatomic, readonly) ABContactsFilter *selectedContactsFilter;
+@property (nonatomic, readonly) void*sourceForNewRecords;
 
 + (void)initialize;
 + (unsigned int)sortOrdering;

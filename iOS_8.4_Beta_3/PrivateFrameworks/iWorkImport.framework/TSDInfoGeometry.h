@@ -20,13 +20,13 @@
     } mSize;
 }
 
-@property(assign,readonly) double angle;
-@property(assign,readonly) bool heightValid;
-@property(assign,readonly) bool horizontalFlip;
-@property(assign,readonly) struct CGPoint { double x1; double x2; } position;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) bool verticalFlip;
-@property(assign,readonly) bool widthValid;
+@property (nonatomic, readonly) double angle;
+@property (nonatomic, readonly) bool heightValid;
+@property (nonatomic, readonly) bool horizontalFlip;
+@property (nonatomic, readonly) struct CGPoint { double x1; double x2; } position;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) bool verticalFlip;
+@property (nonatomic, readonly) bool widthValid;
 
 + (id)geometryFromFullTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })arg1;
 + (id)geometryFromFullTransform:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })arg1 widthValid:(bool)arg2 heightValid:(bool)arg3;

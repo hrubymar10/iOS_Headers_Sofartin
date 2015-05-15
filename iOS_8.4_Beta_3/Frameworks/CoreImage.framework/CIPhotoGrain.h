@@ -9,10 +9,10 @@
     NSNumber *inputSeed;
 }
 
-@property(assign,copy) NSNumber * inputAmount;
-@property(assign,copy) NSNumber * inputISO;
-@property(assign,retain) CIImage * inputImage;
-@property(assign,copy) NSNumber * inputSeed;
+@property (nonatomic, copy) NSNumber *inputAmount;
+@property (nonatomic, copy) NSNumber *inputISO;
+@property (nonatomic, retain) CIImage *inputImage;
+@property (nonatomic, copy) NSNumber *inputSeed;
 
 - (id)_grainBlendAndMixKernel;
 - (id)_interpolateGrainKernel;

@@ -11,11 +11,11 @@
     id _responseBlock;
 }
 
-@property(getter=isITunesStoreRequest,assign,readwrite) bool ITunesStoreRequest;
-@property(assign,retain) NSURL * certificateURL;
-@property(assign,retain) NSURL * keyServerURL;
-@property(assign,retain) AVAssetResourceLoadingRequest * resourceLoadingRequest;
-@property(assign,copy) id responseBlock;
+@property (getter=isITunesStoreRequest) bool ITunesStoreRequest;
+@property (retain) NSURL *certificateURL;
+@property (retain) NSURL *keyServerURL;
+@property (retain) AVAssetResourceLoadingRequest *resourceLoadingRequest;
+@property (copy) id responseBlock;
 
 - (void).cxx_destruct;
 - (id)_contentKeyContextForStreamingKeyID:(long long)arg1 streamingKeyDictionaries:(id)arg2 error:(id*)arg3;

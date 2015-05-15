@@ -8,12 +8,12 @@
     CKDPRecordZoneIdentifier *_zoneIdentifier;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasProtectionInfo;
-@property(assign,readonly) bool hasZoneIdentifier;
-@property(assign,retain) CKDPProtectionInfo * protectionInfo;
-@property(assign,retain) CKDPRecordZoneIdentifier * zoneIdentifier;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasProtectionInfo;
+@property (nonatomic, readonly) bool hasZoneIdentifier;
+@property (nonatomic, retain) CKDPProtectionInfo *protectionInfo;
+@property (nonatomic, retain) CKDPRecordZoneIdentifier *zoneIdentifier;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

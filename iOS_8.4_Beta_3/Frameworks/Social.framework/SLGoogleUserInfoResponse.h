@@ -11,12 +11,12 @@
     NSDictionary *_userInfo;
 }
 
-@property(assign,readonly) NSString * displayName;
-@property(assign,readonly) NSString * emailAddress;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) NSString * errorMessage;
-@property(assign,readonly) long long statusCode;
-@property(assign,readonly) NSDictionary * userInfo;
+@property (readonly) NSString *displayName;
+@property (readonly) NSString *emailAddress;
+@property (readonly) NSError *error;
+@property (readonly) NSString *errorMessage;
+@property (readonly) long long statusCode;
+@property (readonly) NSDictionary *userInfo;
 
 - (void).cxx_destruct;
 - (id)displayName;

@@ -19,23 +19,23 @@
     unsigned long long _storageRef;
 }
 
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } alignmentEdgeInsets;
-@property(assign,readonly) int blendMode;
-@property(assign,readonly) struct { double x1; double x2; double x3; double x4; } edgeInsets;
-@property(assign,readonly) int exifOrientation;
-@property(assign,readonly) bool hasAlignmentInformation;
-@property(assign,readonly) bool hasSliceInformation;
-@property(assign,readonly) struct CGImage { }* image;
-@property(assign,readonly) long long imageType;
-@property(assign,readonly) bool isStructured;
-@property(assign,readonly) bool isTemplate;
-@property(assign,readonly) bool isVectorBased;
-@property(assign,copy) NSString * name;
-@property(assign,readonly) double opacity;
-@property(assign,readonly) long long resizingMode;
-@property(assign,readwrite) double scale;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) long long templateRenderingMode;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } alignmentEdgeInsets;
+@property (nonatomic, readonly) int blendMode;
+@property (nonatomic, readonly) struct { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic, readonly) int exifOrientation;
+@property (nonatomic, readonly) bool hasAlignmentInformation;
+@property (nonatomic, readonly) bool hasSliceInformation;
+@property (nonatomic, readonly) struct CGImage { }*image;
+@property (nonatomic, readonly) long long imageType;
+@property (nonatomic, readonly) bool isStructured;
+@property (nonatomic, readonly) bool isTemplate;
+@property (nonatomic, readonly) bool isVectorBased;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly) double opacity;
+@property (nonatomic, readonly) long long resizingMode;
+@property (nonatomic) double scale;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (nonatomic, readonly) long long templateRenderingMode;
 
 - (id)UIImage;
 - (void)_cacheRenditionProperties;

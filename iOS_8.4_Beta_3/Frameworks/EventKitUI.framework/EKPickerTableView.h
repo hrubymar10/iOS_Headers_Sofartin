@@ -10,12 +10,12 @@
     bool _usesKeyboard;
 }
 
-@property(assign,readonly) UIDatePicker * datePicker;
-@property(assign,readwrite) <EKPickerTableViewDelegate> * delegate;
-@property(assign,readwrite) bool showsDatePicker;
-@property(assign,readonly) UITableView * tableView;
-@property(assign,readwrite) bool usesBlackDatePicker;
-@property(assign,readwrite) bool usesKeyboard;
+@property (nonatomic, readonly) UIDatePicker *datePicker;
+@property (nonatomic) <EKPickerTableViewDelegate> *delegate;
+@property (nonatomic) bool showsDatePicker;
+@property (nonatomic, readonly) UITableView *tableView;
+@property (nonatomic) bool usesBlackDatePicker;
+@property (nonatomic) bool usesKeyboard;
 
 - (void).cxx_destruct;
 - (void)_datePickerDoubleTapped:(id)arg1;

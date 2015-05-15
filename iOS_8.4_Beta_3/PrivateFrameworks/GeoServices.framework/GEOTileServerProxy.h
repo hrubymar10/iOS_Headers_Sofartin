@@ -9,8 +9,8 @@
     GEOResourceManifestConfiguration *_manifestConfiguration;
 }
 
-@property(assign,readwrite) <GEOTileServerProxyDelegate> * delegate;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * delegateQ;
+@property (nonatomic) <GEOTileServerProxyDelegate> *delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> *delegateQ;
 
 - (void)beginPreloadSessionOfSize:(unsigned long long)arg1 exclusive:(bool)arg2;
 - (void)calculateFreeableSize;

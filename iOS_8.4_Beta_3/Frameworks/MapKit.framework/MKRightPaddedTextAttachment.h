@@ -6,7 +6,7 @@
     double _padding;
 }
 
-@property(assign,readwrite) double padding;
+@property (nonatomic) double padding;
 
 - (id)_contentViewForImage:(id)arg1;
 - (double)padding;

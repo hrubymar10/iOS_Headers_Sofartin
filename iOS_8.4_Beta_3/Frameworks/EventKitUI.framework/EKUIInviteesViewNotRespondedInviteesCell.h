@@ -14,15 +14,15 @@
     UIActivityIndicatorView *_spinner;
 }
 
-@property(assign,retain) UIImageView * availabilityTypeImageView;
-@property(assign,retain) UILabel * commentLabel;
-@property(assign,retain) NSLayoutConstraint * minimumHeightConstraint;
-@property(assign,retain) NSLayoutConstraint * nameBaselineToTopConstraint;
-@property(assign,retain) UILabel * nameLabel;
-@property(assign,retain) NSArray * persistentConstraints;
-@property(assign,retain) NSArray * removableConstraints;
-@property(assign,readwrite) bool showSpinner;
-@property(assign,retain) UIActivityIndicatorView * spinner;
+@property (nonatomic, retain) UIImageView *availabilityTypeImageView;
+@property (nonatomic, retain) UILabel *commentLabel;
+@property (nonatomic, retain) NSLayoutConstraint *minimumHeightConstraint;
+@property (nonatomic, retain) NSLayoutConstraint *nameBaselineToTopConstraint;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) NSArray *persistentConstraints;
+@property (nonatomic, retain) NSArray *removableConstraints;
+@property (nonatomic) bool showSpinner;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
 
 + (id)_commentLabelFont;
 + (double)_leftTextInset;

@@ -7,11 +7,11 @@
     NSArray *_tabItems;
 }
 
-@property(assign,readonly) IKAppTabBar * appTabBar;
-@property(assign,retain) IKJSTabBarItem * selectedTab;
-@property(assign,retain) NSArray * tabItems;
-@property(assign,readonly) NSArray * tabs;
-@property(assign,readonly) IKJSTabBarItem * transientTab;
+@property (nonatomic, readonly) IKAppTabBar *appTabBar;
+@property (nonatomic, retain) IKJSTabBarItem *selectedTab;
+@property (retain) NSArray *tabItems;
+@property (nonatomic, readonly) NSArray *tabs;
+@property (nonatomic, readonly) IKJSTabBarItem *transientTab;
 
 - (void).cxx_destruct;
 - (void)_reload;

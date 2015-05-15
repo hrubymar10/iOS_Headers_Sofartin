@@ -14,12 +14,12 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) double cancellationTime;
-@property(assign,readonly) bool cancelled;
-@property(assign,readonly) double creationTime;
-@property(assign,readwrite) bool extendedTime;
-@property(assign,readonly) NSArray * searchDomains;
-@property(assign,readonly) NSString * searchString;
+@property (nonatomic, readonly) double cancellationTime;
+@property (nonatomic, readonly) bool cancelled;
+@property (nonatomic, readonly) double creationTime;
+@property (nonatomic) bool extendedTime;
+@property (nonatomic, readonly) NSArray *searchDomains;
+@property (nonatomic, readonly) NSString *searchString;
 
 - (void)cancel;
 - (double)cancellationTime;

@@ -9,10 +9,10 @@
     unsigned int _uid;
 }
 
-@property(assign,readwrite) id delegate;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(assign,copy) NSString * name;
-@property(assign,copy) NSDictionary * style;
+@property id delegate;
+@property (getter=isEnabled) bool enabled;
+@property (copy) NSString *name;
+@property (copy) NSDictionary *style;
 
 + (void)CAMLParserStartElement:(id)arg1;
 + (bool)CA_automaticallyNotifiesObservers:(Class)arg1;

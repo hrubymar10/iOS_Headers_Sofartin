@@ -6,7 +6,7 @@
     SCRCMathExpression *_divisor;
 }
 
-@property(assign,retain) SCRCMathExpression * divisor;
+@property (nonatomic, retain) SCRCMathExpression *divisor;
 
 - (void)dealloc;
 - (id)divisor;

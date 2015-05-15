@@ -25,12 +25,12 @@
     NSMutableDictionary *tokenCache;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * deferredRequestsQ;
-@property(assign,readonly) NSString * fullName;
-@property(assign,readonly) unsigned long long integerId;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) CDSession * session;
-@property(assign,readonly) long long type;
+@property (readonly) NSObject<OS_dispatch_queue> *deferredRequestsQ;
+@property (readonly) NSString *fullName;
+@property (readonly) unsigned long long integerId;
+@property (readonly) NSString *name;
+@property (readonly) CDSession *session;
+@property (readonly) long long type;
 
 - (void).cxx_destruct;
 - (bool)activityStartedWithValue:(id)arg1 cost:(long long)arg2 error:(id*)arg3;

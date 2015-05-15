@@ -13,8 +13,8 @@
     MFRecipientTableViewCellTitleView *_titleView;
 }
 
-@property(assign,readwrite) bool shouldDimIrrelevantInformation;
-@property(assign,readwrite) bool shouldHighlightCompleteMatches;
+@property (nonatomic) bool shouldDimIrrelevantInformation;
+@property (nonatomic) bool shouldHighlightCompleteMatches;
 
 + (id)_attributedStringRepresentationOfCompleteMatchesForRecipient:(id)arg1 constrainedToWidth:(double)arg2 overflowRecipients:(out id*)arg3 useHighlighting:(bool)arg4;
 + (id)_attributedStringRepresentationOfPartialEmailMatchForSingleRecipient:(id)arg1 useHighlighting:(bool)arg2;

@@ -12,7 +12,7 @@
     unsigned int _skipOffset;
 }
 
-@property(assign,readonly) unsigned int folderID;
+@property (nonatomic, readonly) unsigned int folderID;
 
 - (void)_moveBookmarkAtIndex:(unsigned int)arg1 toIndex:(unsigned int)arg2;
 - (unsigned int)_reverseOrderIndex:(unsigned int)arg1;

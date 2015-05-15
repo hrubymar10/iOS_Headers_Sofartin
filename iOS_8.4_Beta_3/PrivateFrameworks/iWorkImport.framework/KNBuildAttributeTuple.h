@@ -12,12 +12,12 @@
     NSString *_property;
 }
 
-@property(assign,readonly) KNBuild * build;
-@property(assign,readonly) KNBuildChunk * chunk;
-@property(assign,readonly) bool isBuildTuple;
-@property(assign,readonly) bool isChunkTuple;
-@property(assign,readonly) NSString * property;
-@property(assign,readonly) KNBuildAttributeValue * value;
+@property (nonatomic, readonly) KNBuild *build;
+@property (nonatomic, readonly) KNBuildChunk *chunk;
+@property (nonatomic, readonly) bool isBuildTuple;
+@property (nonatomic, readonly) bool isChunkTuple;
+@property (nonatomic, readonly) NSString *property;
+@property (nonatomic, readonly) KNBuildAttributeValue *value;
 
 + (id)tupleForBuild:(id)arg1 property:(id)arg2 value:(id)arg3;
 + (id)tupleWithChunk:(id)arg1 property:(id)arg2 value:(id)arg3;

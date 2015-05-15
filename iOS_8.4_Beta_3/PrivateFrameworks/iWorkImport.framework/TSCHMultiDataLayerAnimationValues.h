@@ -10,11 +10,11 @@
     NSArray *mValues;
 }
 
-@property(assign,readonly) NSString * key;
-@property(assign,readonly) NSArray * keyTimes;
-@property(assign,readonly) CALayer * layer;
-@property(assign,readonly) bool needPresentationLayerValues;
-@property(assign,readonly) NSArray * values;
+@property (nonatomic, readonly) NSString *key;
+@property (nonatomic, readonly) NSArray *keyTimes;
+@property (nonatomic, readonly) CALayer *layer;
+@property (nonatomic, readonly) bool needPresentationLayerValues;
+@property (nonatomic, readonly) NSArray *values;
 
 + (id)animationValuesWithLayer:(id)arg1 key:(id)arg2 values:(id)arg3;
 + (id)animationValuesWithLayer:(id)arg1 key:(id)arg2 values:(id)arg3 keyTimes:(id)arg4;

@@ -8,9 +8,9 @@
     unsigned int _identifier;
 }
 
-@property(assign,retain) NSMutableArray * atlas;
-@property(assign,retain) NSMutableArray * icons;
-@property(assign,readwrite) unsigned int identifier;
+@property (nonatomic, retain) NSMutableArray *atlas;
+@property (nonatomic, retain) NSMutableArray *icons;
+@property (nonatomic) unsigned int identifier;
 
 - (void)addAtlas:(id)arg1;
 - (void)addIcons:(id)arg1;

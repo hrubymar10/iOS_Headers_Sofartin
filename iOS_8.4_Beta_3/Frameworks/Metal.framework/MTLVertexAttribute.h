@@ -9,10 +9,10 @@
     NSString *_name;
 }
 
-@property(getter=isActive,assign,readonly) bool active;
-@property(assign,readonly) unsigned long long attributeIndex;
-@property(assign,readonly) unsigned long long attributeType;
-@property(assign,readonly) NSString * name;
+@property (getter=isActive, readonly) bool active;
+@property (readonly) unsigned long long attributeIndex;
+@property (readonly) unsigned long long attributeType;
+@property (readonly) NSString *name;
 
 - (unsigned long long)attributeIndex;
 - (unsigned long long)attributeType;

@@ -6,7 +6,7 @@
     NSString *_label;
 }
 
-@property(assign,readonly) NSString * label;
+@property (nonatomic, readonly) NSString *label;
 
 + (bool)supportsSecureCoding;
 

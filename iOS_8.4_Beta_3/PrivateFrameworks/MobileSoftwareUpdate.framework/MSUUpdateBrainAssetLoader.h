@@ -6,7 +6,7 @@
     ASAsset *_updateAsset;
 }
 
-@property(assign,retain) ASAsset * updateAsset;
+@property (nonatomic, retain) ASAsset *updateAsset;
 
 - (void)adjustOptions:(id)arg1 completion:(id)arg2;
 - (bool)cancel:(id*)arg1;

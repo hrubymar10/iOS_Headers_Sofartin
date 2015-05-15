@@ -14,14 +14,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) int connectionType;
-@property(assign,readwrite) long long errorCode;
-@property(assign,retain) NSString * errorDomain;
-@property(assign,readwrite) bool hasConnectionType;
-@property(assign,readwrite) bool hasErrorCode;
-@property(assign,readonly) bool hasErrorDomain;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) int connectionType;
+@property (nonatomic) long long errorCode;
+@property (nonatomic, retain) NSString *errorDomain;
+@property (nonatomic) bool hasConnectionType;
+@property (nonatomic) bool hasErrorCode;
+@property (nonatomic, readonly) bool hasErrorDomain;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) unsigned long long timestamp;
 
 - (int)connectionType;
 - (void)copyTo:(id)arg1;

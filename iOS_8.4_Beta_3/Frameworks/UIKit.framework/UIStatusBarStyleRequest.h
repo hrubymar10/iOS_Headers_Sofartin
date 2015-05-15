@@ -10,11 +10,11 @@
     long long _style;
 }
 
-@property(assign,retain) UIColor * foregroundColor;
-@property(getter=isLegacy,assign,readonly) bool legacy;
-@property(assign,readonly) long long legibilityStyle;
-@property(assign,retain) NSNumber * overrideHeight;
-@property(assign,readonly) long long style;
+@property (nonatomic, readonly, retain) UIColor *foregroundColor;
+@property (getter=isLegacy, nonatomic, readonly) bool legacy;
+@property (nonatomic, readonly) long long legibilityStyle;
+@property (nonatomic, readonly, retain) NSNumber *overrideHeight;
+@property (nonatomic, readonly) long long style;
 
 - (id)_copyWithZone:(struct _NSZone { }*)arg1 class:(Class)arg2;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

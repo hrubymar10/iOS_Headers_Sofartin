@@ -8,9 +8,9 @@
     UIView *_mapView;
 }
 
-@property(assign,readwrite) bool autoCenteringDisabled;
-@property(assign,retain) UIView * detailsView;
-@property(assign,retain) UIView * mapView;
+@property (nonatomic) bool autoCenteringDisabled;
+@property (nonatomic, retain) UIView *detailsView;
+@property (nonatomic, retain) UIView *mapView;
 
 - (void).cxx_destruct;
 - (double)_horizontalSpacing;

@@ -8,7 +8,7 @@
     unsigned long long _selectedItemIndex;
 }
 
-@property(assign,readwrite) unsigned long long selectedItemIndex;
+@property (nonatomic) unsigned long long selectedItemIndex;
 
 - (void).cxx_destruct;
 - (void)_prepareLayout;

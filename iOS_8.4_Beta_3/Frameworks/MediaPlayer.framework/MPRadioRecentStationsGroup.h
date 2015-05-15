@@ -7,8 +7,8 @@
     NSArray *_stations;
 }
 
-@property(assign,copy) NSString * localizedTitle;
-@property(assign,copy) NSArray * stations;
+@property (nonatomic, copy) NSString *localizedTitle;
+@property (nonatomic, copy) NSArray *stations;
 
 + (bool)supportsSecureCoding;
 

@@ -35,10 +35,10 @@
     } _trafficLayer;
 }
 
-@property(assign,readwrite) const struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; }* dataKey;
-@property(assign,readonly) VKTileKeyMap * dynamicTiles;
-@property(assign,readonly) NSArray * incidents;
-@property(assign,readonly) /* Warning: unhandled struct encoding: '{TrafficLayer=^^?{vector<vk::TrafficBatch *' */ struct * trafficLayer; /* unknown property attribute:  std::__1::allocator<ggl::OptimizedTraffic::BaseMesh *> >=^^{BaseMesh}}}[1^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[1{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{TrafficManager}@} */
+@property (nonatomic) const struct _GEOTileKey { unsigned int x1 : 6; unsigned int x2 : 26; unsigned int x3 : 26; unsigned int x4 : 6; unsigned int x5 : 8; unsigned int x6 : 8; unsigned int x7 : 8; unsigned int x8 : 1; unsigned int x9 : 7; unsigned char x10[4]; }*dataKey;
+@property (nonatomic, readonly) VKTileKeyMap *dynamicTiles;
+@property (nonatomic, readonly) NSArray *incidents;
+@property (nonatomic, readonly) /* Warning: unhandled struct encoding: '{TrafficLayer=^^?{vector<vk::TrafficBatch *' */ struct *trafficLayer; /* unknown property attribute:  std::__1::allocator<ggl::OptimizedTraffic::BaseMesh *> >=^^{BaseMesh}}}[1^{RenderState}]{shared_ptr<ggl::Tile::ViewUniformData>=^{ViewUniformData}^{__shared_weak_count}}[1{shared_ptr<ggl::RenderState>=^{RenderState}^{__shared_weak_count}}]Q^{TrafficManager}@} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

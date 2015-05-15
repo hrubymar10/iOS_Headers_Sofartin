@@ -13,14 +13,14 @@
     double _timestamp;
 }
 
-@property(assign,retain) NSString * function;
-@property(assign,readwrite) int level;
-@property(assign,retain) NSString * logName;
-@property(assign,readwrite) unsigned int machPort;
-@property(assign,retain) NSString * message;
-@property(assign,readwrite) int processID;
-@property(assign,retain) NSString * processName;
-@property(assign,readwrite) double timestamp;
+@property (nonatomic, retain) NSString *function;
+@property (nonatomic) int level;
+@property (nonatomic, retain) NSString *logName;
+@property (nonatomic) unsigned int machPort;
+@property (nonatomic, retain) NSString *message;
+@property (nonatomic) int processID;
+@property (nonatomic, retain) NSString *processName;
+@property (nonatomic) double timestamp;
 
 - (void).cxx_destruct;
 - (id)description;

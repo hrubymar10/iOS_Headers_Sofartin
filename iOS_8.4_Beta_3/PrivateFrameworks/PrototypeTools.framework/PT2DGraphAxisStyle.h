@@ -15,16 +15,16 @@
     UIColor *_titleColor;
 }
 
-@property(assign,retain) UIColor * color;
-@property(assign,retain) UIColor * gridlineColor;
-@property(assign,readwrite) unsigned long long gridlineCount;
-@property(assign,readwrite) double hashmarkInterval;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) bool showsGridlines;
-@property(assign,readwrite) bool showsHashmarks;
-@property(assign,readwrite) bool showsTitle;
-@property(assign,readwrite) NSString * title;
-@property(assign,retain) UIColor * titleColor;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, retain) UIColor *gridlineColor;
+@property (nonatomic) unsigned long long gridlineCount;
+@property (nonatomic) double hashmarkInterval;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) bool showsGridlines;
+@property (nonatomic) bool showsHashmarks;
+@property (nonatomic) bool showsTitle;
+@property (nonatomic) NSString *title;
+@property (nonatomic, retain) UIColor *titleColor;
 
 - (void).cxx_destruct;
 - (id)color;

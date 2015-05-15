@@ -10,11 +10,11 @@
     CAReplicatorLayer *_thinkingDots;
 }
 
-@property(assign,retain) CALayer * largeBubble;
-@property(assign,retain) CALayer * mediumBubble;
-@property(assign,retain) CALayer * smallBubble;
-@property(assign,retain) CALayer * thinkingDot;
-@property(assign,retain) CAReplicatorLayer * thinkingDots;
+@property (nonatomic, retain) CALayer *largeBubble;
+@property (nonatomic, retain) CALayer *mediumBubble;
+@property (nonatomic, retain) CALayer *smallBubble;
+@property (nonatomic, retain) CALayer *thinkingDot;
+@property (nonatomic, retain) CAReplicatorLayer *thinkingDots;
 
 - (void)_buildThinkingDots;
 - (id)_largeBubbleGrowAnimationsWithSpeed:(double)arg1 offset:(struct CGPoint { double x1; double x2; })arg2;

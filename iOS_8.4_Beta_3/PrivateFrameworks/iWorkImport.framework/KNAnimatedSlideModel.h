@@ -13,9 +13,9 @@
     KNPlaybackSession *_session;
 }
 
-@property(assign,readonly) NSArray * animatedBuilds;
-@property(getter=isFirstBuildEventAutomatic,assign,readonly) bool firstBuildEventAutomatic;
-@property(assign,readwrite) unsigned long long numberOfAddedEvents;
+@property (nonatomic, readonly) NSArray *animatedBuilds;
+@property (getter=isFirstBuildEventAutomatic, nonatomic, readonly) bool firstBuildEventAutomatic;
+@property (nonatomic) unsigned long long numberOfAddedEvents;
 
 - (id)actionEffectForDrawable:(id)arg1 atBeginningOfEvent:(long long)arg2;
 - (id)animatedBuildForInfo:(id)arg1 aroundEvent:(long long)arg2 isAtEndOfBuild:(bool*)arg3;

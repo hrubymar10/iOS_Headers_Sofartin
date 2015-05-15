@@ -6,7 +6,7 @@
     UILabel *_valueLabel;
 }
 
-@property(assign,readonly) UILabel * valueLabel;
+@property (nonatomic, readonly) UILabel *valueLabel;
 
 - (void).cxx_destruct;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;

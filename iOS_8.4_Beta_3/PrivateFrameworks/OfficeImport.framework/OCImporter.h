@@ -12,9 +12,9 @@
     NSURL *mURL;
 }
 
-@property(assign,retain) NSString * docPassphrase;
-@property(assign,retain) OITSUProgressContext * progressContext;
-@property(assign,readonly) TCImportTracing * tracing;
+@property (nonatomic, retain) NSString *docPassphrase;
+@property (retain) OITSUProgressContext *progressContext;
+@property (nonatomic, readonly) TCImportTracing *tracing;
 
 + (void)initialize;
 

@@ -12,13 +12,13 @@
     unsigned long long _spread;
 }
 
-@property(assign,readwrite) short angle;
-@property(assign,readwrite) int blendMode;
-@property(assign,readwrite) unsigned long long blurSize;
-@property(assign,retain) CUIColor * color;
-@property(assign,readwrite) unsigned long long distance;
-@property(assign,readwrite) double opacity;
-@property(assign,readwrite) unsigned long long spread;
+@property short angle;
+@property int blendMode;
+@property unsigned long long blurSize;
+@property (retain) CUIColor *color;
+@property unsigned long long distance;
+@property double opacity;
+@property unsigned long long spread;
 
 - (short)angle;
 - (int)blendMode;

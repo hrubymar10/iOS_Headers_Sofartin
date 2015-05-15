@@ -6,10 +6,10 @@
     AVAsynchronousVideoCompositionRequestInternal *_internal;
 }
 
-@property(assign,readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } compositionTime;
-@property(assign,readonly) AVVideoCompositionRenderContext * renderContext;
-@property(assign,readonly) NSArray * sourceTrackIDs;
-@property(assign,readonly) <AVVideoCompositionInstruction> * videoCompositionInstruction;
+@property (nonatomic, readonly) struct { long long x1; int x2; unsigned int x3; long long x4; } compositionTime;
+@property (nonatomic, readonly) AVVideoCompositionRenderContext *renderContext;
+@property (nonatomic, readonly) NSArray *sourceTrackIDs;
+@property (nonatomic, readonly) <AVVideoCompositionInstruction> *videoCompositionInstruction;
 
 - (void)_willDeallocOrFinalize;
 - (struct OpaqueFigVideoCompositorFrame { }*)compositionFrame;

@@ -4,7 +4,7 @@
 
 @interface SKUIFilterBarViewElement : SKUIViewElement
 
-@property(assign,readonly) SKUIDividerViewElement * bottomDivider;
+@property (nonatomic, readonly) SKUIDividerViewElement *bottomDivider;
 
 - (id)bottomDivider;
 - (id)childViewElementsForAlignment:(unsigned long long)arg1;

@@ -6,9 +6,9 @@
     AVSubtitleLayerInternal *_subtitleLayer;
 }
 
-@property(getter=isOverscanSubtitleSupportEnabled,assign,readwrite) bool overscanSubtitleSupportEnabled;
-@property(assign,retain) AVPlayer * player;
-@property(assign,readonly) CADisplay * subtitleLayerDisplay;
+@property (getter=isOverscanSubtitleSupportEnabled, nonatomic) bool overscanSubtitleSupportEnabled;
+@property (nonatomic, retain) AVPlayer *player;
+@property (nonatomic, readonly) CADisplay *subtitleLayerDisplay;
 
 + (id)subtitleLayerWithPlayer:(id)arg1;
 

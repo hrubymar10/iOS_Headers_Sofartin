@@ -36,26 +36,26 @@
     unsigned int _wantsTick;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MPPlaybackControlsDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool detailScrubbingHidesControls;
-@property(assign,readwrite) unsigned long long disabledParts;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool hideGeniusButton;
-@property(assign,readonly) bool isScrubbing;
-@property(assign,retain) MPAVItem * item;
-@property(assign,readonly) NSString * localizedScrubSpeedText;
-@property(assign,readonly) UIImage * mailButtonImage;
-@property(assign,retain) MPAVController * player;
-@property(assign,readonly) UIImage * repeatButtonImage;
-@property(assign,readonly) unsigned long long repeatType;
-@property(assign,readonly) bool shouldOverrideProgressTimeLabelStyle;
-@property(assign,readonly) UIImage * shuffleButtonImage;
-@property(assign,readonly) bool shuffleIsOn;
-@property(assign,readonly) unsigned long long shuffleType;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long visibleParts;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MPPlaybackControlsDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool detailScrubbingHidesControls;
+@property (nonatomic) unsigned long long disabledParts;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool hideGeniusButton;
+@property (nonatomic, readonly) bool isScrubbing;
+@property (nonatomic, retain) MPAVItem *item;
+@property (nonatomic, readonly) NSString *localizedScrubSpeedText;
+@property (nonatomic, readonly) UIImage *mailButtonImage;
+@property (nonatomic, retain) MPAVController *player;
+@property (nonatomic, readonly) UIImage *repeatButtonImage;
+@property (nonatomic, readonly) unsigned long long repeatType;
+@property (nonatomic, readonly) bool shouldOverrideProgressTimeLabelStyle;
+@property (nonatomic, readonly) UIImage *shuffleButtonImage;
+@property (nonatomic, readonly) bool shuffleIsOn;
+@property (nonatomic, readonly) unsigned long long shuffleType;
+@property (readonly) Class superclass;
+@property (nonatomic) unsigned long long visibleParts;
 
 + (unsigned long long)defaultVisibleParts;
 

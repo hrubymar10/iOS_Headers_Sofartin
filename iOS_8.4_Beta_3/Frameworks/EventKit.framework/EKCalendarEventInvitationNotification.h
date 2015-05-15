@@ -19,20 +19,20 @@
     bool _timeChanged;
 }
 
-@property(getter=isAllDay,assign,readwrite) bool allDay;
-@property(assign,readwrite) bool attendeeReplyChanged;
-@property(assign,retain) NSArray * attendees;
-@property(assign,readwrite) bool dateChanged;
-@property(assign,retain) NSDate * endDate;
-@property(assign,readwrite) bool hasRecurrenceRules;
-@property(assign,retain) NSString * location;
-@property(assign,readwrite) bool locationChanged;
-@property(assign,readwrite) int participationStatus;
-@property(assign,retain) NSDate * participationStatusModifiedDate;
-@property(assign,retain) NSDate * startDate;
-@property(assign,retain) NSDate * startDateForNextOccurrence;
-@property(assign,readwrite) int status;
-@property(assign,readwrite) bool timeChanged;
+@property (getter=isAllDay, nonatomic) bool allDay;
+@property (nonatomic) bool attendeeReplyChanged;
+@property (nonatomic, retain) NSArray *attendees;
+@property (nonatomic) bool dateChanged;
+@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic) bool hasRecurrenceRules;
+@property (nonatomic, retain) NSString *location;
+@property (nonatomic) bool locationChanged;
+@property (nonatomic) int participationStatus;
+@property (nonatomic, retain) NSDate *participationStatusModifiedDate;
+@property (nonatomic, retain) NSDate *startDate;
+@property (nonatomic, retain) NSDate *startDateForNextOccurrence;
+@property (nonatomic) int status;
+@property (nonatomic) bool timeChanged;
 
 - (bool)attendeeReplyChanged;
 - (id)attendees;

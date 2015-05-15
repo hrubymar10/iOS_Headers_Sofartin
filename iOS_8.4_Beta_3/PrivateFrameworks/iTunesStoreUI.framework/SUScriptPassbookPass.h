@@ -6,9 +6,9 @@
     PKPass *_pass;
 }
 
-@property(assign,readonly) NSString * passTypeIdentifier;
-@property(assign,readonly) NSString * passURL;
-@property(assign,readonly) NSString * serialNumber;
+@property (readonly) NSString *passTypeIdentifier;
+@property (readonly) NSString *passURL;
+@property (readonly) NSString *serialNumber;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

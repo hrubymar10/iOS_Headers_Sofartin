@@ -4,7 +4,7 @@
 
 @interface SAReminderListSearch : SADomainCommand
 
-@property(assign,copy) NSString * name;
+@property (nonatomic, copy) NSString *name;
 
 + (id)listSearch;
 + (id)listSearchWithDictionary:(id)arg1 context:(id)arg2;

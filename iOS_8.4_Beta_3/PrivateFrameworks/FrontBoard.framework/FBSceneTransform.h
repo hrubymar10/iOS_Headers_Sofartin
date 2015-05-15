@@ -14,7 +14,7 @@
     } _transform;
 }
 
-@property(assign,readwrite) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
+@property (nonatomic) struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; } transform;
 
 + (struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; })concatenateTransforms:(id)arg1;
 

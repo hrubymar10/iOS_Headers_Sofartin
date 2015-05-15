@@ -10,8 +10,8 @@
     NSURL *_url;
 }
 
-@property(assign,retain) NSURL * fromURL;
-@property(assign,retain) NSArray * queries;
+@property (nonatomic, retain) NSURL *fromURL;
+@property (nonatomic, retain) NSArray *queries;
 
 - (void)_creationDone;
 - (void)_deletionDone;

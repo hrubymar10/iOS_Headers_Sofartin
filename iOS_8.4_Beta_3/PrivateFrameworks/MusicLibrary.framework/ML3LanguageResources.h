@@ -8,9 +8,9 @@
     NSDictionary *_sortingDetails;
 }
 
-@property(assign,readonly) NSString * canonicalLanguageIdentifier;
-@property(assign,readonly) NSDictionary * sectionsInfo;
-@property(assign,readonly) NSDictionary * sortingDetails;
+@property (nonatomic, readonly) NSString *canonicalLanguageIdentifier;
+@property (nonatomic, readonly) NSDictionary *sectionsInfo;
+@property (nonatomic, readonly) NSDictionary *sortingDetails;
 
 + (bool)supportsSecureCoding;
 

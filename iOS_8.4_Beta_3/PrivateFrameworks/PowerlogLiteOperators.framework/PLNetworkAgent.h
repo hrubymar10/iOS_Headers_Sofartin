@@ -10,11 +10,11 @@
     NSDate *_priorLogEventPointPortMappingTimestamp;
 }
 
-@property(assign,retain) PLEntryNotificationOperatorComposition * batteryLevelChanged;
-@property(assign,retain) PLEntryNotificationOperatorComposition * canSleep;
-@property(assign,retain) PLSemaphore * canSleepSemaphore;
-@property(assign,retain) PLProcessPortMap * portMapper;
-@property(assign,retain) NSDate * priorLogEventPointPortMappingTimestamp;
+@property (retain) PLEntryNotificationOperatorComposition *batteryLevelChanged;
+@property (retain) PLEntryNotificationOperatorComposition *canSleep;
+@property (retain) PLSemaphore *canSleepSemaphore;
+@property (retain) PLProcessPortMap *portMapper;
+@property (retain) NSDate *priorLogEventPointPortMappingTimestamp;
 
 + (id)accountingGroupDefinitions;
 + (id)defaults;

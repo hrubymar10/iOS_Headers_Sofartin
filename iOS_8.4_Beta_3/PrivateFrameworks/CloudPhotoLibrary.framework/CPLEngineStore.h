@@ -25,27 +25,27 @@
     CPLEngineResourceUploadQueue *_uploadQueue;
 }
 
-@property(assign,readonly) CPLEngineClientCache * clientCache;
-@property(assign,readonly) CPLEngineCloudCache * cloudCache;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) CPLEngineChangePipe * deletePushQueue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) CPLEngineResourceDownloadQueue * downloadQueue;
-@property(assign,readonly) CPLEngineLibrary * engineLibrary;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) CPLEngineIDMapping * idMapping;
-@property(assign,readonly) NSDate * libraryCreationDate;
-@property(assign,readonly) CPLPlatformObject * platformObject;
-@property(assign,readonly) CPLEngineChangePipe * pullQueue;
-@property(assign,readonly) CPLEngineChangePipe * pushQueue;
-@property(assign,readonly) bool pushQueuesAreFull;
-@property(assign,readonly) CPLEngineRemappedDeletes * remappedDeletes;
-@property(assign,readonly) CPLEngineResourceStorage * resourceStorage;
-@property(assign,readwrite) unsigned long long state;
-@property(assign,readonly) NSArray * storages;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) CPLEngineTransientRepository * transientPullRepository;
-@property(assign,readonly) CPLEngineResourceUploadQueue * uploadQueue;
+@property (nonatomic, readonly) CPLEngineClientCache *clientCache;
+@property (nonatomic, readonly) CPLEngineCloudCache *cloudCache;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) CPLEngineChangePipe *deletePushQueue;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) CPLEngineResourceDownloadQueue *downloadQueue;
+@property (nonatomic, readonly) CPLEngineLibrary *engineLibrary;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) CPLEngineIDMapping *idMapping;
+@property (readonly) NSDate *libraryCreationDate;
+@property (nonatomic, readonly) CPLPlatformObject *platformObject;
+@property (nonatomic, readonly) CPLEngineChangePipe *pullQueue;
+@property (nonatomic, readonly) CPLEngineChangePipe *pushQueue;
+@property (nonatomic, readonly) bool pushQueuesAreFull;
+@property (nonatomic, readonly) CPLEngineRemappedDeletes *remappedDeletes;
+@property (nonatomic, readonly) CPLEngineResourceStorage *resourceStorage;
+@property (nonatomic) unsigned long long state;
+@property (nonatomic, readonly) NSArray *storages;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) CPLEngineTransientRepository *transientPullRepository;
+@property (nonatomic, readonly) CPLEngineResourceUploadQueue *uploadQueue;
 
 + (id)platformImplementationProtocol;
 + (id)stateDescriptionForState:(unsigned long long)arg1;

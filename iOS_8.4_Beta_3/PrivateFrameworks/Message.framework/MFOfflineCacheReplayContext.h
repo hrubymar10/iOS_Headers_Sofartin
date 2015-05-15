@@ -8,9 +8,9 @@
     NSMutableDictionary *_translatedIDsByTemporaryID;
 }
 
-@property(assign,readonly) NSMutableDictionary * failureSnapshotsByTemporaryID;
-@property(assign,copy) NSString * selectedMailboxID;
-@property(assign,readonly) NSMutableDictionary * translatedIDsByTemporaryID;
+@property (nonatomic, readonly) NSMutableDictionary *failureSnapshotsByTemporaryID;
+@property (nonatomic, copy) NSString *selectedMailboxID;
+@property (nonatomic, readonly) NSMutableDictionary *translatedIDsByTemporaryID;
 
 - (void)dealloc;
 - (id)failureSnapshotsByTemporaryID;

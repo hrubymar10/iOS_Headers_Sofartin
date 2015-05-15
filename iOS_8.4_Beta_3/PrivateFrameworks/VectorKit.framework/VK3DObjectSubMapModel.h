@@ -42,8 +42,8 @@
     long long _vectorType;
 }
 
-@property(assign,readwrite) VKBuildingFootprintMapModel * buildingMapModel;
-@property(assign,readwrite) long long vectorType;
+@property (nonatomic) VKBuildingFootprintMapModel *buildingMapModel;
+@property (nonatomic) long long vectorType;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

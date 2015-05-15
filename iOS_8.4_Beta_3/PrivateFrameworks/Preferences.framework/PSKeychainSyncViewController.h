@@ -8,7 +8,7 @@
     KeychainSyncHeaderView *_headerView;
 }
 
-@property(assign,readwrite) <KeychainSyncViewControllerDelegate> * delegate;
+@property (nonatomic) <KeychainSyncViewControllerDelegate> *delegate;
 
 - (void)dealloc;
 - (id)delegate;

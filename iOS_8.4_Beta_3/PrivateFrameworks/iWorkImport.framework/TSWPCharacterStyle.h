@@ -4,7 +4,7 @@
 
 @interface TSWPCharacterStyle : TSSStyle <TSSPreset>
 
-@property(assign,readonly) NSString * presetKind;
+@property (nonatomic, readonly) NSString *presetKind;
 
 + (id)emphasisProperties;
 + (id)nonEmphasisCharacterProperties;

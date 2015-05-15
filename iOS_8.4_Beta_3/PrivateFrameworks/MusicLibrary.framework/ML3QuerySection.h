@@ -10,8 +10,8 @@
     unsigned long long _sectionIndex;
 }
 
-@property(assign,readwrite) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
-@property(assign,readwrite) unsigned long long sectionIndex;
+@property (nonatomic) struct _NSRange { unsigned long long x1; unsigned long long x2; } range;
+@property (nonatomic) unsigned long long sectionIndex;
 
 - (id)description;
 - (unsigned long long)hash;

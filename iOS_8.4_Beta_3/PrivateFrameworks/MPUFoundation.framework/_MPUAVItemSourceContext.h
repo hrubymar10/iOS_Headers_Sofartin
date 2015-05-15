@@ -9,14 +9,14 @@
     MPQueueFeeder *_queueFeeder;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) <MPAVItemQueueIdentifier> * itemIdentifier;
-@property(assign,readwrite) unsigned long long originalIterationIndex;
-@property(assign,readwrite) long long playlistIteration;
-@property(assign,retain) MPQueueFeeder * queueFeeder;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) <MPAVItemQueueIdentifier> *itemIdentifier;
+@property (nonatomic) unsigned long long originalIterationIndex;
+@property (nonatomic) long long playlistIteration;
+@property (nonatomic, retain) MPQueueFeeder *queueFeeder;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

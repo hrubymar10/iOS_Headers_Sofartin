@@ -11,12 +11,12 @@
     NSString *_title;
 }
 
-@property(assign,copy) id handler;
-@property(assign,copy) NSString * identifier;
-@property(assign,retain) UIImage * image;
-@property(getter=isNewlyAdded,assign,readwrite) bool newlyAdded;
-@property(assign,readwrite) unsigned long long order;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) id handler;
+@property (nonatomic, copy) NSString *identifier;
+@property (nonatomic, retain) UIImage *image;
+@property (getter=isNewlyAdded, nonatomic) bool newlyAdded;
+@property (nonatomic) unsigned long long order;
+@property (nonatomic, copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

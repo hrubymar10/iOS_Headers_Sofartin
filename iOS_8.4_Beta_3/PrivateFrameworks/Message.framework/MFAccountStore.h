@@ -7,7 +7,7 @@
     int _accountStoreLock;
 }
 
-@property(assign,readonly) ACAccountStore * persistentStore;
+@property (readonly) ACAccountStore *persistentStore;
 
 + (id)_accountWithAccountClass:(Class)arg1 persistentAccount:(id)arg2 useExisting:(bool)arg3;
 + (bool)_shouldUpdateAccountsInPlace;

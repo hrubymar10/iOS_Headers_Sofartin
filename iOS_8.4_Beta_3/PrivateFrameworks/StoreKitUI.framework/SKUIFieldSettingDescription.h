@@ -8,12 +8,12 @@
     NSMutableDictionary *_fieldValues;
 }
 
-@property(assign,readwrite) SKUISettingsGroupController * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) long long fieldType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) SKUISettingsGroupController *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) long long fieldType;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (long long)_fieldTypeFromElement:(id)arg1;
 + (id)_inputViewElementFromElement:(id)arg1;

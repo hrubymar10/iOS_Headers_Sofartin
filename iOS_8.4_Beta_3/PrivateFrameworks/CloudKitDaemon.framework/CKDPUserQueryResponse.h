@@ -6,8 +6,8 @@
     CKDPUser *_user;
 }
 
-@property(assign,readonly) bool hasUser;
-@property(assign,retain) CKDPUser * user;
+@property (nonatomic, readonly) bool hasUser;
+@property (nonatomic, retain) CKDPUser *user;
 
 - (void).cxx_destruct;
 - (void)copyTo:(id)arg1;

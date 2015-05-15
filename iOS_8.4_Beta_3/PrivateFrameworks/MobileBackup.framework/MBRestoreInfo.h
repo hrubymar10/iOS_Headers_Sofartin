@@ -9,10 +9,10 @@
     bool _wasCloudRestore;
 }
 
-@property(assign,readonly) NSString * backupBuildVersion;
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) NSString * deviceBuildVersion;
-@property(assign,readonly) bool wasCloudRestore;
+@property (readonly) NSString *backupBuildVersion;
+@property (readonly) NSDate *date;
+@property (readonly) NSString *deviceBuildVersion;
+@property (readonly) bool wasCloudRestore;
 
 - (id)backupBuildVersion;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

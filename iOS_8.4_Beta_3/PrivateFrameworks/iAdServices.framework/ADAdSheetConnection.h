@@ -9,10 +9,10 @@
     NSMutableArray *_performWhenConnectedBlocks;
 }
 
-@property(assign,retain) NSXPCConnection * adSheetConnection;
-@property(assign,readwrite) NSObject<OS_dispatch_queue> * connectionQueue;
-@property(assign,readwrite) <ADAdSheetConnectionDelegate> * delegate;
-@property(assign,retain) NSMutableArray * performWhenConnectedBlocks;
+@property (nonatomic, retain) NSXPCConnection *adSheetConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> *connectionQueue;
+@property (nonatomic) <ADAdSheetConnectionDelegate> *delegate;
+@property (nonatomic, retain) NSMutableArray *performWhenConnectedBlocks;
 
 - (void)_considerConnectingToAdSheet;
 - (id)adSheetConnection;

@@ -4,7 +4,7 @@
 
 @interface DOMHTMLHeadElement : DOMHTMLElement
 
-@property(assign,copy) NSString * profile;
+@property (copy) NSString *profile;
 
 - (id)profile;
 - (void)setProfile:(id)arg1;

@@ -7,8 +7,8 @@
     NSNumber *_uid;
 }
 
-@property(assign,retain) NSURL * objectID;
-@property(assign,copy) NSNumber * uid;
+@property (nonatomic, retain) NSURL *objectID;
+@property (nonatomic, copy) NSNumber *uid;
 
 + (bool)supportsSecureCoding;
 + (id)userRecordWithDictionaryRepresentation:(id)arg1;

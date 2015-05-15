@@ -10,16 +10,16 @@
     double _valueLeftMargin;
 }
 
-@property(assign,readonly) double contentHeightPadding;
-@property(assign,readonly) double contentMargin;
-@property(assign,readwrite) UIViewController * controller;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) double headerMargin;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITraitCollection * traitCollection;
-@property(assign,readonly) double valueLeftMargin;
+@property (nonatomic, readonly) double contentHeightPadding;
+@property (nonatomic, readonly) double contentMargin;
+@property (nonatomic) UIViewController *controller;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) double headerMargin;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITraitCollection *traitCollection;
+@property (nonatomic, readonly) double valueLeftMargin;
 
 - (double)contentHeightPadding;
 - (double)contentMargin;

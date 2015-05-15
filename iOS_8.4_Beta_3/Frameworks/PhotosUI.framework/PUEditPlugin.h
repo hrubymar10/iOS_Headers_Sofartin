@@ -7,11 +7,11 @@
     NSExtension *_extension;
 }
 
-@property(assign,readonly) _PUEditPluginApplicationExtensionActivity * _applicationExtensionActivity;
-@property(assign,readonly) NSExtension * extension;
-@property(assign,readonly) UIImage * icon;
-@property(assign,readonly) UIImage * smallIcon;
-@property(assign,readonly) NSString * title;
+@property (nonatomic, readonly) _PUEditPluginApplicationExtensionActivity *_applicationExtensionActivity;
+@property (nonatomic, readonly) NSExtension *extension;
+@property (nonatomic, readonly) UIImage *icon;
+@property (nonatomic, readonly) UIImage *smallIcon;
+@property (nonatomic, readonly) NSString *title;
 
 - (void).cxx_destruct;
 - (id)_applicationExtensionActivity;

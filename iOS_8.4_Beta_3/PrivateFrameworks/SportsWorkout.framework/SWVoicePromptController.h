@@ -12,9 +12,9 @@
     WordsSpeaker *_speaker;
 }
 
-@property(assign,retain) NSString * gender;
-@property(assign,readonly) bool isPlaying;
-@property(assign,retain) NSString * language;
+@property (nonatomic, retain) NSString *gender;
+@property (nonatomic, readonly) bool isPlaying;
+@property (nonatomic, retain) NSString *language;
 
 + (id)__sharedFemalePromptController;
 + (id)__sharedMalePromptController;

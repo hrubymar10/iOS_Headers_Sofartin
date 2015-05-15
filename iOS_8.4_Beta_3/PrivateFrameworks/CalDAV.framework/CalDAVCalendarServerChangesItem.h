@@ -6,7 +6,7 @@
     NSMutableSet *_changedProperties;
 }
 
-@property(assign,retain) NSMutableSet * changedProperties;
+@property (nonatomic, retain) NSMutableSet *changedProperties;
 
 - (void)addChangedProperty:(id)arg1;
 - (id)changedProperties;

@@ -20,21 +20,21 @@
     NSString *_title;
 }
 
-@property(assign,retain) NSString * content;
-@property(assign,readwrite) double creationTimestamp;
-@property(assign,retain) SGDuplicateKey * duplicateKey;
-@property(assign,readwrite) double lastModifiedTimestamp;
-@property(assign,retain) NSMutableSet * locations;
-@property(assign,readwrite) long long masterEntityId;
-@property(assign,readonly) NSSet * participants;
-@property(assign,readwrite) double quality;
-@property(assign,retain) SGRecordId * recordId;
-@property(assign,retain) NSString * sourceKey;
-@property(assign,readwrite) unsigned int state;
-@property(assign,retain) NSData * structuredData;
-@property(assign,readonly) NSSet * tags;
-@property(assign,retain) SGSimpleTimeRange * timeRange;
-@property(assign,retain) NSString * title;
+@property (nonatomic, retain) NSString *content;
+@property (nonatomic) double creationTimestamp;
+@property (nonatomic, retain) SGDuplicateKey *duplicateKey;
+@property (nonatomic) double lastModifiedTimestamp;
+@property (nonatomic, retain) NSMutableSet *locations;
+@property (nonatomic) long long masterEntityId;
+@property (nonatomic, readonly) NSSet *participants;
+@property (nonatomic) double quality;
+@property (nonatomic, retain) SGRecordId *recordId;
+@property (nonatomic, retain) NSString *sourceKey;
+@property (nonatomic) unsigned int state;
+@property (nonatomic, retain) NSData *structuredData;
+@property (nonatomic, readonly) NSSet *tags;
+@property (nonatomic, retain) SGSimpleTimeRange *timeRange;
+@property (nonatomic, retain) NSString *title;
 
 - (void).cxx_destruct;
 - (void)addParticipant:(id)arg1 type:(unsigned int)arg2;

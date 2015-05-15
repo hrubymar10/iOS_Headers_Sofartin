@@ -16,16 +16,16 @@
     unsigned int _validationDuration;
 }
 
-@property(assign,retain) NSString * guid;
-@property(assign,readonly) bool hasGuid;
-@property(assign,readwrite) bool hasNumberOfSMSSent;
-@property(assign,readwrite) bool hasRegistrationError;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) bool hasValidationDuration;
-@property(assign,readwrite) unsigned int numberOfSMSSent;
-@property(assign,readwrite) int registrationError;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,readwrite) unsigned int validationDuration;
+@property (nonatomic, retain) NSString *guid;
+@property (nonatomic, readonly) bool hasGuid;
+@property (nonatomic) bool hasNumberOfSMSSent;
+@property (nonatomic) bool hasRegistrationError;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) bool hasValidationDuration;
+@property (nonatomic) unsigned int numberOfSMSSent;
+@property (nonatomic) int registrationError;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic) unsigned int validationDuration;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -17,18 +17,18 @@
     NSData *_trackData;
 }
 
-@property(assign,readonly) NSFileHandle * fileHandle;
-@property(assign,readonly) unsigned int homeSharingBasePlaylistID;
-@property(getter=isLibraryOwnedContent,assign,readonly) bool libraryOwnedContent;
-@property(assign,readonly) NSString * libraryPath;
-@property(getter=isPendingMatch,assign,readonly) bool pendingMatch;
-@property(assign,readonly) NSData * playlistData;
-@property(assign,readonly) long long preferredVideoQuality;
-@property(getter=isResetSync,assign,readonly) bool resetSync;
-@property(getter=isSagaEnabled,assign,readonly) bool sagaEnabled;
-@property(assign,readonly) long long storeAccountID;
-@property(assign,readonly) NSString * syncAnchor;
-@property(assign,readonly) NSData * trackData;
+@property (nonatomic, readonly) NSFileHandle *fileHandle;
+@property (nonatomic, readonly) unsigned int homeSharingBasePlaylistID;
+@property (getter=isLibraryOwnedContent, nonatomic, readonly) bool libraryOwnedContent;
+@property (nonatomic, readonly) NSString *libraryPath;
+@property (getter=isPendingMatch, nonatomic, readonly) bool pendingMatch;
+@property (nonatomic, readonly) NSData *playlistData;
+@property (nonatomic, readonly) long long preferredVideoQuality;
+@property (getter=isResetSync, nonatomic, readonly) bool resetSync;
+@property (getter=isSagaEnabled, nonatomic, readonly) bool sagaEnabled;
+@property (nonatomic, readonly) long long storeAccountID;
+@property (nonatomic, readonly) NSString *syncAnchor;
+@property (nonatomic, readonly) NSData *trackData;
 
 + (bool)supportsSecureCoding;
 

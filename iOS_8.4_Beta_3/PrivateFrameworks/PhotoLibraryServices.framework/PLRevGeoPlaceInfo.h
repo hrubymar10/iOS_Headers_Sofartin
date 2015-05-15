@@ -7,8 +7,8 @@
     NSString *_placeName;
 }
 
-@property(assign,retain) NSSet * geoPlaceInfos;
-@property(assign,copy) NSString * placeName;
+@property (nonatomic, readonly, retain) NSSet *geoPlaceInfos;
+@property (nonatomic, readonly, copy) NSString *placeName;
 
 - (void)addPlaceInfo:(id)arg1;
 - (void)dealloc;

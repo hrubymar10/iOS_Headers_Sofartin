@@ -10,10 +10,10 @@
     NSString *_realFunctionName;
 }
 
-@property(assign,readonly) unsigned long long address;
-@property(assign,retain) NSString * className;
-@property(assign,retain) NSString * executableName;
-@property(assign,retain) NSString * functionName;
+@property (nonatomic, readonly) unsigned long long address;
+@property (nonatomic, readonly, retain) NSString *className;
+@property (nonatomic, readonly, retain) NSString *executableName;
+@property (nonatomic, readonly, retain) NSString *functionName;
 
 - (unsigned long long)address;
 - (id)className;

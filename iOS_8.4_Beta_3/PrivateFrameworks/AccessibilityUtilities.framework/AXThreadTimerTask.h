@@ -9,10 +9,10 @@
     bool finished;
 }
 
-@property(getter=isActive,assign,readwrite) bool active;
-@property(assign,copy) id block;
-@property(getter=isCancelled,assign,readwrite) bool cancel;
-@property(getter=isFinished,assign,readwrite) bool finished;
+@property (getter=isActive, nonatomic) bool active;
+@property (nonatomic, copy) id block;
+@property (getter=isCancelled, nonatomic) bool cancel;
+@property (getter=isFinished, nonatomic) bool finished;
 
 - (id)block;
 - (void)dealloc;

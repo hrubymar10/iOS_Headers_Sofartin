@@ -12,9 +12,9 @@
     CAStateControllerUndo *_undoStack;
 }
 
-@property(assign,retain) CAState * currentState;
-@property(assign,readonly) CALayer * layer;
-@property(assign,readonly) CAStateControllerUndo * undoStack;
+@property (nonatomic, retain) CAState *currentState;
+@property (readonly) CALayer *layer;
+@property (readonly) CAStateControllerUndo *undoStack;
 
 - (void)addTransition:(id)arg1;
 - (id)currentState;

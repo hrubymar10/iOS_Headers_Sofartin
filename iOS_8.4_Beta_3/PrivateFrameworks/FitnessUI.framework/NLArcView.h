@@ -20,15 +20,15 @@
     CALayer *_whiteDotIndicatorLayer;
 }
 
-@property(assign,readwrite) double arcStart;
-@property(assign,retain) UIImage * icon;
-@property(assign,readwrite) double indicatorPercentage;
-@property(assign,readwrite) double lineWidth;
-@property(assign,readwrite) long long numberOfSegments;
-@property(assign,readwrite) double radius;
-@property(assign,readwrite) bool shouldDrawIndicator;
-@property(assign,readwrite) bool shouldDrawSegmented;
-@property(assign,readwrite) bool shouldShowIcon;
+@property (nonatomic) double arcStart;
+@property (nonatomic, retain) UIImage *icon;
+@property (nonatomic) double indicatorPercentage;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) long long numberOfSegments;
+@property (nonatomic) double radius;
+@property (nonatomic) bool shouldDrawIndicator;
+@property (nonatomic) bool shouldDrawSegmented;
+@property (nonatomic) bool shouldShowIcon;
 
 - (void).cxx_destruct;
 - (id)_coloredDotIndicatorLayer;

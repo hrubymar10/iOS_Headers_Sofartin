@@ -9,10 +9,10 @@
     NSObject<OS_dispatch_queue> *_workQueue;
 }
 
-@property(assign,retain) NSMutableDictionary * notificationHandlers;
-@property(getter=isRemoteSource,assign,readwrite) bool remoteSource;
-@property(assign,readwrite) <HMMessageTransport> * transport;
-@property(assign,retain) NSObject<OS_dispatch_queue> * workQueue;
+@property (nonatomic, retain) NSMutableDictionary *notificationHandlers;
+@property (getter=isRemoteSource, nonatomic) bool remoteSource;
+@property (nonatomic) <HMMessageTransport> *transport;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *workQueue;
 
 - (void).cxx_destruct;
 - (void)_deregisterForMessage:(id)arg1 receiver:(id)arg2 token:(id)arg3;

@@ -7,8 +7,8 @@
     unsigned long long _operatorType;
 }
 
-@property(assign,readonly) NSDate * comparisonDate;
-@property(assign,readonly) unsigned long long operatorType;
+@property (nonatomic, readonly) NSDate *comparisonDate;
+@property (nonatomic, readonly) unsigned long long operatorType;
 
 + (id)filterForKeyPath:(id)arg1 predicateOperatorType:(unsigned long long)arg2 value:(id)arg3 dataTypes:(id)arg4;
 + (id)filterWithOperatorType:(unsigned long long)arg1 comparisonDate:(id)arg2;

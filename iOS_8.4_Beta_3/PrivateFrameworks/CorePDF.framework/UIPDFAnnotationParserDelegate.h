@@ -8,12 +8,12 @@
     bool _parseError;
 }
 
-@property(assign,retain) UIPDFAnnotation * annotation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool parseError;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, retain) UIPDFAnnotation *annotation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool parseError;
+@property (readonly) Class superclass;
 
 - (id)annotation;
 - (void)dealloc;

@@ -11,13 +11,13 @@
     NSTimer *_timer;
 }
 
-@property(assign,retain) _UIActionWhenIdle * deferredAction;
-@property(assign,copy) id enqueuedTask;
-@property(assign,readonly) bool repeats;
-@property(assign,readonly) id task;
-@property(assign,readonly) UIKeyboardTaskQueue * taskQueue;
-@property(assign,readonly) double timeInterval;
-@property(assign,retain) NSTimer * timer;
+@property (nonatomic, retain) _UIActionWhenIdle *deferredAction;
+@property (nonatomic, copy) id enqueuedTask;
+@property (nonatomic, readonly) bool repeats;
+@property (nonatomic, readonly) id task;
+@property (nonatomic, readonly) UIKeyboardTaskQueue *taskQueue;
+@property (nonatomic, readonly) double timeInterval;
+@property (nonatomic, retain) NSTimer *timer;
 
 - (void)dealloc;
 - (id)deferredAction;

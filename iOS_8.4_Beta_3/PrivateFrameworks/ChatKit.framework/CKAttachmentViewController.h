@@ -18,23 +18,23 @@
     NSArray *_visibleMediaObjects;
 }
 
-@property(assign,retain) CKAttachmentCollectionView * collectionView;
-@property(assign,retain) CKConversation * conversation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <CKAttachmentViewControllerDelegate> * delegate;
-@property(assign,retain) UIBarButtonItem * deleteButton;
-@property(assign,copy) NSString * description;
-@property(assign,retain) CKFeedCollectionViewLayout * feedLayout;
-@property(assign,retain) UICollectionViewFlowLayout * flowLayout;
-@property(assign,readonly) unsigned long long hash;
-@property(getter=isInitialLoad,assign,readwrite) bool initialLoad;
-@property(assign,retain) NSMutableArray * mediaObjects;
-@property(assign,retain) CKQLPreviewController * qlPreviewController;
-@property(assign,retain) CKTranscriptRecipientsController * recipientsController;
-@property(assign,retain) UIBarButtonItem * saveButton;
-@property(getter=isSelectingAttachments,assign,readwrite) bool selectingAttachments;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSArray * visibleMediaObjects;
+@property (nonatomic, retain) CKAttachmentCollectionView *collectionView;
+@property (nonatomic, retain) CKConversation *conversation;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <CKAttachmentViewControllerDelegate> *delegate;
+@property (nonatomic, retain) UIBarButtonItem *deleteButton;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) CKFeedCollectionViewLayout *feedLayout;
+@property (nonatomic, retain) UICollectionViewFlowLayout *flowLayout;
+@property (readonly) unsigned long long hash;
+@property (getter=isInitialLoad, nonatomic) bool initialLoad;
+@property (nonatomic, retain) NSMutableArray *mediaObjects;
+@property (nonatomic, retain) CKQLPreviewController *qlPreviewController;
+@property (nonatomic, retain) CKTranscriptRecipientsController *recipientsController;
+@property (nonatomic, retain) UIBarButtonItem *saveButton;
+@property (getter=isSelectingAttachments, nonatomic) bool selectingAttachments;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSArray *visibleMediaObjects;
 
 - (void)_chatItemsChanged:(id)arg1;
 - (void)_configureCell:(id)arg1 withCollectionView:(id)arg2 forItemAtIndexPath:(id)arg3;

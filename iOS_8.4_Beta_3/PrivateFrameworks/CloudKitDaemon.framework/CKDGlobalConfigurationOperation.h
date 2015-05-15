@@ -7,8 +7,8 @@
     NSObject<OS_dispatch_group> *_configurationFetchedGroup;
 }
 
-@property(assign,retain) CKDServerConfiguration * configuration;
-@property(assign,retain) NSObject<OS_dispatch_group> * configurationFetchedGroup;
+@property (nonatomic, retain) CKDServerConfiguration *configuration;
+@property (nonatomic, retain) NSObject<OS_dispatch_group> *configurationFetchedGroup;
 
 - (void).cxx_destruct;
 - (id)configuration;

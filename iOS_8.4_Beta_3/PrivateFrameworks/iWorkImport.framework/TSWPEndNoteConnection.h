@@ -14,7 +14,7 @@
     NSString *_format;
 }
 
-@property(assign,retain) NSString * format;
+@property (retain) NSString *format;
 
 + (void)applyEndNoteXml:(id)arg1 toCitationRecord:(id)arg2;
 + (id)currentPluginDownloadURL;

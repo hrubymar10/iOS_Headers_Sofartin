@@ -16,14 +16,14 @@
     bool _updateShouldAllowLinkingAnotherContact;
 }
 
-@property(assign,readwrite) bool appearsInLinkingPeoplePicker;
-@property(assign,readwrite) ABPersonTableViewDataSource * dataSource;
-@property(assign,readonly) bool hasLinkChanges;
-@property(assign,readonly) ABPersonViewControllerHelper * helper;
-@property(assign,readonly) NSArray * linkedInfos;
-@property(assign,readwrite) bool shouldShowLinkedPeople;
-@property(assign,readwrite) bool shouldShowLinkingUIOnCard;
-@property(assign,readwrite) bool updateShouldAllowLinkingAnotherContact;
+@property (nonatomic) bool appearsInLinkingPeoplePicker;
+@property (nonatomic) ABPersonTableViewDataSource *dataSource;
+@property (nonatomic, readonly) bool hasLinkChanges;
+@property (nonatomic, readonly) ABPersonViewControllerHelper *helper;
+@property (nonatomic, readonly) NSArray *linkedInfos;
+@property (nonatomic) bool shouldShowLinkedPeople;
+@property (nonatomic) bool shouldShowLinkingUIOnCard;
+@property (nonatomic) bool updateShouldAllowLinkingAnotherContact;
 
 - (void)_finalizeLinkChanges;
 - (id)allNonUnifiedPeople;

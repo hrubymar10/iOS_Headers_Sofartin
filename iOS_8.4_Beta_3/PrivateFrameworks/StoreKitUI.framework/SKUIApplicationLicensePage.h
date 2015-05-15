@@ -7,8 +7,8 @@
     NSString *_title;
 }
 
-@property(assign,copy) NSString * licenseAgreementHTML;
-@property(assign,copy) NSString * title;
+@property (nonatomic, copy) NSString *licenseAgreementHTML;
+@property (nonatomic, copy) NSString *title;
 
 - (void).cxx_destruct;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

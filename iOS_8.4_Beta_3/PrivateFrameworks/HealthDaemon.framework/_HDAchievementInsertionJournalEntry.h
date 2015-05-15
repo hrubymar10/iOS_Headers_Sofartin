@@ -6,7 +6,7 @@
     HKAchievement *_achievement;
 }
 
-@property(assign,readonly) HKAchievement * achievement;
+@property (nonatomic, readonly) HKAchievement *achievement;
 
 + (void)applyEntries:(id)arg1 withDaemon:(id)arg2;
 + (long long)behavior;

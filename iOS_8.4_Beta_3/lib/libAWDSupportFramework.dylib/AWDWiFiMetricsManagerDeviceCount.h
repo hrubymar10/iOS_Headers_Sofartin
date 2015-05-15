@@ -15,14 +15,14 @@
     unsigned long long _timestamp;
 }
 
-@property(assign,readwrite) unsigned int deviceCount;
-@property(assign,readwrite) unsigned int deviceIdentifierMap;
-@property(assign,readwrite) bool hasDeviceCount;
-@property(assign,readwrite) bool hasDeviceIdentifierMap;
-@property(assign,readwrite) bool hasTimeSinceBoot;
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readwrite) double timeSinceBoot;
-@property(assign,readwrite) unsigned long long timestamp;
+@property (nonatomic) unsigned int deviceCount;
+@property (nonatomic) unsigned int deviceIdentifierMap;
+@property (nonatomic) bool hasDeviceCount;
+@property (nonatomic) bool hasDeviceIdentifierMap;
+@property (nonatomic) bool hasTimeSinceBoot;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic) double timeSinceBoot;
+@property (nonatomic) unsigned long long timestamp;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

@@ -20,24 +20,24 @@
     NSString *_urlString;
 }
 
-@property(assign,readonly) NSString * completion;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSString * descriptionText;
-@property(assign,readonly) NSString * feedbackIdentifier;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) NSNumber * iTunesItemIdentifier;
-@property(assign,readonly) NSString * identifier;
-@property(assign,readonly) unsigned long long minimumRankOfTopHitToSuppressResult;
-@property(assign,readonly) NSString * parsecDomainIdentifier;
-@property(assign,readonly) NSURL * reportProblemURL;
-@property(assign,readonly) NSString * sectionHeader;
-@property(assign,readonly) NSDictionary * styleOverrides;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * supportedStyleOverrides;
-@property(assign,readonly) NSString * title;
-@property(assign,readonly) unsigned long long type;
-@property(assign,readonly) NSString * urlString;
+@property (nonatomic, readonly) NSString *completion;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSString *descriptionText;
+@property (nonatomic, readonly) NSString *feedbackIdentifier;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) NSNumber *iTunesItemIdentifier;
+@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, readonly) unsigned long long minimumRankOfTopHitToSuppressResult;
+@property (nonatomic, readonly) NSString *parsecDomainIdentifier;
+@property (nonatomic, readonly) NSURL *reportProblemURL;
+@property (nonatomic, readonly) NSString *sectionHeader;
+@property (nonatomic, readonly) NSDictionary *styleOverrides;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSArray *supportedStyleOverrides;
+@property (nonatomic, readonly) NSString *title;
+@property (nonatomic, readonly) unsigned long long type;
+@property (nonatomic, readonly) NSString *urlString;
 
 + (id)allocWithZone:(struct _NSZone { }*)arg1;
 + (Class)replacementClass;

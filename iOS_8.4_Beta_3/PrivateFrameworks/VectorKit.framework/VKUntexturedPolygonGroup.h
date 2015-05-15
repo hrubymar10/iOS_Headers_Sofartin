@@ -22,7 +22,7 @@
     } _styleQueries;
 }
 
-@property(assign,readonly) NSOrderedSet * attributeSets;
+@property (nonatomic, readonly) NSOrderedSet *attributeSets;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

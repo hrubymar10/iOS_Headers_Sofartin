@@ -7,8 +7,8 @@
     bool _orderOut;
 }
 
-@property(assign,retain) FBSContext * context;
-@property(assign,readwrite) bool orderOut;
+@property (nonatomic, retain) FBSContext *context;
+@property (nonatomic) bool orderOut;
 
 - (id)context;
 - (void)dealloc;

@@ -10,11 +10,11 @@
     KNRecordingSyncState *mSyncState;
 }
 
-@property(assign,readonly) double duration;
-@property(assign,readonly) NSArray * eventTracks;
-@property(getter=isInSyncWithShow,assign,readonly) bool inSyncWithShow;
-@property(assign,readonly) NSDate * modificationDate;
-@property(assign,readonly) KNRecordingMovieTrack * movieTrack;
+@property (nonatomic, readonly) double duration;
+@property (nonatomic, readonly) NSArray *eventTracks;
+@property (getter=isInSyncWithShow, nonatomic, readonly) bool inSyncWithShow;
+@property (nonatomic, readonly) NSDate *modificationDate;
+@property (nonatomic, readonly) KNRecordingMovieTrack *movieTrack;
 
 - (void)dealloc;
 - (double)duration;

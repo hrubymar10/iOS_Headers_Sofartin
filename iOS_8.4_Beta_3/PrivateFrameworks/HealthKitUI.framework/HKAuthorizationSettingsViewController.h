@@ -15,16 +15,16 @@
     NSString *_updateDescription;
 }
 
-@property(assign,retain) UIBarButtonItem * cancelButtonItem;
-@property(assign,retain) HKDataCategoryController * dataCategoryController;
-@property(assign,readwrite) <HKAuthorizationSettingsViewControllerDelegate> * delegate;
-@property(assign,retain) UIBarButtonItem * doneButtonItem;
-@property(assign,readonly) HKHealthStore * healthStore;
-@property(assign,copy) NSString * shareDescription;
-@property(assign,retain) HKSource * source;
-@property(assign,retain) HKSourceAuthorizationController * sourceAuthorizationController;
-@property(assign,readonly) long long style;
-@property(assign,copy) NSString * updateDescription;
+@property (nonatomic, retain) UIBarButtonItem *cancelButtonItem;
+@property (nonatomic, retain) HKDataCategoryController *dataCategoryController;
+@property (nonatomic) <HKAuthorizationSettingsViewControllerDelegate> *delegate;
+@property (nonatomic, retain) UIBarButtonItem *doneButtonItem;
+@property (nonatomic, readonly) HKHealthStore *healthStore;
+@property (nonatomic, copy) NSString *shareDescription;
+@property (nonatomic, retain) HKSource *source;
+@property (nonatomic, retain) HKSourceAuthorizationController *sourceAuthorizationController;
+@property (nonatomic, readonly) long long style;
+@property (nonatomic, copy) NSString *updateDescription;
 
 - (void).cxx_destruct;
 - (void)_addCancelAndDoneButtons;

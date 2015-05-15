@@ -11,12 +11,12 @@
     bool _isSleeping;
 }
 
-@property(assign,readwrite) unsigned long long _hostFlags;
-@property(assign,retain) IMReachability * _hostReachability;
-@property(assign,readwrite) unsigned long long _ipFlags;
-@property(assign,retain) IMReachability * _ipReachability;
-@property(assign,readwrite) bool _isConnected;
-@property(assign,readwrite) bool _isSleeping;
+@property (nonatomic) unsigned long long _hostFlags;
+@property (nonatomic, retain) IMReachability *_hostReachability;
+@property (nonatomic) unsigned long long _ipFlags;
+@property (nonatomic, retain) IMReachability *_ipReachability;
+@property (nonatomic) bool _isConnected;
+@property (nonatomic) bool _isSleeping;
 
 - (void)_clearReachability:(id*)arg1 flags:(unsigned long long*)arg2;
 - (void)_doCallbackLater;

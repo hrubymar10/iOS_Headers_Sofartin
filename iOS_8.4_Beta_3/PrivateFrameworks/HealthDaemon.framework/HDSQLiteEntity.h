@@ -6,11 +6,11 @@
     long long _persistentID;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long persistentID;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long persistentID;
+@property (readonly) Class superclass;
 
 + (id)_copyDeleteSQLWithTableName:(id)arg1 columnName:(id)arg2;
 + (id)_generateDisambiguatedDatabaseTableName;

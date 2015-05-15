@@ -11,12 +11,12 @@
     bool _success;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSMutableArray * photoSets;
-@property(assign,readwrite) long long stage;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSMutableArray *photoSets;
+@property (nonatomic) long long stage;
+@property (readonly) Class superclass;
 
 + (id)responseWithData:(id)arg1;
 

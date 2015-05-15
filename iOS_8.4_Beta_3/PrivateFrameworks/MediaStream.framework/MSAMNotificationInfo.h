@@ -10,11 +10,11 @@
     struct __CFUserNotification { } *_userNotification;
 }
 
-@property(assign,copy) id completionBlock;
-@property(assign,readwrite) MSAlertManager * owner;
-@property(assign,retain) NSString * personID;
-@property(assign,readwrite) struct __CFRunLoopSource { }* runLoopSource;
-@property(assign,readwrite) struct __CFUserNotification { }* userNotification;
+@property (nonatomic, copy) id completionBlock;
+@property (nonatomic) MSAlertManager *owner;
+@property (nonatomic, retain) NSString *personID;
+@property (nonatomic) struct __CFRunLoopSource { }*runLoopSource;
+@property (nonatomic) struct __CFUserNotification { }*userNotification;
 
 + (id)info;
 

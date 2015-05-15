@@ -6,7 +6,7 @@
     NSFileHandle *_fileHandle;
 }
 
-@property(assign,retain) NSFileHandle * fileHandle;
+@property (nonatomic, retain) NSFileHandle *fileHandle;
 
 - (void)dealloc;
 - (id)fileHandle;

@@ -28,14 +28,14 @@
     NSMutableArray *_targetActions;
 }
 
-@property(assign,readwrite) long long contentHorizontalAlignment;
-@property(assign,readwrite) long long contentVerticalAlignment;
-@property(getter=isEnabled,assign,readwrite) bool enabled;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(getter=isSelected,assign,readwrite) bool selected;
-@property(assign,readonly) unsigned long long state;
-@property(getter=isTouchInside,assign,readonly) bool touchInside;
-@property(getter=isTracking,assign,readonly) bool tracking;
+@property (nonatomic) long long contentHorizontalAlignment;
+@property (nonatomic) long long contentVerticalAlignment;
+@property (getter=isEnabled, nonatomic) bool enabled;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (getter=isSelected, nonatomic) bool selected;
+@property (nonatomic, readonly) unsigned long long state;
+@property (getter=isTouchInside, nonatomic, readonly) bool touchInside;
+@property (getter=isTracking, nonatomic, readonly) bool tracking;
 
 - (void)_cancelDelayedActions;
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })_clippedHighlightBounds;

@@ -9,10 +9,10 @@
     UIScrollView *_scrollView;
 }
 
-@property(assign,readwrite) double autoscrollSpeed;
-@property(getter=isAutoscrolling,assign,readwrite) bool autoscrolling;
-@property(assign,readwrite) int scrollDirection;
-@property(assign,retain) UIScrollView * scrollView;
+@property (nonatomic) double autoscrollSpeed;
+@property (getter=isAutoscrolling, nonatomic) bool autoscrolling;
+@property (nonatomic) int scrollDirection;
+@property (nonatomic, retain) UIScrollView *scrollView;
 
 + (id)sharedInstance;
 

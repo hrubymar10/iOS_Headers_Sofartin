@@ -10,8 +10,8 @@
     } _size;
 }
 
-@property(assign,readwrite) double scaleFactor;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
+@property double scaleFactor;
+@property struct CGSize { double x1; double x2; } size;
 
 + (id)descriptorWithSize:(struct CGSize { double x1; double x2; })arg1 scaleFactor:(double)arg2;
 

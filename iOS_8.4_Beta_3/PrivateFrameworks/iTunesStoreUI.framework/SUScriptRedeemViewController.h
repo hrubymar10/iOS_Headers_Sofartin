@@ -7,10 +7,10 @@
     NSString *_initialCode;
 }
 
-@property(assign,copy) NSString * initialCode;
-@property(assign,readonly) long long redeemCategoryApps;
-@property(assign,readonly) long long redeemCategoryBooks;
-@property(assign,readonly) long long redeemCategoryMedia;
+@property (nonatomic, copy) NSString *initialCode;
+@property (nonatomic, readonly) long long redeemCategoryApps;
+@property (nonatomic, readonly) long long redeemCategoryBooks;
+@property (nonatomic, readonly) long long redeemCategoryMedia;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

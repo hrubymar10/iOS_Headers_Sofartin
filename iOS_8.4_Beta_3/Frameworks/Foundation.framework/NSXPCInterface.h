@@ -8,7 +8,7 @@
     id _reserved1;
 }
 
-@property(assign,readwrite) Protocol * protocol;
+@property Protocol *protocol;
 
 + (id)af_siriTaskDeliveringInterface;
 + (id)interfaceWithProtocol:(id)arg1;

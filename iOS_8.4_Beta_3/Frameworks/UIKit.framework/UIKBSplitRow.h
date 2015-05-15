@@ -21,12 +21,12 @@
     NSMutableArray *_vacancies;
 }
 
-@property(assign,readwrite) struct CGSize { double x1; double x2; } defaultKeySize;
-@property(assign,retain) NSDictionary * hints;
-@property(assign,readonly) NSMutableArray * keys;
-@property(assign,readwrite) unsigned char rowIndex;
-@property(assign,readwrite) double rowOffset;
-@property(assign,readwrite) double rowWidth;
+@property struct CGSize { double x1; double x2; } defaultKeySize;
+@property (retain) NSDictionary *hints;
+@property (readonly) NSMutableArray *keys;
+@property (nonatomic) unsigned char rowIndex;
+@property double rowOffset;
+@property double rowWidth;
 
 - (void)addKey:(id)arg1;
 - (void)dealloc;

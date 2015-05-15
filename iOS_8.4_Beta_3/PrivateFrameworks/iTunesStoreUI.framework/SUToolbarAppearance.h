@@ -8,7 +8,7 @@
     UIColor *_tintColor;
 }
 
-@property(assign,retain) UIColor * tintColor;
+@property (nonatomic, retain) UIColor *tintColor;
 
 + (id)defaultToolbarAppearance;
 

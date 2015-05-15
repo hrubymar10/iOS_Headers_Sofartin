@@ -12,11 +12,11 @@
     bool _shouldUseLease;
 }
 
-@property(getter=isDefinitiveInformation,assign,readonly) bool definitiveInformation;
-@property(assign,readonly) bool hasPlaybackCapability;
-@property(assign,readonly) bool requiresCarrierManualVerification;
-@property(assign,readonly) bool shouldUseAccountLessStreaming;
-@property(assign,readonly) bool shouldUseLease;
+@property (getter=isDefinitiveInformation, nonatomic, readonly) bool definitiveInformation;
+@property (nonatomic, readonly) bool hasPlaybackCapability;
+@property (nonatomic, readonly) bool requiresCarrierManualVerification;
+@property (nonatomic, readonly) bool shouldUseAccountLessStreaming;
+@property (nonatomic, readonly) bool shouldUseLease;
 
 - (id)description;
 - (bool)hasPlaybackCapability;

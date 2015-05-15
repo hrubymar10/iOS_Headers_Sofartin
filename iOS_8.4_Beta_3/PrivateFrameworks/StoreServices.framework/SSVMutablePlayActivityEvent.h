@@ -4,29 +4,29 @@
 
 @interface SSVMutablePlayActivityEvent : SSVPlayActivityEvent
 
-@property(getter=isSBEnabled,assign,readwrite) bool SBEnabled;
-@property(assign,copy) NSString * containerID;
-@property(assign,readwrite) unsigned long long containerType;
-@property(assign,copy) NSString * deviceName;
-@property(assign,readwrite) unsigned long long endReasonType;
-@property(assign,copy) NSDate * eventDate;
-@property(assign,copy) NSTimeZone * eventTimeZone;
-@property(assign,copy) NSString * externalID;
-@property(assign,copy) NSString * featureName;
-@property(assign,readwrite) double itemDuration;
-@property(assign,readwrite) double itemEndTime;
-@property(assign,readwrite) double itemStartTime;
-@property(assign,readwrite) unsigned long long itemType;
-@property(assign,readwrite) unsigned long long mediaType;
-@property(getter=isOffline,assign,readwrite) bool offline;
-@property(assign,readwrite) long long persistentID;
-@property(assign,copy) NSString * personalizedContainerID;
-@property(assign,copy) NSData * recommendationData;
-@property(assign,readwrite) unsigned long long sourceType;
-@property(assign,readwrite) unsigned long long storeAccountID;
-@property(assign,copy) NSString * storeID;
-@property(assign,copy) NSData * timedMetadata;
-@property(assign,copy) NSData * trackInfo;
+@property (getter=isSBEnabled, nonatomic) bool SBEnabled;
+@property (nonatomic, copy) NSString *containerID;
+@property (nonatomic) unsigned long long containerType;
+@property (nonatomic, copy) NSString *deviceName;
+@property (nonatomic) unsigned long long endReasonType;
+@property (nonatomic, copy) NSDate *eventDate;
+@property (nonatomic, copy) NSTimeZone *eventTimeZone;
+@property (nonatomic, copy) NSString *externalID;
+@property (nonatomic, copy) NSString *featureName;
+@property (nonatomic) double itemDuration;
+@property (nonatomic) double itemEndTime;
+@property (nonatomic) double itemStartTime;
+@property (nonatomic) unsigned long long itemType;
+@property (nonatomic) unsigned long long mediaType;
+@property (getter=isOffline, nonatomic) bool offline;
+@property (nonatomic) long long persistentID;
+@property (nonatomic, copy) NSString *personalizedContainerID;
+@property (nonatomic, copy) NSData *recommendationData;
+@property (nonatomic) unsigned long long sourceType;
+@property (nonatomic) unsigned long long storeAccountID;
+@property (nonatomic, copy) NSString *storeID;
+@property (nonatomic, copy) NSData *timedMetadata;
+@property (nonatomic, copy) NSData *trackInfo;
 
 - (Class)_mutableCopyClass;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

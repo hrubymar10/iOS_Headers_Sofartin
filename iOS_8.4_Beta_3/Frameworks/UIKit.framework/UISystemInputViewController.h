@@ -10,9 +10,9 @@
     UIResponder<UITextInput> *_persistentDelegate;
 }
 
-@property(assign,retain) UIKeyboard * keyboard;
-@property(assign,retain) NSArray * keyboardConstraits;
-@property(assign,retain) UIResponder<UITextInput> * persistentDelegate;
+@property (nonatomic, retain) UIKeyboard *keyboard;
+@property (nonatomic, retain) NSArray *keyboardConstraits;
+@property (nonatomic, retain) UIResponder<UITextInput> *persistentDelegate;
 
 + (bool)_requiresProxyInterface;
 

@@ -9,10 +9,10 @@
     bool _reset;
 }
 
-@property(assign,readonly) NSString * SQL;
-@property(assign,readonly) CKSQLite * SQLite;
-@property(assign,readonly) struct sqlite3_stmt { }* handle;
-@property(getter=isReset,assign,readwrite) bool reset;
+@property (nonatomic, readonly) NSString *SQL;
+@property (nonatomic, readonly) CKSQLite *SQLite;
+@property (nonatomic, readonly) struct sqlite3_stmt { }*handle;
+@property (getter=isReset, nonatomic) bool reset;
 
 - (void).cxx_destruct;
 - (id)SQL;

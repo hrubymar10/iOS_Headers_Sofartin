@@ -8,9 +8,9 @@
     NSMutableDictionary *_remoteAssets;
 }
 
-@property(assign,readonly) NSURL * fileURL;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) NSDictionary * remoteAssets;
+@property (nonatomic, readonly) NSURL *fileURL;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSDictionary *remoteAssets;
 
 - (void)dealloc;
 - (id)deviceSpecificAsset;

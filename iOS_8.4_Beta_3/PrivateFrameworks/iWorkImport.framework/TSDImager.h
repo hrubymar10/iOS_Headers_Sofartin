@@ -88,23 +88,23 @@
     double mViewScale;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } actualScaledClipRect;
-@property(assign,readwrite) struct CGColor { }* backgroundColor;
-@property(assign,retain) TSDCanvas * canvas;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool distortedToMatch;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool imageMustHaveEvenDimensions;
-@property(assign,retain) NSArray * infos;
-@property(assign,readwrite) bool isPrinting;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } maximumScaledImageSize;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } scaledImageSize;
-@property(assign,readwrite) bool shouldReuseBitmapContext;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unscaledClipRect;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } actualScaledClipRect;
+@property (nonatomic) struct CGColor { }*backgroundColor;
+@property (nonatomic, readonly, retain) TSDCanvas *canvas;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool distortedToMatch;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool imageMustHaveEvenDimensions;
+@property (nonatomic, retain) NSArray *infos;
+@property (nonatomic) bool isPrinting;
+@property (nonatomic) struct CGSize { double x1; double x2; } maximumScaledImageSize;
+@property (nonatomic) struct CGSize { double x1; double x2; } scaledImageSize;
+@property (nonatomic) bool shouldReuseBitmapContext;
+@property (readonly) Class superclass;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } unscaledClipRect;
+@property (nonatomic) double viewScale;
 
 - (struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })actualScaledClipRect;
 - (struct CGColor { }*)backgroundColor;

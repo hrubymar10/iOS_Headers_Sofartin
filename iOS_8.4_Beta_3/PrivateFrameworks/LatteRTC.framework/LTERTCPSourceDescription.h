@@ -7,8 +7,8 @@
     unsigned char _type;
 }
 
-@property(assign,retain) NSString * text;
-@property(assign,readwrite) unsigned char type;
+@property (nonatomic, retain) NSString *text;
+@property (nonatomic) unsigned char type;
 
 - (void)dealloc;
 - (id)description;

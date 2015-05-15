@@ -6,7 +6,7 @@
     unsigned long long _numberOfRequestsAllowedInRateLimitWindow;
 }
 
-@property(assign,readwrite) unsigned long long numberOfRequestsAllowedInRateLimitWindow;
+@property (nonatomic) unsigned long long numberOfRequestsAllowedInRateLimitWindow;
 
 + (id)sharedSource;
 

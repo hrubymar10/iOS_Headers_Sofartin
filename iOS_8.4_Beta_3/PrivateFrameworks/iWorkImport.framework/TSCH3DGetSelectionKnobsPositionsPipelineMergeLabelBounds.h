@@ -8,8 +8,8 @@
     NSMutableArray *mLabelsBounds;
 }
 
-@property(assign,readonly) int knobsMode;
-@property(assign,readonly) int labelType;
+@property (nonatomic, readonly) int knobsMode;
+@property (nonatomic, readonly) int labelType;
 
 + (id)boundsWithLabelType:(int)arg1 knobsMode:(int)arg2;
 

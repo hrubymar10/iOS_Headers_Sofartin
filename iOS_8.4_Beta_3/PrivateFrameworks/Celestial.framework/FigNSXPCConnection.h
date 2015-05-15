@@ -7,7 +7,7 @@
     bool _explicitlyInvalidated;
 }
 
-@property(assign,readonly) bool explicitlyInvalidated;
+@property (nonatomic, readonly) bool explicitlyInvalidated;
 
 - (void)blockUntilInvalidateHandlerHasBeenCalled;
 - (void)dealloc;

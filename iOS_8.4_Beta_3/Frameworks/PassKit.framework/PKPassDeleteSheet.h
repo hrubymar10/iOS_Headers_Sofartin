@@ -9,13 +9,13 @@
     PKPassView *_passView;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <PKPassDeleteDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,retain) PKPassGroupView * groupView;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) PKPassView * passView;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <PKPassDeleteDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly, retain) PKPassGroupView *groupView;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) PKPassView *passView;
+@property (readonly) Class superclass;
 
 + (void)performPassbookDeleteWithView:(id)arg1 completion:(id)arg2;
 

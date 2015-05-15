@@ -11,9 +11,9 @@
     unsigned long long _validBytes;
 }
 
-@property(assign,readwrite) bool convertCommas;
-@property(assign,readwrite) bool isBound;
-@property(assign,readonly) unsigned long long unconverted;
+@property (nonatomic) bool convertCommas;
+@property (nonatomic) bool isBound;
+@property (nonatomic, readonly) unsigned long long unconverted;
 
 + (bool)isValidBase64:(id)arg1;
 

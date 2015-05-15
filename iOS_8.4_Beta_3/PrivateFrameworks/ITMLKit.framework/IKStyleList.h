@@ -10,11 +10,11 @@
     NSArray *_styles;
 }
 
-@property(assign,retain) IKStyleList * baseStyleList;
-@property(assign,copy) NSString * classSelector;
-@property(assign,readonly) bool requiresMediaQueryEvaluation;
-@property(assign,retain) IKViewElementStyle * resolvedStyle;
-@property(assign,copy) NSArray * styles;
+@property (nonatomic, readonly, retain) IKStyleList *baseStyleList;
+@property (nonatomic, readonly, copy) NSString *classSelector;
+@property (nonatomic, readonly) bool requiresMediaQueryEvaluation;
+@property (nonatomic, retain) IKViewElementStyle *resolvedStyle;
+@property (nonatomic, readonly, copy) NSArray *styles;
 
 - (void).cxx_destruct;
 - (void)_resolveWithMediaQueryEvaluator:(id)arg1;

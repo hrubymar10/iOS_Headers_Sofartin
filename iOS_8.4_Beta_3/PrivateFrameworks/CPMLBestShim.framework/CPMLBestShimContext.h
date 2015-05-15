@@ -6,7 +6,7 @@
     NSArray *orderedSuggestions;
 }
 
-@property(assign,retain) NSArray * orderedSuggestions;
+@property (retain) NSArray *orderedSuggestions;
 
 - (void).cxx_destruct;
 - (id)orderedSuggestions;

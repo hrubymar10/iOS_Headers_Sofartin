@@ -7,8 +7,8 @@
     NSString *_eventExternalURL;
 }
 
-@property(assign,retain) <EKTravelAdvice> * advice;
-@property(assign,retain) NSString * eventExternalURL;
+@property (nonatomic, retain) <EKTravelAdvice> *advice;
+@property (nonatomic, readonly, retain) NSString *eventExternalURL;
 
 - (id)advice;
 - (void)dealloc;

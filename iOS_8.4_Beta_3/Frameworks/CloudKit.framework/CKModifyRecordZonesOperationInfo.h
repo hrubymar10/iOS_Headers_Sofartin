@@ -9,10 +9,10 @@
     NSArray *_recordZonesToSave;
 }
 
-@property(assign,readwrite) bool allowDefaultZoneSave;
-@property(assign,readwrite) bool markZonesAsUserPurged;
-@property(assign,retain) NSArray * recordZoneIDsToDelete;
-@property(assign,retain) NSArray * recordZonesToSave;
+@property (nonatomic) bool allowDefaultZoneSave;
+@property (nonatomic) bool markZonesAsUserPurged;
+@property (nonatomic, retain) NSArray *recordZoneIDsToDelete;
+@property (nonatomic, retain) NSArray *recordZonesToSave;
 
 + (bool)supportsSecureCoding;
 

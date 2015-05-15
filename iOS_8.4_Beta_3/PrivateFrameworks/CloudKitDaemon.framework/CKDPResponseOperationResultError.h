@@ -15,20 +15,20 @@
     CKDPResponseOperationResultErrorServer *_serverError;
 }
 
-@property(assign,retain) CKDPResponseOperationResultErrorClient * clientError;
-@property(assign,retain) NSString * errorDescription;
-@property(assign,retain) NSString * errorInternal;
-@property(assign,retain) NSString * errorKey;
-@property(assign,retain) CKDPResponseOperationResultErrorExtension * extensionError;
-@property(assign,readonly) bool hasClientError;
-@property(assign,readonly) bool hasErrorDescription;
-@property(assign,readonly) bool hasErrorInternal;
-@property(assign,readonly) bool hasErrorKey;
-@property(assign,readonly) bool hasExtensionError;
-@property(assign,readwrite) bool hasRetryAfterSeconds;
-@property(assign,readonly) bool hasServerError;
-@property(assign,readwrite) int retryAfterSeconds;
-@property(assign,retain) CKDPResponseOperationResultErrorServer * serverError;
+@property (nonatomic, retain) CKDPResponseOperationResultErrorClient *clientError;
+@property (nonatomic, retain) NSString *errorDescription;
+@property (nonatomic, retain) NSString *errorInternal;
+@property (nonatomic, retain) NSString *errorKey;
+@property (nonatomic, retain) CKDPResponseOperationResultErrorExtension *extensionError;
+@property (nonatomic, readonly) bool hasClientError;
+@property (nonatomic, readonly) bool hasErrorDescription;
+@property (nonatomic, readonly) bool hasErrorInternal;
+@property (nonatomic, readonly) bool hasErrorKey;
+@property (nonatomic, readonly) bool hasExtensionError;
+@property (nonatomic) bool hasRetryAfterSeconds;
+@property (nonatomic, readonly) bool hasServerError;
+@property (nonatomic) int retryAfterSeconds;
+@property (nonatomic, retain) CKDPResponseOperationResultErrorServer *serverError;
 
 - (void).cxx_destruct;
 - (id)clientError;

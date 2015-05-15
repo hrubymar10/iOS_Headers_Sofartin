@@ -10,10 +10,10 @@
     long long _showingNetworkActivityCount;
 }
 
-@property(setter=setCMObserver:,assign,retain) CMNetworkActivityObserver * cmObserver;
-@property(assign,readwrite) long long monitoringActiveCount;
-@property(assign,readwrite) bool networkIsActive;
-@property(assign,readwrite) long long showingNetworkActivityCount;
+@property (setter=setCMObserver:, nonatomic, retain) CMNetworkActivityObserver *cmObserver;
+@property (nonatomic) long long monitoringActiveCount;
+@property (nonatomic) bool networkIsActive;
+@property (nonatomic) long long showingNetworkActivityCount;
 
 + (id)sharedActivityMonitor;
 

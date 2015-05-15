@@ -7,8 +7,8 @@
     NSDate *_timestamp;
 }
 
-@property(assign,readwrite) double timeToLive;
-@property(assign,retain) NSDate * timestamp;
+@property (nonatomic) double timeToLive;
+@property (nonatomic, retain) NSDate *timestamp;
 
 + (bool)supportsSecureCoding;
 

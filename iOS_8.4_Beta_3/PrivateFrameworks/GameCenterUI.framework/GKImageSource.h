@@ -11,12 +11,12 @@
     bool _shouldRenderDefaultImageWithBrush;
 }
 
-@property(assign,retain) GKThreadsafeCache * cache;
-@property(assign,retain) UIImage * defaultImage;
-@property(assign,readonly) GKImageBrush * imageBrush;
-@property(assign,readonly) NSString * name;
-@property(assign,retain) UIImage * renderedDefaultImage;
-@property(assign,readwrite) bool shouldRenderDefaultImageWithBrush;
+@property (nonatomic, retain) GKThreadsafeCache *cache;
+@property (nonatomic, retain) UIImage *defaultImage;
+@property (nonatomic, readonly) GKImageBrush *imageBrush;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, retain) UIImage *renderedDefaultImage;
+@property (nonatomic) bool shouldRenderDefaultImageWithBrush;
 
 + (id)cacheDirectoryForImageID:(id)arg1;
 + (void)clearCache;

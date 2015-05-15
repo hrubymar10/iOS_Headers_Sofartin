@@ -9,10 +9,10 @@
     bool _hasActiveConference;
 }
 
-@property(assign,retain) NSMutableArray * activeConferenceConnections;
-@property(assign,readwrite) long long callID;
-@property(assign,retain) AVConference * conference;
-@property(assign,readwrite) bool hasActiveConference;
+@property (nonatomic, retain) NSMutableArray *activeConferenceConnections;
+@property (nonatomic) long long callID;
+@property (nonatomic, retain) AVConference *conference;
+@property (nonatomic) bool hasActiveConference;
 
 + (id)sharedInstance;
 

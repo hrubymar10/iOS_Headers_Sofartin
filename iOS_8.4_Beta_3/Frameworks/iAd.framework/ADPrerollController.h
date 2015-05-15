@@ -13,18 +13,18 @@
     ADPrerollView *_view;
 }
 
-@property(assign,retain) ADPlayer * adPlayer;
-@property(assign,readwrite) AVPlayerViewController * avPlayerViewController;
-@property(assign,copy) id completionHandler;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isObservingThirdPartyAVPlayer;
-@property(assign,readwrite) MPMoviePlayerController * moviePlayerController;
-@property(assign,readwrite) bool setupInProgress;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) unsigned long long type;
-@property(assign,retain) ADPrerollView * view;
+@property (nonatomic, retain) ADPlayer *adPlayer;
+@property (nonatomic) AVPlayerViewController *avPlayerViewController;
+@property (nonatomic, copy) id completionHandler;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isObservingThirdPartyAVPlayer;
+@property (nonatomic) MPMoviePlayerController *moviePlayerController;
+@property (nonatomic) bool setupInProgress;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long type;
+@property (nonatomic, retain) ADPrerollView *view;
 
 - (id)_advertisementView;
 - (void)_appWillResignActive;

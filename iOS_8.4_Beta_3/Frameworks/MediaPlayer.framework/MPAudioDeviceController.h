@@ -15,8 +15,8 @@
     bool _scheduledSendAudioRoutesDidChange;
 }
 
-@property(assign,readwrite) id delegate;
-@property(assign,readwrite) bool routeDiscoveryEnabled;
+@property (nonatomic) id delegate;
+@property (nonatomic) bool routeDiscoveryEnabled;
 
 + (void)_internalPushRouteDiscoveryMode:(long long)arg1;
 + (void)_internalSetSystemRouteDiscoveryMode:(long long)arg1;

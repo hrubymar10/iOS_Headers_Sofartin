@@ -13,14 +13,14 @@
     } _presentationPoint;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) <UIWebRotatingNodePopoverDelegate> * dismissDelegate;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) DOMNode * node;
-@property(assign,retain) UIPopoverController * popoverController;
-@property(assign,readwrite) struct CGPoint { double x1; double x2; } presentationPoint;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) <UIWebRotatingNodePopoverDelegate> *dismissDelegate;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) DOMNode *node;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+@property (nonatomic) struct CGPoint { double x1; double x2; } presentationPoint;
+@property (readonly) Class superclass;
 
 - (void)dealloc;
 - (void)didRotate:(id)arg1;

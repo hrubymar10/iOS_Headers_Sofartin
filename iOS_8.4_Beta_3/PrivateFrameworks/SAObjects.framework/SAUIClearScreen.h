@@ -4,7 +4,7 @@
 
 @interface SAUIClearScreen : SABaseClientBoundCommand
 
-@property(assign,retain) SAAceView * initialView;
+@property (nonatomic, retain) SAAceView *initialView;
 
 + (id)clearScreen;
 + (id)clearScreenWithDictionary:(id)arg1 context:(id)arg2;

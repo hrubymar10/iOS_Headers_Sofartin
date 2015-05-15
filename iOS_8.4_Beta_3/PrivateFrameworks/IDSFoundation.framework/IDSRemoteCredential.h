@@ -8,7 +8,7 @@
     bool _wantsRetries;
 }
 
-@property(assign,readwrite) bool wantsRetries;
+@property (nonatomic) bool wantsRetries;
 
 - (bool)_connect;
 - (bool)_disconnect;

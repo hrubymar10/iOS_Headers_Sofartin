@@ -4,7 +4,7 @@
 
 @interface AVSpeechSynthesisVoice : NSObject <NSSecureCoding>
 
-@property(assign,copy) NSString * language;
+@property (nonatomic, copy) NSString *language;
 
 + (id)currentLanguageCode;
 + (void)initialize;

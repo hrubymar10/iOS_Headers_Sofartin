@@ -12,14 +12,14 @@
     long long _tableViewStyle;
 }
 
-@property(assign,retain) SUTableDataSource * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long numberOfRows;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) UITableView * tableView;
-@property(assign,readwrite) long long tableViewStyle;
+@property (nonatomic, retain) SUTableDataSource *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) unsigned long long numberOfRows;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) UITableView *tableView;
+@property (nonatomic) long long tableViewStyle;
 
 - (void)_deliverTapCount:(long long)arg1 forIndexPath:(id)arg2;
 - (void)_doubleTapTimeout;

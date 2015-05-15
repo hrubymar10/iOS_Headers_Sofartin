@@ -9,9 +9,9 @@
     unsigned long long _validationState;
 }
 
-@property(assign,copy) NSString * databasePath;
-@property(assign,retain) NSObject<OS_dispatch_queue> * validationSerialQueue;
-@property(assign,readwrite) unsigned long long validationState;
+@property (nonatomic, copy) NSString *databasePath;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *validationSerialQueue;
+@property (nonatomic) unsigned long long validationState;
 
 - (void).cxx_destruct;
 - (bool)currentQueueIsValidationQueue;

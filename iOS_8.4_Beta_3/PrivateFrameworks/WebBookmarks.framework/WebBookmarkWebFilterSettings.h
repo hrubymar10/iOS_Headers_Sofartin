@@ -6,9 +6,9 @@
     WFUserSettings *_userSettings;
 }
 
-@property(assign,readonly) WFUserSettings * userSettings;
-@property(getter=isWebFilterEnabled,assign,readonly) bool webFilterEnabled;
-@property(getter=isWebFilterWhiteListOnlyModeEnabled,assign,readonly) bool webFilterWhiteListOnlyModeEnabled;
+@property (nonatomic, readonly) WFUserSettings *userSettings;
+@property (getter=isWebFilterEnabled, nonatomic, readonly) bool webFilterEnabled;
+@property (getter=isWebFilterWhiteListOnlyModeEnabled, nonatomic, readonly) bool webFilterWhiteListOnlyModeEnabled;
 
 + (id)sharedWebFilterSettings;
 

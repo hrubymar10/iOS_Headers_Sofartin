@@ -24,23 +24,23 @@
     NSString *_subHeaderText;
 }
 
-@property(assign,copy) NSString * HTMLFooterContent;
-@property(assign,copy) NSString * HTMLHeaderContent;
-@property(assign,readwrite) bool configured;
-@property(assign,readwrite) <RUITableViewSectionDelegate> * delegate;
-@property(assign,copy) NSString * detailHeaderText;
-@property(assign,readwrite) bool drawTopSeparator;
-@property(assign,copy) NSDictionary * footerAttributes;
-@property(assign,readwrite) double footerHeight;
-@property(assign,copy) NSString * footerText;
-@property(assign,retain) UIView<RemoteUITableFooter> * footerView;
-@property(assign,copy) NSDictionary * headerAttributes;
-@property(assign,readwrite) double headerHeight;
-@property(assign,copy) NSString * headerText;
-@property(assign,retain) UIView<RemoteUITableHeader> * headerView;
-@property(assign,readonly) NSArray * rows;
-@property(assign,copy) NSDictionary * subHeaderAttributes;
-@property(assign,copy) NSString * subHeaderText;
+@property (nonatomic, copy) NSString *HTMLFooterContent;
+@property (nonatomic, copy) NSString *HTMLHeaderContent;
+@property (nonatomic) bool configured;
+@property (nonatomic) <RUITableViewSectionDelegate> *delegate;
+@property (nonatomic, copy) NSString *detailHeaderText;
+@property (nonatomic) bool drawTopSeparator;
+@property (nonatomic, copy) NSDictionary *footerAttributes;
+@property (nonatomic) double footerHeight;
+@property (nonatomic, copy) NSString *footerText;
+@property (nonatomic, retain) UIView<RemoteUITableFooter> *footerView;
+@property (nonatomic, copy) NSDictionary *headerAttributes;
+@property (nonatomic) double headerHeight;
+@property (nonatomic, copy) NSString *headerText;
+@property (nonatomic, retain) UIView<RemoteUITableHeader> *headerView;
+@property (nonatomic, readonly) NSArray *rows;
+@property (nonatomic, copy) NSDictionary *subHeaderAttributes;
+@property (nonatomic, copy) NSString *subHeaderText;
 
 - (void).cxx_destruct;
 - (id)HTMLFooterContent;

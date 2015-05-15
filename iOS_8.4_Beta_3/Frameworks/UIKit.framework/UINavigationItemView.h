@@ -16,7 +16,7 @@
     UIView *_topCrossView;
 }
 
-@property(setter=_setFadingInFromCustomAlpha:,assign,readwrite) bool _isFadingInFromCustomAlpha;
+@property (setter=_setFadingInFromCustomAlpha:, nonatomic) bool _isFadingInFromCustomAlpha;
 
 - (void)_adjustLabelTrackingIfNecessary;
 - (void)_cleanUpCrossView;

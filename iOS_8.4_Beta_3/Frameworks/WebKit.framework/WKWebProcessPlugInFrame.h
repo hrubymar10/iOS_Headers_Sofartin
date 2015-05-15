@@ -10,15 +10,15 @@
     } _frame;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) struct Object { int (**x1)(); id x2; }* _apiObject;
-@property(assign,readonly) NSArray * childFrames;
-@property(assign,readonly) bool containsAnyFormElements;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) _WKFrameHandle * handle;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) NSURL *URL;
+@property (readonly) struct Object { int (**x1)(); id x2; }*_apiObject;
+@property (nonatomic, readonly) NSArray *childFrames;
+@property (nonatomic, readonly) bool containsAnyFormElements;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) _WKFrameHandle *handle;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)lookUpFrameFromHandle:(id)arg1;
 

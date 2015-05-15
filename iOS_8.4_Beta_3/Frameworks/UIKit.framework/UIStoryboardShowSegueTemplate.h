@@ -6,7 +6,7 @@
     NSString *_action;
 }
 
-@property(assign,copy) NSString * action;
+@property (nonatomic, copy) NSString *action;
 
 - (id)action;
 - (void)dealloc;

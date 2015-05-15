@@ -7,8 +7,8 @@
     NSString *_text;
 }
 
-@property(assign,readonly) NSArray * alternativeInterpretations;
-@property(assign,readonly) NSString * text;
+@property (nonatomic, readonly) NSArray *alternativeInterpretations;
+@property (nonatomic, readonly) NSString *text;
 
 + (id)phraseWithText:(id)arg1 alternativeInterpretations:(id)arg2;
 

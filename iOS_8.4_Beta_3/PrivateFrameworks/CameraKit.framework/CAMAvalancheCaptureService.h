@@ -12,13 +12,13 @@
     bool _supportsAvalancheAnalysis;
 }
 
-@property(assign,readonly) CAMAvalancheSession * _activeAvalancheSession;
-@property(assign,readonly) NSMutableDictionary * _avalancheSessionsByUUID;
-@property(assign,readonly) NSMutableSet * _avalancheSessionsToBeFinalizedAfterNextResponseCompletion;
-@property(assign,readonly) double _avalancheStartTime;
-@property(assign,readonly) NSCountedSet * _inflightRequestsByUUID;
-@property(assign,copy) NSArray * recentFaceMetadata;
-@property(assign,readwrite) bool supportsAvalancheAnalysis;
+@property (nonatomic, readonly) CAMAvalancheSession *_activeAvalancheSession;
+@property (nonatomic, readonly) NSMutableDictionary *_avalancheSessionsByUUID;
+@property (nonatomic, readonly) NSMutableSet *_avalancheSessionsToBeFinalizedAfterNextResponseCompletion;
+@property (nonatomic, readonly) double _avalancheStartTime;
+@property (nonatomic, readonly) NSCountedSet *_inflightRequestsByUUID;
+@property (nonatomic, copy) NSArray *recentFaceMetadata;
+@property (nonatomic) bool supportsAvalancheAnalysis;
 
 - (void).cxx_destruct;
 - (id)_activeAvalancheSession;

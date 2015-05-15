@@ -6,7 +6,7 @@
     NSArray *authorizedDSIDs;
 }
 
-@property(assign,copy) NSArray * authorizedDSIDs;
+@property (nonatomic, copy) NSArray *authorizedDSIDs;
 
 - (void).cxx_destruct;
 - (id)authorizedDSIDs;

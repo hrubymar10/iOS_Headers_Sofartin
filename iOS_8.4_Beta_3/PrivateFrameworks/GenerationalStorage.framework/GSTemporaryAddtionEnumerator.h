@@ -13,7 +13,7 @@
     unsigned long long _withoutOption;
 }
 
-@property(assign,readonly) NSError * error;
+@property (nonatomic, readonly) NSError *error;
 
 - (id)_nextURL;
 - (void)dealloc;

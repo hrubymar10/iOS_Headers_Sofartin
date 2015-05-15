@@ -51,11 +51,11 @@
     UIColor *_toolbarTintColor;
 }
 
-@property(setter=_setAdditionalSelectionInsets:,assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _additionalSelectionInsets;
-@property(setter=_setAppearanceGuideClass:,assign,readwrite) Class _appearanceGuideClass;
-@property(setter=_setCreatedByBarButtonItem:,assign,readwrite) bool _createdByBarButtonItem;
-@property(setter=_setTintColor:,assign,retain) UIColor * _tintColor;
-@property(getter=isAnimatedTrashButton,assign,readwrite) bool animatedTrashButton;
+@property (setter=_setAdditionalSelectionInsets:, nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _additionalSelectionInsets;
+@property (setter=_setAppearanceGuideClass:, nonatomic) Class _appearanceGuideClass;
+@property (setter=_setCreatedByBarButtonItem:, nonatomic) bool _createdByBarButtonItem;
+@property (setter=_setTintColor:, nonatomic, retain) UIColor *_tintColor;
+@property (getter=isAnimatedTrashButton, nonatomic) bool animatedTrashButton;
 
 + (id)_defaultLabelColor;
 + (id)_defaultLabelFont;

@@ -21,23 +21,23 @@
     double _trailingMargin;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRectForText;
-@property(assign,retain) GKHairlineView * bottomHairline;
-@property(assign,retain) NSLayoutConstraint * contentLeftConstraint;
-@property(assign,retain) GKStaticRenderContentView * contentRenderView;
-@property(assign,readwrite) bool doesAbutLeftEdge;
-@property(assign,retain) NSArray * editActions;
-@property(assign,retain) NSArray * editActionsConstraints;
-@property(assign,readonly) GKEditActionsView * editActionsView;
-@property(assign,readwrite) double editingContentOriginX;
-@property(assign,retain) NSArray * hairlineConstraints;
-@property(assign,readonly) UIView * interactiveContentView;
-@property(assign,readwrite) double leadingMargin;
-@property(assign,retain) CALayer * leftGradientMask;
-@property(assign,retain) id representedItem;
-@property(assign,readonly) UIView * staticContentView;
-@property(assign,retain) GKHairlineView * topHairline;
-@property(assign,readwrite) double trailingMargin;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } alignmentRectForText;
+@property (nonatomic, retain) GKHairlineView *bottomHairline;
+@property (nonatomic, retain) NSLayoutConstraint *contentLeftConstraint;
+@property (nonatomic, retain) GKStaticRenderContentView *contentRenderView;
+@property (nonatomic) bool doesAbutLeftEdge;
+@property (nonatomic, retain) NSArray *editActions;
+@property (nonatomic, retain) NSArray *editActionsConstraints;
+@property (nonatomic, readonly) GKEditActionsView *editActionsView;
+@property (nonatomic) double editingContentOriginX;
+@property (nonatomic, retain) NSArray *hairlineConstraints;
+@property (nonatomic, readonly) UIView *interactiveContentView;
+@property (nonatomic) double leadingMargin;
+@property (nonatomic, retain) CALayer *leftGradientMask;
+@property (nonatomic, retain) id representedItem;
+@property (nonatomic, readonly) UIView *staticContentView;
+@property (nonatomic, retain) GKHairlineView *topHairline;
+@property (nonatomic) double trailingMargin;
 
 + (void)registerCellClassesWithCollectionView:(id)arg1;
 

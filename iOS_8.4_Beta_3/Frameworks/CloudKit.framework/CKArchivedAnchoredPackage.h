@@ -9,10 +9,10 @@
     NSString *_packagePath;
 }
 
-@property(assign,retain) NSString * UUID;
-@property(assign,retain) NSString * anchorPath;
-@property(assign,retain) NSArray * assets;
-@property(assign,retain) NSString * packagePath;
+@property (nonatomic, retain) NSString *UUID;
+@property (nonatomic, retain) NSString *anchorPath;
+@property (nonatomic, retain) NSArray *assets;
+@property (nonatomic, retain) NSString *packagePath;
 
 + (bool)supportsSecureCoding;
 

@@ -7,15 +7,15 @@
     id _private;
 }
 
-@property(getter=isCancelled,assign,readonly) bool cancelled;
-@property(getter=isExecuting,assign,readonly) bool executing;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readonly) bool isMainThread;
-@property(assign,copy) NSString * name;
-@property(assign,readwrite) long long qualityOfService;
-@property(assign,readwrite) unsigned long long stackSize;
-@property(assign,retain) NSMutableDictionary * threadDictionary;
-@property(assign,readwrite) double threadPriority;
+@property (getter=isCancelled, readonly) bool cancelled;
+@property (getter=isExecuting, readonly) bool executing;
+@property (getter=isFinished, readonly) bool finished;
+@property (readonly) bool isMainThread;
+@property (copy) NSString *name;
+@property long long qualityOfService;
+@property unsigned long long stackSize;
+@property (readonly, retain) NSMutableDictionary *threadDictionary;
+@property double threadPriority;
 
 + (void)_im_runBlock:(id)arg1;
 + (id)_mapkit_networkIOThread;

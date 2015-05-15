@@ -8,7 +8,7 @@
     unsigned int _soundsActivated;
 }
 
-@property(assign,readwrite) unsigned long long incompleteSoundCount;
+@property unsigned long long incompleteSoundCount;
 
 + (void)_delayedDeactivate;
 

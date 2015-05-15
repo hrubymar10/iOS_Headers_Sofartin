@@ -8,9 +8,9 @@
     NSDocumentDifferenceSize *_dueToRecentChangesBeforeSaving;
 }
 
-@property(assign,readonly) NSDocumentDifferenceSize * betweenPreservingPreviousVersionAndSaving;
-@property(assign,readonly) NSDocumentDifferenceSize * betweenPreviousSavingAndSaving;
-@property(assign,readonly) NSDocumentDifferenceSize * dueToRecentChangesBeforeSaving;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *betweenPreservingPreviousVersionAndSaving;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *betweenPreviousSavingAndSaving;
+@property (nonatomic, readonly) NSDocumentDifferenceSize *dueToRecentChangesBeforeSaving;
 
 - (id)betweenPreservingPreviousVersionAndSaving;
 - (id)betweenPreviousSavingAndSaving;

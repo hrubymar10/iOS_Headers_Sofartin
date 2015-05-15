@@ -39,20 +39,20 @@
     id _reserved4;
 }
 
-@property(setter=ab_setDefaultToolbarItems:,assign,retain) NSArray * ab_defaultToolbarItems;
-@property(assign,readwrite) void* addressBook;
-@property(assign,readwrite) bool allowsContactBlocking;
-@property(assign,readwrite) bool allowsOnlyFaceTimeActions;
-@property(assign,readwrite) bool allowsOnlyPhoneActions;
-@property(assign,readwrite) UISplitViewController<ABContactViewControllerDelegate> * contactsSplitViewPresentationDelegate;
-@property(assign,copy) NSArray * displayedProperties;
-@property(assign,readwrite) bool hidesPromptInLandscape;
-@property(assign,readwrite) bool hidesSearchableSources;
-@property(assign,readwrite) <ABPeoplePickerNavigationControllerDelegate> * peoplePickerDelegate;
-@property(assign,copy) NSPredicate * predicateForEnablingPerson;
-@property(assign,copy) NSPredicate * predicateForSelectionOfPerson;
-@property(assign,copy) NSPredicate * predicateForSelectionOfProperty;
-@property(assign,retain) <ABStyleProvider> * styleProvider;
+@property (setter=ab_setDefaultToolbarItems:, nonatomic, retain) NSArray *ab_defaultToolbarItems;
+@property (nonatomic) void*addressBook;
+@property (nonatomic) bool allowsContactBlocking;
+@property (nonatomic) bool allowsOnlyFaceTimeActions;
+@property (nonatomic) bool allowsOnlyPhoneActions;
+@property (nonatomic) UISplitViewController<ABContactViewControllerDelegate> *contactsSplitViewPresentationDelegate;
+@property (nonatomic, copy) NSArray *displayedProperties;
+@property (nonatomic) bool hidesPromptInLandscape;
+@property (nonatomic) bool hidesSearchableSources;
+@property (nonatomic) <ABPeoplePickerNavigationControllerDelegate> *peoplePickerDelegate;
+@property (nonatomic, copy) NSPredicate *predicateForEnablingPerson;
+@property (nonatomic, copy) NSPredicate *predicateForSelectionOfPerson;
+@property (nonatomic, copy) NSPredicate *predicateForSelectionOfProperty;
+@property (nonatomic, retain) <ABStyleProvider> *styleProvider;
 
 + (void)notifyPreferencesChanged;
 

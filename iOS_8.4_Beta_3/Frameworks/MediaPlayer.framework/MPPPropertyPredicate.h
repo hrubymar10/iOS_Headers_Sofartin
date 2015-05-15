@@ -11,12 +11,12 @@
     MPPMediaPredicateValue *_value;
 }
 
-@property(assign,readwrite) int comparisonType;
-@property(assign,readwrite) bool hasComparisonType;
-@property(assign,readonly) bool hasProperty;
-@property(assign,readonly) bool hasValue;
-@property(assign,retain) NSString * property;
-@property(assign,retain) MPPMediaPredicateValue * value;
+@property (nonatomic) int comparisonType;
+@property (nonatomic) bool hasComparisonType;
+@property (nonatomic, readonly) bool hasProperty;
+@property (nonatomic, readonly) bool hasValue;
+@property (nonatomic, retain) NSString *property;
+@property (nonatomic, retain) MPPMediaPredicateValue *value;
 
 - (void).cxx_destruct;
 - (int)comparisonType;

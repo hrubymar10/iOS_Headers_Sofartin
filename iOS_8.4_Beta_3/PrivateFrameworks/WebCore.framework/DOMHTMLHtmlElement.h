@@ -4,7 +4,7 @@
 
 @interface DOMHTMLHtmlElement : DOMHTMLElement
 
-@property(assign,copy) NSString * version;
+@property (copy) NSString *version;
 
 - (id)manifest;
 - (void)setManifest:(id)arg1;

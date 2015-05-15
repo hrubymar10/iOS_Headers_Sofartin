@@ -10,11 +10,11 @@
     struct __CFRunLoopSource { } *_notificationSource;
 }
 
-@property(assign,copy) id callback;
-@property(assign,retain) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(assign,readwrite) bool isBanner;
-@property(assign,readwrite) struct __CFUserNotification { }* notification;
-@property(assign,readwrite) struct __CFRunLoopSource { }* notificationSource;
+@property (nonatomic, copy) id callback;
+@property (retain) NSObject<OS_dispatch_queue> *callbackQueue;
+@property bool isBanner;
+@property struct __CFUserNotification { }*notification;
+@property struct __CFRunLoopSource { }*notificationSource;
 
 - (void).cxx_destruct;
 - (id)callback;

@@ -7,7 +7,7 @@
     NSMutableArray *mSections;
 }
 
-@property(assign,readonly) NSSet * identifier;
+@property (nonatomic, readonly) NSSet *identifier;
 
 - (void)addEffect:(id)arg1;
 - (void)addEffect:(id)arg1 toSection:(int)arg2;

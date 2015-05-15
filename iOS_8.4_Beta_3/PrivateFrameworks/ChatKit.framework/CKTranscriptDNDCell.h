@@ -6,7 +6,7 @@
     UISwitch *_muteSwitch;
 }
 
-@property(assign,retain) UISwitch * muteSwitch;
+@property (nonatomic, retain) UISwitch *muteSwitch;
 
 + (id)identifier;
 + (double)preferredHeight;

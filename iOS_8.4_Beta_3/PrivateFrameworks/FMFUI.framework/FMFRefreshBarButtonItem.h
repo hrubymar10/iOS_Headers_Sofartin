@@ -10,11 +10,11 @@
     FMFRefreshWrapperButton *_wrapperButton;
 }
 
-@property(assign,retain) FMFTintedActivityIndicatorView * aiv;
-@property(assign,retain) UIImageView * imageView;
-@property(assign,retain) id locateNotification;
-@property(assign,retain) NSSet * locations;
-@property(assign,retain) FMFRefreshWrapperButton * wrapperButton;
+@property (nonatomic, retain) FMFTintedActivityIndicatorView *aiv;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) id locateNotification;
+@property (nonatomic, retain) NSSet *locations;
+@property (nonatomic, retain) FMFRefreshWrapperButton *wrapperButton;
 
 - (void).cxx_destruct;
 - (void)_updateLocateInProgress;

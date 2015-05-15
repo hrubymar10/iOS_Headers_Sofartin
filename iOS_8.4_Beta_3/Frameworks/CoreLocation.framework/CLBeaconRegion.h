@@ -8,10 +8,10 @@
     NSUUID *_proximityUUID;
 }
 
-@property(assign,readonly) NSNumber * major;
-@property(assign,readonly) NSNumber * minor;
-@property(assign,readwrite) bool notifyEntryStateOnDisplay;
-@property(assign,readonly) NSUUID * proximityUUID;
+@property (nonatomic, readonly) NSNumber *major;
+@property (nonatomic, readonly) NSNumber *minor;
+@property (nonatomic) bool notifyEntryStateOnDisplay;
+@property (nonatomic, readonly) NSUUID *proximityUUID;
 
 + (id)any;
 + (bool)supportsSecureCoding;

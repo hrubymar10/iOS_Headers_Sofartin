@@ -10,12 +10,12 @@
     NSNumber *_size;
 }
 
-@property(assign,copy) NSURL * localURL;
-@property(assign,copy) NSURL * passURL;
-@property(assign,readonly) NSString * relativeLocalPath;
-@property(assign,copy) NSURL * remoteURL;
-@property(assign,copy) NSString * sha1Hex;
-@property(assign,copy) NSNumber * size;
+@property (nonatomic, copy) NSURL *localURL;
+@property (nonatomic, copy) NSURL *passURL;
+@property (nonatomic, readonly) NSString *relativeLocalPath;
+@property (nonatomic, copy) NSURL *remoteURL;
+@property (nonatomic, copy) NSString *sha1Hex;
+@property (nonatomic, copy) NSNumber *size;
 
 + (id)itemWithLocalURL:(id)arg1 passURL:(id)arg2 dictionary:(id)arg3 error:(id*)arg4;
 + (bool)supportsSecureCoding;

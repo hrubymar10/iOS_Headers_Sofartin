@@ -9,10 +9,10 @@
     NSArray *_wordRanges;
 }
 
-@property(assign,readonly) bool rare;
-@property(assign,readonly) NSString * string;
-@property(assign,readonly) NSArray * wordIDs;
-@property(assign,readonly) NSArray * wordRanges;
+@property (readonly) bool rare;
+@property (readonly) NSString *string;
+@property (readonly) NSArray *wordIDs;
+@property (readonly) NSArray *wordRanges;
 
 - (void)dealloc;
 - (id)initWithString:(id)arg1 score:(double)arg2 rare:(bool)arg3 wordRanges:(id)arg4 wordIDs:(id)arg5;

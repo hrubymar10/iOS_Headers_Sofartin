@@ -6,7 +6,7 @@
     AVMutableAudioMixInternal *_mutableAudioMix;
 }
 
-@property(assign,copy) NSArray * inputParameters;
+@property (nonatomic, copy) NSArray *inputParameters;
 
 + (id)audioMix;
 

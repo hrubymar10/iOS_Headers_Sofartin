@@ -8,13 +8,13 @@
     bool _wantsSharePermissions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) CKRecordID * recordID;
-@property(assign,retain) CKShareID * shareID;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) bool wantsSharePermissions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) CKRecordID *recordID;
+@property (nonatomic, retain) CKShareID *shareID;
+@property (readonly) Class superclass;
+@property (nonatomic) bool wantsSharePermissions;
 
 - (void).cxx_destruct;
 - (id)initWithItem:(id)arg1;

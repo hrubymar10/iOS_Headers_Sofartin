@@ -9,9 +9,9 @@
     bool _shouldAnimateIn;
 }
 
-@property(assign,retain) NSString * activationContext;
-@property(assign,retain) NSNumber * animationStartTime;
-@property(assign,readwrite) bool shouldAnimateIn;
+@property (nonatomic, retain) NSString *activationContext;
+@property (nonatomic, retain) NSNumber *animationStartTime;
+@property (nonatomic) bool shouldAnimateIn;
 
 - (id)activationContext;
 - (bool)allowStackingOfAlert:(id)arg1;

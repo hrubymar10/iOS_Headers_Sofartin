@@ -10,10 +10,10 @@
     unsigned char _uuid;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * callbackQueue;
-@property(getter=isExecuting,assign,readonly) bool executing;
-@property(getter=isFinished,assign,readonly) bool finished;
-@property(assign,readwrite) NSObject<BRCancellable> * remoteOperation;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *callbackQueue;
+@property (getter=isExecuting, readonly) bool executing;
+@property (getter=isFinished, readonly) bool finished;
+@property (nonatomic) NSObject<BRCancellable> *remoteOperation;
 
 - (bool)_finishIfCancelled;
 - (void)_setExecuting:(bool)arg1;

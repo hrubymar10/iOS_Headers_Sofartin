@@ -11,12 +11,12 @@
     int _waitStatus;
 }
 
-@property(assign,retain) NSArray * argv;
-@property(assign,retain) NSString * redirectStderrToFileAtPath;
-@property(assign,readwrite) int redirectStderrToFileDescriptor;
-@property(assign,retain) NSString * redirectStdoutToFileAtPath;
-@property(assign,readwrite) int redirectStdoutToFileDescriptor;
-@property(assign,readonly) int waitStatus;
+@property (nonatomic, retain) NSArray *argv;
+@property (nonatomic, retain) NSString *redirectStderrToFileAtPath;
+@property (nonatomic) int redirectStderrToFileDescriptor;
+@property (nonatomic, retain) NSString *redirectStdoutToFileAtPath;
+@property (nonatomic) int redirectStdoutToFileDescriptor;
+@property (nonatomic, readonly) int waitStatus;
 
 + (id)sanitizeStringForFilename:(id)arg1;
 + (id)taskWithCommand:(id)arg1;

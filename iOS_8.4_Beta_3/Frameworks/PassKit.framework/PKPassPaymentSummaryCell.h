@@ -8,13 +8,13 @@
     UIButton *_detailsButton;
 }
 
-@property(assign,retain) NSString * amountText;
-@property(assign,readwrite) <PKPassPaymentSummaryCellDelegate> * delegate;
-@property(assign,retain) NSString * detailText;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) NSString * primaryText;
-@property(assign,readwrite) long long primaryTextNumberOfLines;
-@property(assign,readwrite) bool showDetailsButton;
+@property (nonatomic, retain) NSString *amountText;
+@property (nonatomic) <PKPassPaymentSummaryCellDelegate> *delegate;
+@property (nonatomic, retain) NSString *detailText;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) NSString *primaryText;
+@property (nonatomic) long long primaryTextNumberOfLines;
+@property (nonatomic) bool showDetailsButton;
 
 + (id)_amountTextFont;
 + (id)_detailTextFont;

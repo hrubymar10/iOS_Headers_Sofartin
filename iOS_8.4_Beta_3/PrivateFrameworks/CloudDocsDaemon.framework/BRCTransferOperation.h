@@ -12,15 +12,15 @@
     unsigned long long _totalSize;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) unsigned long long doneSize;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) unsigned long long itemsCount;
-@property(assign,readonly) NSObject<OS_dispatch_group> * pendingGroup;
-@property(assign,copy) id progressed;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) unsigned long long totalSize;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property unsigned long long doneSize;
+@property (readonly) unsigned long long hash;
+@property (readonly) unsigned long long itemsCount;
+@property (nonatomic, readonly) NSObject<OS_dispatch_group> *pendingGroup;
+@property (copy) id progressed;
+@property (readonly) Class superclass;
+@property unsigned long long totalSize;
 
 - (void).cxx_destruct;
 - (void)__doneWithEntry:(id)arg1 error:(id)arg2;

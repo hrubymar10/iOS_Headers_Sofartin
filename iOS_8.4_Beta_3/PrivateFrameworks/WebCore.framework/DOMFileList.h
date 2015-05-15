@@ -4,7 +4,7 @@
 
 @interface DOMFileList : DOMObject
 
-@property(assign,readonly) unsigned int length;
+@property (readonly) unsigned int length;
 
 - (void)dealloc;
 - (void)finalize;

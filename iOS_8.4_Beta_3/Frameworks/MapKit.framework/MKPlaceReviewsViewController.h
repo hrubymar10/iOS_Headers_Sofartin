@@ -16,22 +16,22 @@
     NSMutableArray *_viewDidAppearBlocks;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool hasAttribution;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MKMapItem * mapItem;
-@property(assign,retain) ABMonogrammer * monogrammer;
-@property(assign,readwrite) _MKPlaceViewController * owner;
-@property(assign,retain) GEORating * rating;
-@property(assign,readonly) bool requiresPreferredContentSizeInStackingView;
-@property(assign,readwrite) <MKPlaceCardReviewsControllerDelegate> * reviewsControllerDelegate;
-@property(assign,readwrite) bool showAttribution;
-@property(assign,readonly) bool showAttributionButtons;
-@property(assign,readwrite) bool showCheckInAndWriteReviewButtons;
-@property(assign,readwrite) bool showMoreReviewsButton;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSMutableArray * viewDidAppearBlocks;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool hasAttribution;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MKMapItem *mapItem;
+@property (nonatomic, retain) ABMonogrammer *monogrammer;
+@property (nonatomic) _MKPlaceViewController *owner;
+@property (nonatomic, retain) GEORating *rating;
+@property (nonatomic, readonly) bool requiresPreferredContentSizeInStackingView;
+@property (nonatomic) <MKPlaceCardReviewsControllerDelegate> *reviewsControllerDelegate;
+@property (nonatomic) bool showAttribution;
+@property (nonatomic, readonly) bool showAttributionButtons;
+@property (nonatomic) bool showCheckInAndWriteReviewButtons;
+@property (nonatomic) bool showMoreReviewsButton;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSMutableArray *viewDidAppearBlocks;
 
 - (void).cxx_destruct;
 - (void)_showReviewWithID:(id)arg1;

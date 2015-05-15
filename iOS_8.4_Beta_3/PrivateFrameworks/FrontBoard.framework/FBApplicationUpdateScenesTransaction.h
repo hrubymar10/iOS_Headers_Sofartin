@@ -13,12 +13,12 @@
     NSMutableArray *_updateSceneTransactions;
 }
 
-@property(assign,retain) NSString * bundleID;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) FBApplicationProcess * process;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly, retain) NSString *bundleID;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly, retain) FBApplicationProcess *process;
+@property (readonly) Class superclass;
 
 - (bool)_canBeInterrupted;
 - (void)_childTransactionDidComplete:(id)arg1;

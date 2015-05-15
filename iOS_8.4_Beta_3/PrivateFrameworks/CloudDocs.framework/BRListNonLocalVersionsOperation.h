@@ -15,16 +15,16 @@
     GSPermanentStorage *_versionsStore;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSError * error;
-@property(getter=isExecuting,assign,readwrite) bool executing;
-@property(assign,copy) id fetchingVersionsDoneBlock;
-@property(getter=isFinished,assign,readwrite) bool finished;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool includeCachedVersions;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSMutableArray * versions;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSError *error;
+@property (getter=isExecuting, nonatomic) bool executing;
+@property (nonatomic, copy) id fetchingVersionsDoneBlock;
+@property (getter=isFinished, nonatomic) bool finished;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool includeCachedVersions;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) NSMutableArray *versions;
 
 - (bool)__advanceToState:(BOOL)arg1 result:(id)arg2 error:(id)arg3;
 - (bool)__finishIfCancelled;

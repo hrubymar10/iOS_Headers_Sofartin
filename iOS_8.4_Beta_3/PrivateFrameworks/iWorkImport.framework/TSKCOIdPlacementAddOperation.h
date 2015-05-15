@@ -7,13 +7,13 @@
     int mObjectCounterSpace;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) bool isNoop;
-@property(assign,readonly) int objectCount;
-@property(assign,readonly) int objectCounterSpace;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) bool isNoop;
+@property (nonatomic, readonly) int objectCount;
+@property (nonatomic, readonly) int objectCounterSpace;
+@property (readonly) Class superclass;
 
 - (id)description;
 - (id)initWithIdAddress:(id)arg1 fromIndex:(int)arg2 toIndex:(int)arg3 dominating:(bool)arg4 noop:(bool)arg5;

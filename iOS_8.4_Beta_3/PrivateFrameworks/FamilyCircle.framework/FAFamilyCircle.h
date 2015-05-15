@@ -8,9 +8,9 @@
     NSArray *_members;
 }
 
-@property(assign,readonly) NSDictionary * _serverResponse;
-@property(assign,readonly) FAFamilyCloudKitProperties * cloudKitProperties;
-@property(assign,readonly) NSArray * members;
+@property (readonly) NSDictionary *_serverResponse;
+@property (readonly) FAFamilyCloudKitProperties *cloudKitProperties;
+@property (readonly) NSArray *members;
 
 + (bool)supportsSecureCoding;
 

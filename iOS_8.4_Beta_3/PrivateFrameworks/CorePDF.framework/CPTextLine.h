@@ -34,11 +34,11 @@
     NSArray *xsegments;
 }
 
-@property(assign,readwrite) bool isListItem;
-@property(assign,readwrite) unsigned int leftSpacerIndex;
-@property(assign,readwrite) bool lineBreakAfter;
-@property(assign,readwrite) unsigned int listSpacerIndex;
-@property(assign,readwrite) unsigned int rightSpacerIndex;
+@property (nonatomic) bool isListItem;
+@property (nonatomic) unsigned int leftSpacerIndex;
+@property (nonatomic) bool lineBreakAfter;
+@property (nonatomic) unsigned int listSpacerIndex;
+@property (nonatomic) unsigned int rightSpacerIndex;
 
 - (void)accept:(id)arg1;
 - (int)align;

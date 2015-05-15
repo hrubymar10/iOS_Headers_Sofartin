@@ -10,8 +10,8 @@
     bool _isExteralPowerConnected;
 }
 
-@property(assign,readwrite) double currentLevel;
-@property(assign,readwrite) bool isExternalPowerConnected;
+@property (nonatomic) double currentLevel;
+@property (nonatomic) bool isExternalPowerConnected;
 
 + (id)defaultMonitor;
 

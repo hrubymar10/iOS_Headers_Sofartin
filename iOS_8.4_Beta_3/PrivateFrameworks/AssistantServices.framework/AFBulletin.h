@@ -18,19 +18,19 @@
     NSString *_title;
 }
 
-@property(getter=isAllDay,assign,readonly) bool allDay;
-@property(assign,copy) NSString * bulletinID;
-@property(assign,copy) NSDate * date;
-@property(assign,copy) NSString * displayName;
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) NSString * message;
-@property(assign,copy) NSString * modalAlertContentMessage;
-@property(getter=isRead,assign,readwrite) bool read;
-@property(assign,copy) NSDate * recencyDate;
-@property(assign,copy) NSString * sectionID;
-@property(assign,copy) NSString * subtitle;
-@property(assign,copy) NSString * timeZone;
-@property(assign,copy) NSString * title;
+@property (getter=isAllDay, nonatomic, readonly) bool allDay;
+@property (nonatomic, readonly, copy) NSString *bulletinID;
+@property (nonatomic, readonly, copy) NSDate *date;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, readonly, copy) NSDate *endDate;
+@property (nonatomic, readonly, copy) NSString *message;
+@property (nonatomic, readonly, copy) NSString *modalAlertContentMessage;
+@property (getter=isRead, nonatomic) bool read;
+@property (nonatomic, readonly, copy) NSDate *recencyDate;
+@property (nonatomic, readonly, copy) NSString *sectionID;
+@property (nonatomic, readonly, copy) NSString *subtitle;
+@property (nonatomic, readonly, copy) NSString *timeZone;
+@property (nonatomic, readonly, copy) NSString *title;
 
 + (bool)supportsSecureCoding;
 

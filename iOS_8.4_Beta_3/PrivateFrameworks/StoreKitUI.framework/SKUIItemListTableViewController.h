@@ -28,25 +28,25 @@
     SKUIUber *_uber;
 }
 
-@property(assign,retain) SKUIItemArtworkContext * artworkContext;
-@property(assign,retain) SKUIResourceLoader * artworkLoader;
-@property(assign,retain) SKUIClientContext * clientContext;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <SKUIItemListTableDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SKUIStyledImageDataConsumer * iconDataConsumer;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } imageBoundingSize;
-@property(assign,retain) SKUIItemList * itemList;
-@property(assign,readwrite) bool loadsMoreItems;
-@property(assign,retain) NSOperationQueue * operationQueue;
-@property(assign,readwrite) double rowHeight;
-@property(assign,readwrite) long long selectionStyle;
-@property(assign,readwrite) long long separatorStyle;
-@property(assign,readonly) Class superclass;
-@property(getter=isSuspended,assign,readwrite) bool suspended;
-@property(assign,retain) SKUIUber * uber;
-@property(assign,readonly) NSString * visibleMetricsImpressions;
+@property (nonatomic, retain) SKUIItemArtworkContext *artworkContext;
+@property (nonatomic, retain) SKUIResourceLoader *artworkLoader;
+@property (nonatomic, retain) SKUIClientContext *clientContext;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <SKUIItemListTableDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SKUIStyledImageDataConsumer *iconDataConsumer;
+@property (nonatomic) struct CGSize { double x1; double x2; } imageBoundingSize;
+@property (nonatomic, retain) SKUIItemList *itemList;
+@property (nonatomic) bool loadsMoreItems;
+@property (nonatomic, retain) NSOperationQueue *operationQueue;
+@property (nonatomic) double rowHeight;
+@property (nonatomic) long long selectionStyle;
+@property (nonatomic) long long separatorStyle;
+@property (readonly) Class superclass;
+@property (getter=isSuspended, nonatomic) bool suspended;
+@property (nonatomic, retain) SKUIUber *uber;
+@property (nonatomic, readonly) NSString *visibleMetricsImpressions;
 
 - (void).cxx_destruct;
 - (void)_finishLoadMoreOperationWithItems:(id)arg1 error:(id)arg2;

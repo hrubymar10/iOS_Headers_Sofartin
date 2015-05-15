@@ -7,8 +7,8 @@
     NSMutableDictionary *_vehiclesBySerialNumber;
 }
 
-@property(assign,readwrite) <CRVehicleAccessoryManagerDelegate> * vehicleAccessoryDelegate;
-@property(assign,retain) NSMutableDictionary * vehiclesBySerialNumber;
+@property (nonatomic) <CRVehicleAccessoryManagerDelegate> *vehicleAccessoryDelegate;
+@property (nonatomic, retain) NSMutableDictionary *vehiclesBySerialNumber;
 
 + (id)_certificateSerialNumberForAccessory:(id)arg1;
 + (bool)_isValidAccessoryMacAddress:(id)arg1;

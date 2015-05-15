@@ -4,7 +4,7 @@
 
 @interface MLITDBGeniusDatabase : NSObject
 
-@property(assign,readonly) ML3MusicLibrary * musicLibrary;
+@property (nonatomic, readonly) ML3MusicLibrary *musicLibrary;
 
 + (id)sharedGeniusDatabase;
 

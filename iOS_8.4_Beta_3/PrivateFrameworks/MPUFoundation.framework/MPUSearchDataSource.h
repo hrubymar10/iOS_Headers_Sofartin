@@ -10,8 +10,8 @@
     NSString *_searchString;
 }
 
-@property(assign,readonly) MPUQueryDataSource * dataSource;
-@property(assign,readonly) NSString * searchString;
+@property (nonatomic, readonly) MPUQueryDataSource *dataSource;
+@property (nonatomic, readonly) NSString *searchString;
 
 - (void).cxx_destruct;
 - (void)_searchOperation:(id)arg1 didFinishWithResults:(id)arg2;

@@ -8,9 +8,9 @@
     long long _separatorStyle;
 }
 
-@property(assign,copy) UIColor * color1;
-@property(assign,copy) UIColor * color2;
-@property(assign,readwrite) long long separatorStyle;
+@property (nonatomic, copy) UIColor *color1;
+@property (nonatomic, copy) UIColor *color2;
+@property (nonatomic) long long separatorStyle;
 
 - (void).cxx_destruct;
 - (id)color1;

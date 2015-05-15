@@ -14,9 +14,9 @@
     PUStackView *_stackView;
 }
 
-@property(assign,readwrite) unsigned long long count;
-@property(assign,readonly) double sideCapWidth;
-@property(assign,retain) PUStackView * stackView;
+@property (nonatomic) unsigned long long count;
+@property (nonatomic, readonly) double sideCapWidth;
+@property (nonatomic, readonly, retain) PUStackView *stackView;
 
 - (void).cxx_destruct;
 - (void)cleanUpAnimatedState;

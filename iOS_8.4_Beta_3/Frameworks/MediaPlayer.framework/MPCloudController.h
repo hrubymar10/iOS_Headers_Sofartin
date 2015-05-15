@@ -15,19 +15,19 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readonly) bool canDefaultMediaLibraryShowCloudContent;
-@property(assign,readonly) bool canShowCloudDownloadButtons;
-@property(assign,readonly) bool canShowCloudMusic;
-@property(assign,readonly) bool canShowCloudVideo;
-@property(assign,readonly) HSCloudClient * cloudClient;
-@property(assign,readonly) bool enablingJaliscoGeniusRequiresTerms;
-@property(assign,readonly) bool hasCloudLockerAccount;
-@property(assign,readonly) bool hasPurchaseHistoryAccount;
-@property(assign,readonly) bool isCloudEnabled;
-@property(assign,readonly) bool isGeniusEnabled;
-@property(assign,readonly) bool isInitialImport;
-@property(assign,readonly) bool isUpdateInProgress;
-@property(getter=isJaliscoGeniusEnabled,assign,readonly) bool jaliscoGeniusEnabled;
+@property (nonatomic, readonly) bool canDefaultMediaLibraryShowCloudContent;
+@property (nonatomic, readonly) bool canShowCloudDownloadButtons;
+@property (nonatomic, readonly) bool canShowCloudMusic;
+@property (nonatomic, readonly) bool canShowCloudVideo;
+@property (nonatomic, readonly) HSCloudClient *cloudClient;
+@property (nonatomic, readonly) bool enablingJaliscoGeniusRequiresTerms;
+@property (nonatomic, readonly) bool hasCloudLockerAccount;
+@property (nonatomic, readonly) bool hasPurchaseHistoryAccount;
+@property (nonatomic, readonly) bool isCloudEnabled;
+@property (nonatomic, readonly) bool isGeniusEnabled;
+@property (nonatomic, readonly) bool isInitialImport;
+@property (nonatomic, readonly) bool isUpdateInProgress;
+@property (getter=isJaliscoGeniusEnabled, nonatomic, readonly) bool jaliscoGeniusEnabled;
 
 + (bool)isMediaApplication;
 + (void)migrateCellularDataPreferencesIfNeeded;

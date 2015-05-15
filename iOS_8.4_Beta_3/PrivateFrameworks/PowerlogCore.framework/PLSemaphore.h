@@ -10,11 +10,11 @@
     double _timeout;
 }
 
-@property(assign,retain) NSMutableSet * interestedObjects;
-@property(assign,retain) NSString * key;
-@property(assign,retain) NSMutableSet * pendingDoneObjects;
-@property(assign,retain) NSObject<OS_dispatch_semaphore> * semaphore;
-@property(assign,readwrite) double timeout;
+@property (retain) NSMutableSet *interestedObjects;
+@property (retain) NSString *key;
+@property (retain) NSMutableSet *pendingDoneObjects;
+@property (retain) NSObject<OS_dispatch_semaphore> *semaphore;
+@property double timeout;
 
 + (id)sharedSemaphoreForKey:(id)arg1;
 

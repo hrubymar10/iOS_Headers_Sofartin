@@ -6,7 +6,7 @@
     id _completion;
 }
 
-@property(assign,copy) id completion;
+@property (nonatomic, copy) id completion;
 
 + (id)delegateWithCompletion:(id)arg1;
 

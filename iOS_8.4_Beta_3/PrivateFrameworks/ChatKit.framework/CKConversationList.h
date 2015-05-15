@@ -9,8 +9,8 @@
     NSMutableArray *_trackedConversations;
 }
 
-@property(assign,readonly) bool loadingConversations;
-@property(assign,retain) CKConversation * pendingConversation;
+@property (nonatomic, readonly) bool loadingConversations;
+@property (nonatomic, retain) CKConversation *pendingConversation;
 
 + (void)_handleRegistryDidLoadNotification:(id)arg1;
 + (id)conversationThumbnailCache;

@@ -7,8 +7,8 @@
     NSPredicate *_filterPredicate;
 }
 
-@property(assign,readonly) int filter;
-@property(assign,retain) NSPredicate * filterPredicate;
+@property (nonatomic, readonly) int filter;
+@property (nonatomic, readonly, retain) NSPredicate *filterPredicate;
 
 + (struct NSObject { Class x1; }*)_shuffledAlbumWithAlbum:(struct NSObject { Class x1; }*)arg1 filter:(int)arg2 startingAsset:(id)arg3;
 

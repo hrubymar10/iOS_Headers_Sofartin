@@ -14,15 +14,15 @@
     NSData *_valueData;
 }
 
-@property(assign,retain) NSString * accessGroup;
-@property(assign,retain) NSString * account;
-@property(assign,retain) NSData * genericData;
-@property(assign,retain) NSString * itemDescription;
-@property(assign,retain) NSString * label;
-@property(assign,readwrite) void* platformReference;
-@property(getter=isSyncable,assign,readwrite) bool syncable;
-@property(assign,retain) NSNumber * type;
-@property(assign,retain) NSData * valueData;
+@property (nonatomic, retain) NSString *accessGroup;
+@property (nonatomic, retain) NSString *account;
+@property (nonatomic, retain) NSData *genericData;
+@property (nonatomic, retain) NSString *itemDescription;
+@property (nonatomic, retain) NSString *label;
+@property (nonatomic) void*platformReference;
+@property (getter=isSyncable, nonatomic) bool syncable;
+@property (nonatomic, retain) NSNumber *type;
+@property (nonatomic, retain) NSData *valueData;
 
 - (void).cxx_destruct;
 - (id)accessGroup;

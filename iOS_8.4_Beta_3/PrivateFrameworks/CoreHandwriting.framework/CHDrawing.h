@@ -23,7 +23,7 @@
     } _drawing;
 }
 
-@property(assign,readwrite) /* Warning: unhandled struct encoding: '{CJKChar={vector<std::__1::vector<double' */ struct  drawing; /* unknown property attribute:  std::__1::allocator<double> >}}}QI{Matrix<double>=^^?^dII}d} */
+@property (nonatomic) /* Warning: unhandled struct encoding: '{CJKChar={vector<std::__1::vector<double' */ struct  drawing; /* unknown property attribute:  std::__1::allocator<double> >}}}QI{Matrix<double>=^^?^dII}d} */
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

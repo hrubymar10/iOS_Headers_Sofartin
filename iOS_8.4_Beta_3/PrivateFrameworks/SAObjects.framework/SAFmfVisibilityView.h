@@ -4,8 +4,8 @@
 
 @interface SAFmfVisibilityView : SAUISnippet
 
-@property(assign,copy) NSURL * searchContext;
-@property(assign,readwrite) bool visible;
+@property (nonatomic, copy) NSURL *searchContext;
+@property (nonatomic) bool visible;
 
 + (id)visibilityView;
 + (id)visibilityViewWithDictionary:(id)arg1 context:(id)arg2;

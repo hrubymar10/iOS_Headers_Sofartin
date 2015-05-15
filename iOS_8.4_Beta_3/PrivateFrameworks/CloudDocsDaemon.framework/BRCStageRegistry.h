@@ -21,12 +21,12 @@
     NSMutableSet *_unflushedStagedFileIDs;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) int deviceID;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool isCancelled;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) int deviceID;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) bool isCancelled;
+@property (readonly) Class superclass;
 
 + (void)migrateStageToVersion2_0WithSession:(id)arg1;
 

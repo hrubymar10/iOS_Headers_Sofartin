@@ -9,16 +9,16 @@
     long long _width;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(getter=_lookupDictionary,assign,readonly) NSDictionary * _lookupDictionary;
-@property(assign,readonly) NSMutableDictionary * cacheRepresentation;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long height;
-@property(assign,readonly) struct CGSize { double x1; double x2; } size;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) long long width;
+@property (nonatomic, readonly) NSURL *URL;
+@property (getter=_lookupDictionary, nonatomic, readonly) NSDictionary *_lookupDictionary;
+@property (nonatomic, readonly) NSMutableDictionary *cacheRepresentation;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) long long height;
+@property (nonatomic, readonly) struct CGSize { double x1; double x2; } size;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) long long width;
 
 - (void).cxx_destruct;
 - (id)URL;

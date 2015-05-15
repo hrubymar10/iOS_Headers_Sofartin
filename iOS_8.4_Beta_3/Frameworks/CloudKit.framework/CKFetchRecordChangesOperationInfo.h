@@ -11,12 +11,12 @@
     bool _shouldFetchAssetContents;
 }
 
-@property(assign,readwrite) long long changeTypes;
-@property(assign,retain) NSArray * desiredKeys;
-@property(assign,retain) CKServerChangeToken * previousServerChangeToken;
-@property(assign,retain) CKRecordZoneID * recordZoneID;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,readwrite) bool shouldFetchAssetContents;
+@property (nonatomic) long long changeTypes;
+@property (nonatomic, retain) NSArray *desiredKeys;
+@property (nonatomic, retain) CKServerChangeToken *previousServerChangeToken;
+@property (nonatomic, retain) CKRecordZoneID *recordZoneID;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic) bool shouldFetchAssetContents;
 
 + (bool)supportsSecureCoding;
 

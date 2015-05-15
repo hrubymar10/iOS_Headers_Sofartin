@@ -17,18 +17,18 @@
     NSData *_suggestionMetadata;
 }
 
-@property(assign,readwrite) int entriesType;
-@property(assign,readwrite) bool hasEntriesType;
-@property(assign,readwrite) bool hasIncludeRankingFeatures;
-@property(assign,readwrite) bool hasListType;
-@property(assign,readwrite) bool hasNormalizePOIs;
-@property(assign,readonly) bool hasSuggestionEntryMetadata;
-@property(assign,readonly) bool hasSuggestionMetadata;
-@property(assign,readwrite) bool includeRankingFeatures;
-@property(assign,readwrite) int listType;
-@property(assign,readwrite) bool normalizePOIs;
-@property(assign,retain) NSData * suggestionEntryMetadata;
-@property(assign,retain) NSData * suggestionMetadata;
+@property (nonatomic) int entriesType;
+@property (nonatomic) bool hasEntriesType;
+@property (nonatomic) bool hasIncludeRankingFeatures;
+@property (nonatomic) bool hasListType;
+@property (nonatomic) bool hasNormalizePOIs;
+@property (nonatomic, readonly) bool hasSuggestionEntryMetadata;
+@property (nonatomic, readonly) bool hasSuggestionMetadata;
+@property (nonatomic) bool includeRankingFeatures;
+@property (nonatomic) int listType;
+@property (nonatomic) bool normalizePOIs;
+@property (nonatomic, retain) NSData *suggestionEntryMetadata;
+@property (nonatomic, retain) NSData *suggestionMetadata;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

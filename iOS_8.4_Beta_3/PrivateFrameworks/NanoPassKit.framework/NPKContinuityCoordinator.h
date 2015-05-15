@@ -11,12 +11,12 @@
     NSObject<OS_dispatch_queue> *_queue;
 }
 
-@property(assign,readwrite) NSUserActivity * currentUserActivity;
-@property(assign,retain) NSUserActivity * getPaymentPassesUserActivity;
-@property(assign,retain) NSUserActivity * individualPassUserActivity;
-@property(assign,retain) NSUserActivity * passListUserActivity;
-@property(assign,retain) NSUserActivity * provisionPassUserActivity;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
+@property (nonatomic) NSUserActivity *currentUserActivity;
+@property (nonatomic, retain) NSUserActivity *getPaymentPassesUserActivity;
+@property (nonatomic, retain) NSUserActivity *individualPassUserActivity;
+@property (nonatomic, retain) NSUserActivity *passListUserActivity;
+@property (nonatomic, retain) NSUserActivity *provisionPassUserActivity;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
 
 + (id)sharedContinuityCoordinator;
 

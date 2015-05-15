@@ -4,11 +4,11 @@
 
 @interface UISimpleTextPrintFormatter : UIPrintFormatter
 
-@property(assign,copy) NSAttributedString * attributedText;
-@property(assign,retain) UIColor * color;
-@property(assign,retain) UIFont * font;
-@property(assign,copy) NSString * text;
-@property(assign,readwrite) long long textAlignment;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic, retain) UIColor *color;
+@property (nonatomic, retain) UIFont *font;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long textAlignment;
 
 - (id)initWithAttributedText:(id)arg1;
 - (id)initWithText:(id)arg1;

@@ -17,11 +17,11 @@
     } mStartingEditingFrame;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSString * editingString;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSString *editingString;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)addSelection:(id)arg1 toCGPath:(struct CGPath { }*)arg2;
 - (id)axisLayoutItem;

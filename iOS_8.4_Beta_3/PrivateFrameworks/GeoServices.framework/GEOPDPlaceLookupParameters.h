@@ -14,10 +14,10 @@
     int _resultProviderId;
 }
 
-@property(assign,readwrite) bool hasResultProviderId;
-@property(assign,readonly) unsigned long long* muids;
-@property(assign,readonly) unsigned long long muidsCount;
-@property(assign,readwrite) int resultProviderId;
+@property (nonatomic) bool hasResultProviderId;
+@property (nonatomic, readonly) unsigned long long*muids;
+@property (nonatomic, readonly) unsigned long long muidsCount;
+@property (nonatomic) int resultProviderId;
 
 - (void)addMuid:(unsigned long long)arg1;
 - (void)clearMuids;

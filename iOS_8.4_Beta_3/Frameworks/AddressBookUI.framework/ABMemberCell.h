@@ -8,9 +8,9 @@
     ABStyleProvider *_styleProvider;
 }
 
-@property(assign,readwrite) bool isMeCard;
-@property(assign,retain) ABUIPerson * person;
-@property(assign,readonly) <ABStyleProvider> * styleProvider;
+@property (nonatomic) bool isMeCard;
+@property (nonatomic, retain) ABUIPerson *person;
+@property (nonatomic, readonly) <ABStyleProvider> *styleProvider;
 
 - (id)_attributedNameWithNameComponents:(id)arg1 delimiter:(id)arg2 highlightedIndex:(long long)arg3 romanName:(bool)arg4;
 - (id)_cachedBoldTextAttributes;

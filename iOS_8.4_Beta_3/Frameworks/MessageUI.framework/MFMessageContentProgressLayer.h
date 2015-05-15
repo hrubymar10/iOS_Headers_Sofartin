@@ -13,7 +13,7 @@
     UIActivityIndicatorView *_progressIndicator;
 }
 
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } edgeInsets;
 
 - (void)dealloc;
 - (struct UIEdgeInsets { double x1; double x2; double x3; double x4; })edgeInsets;

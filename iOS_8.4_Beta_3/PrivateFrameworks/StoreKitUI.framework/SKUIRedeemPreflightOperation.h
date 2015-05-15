@@ -11,9 +11,9 @@
     SKUIRedeemConfiguration *_redeemConfiguration;
 }
 
-@property(assign,readwrite) bool loadsRedeemCodeMetadata;
-@property(assign,copy) id outputBlock;
-@property(assign,retain) SKUIRedeemConfiguration * redeemConfiguration;
+@property bool loadsRedeemCodeMetadata;
+@property (copy) id outputBlock;
+@property (retain) SKUIRedeemConfiguration *redeemConfiguration;
 
 - (void).cxx_destruct;
 - (id)_authenticationContext;

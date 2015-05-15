@@ -6,16 +6,16 @@
     MTLToolsPointerArray *_functions;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) <MTLDevice> * device;
-@property(assign,copy) NSString * filePath;
-@property(assign,readonly) unsigned long long functionType;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) long long lineNumber;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) NSArray * vertexAttributes;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) <MTLDevice> *device;
+@property (readonly, copy) NSString *filePath;
+@property (readonly) unsigned long long functionType;
+@property (readonly) unsigned long long hash;
+@property (readonly) long long lineNumber;
+@property (readonly) NSString *name;
+@property (readonly) Class superclass;
+@property (readonly) NSArray *vertexAttributes;
 
 - (void).cxx_destruct;
 - (void)acceptVisitor:(id)arg1;

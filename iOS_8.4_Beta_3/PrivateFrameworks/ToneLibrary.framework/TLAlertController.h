@@ -8,10 +8,10 @@
     TLAlert *_repeatedlyPlayingAlert;
 }
 
-@property(setter=_setAccessQueue:,assign,retain) TLAccessQueue * _accessQueue;
-@property(setter=_setAlertsBySoundIDs:,assign,retain) NSMutableDictionary * _alertsBySoundIDs;
-@property(assign,readonly) bool _hasVibratorCapability;
-@property(setter=_setRepeatedlyPlayingAlert:,assign,retain) TLAlert * _repeatedlyPlayingAlert;
+@property (setter=_setAccessQueue:, retain) TLAccessQueue *_accessQueue;
+@property (setter=_setAlertsBySoundIDs:, nonatomic, retain) NSMutableDictionary *_alertsBySoundIDs;
+@property (nonatomic, readonly) bool _hasVibratorCapability;
+@property (setter=_setRepeatedlyPlayingAlert:, nonatomic, retain) TLAlert *_repeatedlyPlayingAlert;
 
 + (id)sharedAlertController;
 

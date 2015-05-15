@@ -14,15 +14,15 @@
     NSString *_structName;
 }
 
-@property(assign,readwrite) struct objc_ivar { }* ivar;
-@property(assign,retain) NSSet * propertyClasses;
-@property(assign,readwrite) SEL propertyGetter;
-@property(assign,readwrite) int (* propertyGetterIMP;
-@property(assign,readwrite) SEL propertySetter;
-@property(assign,readwrite) int (* propertySetterIMP;
-@property(assign,readwrite) BOOL propertyType;
-@property(getter=isReadOnly,assign,readwrite) bool readOnly;
-@property(assign,copy) NSString * structName;
+@property (nonatomic) struct objc_ivar { }*ivar;
+@property (nonatomic, retain) NSSet *propertyClasses;
+@property (nonatomic) SEL propertyGetter;
+@property (nonatomic) int (*propertyGetterIMP;
+@property (nonatomic) SEL propertySetter;
+@property (nonatomic) int (*propertySetterIMP;
+@property (nonatomic) BOOL propertyType;
+@property (getter=isReadOnly, nonatomic) bool readOnly;
+@property (nonatomic, copy) NSString *structName;
 
 - (void).cxx_destruct;
 - (bool)isReadOnly;

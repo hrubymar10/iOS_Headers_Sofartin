@@ -39,25 +39,25 @@
     MPRemoteCommand *_togglePlayPauseCommand;
 }
 
-@property(assign,readonly) MPFeedbackCommand * bookmarkCommand;
-@property(assign,readonly) MPChangePlaybackRateCommand * changePlaybackRateCommand;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) MPFeedbackCommand * dislikeCommand;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) MPFeedbackCommand * likeCommand;
-@property(assign,readonly) MPRemoteCommand * nextTrackCommand;
-@property(assign,readonly) MPRemoteCommand * pauseCommand;
-@property(assign,readonly) MPRemoteCommand * playCommand;
-@property(assign,readonly) MPRemoteCommand * previousTrackCommand;
-@property(assign,readonly) MPRatingCommand * ratingCommand;
-@property(assign,readonly) MPRemoteCommand * seekBackwardCommand;
-@property(assign,readonly) MPRemoteCommand * seekForwardCommand;
-@property(assign,readonly) MPSkipIntervalCommand * skipBackwardCommand;
-@property(assign,readonly) MPSkipIntervalCommand * skipForwardCommand;
-@property(assign,readonly) MPRemoteCommand * stopCommand;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) MPRemoteCommand * togglePlayPauseCommand;
+@property (nonatomic, readonly) MPFeedbackCommand *bookmarkCommand;
+@property (nonatomic, readonly) MPChangePlaybackRateCommand *changePlaybackRateCommand;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) MPFeedbackCommand *dislikeCommand;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) MPFeedbackCommand *likeCommand;
+@property (nonatomic, readonly) MPRemoteCommand *nextTrackCommand;
+@property (nonatomic, readonly) MPRemoteCommand *pauseCommand;
+@property (nonatomic, readonly) MPRemoteCommand *playCommand;
+@property (nonatomic, readonly) MPRemoteCommand *previousTrackCommand;
+@property (nonatomic, readonly) MPRatingCommand *ratingCommand;
+@property (nonatomic, readonly) MPRemoteCommand *seekBackwardCommand;
+@property (nonatomic, readonly) MPRemoteCommand *seekForwardCommand;
+@property (nonatomic, readonly) MPSkipIntervalCommand *skipBackwardCommand;
+@property (nonatomic, readonly) MPSkipIntervalCommand *skipForwardCommand;
+@property (nonatomic, readonly) MPRemoteCommand *stopCommand;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) MPRemoteCommand *togglePlayPauseCommand;
 
 + (id)sharedCommandCenter;
 

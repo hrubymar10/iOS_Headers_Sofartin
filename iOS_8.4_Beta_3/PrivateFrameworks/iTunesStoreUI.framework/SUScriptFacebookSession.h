@@ -6,11 +6,11 @@
     SUScriptAppleAccount *_account;
 }
 
-@property(assign,readonly) id hasAccounts;
-@property(assign,readonly) unsigned long long likeStatusFlagFriendCount;
-@property(assign,readonly) unsigned long long likeStatusFlagFriends;
-@property(assign,readonly) unsigned long long likeStatusFlagGlobalCount;
-@property(assign,readonly) unsigned long long likeStatusFlagMe;
+@property (readonly) id hasAccounts;
+@property (readonly) unsigned long long likeStatusFlagFriendCount;
+@property (readonly) unsigned long long likeStatusFlagFriends;
+@property (readonly) unsigned long long likeStatusFlagGlobalCount;
+@property (readonly) unsigned long long likeStatusFlagMe;
 
 + (void)initialize;
 + (id)webScriptNameForKeyName:(id)arg1;

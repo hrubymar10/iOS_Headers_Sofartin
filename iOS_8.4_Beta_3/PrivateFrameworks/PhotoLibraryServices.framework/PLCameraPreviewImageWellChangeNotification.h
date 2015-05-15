@@ -7,8 +7,8 @@
     NSString *_uuid;
 }
 
-@property(assign,retain) NSString * assetUUID;
-@property(assign,retain) UIImage * image;
+@property (nonatomic, readonly, retain) NSString *assetUUID;
+@property (nonatomic, readonly, retain) UIImage *image;
 
 + (id)notification;
 

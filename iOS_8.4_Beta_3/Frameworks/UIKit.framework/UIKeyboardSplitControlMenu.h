@@ -11,7 +11,7 @@
     } m_preferredSize;
 }
 
-@property(assign,copy) id finishSplitTransitionBlock;
+@property (nonatomic, copy) id finishSplitTransitionBlock;
 
 + (id)activeInstance;
 + (id)sharedInstance;

@@ -22,13 +22,13 @@
     NSLock *_tileGroupObserversLock;
 }
 
-@property(assign,readonly) GEOActiveTileGroup * activeTileGroup;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasActiveTileGroup;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) <GEOResourceManifestServerProxy> * serverProxy;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) GEOActiveTileGroup *activeTileGroup;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasActiveTileGroup;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) <GEOResourceManifestServerProxy> *serverProxy;
+@property (readonly) Class superclass;
 
 + (void)disableServerConnection;
 + (id)modernManager;

@@ -13,13 +13,13 @@
     NSDate *_startDate;
 }
 
-@property(assign,retain) id context;
-@property(assign,readonly) id daemonInvokeBlock;
-@property(assign,readwrite) bool isExecuting;
-@property(assign,readwrite) bool isFinished;
-@property(assign,readonly) NSString * operationID;
-@property(assign,retain) NSString * sectionID;
-@property(assign,retain) NSDate * startDate;
+@property (nonatomic, retain) id context;
+@property (nonatomic, readonly) id daemonInvokeBlock;
+@property (nonatomic) bool isExecuting;
+@property (nonatomic) bool isFinished;
+@property (nonatomic, readonly) NSString *operationID;
+@property (nonatomic, retain) NSString *sectionID;
+@property (nonatomic, retain) NSDate *startDate;
 
 - (void).cxx_destruct;
 - (id)CKPropertiesDescription;

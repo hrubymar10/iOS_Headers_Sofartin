@@ -6,7 +6,7 @@
     NSArray *_localizations;
 }
 
-@property(assign,copy) NSArray * localizations;
+@property (nonatomic, copy) NSArray *localizations;
 
 - (void).cxx_destruct;
 - (id)localeForLocaleString:(id)arg1;

@@ -4,9 +4,9 @@
 
 @interface NSFileManager : NSObject
 
-@property(assign,copy) NSString * currentDirectoryPath;
-@property(assign,readwrite) <NSFileManagerDelegate> * delegate;
-@property(assign,copy) <NSObject><NSCopying><NSCoding> * ubiquityIdentityToken;
+@property (readonly, copy) NSString *currentDirectoryPath;
+@property <NSFileManagerDelegate> *delegate;
+@property (readonly, copy) <NSObject><NSCopying><NSCoding> *ubiquityIdentityToken;
 
 + (bool)_storeMovePath:(id)arg1 toPath:(id)arg2;
 + (id)_web_createTemporaryFileForQuickLook:(id)arg1;

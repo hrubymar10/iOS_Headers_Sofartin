@@ -22,24 +22,24 @@
     double _timeUntilNextAnnouncement;
 }
 
-@property(assign,readwrite) unsigned long long announcementStage;
-@property(assign,readonly) GEOCompanionRouteDetails * companionRoute;
-@property(assign,readonly) GEOCompanionRouteStatus * companionStatus;
-@property(assign,readonly) NSString * destinationName;
-@property(assign,readwrite) double distanceRemainingOnRoute;
-@property(assign,readwrite) double distanceToManeuverEnd;
-@property(assign,readwrite) double distanceToManeuverStart;
-@property(assign,readwrite) double distanceToRoute;
-@property(assign,readonly) GEONavigationGuidanceState * guidanceState;
-@property(assign,retain) GEOLocation * location;
-@property(assign,readwrite) bool locationUnreliable;
-@property(assign,readwrite) int navigationState;
-@property(assign,readonly) unsigned long long nextAnnouncementStage;
-@property(assign,readwrite) double remainingTime;
-@property(assign,retain) GEOComposedRoute * route;
-@property(assign,retain) GEORouteMatch * routeMatch;
-@property(assign,readonly) GEONavigationRouteSummary * routeSummary;
-@property(assign,readonly) double timeUntilNextAnnouncement;
+@property (nonatomic) unsigned long long announcementStage;
+@property (nonatomic, readonly) GEOCompanionRouteDetails *companionRoute;
+@property (nonatomic, readonly) GEOCompanionRouteStatus *companionStatus;
+@property (nonatomic, readonly) NSString *destinationName;
+@property (nonatomic) double distanceRemainingOnRoute;
+@property (nonatomic) double distanceToManeuverEnd;
+@property (nonatomic) double distanceToManeuverStart;
+@property (nonatomic) double distanceToRoute;
+@property (nonatomic, readonly) GEONavigationGuidanceState *guidanceState;
+@property (nonatomic, retain) GEOLocation *location;
+@property (nonatomic) bool locationUnreliable;
+@property (nonatomic) int navigationState;
+@property (nonatomic, readonly) unsigned long long nextAnnouncementStage;
+@property (nonatomic) double remainingTime;
+@property (nonatomic, retain) GEOComposedRoute *route;
+@property (nonatomic, retain) GEORouteMatch *routeMatch;
+@property (nonatomic, readonly) GEONavigationRouteSummary *routeSummary;
+@property (nonatomic, readonly) double timeUntilNextAnnouncement;
 
 - (unsigned long long)announcementStage;
 - (id)companionRoute;

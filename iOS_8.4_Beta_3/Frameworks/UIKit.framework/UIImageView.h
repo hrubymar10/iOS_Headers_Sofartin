@@ -15,23 +15,23 @@
     bool _templateSettingsAreInvalid;
 }
 
-@property(setter=_setAnimatesContents:,assign,readwrite) bool _animatesContents;
-@property(setter=_setDefaultRenderingMode:,assign,readwrite) long long _defaultRenderingMode;
-@property(assign,readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _edgeInsetsForEffects;
-@property(setter=_setEdgeInsetsForEffectsAreValid:,assign,readwrite) bool _edgeInsetsForEffectsAreValid;
-@property(setter=_setMasksTemplateImages:,assign,readwrite) bool _masksTemplateImages;
-@property(setter=_setTemplateImageRenderingEffects:,assign,readwrite) unsigned long long _templateImageRenderingEffects;
-@property(assign,readonly) bool _templateSettingsAreInvalid;
-@property(assign,readwrite) double animationDuration;
-@property(assign,copy) NSArray * animationImages;
-@property(assign,readwrite) long long animationRepeatCount;
-@property(assign,readwrite) int drawMode;
-@property(getter=isHighlighted,assign,readwrite) bool highlighted;
-@property(assign,copy) NSArray * highlightedAnimationImages;
-@property(assign,retain) UIImage * highlightedImage;
-@property(assign,retain) UIImage * image;
-@property(assign,retain) UIColor * tintColor;
-@property(getter=isUserInteractionEnabled,assign,readwrite) bool userInteractionEnabled;
+@property (setter=_setAnimatesContents:, nonatomic) bool _animatesContents;
+@property (setter=_setDefaultRenderingMode:, nonatomic) long long _defaultRenderingMode;
+@property (nonatomic, readonly) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } _edgeInsetsForEffects;
+@property (setter=_setEdgeInsetsForEffectsAreValid:, nonatomic) bool _edgeInsetsForEffectsAreValid;
+@property (setter=_setMasksTemplateImages:, nonatomic) bool _masksTemplateImages;
+@property (setter=_setTemplateImageRenderingEffects:, nonatomic) unsigned long long _templateImageRenderingEffects;
+@property (nonatomic, readonly) bool _templateSettingsAreInvalid;
+@property (nonatomic) double animationDuration;
+@property (nonatomic, copy) NSArray *animationImages;
+@property (nonatomic) long long animationRepeatCount;
+@property (nonatomic) int drawMode;
+@property (getter=isHighlighted, nonatomic) bool highlighted;
+@property (nonatomic, copy) NSArray *highlightedAnimationImages;
+@property (nonatomic, retain) UIImage *highlightedImage;
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) UIColor *tintColor;
+@property (getter=isUserInteractionEnabled, nonatomic) bool userInteractionEnabled;
 
 + (id)backgroundImageViewForImage:(id)arg1 frame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg2;
 

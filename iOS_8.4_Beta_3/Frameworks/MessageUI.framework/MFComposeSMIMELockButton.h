@@ -15,9 +15,9 @@
     } touchInsets;
 }
 
-@property(assign,readwrite) bool canEncrypt;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchInsets;
-@property(assign,readwrite) bool wantsEncryption;
+@property (nonatomic) bool canEncrypt;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } touchInsets;
+@property (nonatomic) bool wantsEncryption;
 
 - (void)_closeLock;
 - (void)_openLock;

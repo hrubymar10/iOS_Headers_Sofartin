@@ -8,9 +8,9 @@
     NSString *type;
 }
 
-@property(assign,readonly) unsigned long long pointCount;
-@property(assign,readonly) struct CGPoint { double x1; double x2; }* points;
-@property(assign,readonly) NSString * type;
+@property (readonly) unsigned long long pointCount;
+@property (readonly) struct CGPoint { double x1; double x2; }*points;
+@property (readonly) NSString *type;
 
 + (id)landmarkWithType:(id)arg1 pointCount:(unsigned long long)arg2 points:(struct CGPoint { double x1; double x2; }*)arg3;
 

@@ -6,8 +6,8 @@
     AVMetadataMachineReadableCodeObjectInternal *_internal;
 }
 
-@property(assign,readonly) NSArray * corners;
-@property(assign,readonly) NSString * stringValue;
+@property (readonly) NSArray *corners;
+@property (readonly) NSString *stringValue;
 
 + (id)machineReadableCodeObjectWithFigEmbeddedCaptureDeviceMachineReadableCodeDictionary:(id)arg1 input:(id)arg2;
 

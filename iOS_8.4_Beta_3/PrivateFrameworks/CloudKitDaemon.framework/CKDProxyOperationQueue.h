@@ -6,7 +6,7 @@
     CKDClientProxy *_proxy;
 }
 
-@property(assign,readwrite) CKDClientProxy * proxy;
+@property (nonatomic) CKDClientProxy *proxy;
 
 - (void).cxx_destruct;
 - (void)addOperation:(id)arg1;

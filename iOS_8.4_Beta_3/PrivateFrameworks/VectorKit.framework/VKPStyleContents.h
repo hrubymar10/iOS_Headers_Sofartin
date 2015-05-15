@@ -7,9 +7,9 @@
     NSMutableArray *_zooms;
 }
 
-@property(assign,readonly) bool hasProperties;
-@property(assign,retain) VKPStyleProperties * properties;
-@property(assign,retain) NSMutableArray * zooms;
+@property (nonatomic, readonly) bool hasProperties;
+@property (nonatomic, retain) VKPStyleProperties *properties;
+@property (nonatomic, retain) NSMutableArray *zooms;
 
 - (void)addZooms:(id)arg1;
 - (void)clearZooms;

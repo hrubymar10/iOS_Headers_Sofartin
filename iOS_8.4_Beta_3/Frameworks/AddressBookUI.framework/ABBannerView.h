@@ -7,8 +7,8 @@
     NSString *_value;
 }
 
-@property(assign,copy) NSString * title;
-@property(assign,copy) NSString * value;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *value;
 
 + (float)defaultHeight;
 

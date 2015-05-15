@@ -7,10 +7,10 @@
     CKDPRecordIdentifier *_recordIdentifier;
 }
 
-@property(assign,retain) NSString * etag;
-@property(assign,readonly) bool hasEtag;
-@property(assign,readonly) bool hasRecordIdentifier;
-@property(assign,retain) CKDPRecordIdentifier * recordIdentifier;
+@property (nonatomic, retain) NSString *etag;
+@property (nonatomic, readonly) bool hasEtag;
+@property (nonatomic, readonly) bool hasRecordIdentifier;
+@property (nonatomic, retain) CKDPRecordIdentifier *recordIdentifier;
 
 + (id)options;
 

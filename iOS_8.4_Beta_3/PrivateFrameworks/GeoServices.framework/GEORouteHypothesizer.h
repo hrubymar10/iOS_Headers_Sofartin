@@ -26,21 +26,21 @@
     NSData *_usualRouteData;
 }
 
-@property(assign,readonly) NSDate * arrivalDate;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <GEORouteHypothesizerDelegate> * delegate;
-@property(assign,readonly) NSDate * departureDate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) GEOComposedWaypoint * destination;
-@property(assign,readwrite) unsigned long long etaUpdateFrequency;
-@property(assign,retain) GEODirectionsRequestFeedback * feedback;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) GEOComposedRoute * route;
-@property(assign,readonly) GEOComposedWaypoint * source;
-@property(assign,readonly) NSDate * suggestedNextUpdateDate;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool supportsDirections;
-@property(assign,readonly) bool supportsLiveTraffic;
+@property (nonatomic, readonly) NSDate *arrivalDate;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <GEORouteHypothesizerDelegate> *delegate;
+@property (nonatomic, readonly) NSDate *departureDate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) GEOComposedWaypoint *destination;
+@property (nonatomic) unsigned long long etaUpdateFrequency;
+@property (nonatomic, retain) GEODirectionsRequestFeedback *feedback;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) GEOComposedRoute *route;
+@property (nonatomic, readonly) GEOComposedWaypoint *source;
+@property (nonatomic, readonly) NSDate *suggestedNextUpdateDate;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool supportsDirections;
+@property (nonatomic, readonly) bool supportsLiveTraffic;
 
 - (void)_commonInit;
 - (void)_createUpdaterWithStartingLocation:(id)arg1;

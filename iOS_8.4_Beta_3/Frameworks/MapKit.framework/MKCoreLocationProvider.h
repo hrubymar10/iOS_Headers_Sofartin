@@ -15,27 +15,27 @@
     bool _waitingForAuthorization;
 }
 
-@property(assign,readonly) CLLocationManager * _clLocationManager;
-@property(assign,readwrite) long long activityType;
-@property(assign,readonly) bool airplaneModeBlocksLocation;
-@property(assign,copy) id authorizationRequestBlock;
-@property(assign,readonly) int authorizationStatus;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <MKLocationProviderDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) double desiredAccuracy;
-@property(assign,readwrite) double distanceFilter;
-@property(assign,retain) NSBundle * effectiveBundle;
-@property(assign,copy) NSString * effectiveBundleIdentifier;
-@property(assign,readonly) double expectedGpsUpdateInterval;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) int headingOrientation;
-@property(assign,readonly) bool isSimulation;
-@property(assign,readonly) bool isTracePlayer;
-@property(getter=isLocationServicesPreferencesDialogEnabled,assign,readwrite) bool locationServicesPreferencesDialogEnabled;
-@property(assign,readwrite) bool matchInfoEnabled;
-@property(assign,readonly) Class superclass;
-@property(assign,readonly) bool usesCLMapCorrection;
+@property (nonatomic, readonly) CLLocationManager *_clLocationManager;
+@property (nonatomic) long long activityType;
+@property (nonatomic, readonly) bool airplaneModeBlocksLocation;
+@property (nonatomic, copy) id authorizationRequestBlock;
+@property (nonatomic, readonly) int authorizationStatus;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <MKLocationProviderDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) double desiredAccuracy;
+@property (nonatomic) double distanceFilter;
+@property (nonatomic, retain) NSBundle *effectiveBundle;
+@property (nonatomic, copy) NSString *effectiveBundleIdentifier;
+@property (nonatomic, readonly) double expectedGpsUpdateInterval;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) int headingOrientation;
+@property (nonatomic, readonly) bool isSimulation;
+@property (nonatomic, readonly) bool isTracePlayer;
+@property (getter=isLocationServicesPreferencesDialogEnabled, nonatomic) bool locationServicesPreferencesDialogEnabled;
+@property (nonatomic) bool matchInfoEnabled;
+@property (readonly) Class superclass;
+@property (nonatomic, readonly) bool usesCLMapCorrection;
 
 - (void).cxx_destruct;
 - (id)_clLocationManager;

@@ -18,10 +18,10 @@
     double m_pointerOffset;
 }
 
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyRect;
-@property(assign,readwrite) UIKeyboardMenuView * menu;
-@property(assign,readwrite) double pointerOffset;
-@property(assign,readwrite) int roundedCorners;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyRect;
+@property (nonatomic) UIKeyboardMenuView *menu;
+@property (nonatomic) double pointerOffset;
+@property (nonatomic) int roundedCorners;
 
 - (void)drawRect:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;
 - (id)initWithFrame:(struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; })arg1;

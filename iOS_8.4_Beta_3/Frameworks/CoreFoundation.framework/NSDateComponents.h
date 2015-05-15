@@ -4,25 +4,25 @@
 
 @interface NSDateComponents : NSObject <NSCopying, NSSecureCoding>
 
-@property(assign,copy) NSCalendar * calendar;
-@property(assign,copy) NSDate * date;
-@property(assign,readwrite) long long day;
-@property(assign,readwrite) long long era;
-@property(assign,readwrite) long long hour;
-@property(getter=isLeapMonth,assign,readwrite) bool leapMonth;
-@property(assign,readwrite) long long minute;
-@property(assign,readwrite) long long month;
-@property(assign,readwrite) long long nanosecond;
-@property(assign,readwrite) long long quarter;
-@property(assign,readwrite) long long second;
-@property(assign,copy) NSTimeZone * timeZone;
-@property(getter=isValidDate,assign,readonly) bool validDate;
-@property(assign,readwrite) long long weekOfMonth;
-@property(assign,readwrite) long long weekOfYear;
-@property(assign,readwrite) long long weekday;
-@property(assign,readwrite) long long weekdayOrdinal;
-@property(assign,readwrite) long long year;
-@property(assign,readwrite) long long yearForWeekOfYear;
+@property (copy) NSCalendar *calendar;
+@property (readonly, copy) NSDate *date;
+@property long long day;
+@property long long era;
+@property long long hour;
+@property (getter=isLeapMonth) bool leapMonth;
+@property long long minute;
+@property long long month;
+@property long long nanosecond;
+@property long long quarter;
+@property long long second;
+@property (copy) NSTimeZone *timeZone;
+@property (getter=isValidDate, readonly) bool validDate;
+@property long long weekOfMonth;
+@property long long weekOfYear;
+@property long long weekday;
+@property long long weekdayOrdinal;
+@property long long year;
+@property long long yearForWeekOfYear;
 
 + (unsigned long long)_ui_largerComponentsRelativeToComponent:(unsigned long long)arg1;
 + (id)_ui_namesForComponents:(unsigned long long)arg1;

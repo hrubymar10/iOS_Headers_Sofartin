@@ -4,13 +4,13 @@
 
 @interface GCControllerDirectionPad : GCControllerElement
 
-@property(assign,readonly) GCControllerButtonInput * down;
-@property(assign,readonly) GCControllerButtonInput * left;
-@property(assign,readonly) GCControllerButtonInput * right;
-@property(assign,readonly) GCControllerButtonInput * up;
-@property(assign,copy) id valueChangedHandler;
-@property(assign,readonly) GCControllerAxisInput * xAxis;
-@property(assign,readonly) GCControllerAxisInput * yAxis;
+@property (readonly) GCControllerButtonInput *down;
+@property (readonly) GCControllerButtonInput *left;
+@property (readonly) GCControllerButtonInput *right;
+@property (readonly) GCControllerButtonInput *up;
+@property (copy) id valueChangedHandler;
+@property (readonly) GCControllerAxisInput *xAxis;
+@property (readonly) GCControllerAxisInput *yAxis;
 
 - (id)description;
 - (id)down;

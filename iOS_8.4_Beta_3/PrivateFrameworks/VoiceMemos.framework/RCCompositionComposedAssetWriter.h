@@ -11,11 +11,11 @@
     RCWaveformDataSource *_waveformDataSource;
 }
 
-@property(assign,readwrite) bool canGenerateWaveform;
-@property(assign,readwrite) bool canGenerateWaveformByProcessingAVURL;
-@property(assign,readwrite) bool canSaveCompositionMetadata;
-@property(assign,readonly) RCComposition * composition;
-@property(assign,readonly) float progress;
+@property (nonatomic) bool canGenerateWaveform;
+@property (nonatomic) bool canGenerateWaveformByProcessingAVURL;
+@property (nonatomic) bool canSaveCompositionMetadata;
+@property (nonatomic, readonly) RCComposition *composition;
+@property (nonatomic, readonly) float progress;
 
 - (void).cxx_destruct;
 - (void)_writeCompositionWaveformForFinalizedAssetFromFragmentsWithCompletionHandler:(id)arg1;

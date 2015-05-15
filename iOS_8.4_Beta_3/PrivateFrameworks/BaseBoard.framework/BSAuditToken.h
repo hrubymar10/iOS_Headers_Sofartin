@@ -8,11 +8,11 @@
     } _auditToken;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) struct { unsigned int x1[8]; } realToken;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) struct { unsigned int x1[8]; } realToken;
+@property (readonly) Class superclass;
 
 + (id)tokenFromAuditToken:(struct { unsigned int x1[8]; })arg1;
 + (id)tokenFromMachMessage:(struct { unsigned int x1; unsigned int x2; unsigned int x3; unsigned int x4; unsigned int x5; int x6; }*)arg1;

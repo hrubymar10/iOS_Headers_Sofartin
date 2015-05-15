@@ -8,9 +8,9 @@
     TableViewManager *tableManager;
 }
 
-@property(assign,retain) NSString * actionKey;
-@property(assign,retain) NSString * sectionIdentifier;
-@property(assign,readwrite) TableViewManager * tableManager;
+@property (nonatomic, retain) NSString *actionKey;
+@property (nonatomic, retain) NSString *sectionIdentifier;
+@property (nonatomic) TableViewManager *tableManager;
 
 + (id)recommendationActionControllerWithTableManager:(id)arg1 andAssistantUIViewController:(id)arg2;
 

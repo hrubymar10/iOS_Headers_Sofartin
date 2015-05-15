@@ -6,7 +6,7 @@
     NSMutableDictionary *_scalars;
 }
 
-@property(assign,readonly) NSDictionary * scalars;
+@property (nonatomic, readonly) NSDictionary *scalars;
 
 + (void)addValue:(long long)arg1 forScalarKey:(id)arg2;
 + (void)incrementScalarKey:(id)arg1;

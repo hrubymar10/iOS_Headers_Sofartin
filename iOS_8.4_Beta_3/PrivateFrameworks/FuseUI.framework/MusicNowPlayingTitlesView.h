@@ -23,12 +23,12 @@
     bool _needsViewUpdate;
 }
 
-@property(assign,copy) NSArray * attributedTexts;
-@property(assign,readwrite) bool clampLabels;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
-@property(assign,readonly) double firstBaselineOffsetFromTop;
-@property(getter=isMarqueeEnabled,assign,readonly) bool marqueeEnabled;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } marqueeFadeEdgeInsets;
+@property (nonatomic, copy) NSArray *attributedTexts;
+@property (nonatomic) bool clampLabels;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInset;
+@property (nonatomic, readonly) double firstBaselineOffsetFromTop;
+@property (getter=isMarqueeEnabled, nonatomic, readonly) bool marqueeEnabled;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } marqueeFadeEdgeInsets;
 
 - (void).cxx_destruct;
 - (void)_applyMarqueeFade;

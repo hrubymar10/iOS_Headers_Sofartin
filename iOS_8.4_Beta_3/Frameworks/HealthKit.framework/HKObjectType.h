@@ -8,9 +8,9 @@
     NSString *_identifier;
 }
 
-@property(assign,readonly) long long code;
-@property(assign,readonly) Class dataObjectClass;
-@property(assign,readonly) NSString * identifier;
+@property (nonatomic, readonly) long long code;
+@property (nonatomic, readonly) Class dataObjectClass;
+@property (readonly) NSString *identifier;
 
 + (id)_allDataTypeIdentifiers;
 + (bool)_allowAuthorizationForReadingWithTypes:(id)arg1 entitlements:(id)arg2 disallowedTypes:(id)arg3;

@@ -18,18 +18,18 @@
     NSString *_updatedScheduleTag;
 }
 
-@property(assign,retain) NSDictionary * attachments;
-@property(assign,retain) NSDictionary * contentTypes;
-@property(assign,retain) NSMutableDictionary * filenamesToServerLocation;
-@property(assign,readwrite) bool hadPreconditionFailure;
-@property(assign,retain) NSDictionary * postFailureSizes;
-@property(assign,retain) NSString * previousETag;
-@property(assign,retain) NSString * previousScheduleTag;
-@property(assign,retain) NSURL * resourceURL;
-@property(assign,readwrite) int state;
-@property(assign,retain) NSString * updatedETag;
-@property(assign,retain) NSData * updatedResourcePayload;
-@property(assign,retain) NSString * updatedScheduleTag;
+@property (nonatomic, retain) NSDictionary *attachments;
+@property (nonatomic, retain) NSDictionary *contentTypes;
+@property (nonatomic, retain) NSMutableDictionary *filenamesToServerLocation;
+@property (nonatomic) bool hadPreconditionFailure;
+@property (nonatomic, retain) NSDictionary *postFailureSizes;
+@property (nonatomic, retain) NSString *previousETag;
+@property (nonatomic, retain) NSString *previousScheduleTag;
+@property (nonatomic, retain) NSURL *resourceURL;
+@property (nonatomic) int state;
+@property (nonatomic, retain) NSString *updatedETag;
+@property (nonatomic, retain) NSData *updatedResourcePayload;
+@property (nonatomic, retain) NSString *updatedScheduleTag;
 
 - (void)_fetchUpdatedContent;
 - (void)_finishWithError:(id)arg1 state:(int)arg2;

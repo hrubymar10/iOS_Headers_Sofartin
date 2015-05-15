@@ -11,16 +11,16 @@
     bool __writingMovie;
 }
 
-@property(getter=_isCapturing,setter=_setCapturing:,assign,readwrite) bool _capturing;
-@property(setter=_setCurrentState:,assign,retain) CAMTimelapseState * _currentState;
-@property(assign,readonly) CAMTimelapseMovieWriter * _movieWriter;
-@property(assign,readonly) NSMutableArray * _sessionContexts;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * _workQueue;
-@property(assign,readonly) bool _writingMovie;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (getter=_isCapturing, setter=_setCapturing:, nonatomic) bool _capturing;
+@property (setter=_setCurrentState:, nonatomic, retain) CAMTimelapseState *_currentState;
+@property (nonatomic, readonly) CAMTimelapseMovieWriter *_movieWriter;
+@property (nonatomic, readonly) NSMutableArray *_sessionContexts;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *_workQueue;
+@property (nonatomic, readonly) bool _writingMovie;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 + (id)sharedInstance;
 

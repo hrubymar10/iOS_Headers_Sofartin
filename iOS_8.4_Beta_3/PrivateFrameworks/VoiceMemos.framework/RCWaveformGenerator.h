@@ -55,14 +55,14 @@
     NSHashTable *_weakObservers;
 }
 
-@property(assign,readonly) bool canceled;
-@property(assign,readonly) bool finished;
-@property(assign,readonly) bool idle;
-@property(assign,readonly) bool loadable;
-@property(assign,readwrite) long long overviewUnitsPerSecond;
-@property(assign,readwrite) bool paused;
-@property(assign,readonly) double segmentFlushInterval;
-@property(assign,readonly) long long state;
+@property (nonatomic, readonly) bool canceled;
+@property (nonatomic, readonly) bool finished;
+@property (nonatomic, readonly) bool idle;
+@property (nonatomic, readonly) bool loadable;
+@property (nonatomic) long long overviewUnitsPerSecond;
+@property (nonatomic) bool paused;
+@property (nonatomic, readonly) double segmentFlushInterval;
+@property (nonatomic, readonly) long long state;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

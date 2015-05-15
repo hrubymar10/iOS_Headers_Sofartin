@@ -7,8 +7,8 @@
     NSDate *_timeToCheck;
 }
 
-@property(assign,retain) NSMutableDictionary * cache;
-@property(assign,retain) NSDate * timeToCheck;
+@property (nonatomic, retain) NSMutableDictionary *cache;
+@property (nonatomic, retain) NSDate *timeToCheck;
 
 - (void)_checkCache;
 - (bool)_isTimeToCheck;

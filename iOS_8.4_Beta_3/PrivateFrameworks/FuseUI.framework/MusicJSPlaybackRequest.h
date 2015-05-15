@@ -12,13 +12,13 @@
     unsigned long long _upNextAction;
 }
 
-@property(assign,readonly) MPStoreItemMetadataContext * containerItem;
-@property(assign,copy) NSString * featureName;
-@property(assign,copy) NSArray * items;
-@property(assign,copy) NSData * recommendationData;
-@property(assign,readonly) unsigned long long shuffleMode;
-@property(assign,readonly) unsigned long long startIndex;
-@property(assign,readonly) unsigned long long upNextAction;
+@property (nonatomic, readonly) MPStoreItemMetadataContext *containerItem;
+@property (nonatomic, readonly, copy) NSString *featureName;
+@property (nonatomic, readonly, copy) NSArray *items;
+@property (nonatomic, readonly, copy) NSData *recommendationData;
+@property (nonatomic, readonly) unsigned long long shuffleMode;
+@property (nonatomic, readonly) unsigned long long startIndex;
+@property (nonatomic, readonly) unsigned long long upNextAction;
 
 - (void).cxx_destruct;
 - (id)containerItem;

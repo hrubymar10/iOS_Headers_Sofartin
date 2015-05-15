@@ -6,7 +6,7 @@
     bool _shouldExitAfterPurchases;
 }
 
-@property(assign,readwrite) bool shouldExitAfterPurchases;
+@property (nonatomic) bool shouldExitAfterPurchases;
 
 - (id)initWithClientIdentifier:(id)arg1;
 - (id)initWithClientInterface:(id)arg1;

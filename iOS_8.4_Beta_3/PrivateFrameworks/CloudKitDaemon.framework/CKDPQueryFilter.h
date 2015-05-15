@@ -12,14 +12,14 @@
     int _type;
 }
 
-@property(assign,retain) CKDPLocationBound * bounds;
-@property(assign,retain) CKDPRecordFieldIdentifier * fieldName;
-@property(assign,retain) CKDPRecordFieldValue * fieldValue;
-@property(assign,readonly) bool hasBounds;
-@property(assign,readonly) bool hasFieldName;
-@property(assign,readonly) bool hasFieldValue;
-@property(assign,readwrite) bool hasType;
-@property(assign,readwrite) int type;
+@property (nonatomic, retain) CKDPLocationBound *bounds;
+@property (nonatomic, retain) CKDPRecordFieldIdentifier *fieldName;
+@property (nonatomic, retain) CKDPRecordFieldValue *fieldValue;
+@property (nonatomic, readonly) bool hasBounds;
+@property (nonatomic, readonly) bool hasFieldName;
+@property (nonatomic, readonly) bool hasFieldValue;
+@property (nonatomic) bool hasType;
+@property (nonatomic) int type;
 
 - (void).cxx_destruct;
 - (id)bounds;

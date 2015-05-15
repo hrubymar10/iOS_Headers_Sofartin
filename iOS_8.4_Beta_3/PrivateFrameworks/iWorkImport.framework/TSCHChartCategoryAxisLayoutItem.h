@@ -7,8 +7,8 @@
     TSCHChartAxisSeriesLabelsLayoutItem *mSeriesLabels;
 }
 
-@property(assign,readonly) TSCHChartCategoryAxisLabelsLayoutItem * axisCategoryLabelsLayoutItem;
-@property(assign,readonly) TSCHChartAxisSeriesLabelsLayoutItem * axisSeriesLabelsLayoutItem;
+@property (nonatomic, readonly) TSCHChartCategoryAxisLabelsLayoutItem *axisCategoryLabelsLayoutItem;
+@property (nonatomic, readonly) TSCHChartAxisSeriesLabelsLayoutItem *axisSeriesLabelsLayoutItem;
 
 - (id)axisCategoryLabelsLayoutItem;
 - (id)axisSeriesLabelsLayoutItem;

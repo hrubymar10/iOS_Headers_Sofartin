@@ -14,12 +14,12 @@
     bool _drawerWasVisible;
 }
 
-@property(assign,retain) CKBalloonView * balloonView;
-@property(assign,retain) UILabel * drawerLabel;
-@property(assign,copy) NSAttributedString * drawerText;
-@property(assign,readwrite) bool drawerTextChanged;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } drawerTextSize;
-@property(assign,readwrite) bool drawerWasVisible;
+@property (nonatomic, retain) CKBalloonView *balloonView;
+@property (nonatomic, retain) UILabel *drawerLabel;
+@property (nonatomic, copy) NSAttributedString *drawerText;
+@property (nonatomic) bool drawerTextChanged;
+@property (nonatomic) struct CGSize { double x1; double x2; } drawerTextSize;
+@property (nonatomic) bool drawerWasVisible;
 
 - (id)balloonView;
 - (void)configureForChatItem:(id)arg1;

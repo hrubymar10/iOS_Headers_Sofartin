@@ -24,27 +24,27 @@
     NSMutableArray *_unmatchedStrings;
 }
 
-@property(assign,retain) NSMutableArray * additionalPlaces;
-@property(assign,readwrite) int cacheControl;
-@property(assign,readwrite) unsigned long long flyoverTourMuid;
-@property(assign,readwrite) bool hasCacheControl;
-@property(assign,readwrite) bool hasFlyoverTourMuid;
-@property(assign,readonly) bool hasQuad;
-@property(assign,readonly) bool hasRevgeoRequestTemplate;
-@property(assign,readonly) bool hasSuggestedQuery;
-@property(assign,readonly) bool hasTokenEntity;
-@property(assign,readwrite) bool hasTravelDistance;
-@property(assign,readwrite) bool hasTravelTime;
-@property(assign,retain) NSMutableArray * matchedTokens;
-@property(assign,retain) NSMutableArray * namedFeatures;
-@property(assign,retain) GEOPlace * place;
-@property(assign,retain) NSString * quad;
-@property(assign,retain) GEOPlaceSearchRequest * revgeoRequestTemplate;
-@property(assign,retain) NSString * suggestedQuery;
-@property(assign,retain) GEOAddress * tokenEntity;
-@property(assign,readwrite) unsigned int travelDistance;
-@property(assign,readwrite) unsigned int travelTime;
-@property(assign,retain) NSMutableArray * unmatchedStrings;
+@property (nonatomic, retain) NSMutableArray *additionalPlaces;
+@property (nonatomic) int cacheControl;
+@property (nonatomic) unsigned long long flyoverTourMuid;
+@property (nonatomic) bool hasCacheControl;
+@property (nonatomic) bool hasFlyoverTourMuid;
+@property (nonatomic, readonly) bool hasQuad;
+@property (nonatomic, readonly) bool hasRevgeoRequestTemplate;
+@property (nonatomic, readonly) bool hasSuggestedQuery;
+@property (nonatomic, readonly) bool hasTokenEntity;
+@property (nonatomic) bool hasTravelDistance;
+@property (nonatomic) bool hasTravelTime;
+@property (nonatomic, retain) NSMutableArray *matchedTokens;
+@property (nonatomic, retain) NSMutableArray *namedFeatures;
+@property (nonatomic, retain) GEOPlace *place;
+@property (nonatomic, retain) NSString *quad;
+@property (nonatomic, retain) GEOPlaceSearchRequest *revgeoRequestTemplate;
+@property (nonatomic, retain) NSString *suggestedQuery;
+@property (nonatomic, retain) GEOAddress *tokenEntity;
+@property (nonatomic) unsigned int travelDistance;
+@property (nonatomic) unsigned int travelTime;
+@property (nonatomic, retain) NSMutableArray *unmatchedStrings;
 
 - (void)addAdditionalPlace:(id)arg1;
 - (void)addMatchedToken:(id)arg1;

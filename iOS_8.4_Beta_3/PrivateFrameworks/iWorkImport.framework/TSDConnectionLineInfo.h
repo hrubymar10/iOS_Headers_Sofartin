@@ -11,10 +11,10 @@
     } mInvalidFlags;
 }
 
-@property(assign,readwrite) TSDDrawableInfo * connectedFrom;
-@property(assign,retain) NSUUID * connectedFromID;
-@property(assign,readwrite) TSDDrawableInfo * connectedTo;
-@property(assign,retain) NSUUID * connectedToID;
+@property (nonatomic) TSDDrawableInfo *connectedFrom;
+@property (nonatomic, retain) NSUUID *connectedFromID;
+@property (nonatomic) TSDDrawableInfo *connectedTo;
+@property (nonatomic, retain) NSUUID *connectedToID;
 
 - (void)acceptVisitor:(id)arg1;
 - (bool)canAnchor;

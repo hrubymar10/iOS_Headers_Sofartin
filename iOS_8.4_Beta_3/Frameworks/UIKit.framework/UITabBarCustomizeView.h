@@ -32,7 +32,7 @@
     UILabel *_titleLabel;
 }
 
-@property(assign,retain) NSArray * availableItems;
+@property (nonatomic, retain) NSArray *availableItems;
 
 - (long long)_barMetrics;
 - (void)adjustDragImageWithTouches:(id)arg1 withEvent:(id)arg2;

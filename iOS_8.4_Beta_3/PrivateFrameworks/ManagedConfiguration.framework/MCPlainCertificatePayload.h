@@ -9,10 +9,10 @@
     NSString *_password;
 }
 
-@property(assign,retain) NSData * certificateData;
-@property(assign,retain) NSString * certificateFileName;
-@property(assign,readonly) int dataEncoding;
-@property(assign,retain) NSString * password;
+@property (nonatomic, readonly, retain) NSData *certificateData;
+@property (nonatomic, readonly, retain) NSString *certificateFileName;
+@property (nonatomic, readonly) int dataEncoding;
+@property (nonatomic, readonly, retain) NSString *password;
 
 + (id)localizedPluralForm;
 + (id)localizedSingularForm;

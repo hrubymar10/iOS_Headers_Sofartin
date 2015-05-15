@@ -8,9 +8,9 @@
     id _value;
 }
 
-@property(assign,readwrite) GKListNode * nextNode;
-@property(assign,readwrite) GKListNode * prevNode;
-@property(assign,retain) id value;
+@property (nonatomic) GKListNode *nextNode;
+@property (nonatomic) GKListNode *prevNode;
+@property (nonatomic, retain) id value;
 
 - (void)dealloc;
 - (id)description;

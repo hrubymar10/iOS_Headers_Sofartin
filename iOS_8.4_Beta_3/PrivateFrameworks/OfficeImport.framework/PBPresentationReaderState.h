@@ -30,9 +30,9 @@
     PDSlideBase *mTgtSlide;
 }
 
-@property(assign,retain) <TCCancelDelegate> * cancelDelegate;
-@property(assign,readwrite) bool hasSlideNumberPlaceholder;
-@property(assign,readwrite) ESDContainer * sourceSlideListHolder;
+@property (nonatomic, retain) <TCCancelDelegate> *cancelDelegate;
+@property bool hasSlideNumberPlaceholder;
+@property ESDContainer *sourceSlideListHolder;
 
 - (void)addFontEntity:(id)arg1 charSet:(int)arg2 type:(int)arg3 family:(int)arg4;
 - (void)addSlideIndex:(unsigned long long)arg1;

@@ -7,8 +7,8 @@
     NSString *_reviewMetadataURLString;
 }
 
-@property(assign,readonly) long long itemIdentifier;
-@property(assign,readonly) NSString * reviewMetadataURLString;
+@property (nonatomic, readonly) long long itemIdentifier;
+@property (nonatomic, readonly) NSString *reviewMetadataURLString;
 
 - (void).cxx_destruct;
 - (id)applyUpdatesWithElement:(id)arg1;

@@ -7,8 +7,8 @@
     MusicLibraryViewConfiguration *_regularWidthConfiguration;
 }
 
-@property(assign,readonly) MusicLibraryViewConfiguration * compactWidthConfiguration;
-@property(assign,readonly) MusicLibraryViewConfiguration * regularWidthConfiguration;
+@property (nonatomic, readonly) MusicLibraryViewConfiguration *compactWidthConfiguration;
+@property (nonatomic, readonly) MusicLibraryViewConfiguration *regularWidthConfiguration;
 
 - (void).cxx_destruct;
 - (id)compactWidthConfiguration;

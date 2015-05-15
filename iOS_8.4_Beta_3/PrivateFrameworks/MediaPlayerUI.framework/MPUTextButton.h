@@ -6,7 +6,7 @@
     long long _titleAlignment;
 }
 
-@property(assign,readwrite) long long titleAlignment;
+@property (nonatomic) long long titleAlignment;
 
 - (void)_commonTextButtonInit;
 - (id)initWithCoder:(id)arg1;

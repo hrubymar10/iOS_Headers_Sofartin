@@ -4,7 +4,7 @@
 
 @interface SKUILoadSortDataOperation : SKUILoadResourceOperation
 
-@property(assign,copy) SKUISortDataRequest * resourceRequest;
+@property (readonly, copy) SKUISortDataRequest *resourceRequest;
 
 - (id)initWithResourceRequest:(id)arg1;
 - (void)main;

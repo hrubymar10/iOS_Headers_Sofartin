@@ -7,8 +7,8 @@
     bool _touchDownSticky;
 }
 
-@property(assign,readwrite) SEL touchDownAction;
-@property(getter=isTouchDownSticky,assign,readwrite) bool touchDownSticky;
+@property (nonatomic) SEL touchDownAction;
+@property (getter=isTouchDownSticky, nonatomic) bool touchDownSticky;
 
 - (id)initWithImage:(id)arg1 title:(id)arg2 target:(id)arg3 action:(SEL)arg4 touchDownAction:(SEL)arg5 tapAction:(SEL)arg6 touchDownSticky:(bool)arg7;
 - (bool)isTouchDownSticky;

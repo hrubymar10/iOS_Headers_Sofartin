@@ -13,11 +13,11 @@
     UIView *_view;
 }
 
-@property(assign,retain) UIColor * foregroundColor;
-@property(assign,readwrite) long long keyboardAppearance;
-@property(assign,readwrite) RUIObjectModel * objectModel;
-@property(assign,readwrite) RUIPage * page;
-@property(assign,readonly) RUIPasscodeField * passcodeField;
+@property (nonatomic, retain) UIColor *foregroundColor;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) RUIObjectModel *objectModel;
+@property (nonatomic) RUIPage *page;
+@property (nonatomic, readonly) RUIPasscodeField *passcodeField;
 
 - (void).cxx_destruct;
 - (void)footerView:(id)arg1 activatedLinkWithURL:(id)arg2;

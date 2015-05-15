@@ -7,7 +7,7 @@
     NSArray *_suggestedHandles;
 }
 
-@property(assign,readwrite) <SKUISuggestedHandlesSettingsHeaderFooterDescriptionDelegate> * delegate;
+@property (nonatomic) <SKUISuggestedHandlesSettingsHeaderFooterDescriptionDelegate> *delegate;
 
 - (void).cxx_destruct;
 - (Class)_viewClassForSettingsHeaderFooterDescription:(id)arg1;

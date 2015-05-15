@@ -8,9 +8,9 @@
     id _shouldSkipFileBlock;
 }
 
-@property(assign,retain) NSArray * paths;
-@property(assign,copy) id shouldRemoveFileBlock;
-@property(assign,copy) id shouldSkipFileBlock;
+@property (nonatomic, retain) NSArray *paths;
+@property (nonatomic, copy) id shouldRemoveFileBlock;
+@property (nonatomic, copy) id shouldSkipFileBlock;
 
 + (void)purgeDirectoryAtPath:(id)arg1;
 

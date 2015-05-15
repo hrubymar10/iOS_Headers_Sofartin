@@ -11,12 +11,12 @@
     bool _sendOrder;
 }
 
-@property(assign,readwrite) int absoluteOrder;
-@property(assign,readwrite) <CoreDAVPropPatchTaskDelegate> * delegate;
-@property(assign,retain) NSURL * priorOrderedURL;
-@property(assign,retain) NSSet * propPatchRemoveElements;
-@property(assign,retain) NSSet * propPatchSetElements;
-@property(assign,retain) CoreDAVResponseItem * responseItem;
+@property (nonatomic) int absoluteOrder;
+@property (nonatomic) <CoreDAVPropPatchTaskDelegate> *delegate;
+@property (nonatomic, retain) NSURL *priorOrderedURL;
+@property (nonatomic, retain) NSSet *propPatchRemoveElements;
+@property (nonatomic, retain) NSSet *propPatchSetElements;
+@property (nonatomic, retain) CoreDAVResponseItem *responseItem;
 
 - (int)absoluteOrder;
 - (id)additionalHeaderValues;

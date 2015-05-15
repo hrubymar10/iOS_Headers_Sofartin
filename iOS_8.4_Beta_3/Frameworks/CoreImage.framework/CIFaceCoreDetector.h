@@ -8,8 +8,8 @@
     NSMutableDictionary *featureOptions;
 }
 
-@property(assign,retain) CIContext * context;
-@property(assign,readwrite) FCRFaceDetector * faceCoreDetector;
+@property (nonatomic, retain) CIContext *context;
+@property FCRFaceDetector *faceCoreDetector;
 
 - (id)adjustedImageFromImage:(id)arg1 orientation:(int)arg2 inverseCTM:(struct CGAffineTransform { double x1; double x2; double x3; double x4; double x5; double x6; }*)arg3;
 - (id)context;

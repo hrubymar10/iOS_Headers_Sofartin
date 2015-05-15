@@ -7,8 +7,8 @@
     bool _visible;
 }
 
-@property(assign,retain) NSString * name;
-@property(assign,readwrite) bool visible;
+@property (retain) NSString *name;
+@property bool visible;
 
 - (id)_colorFromShapeEffectValue:(union { double x1; unsigned long long x2; struct _rgbcolor { unsigned char x_3_1_1; unsigned char x_3_1_2; unsigned char x_3_1_3; } x3; short x4; unsigned int x5; })arg1;
 - (void)dealloc;

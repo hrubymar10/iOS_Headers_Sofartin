@@ -4,12 +4,12 @@
 
 @interface SAMovieImage : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) SAMovieResolution * resolution;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSURL * uri;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) SAMovieResolution *resolution;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSURL *uri;
 
 + (id)image;
 + (id)imageWithDictionary:(id)arg1 context:(id)arg2;

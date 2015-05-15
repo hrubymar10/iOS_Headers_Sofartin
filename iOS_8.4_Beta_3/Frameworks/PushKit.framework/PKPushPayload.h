@@ -7,8 +7,8 @@
     NSString *_type;
 }
 
-@property(assign,copy) NSDictionary * dictionaryPayload;
-@property(assign,copy) NSString * type;
+@property (copy) NSDictionary *dictionaryPayload;
+@property (copy) NSString *type;
 
 - (void).cxx_destruct;
 - (id)dictionaryPayload;

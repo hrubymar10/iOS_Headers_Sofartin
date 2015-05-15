@@ -11,12 +11,12 @@
     NSString *_udid;
 }
 
-@property(assign,readonly) NSString * buildVersion;
-@property(assign,readonly) NSString * deviceName;
-@property(assign,retain) GKEventEmitter<GKLockStatusObserver> * emitter;
-@property(assign,readonly) NSString * gameKitVersion;
-@property(assign,readonly) NSString * osVersion;
-@property(assign,readonly) NSString * udid;
+@property (nonatomic, readonly) NSString *buildVersion;
+@property (nonatomic, readonly) NSString *deviceName;
+@property (nonatomic, retain) GKEventEmitter<GKLockStatusObserver> *emitter;
+@property (nonatomic, readonly) NSString *gameKitVersion;
+@property (nonatomic, readonly) NSString *osVersion;
+@property (nonatomic, readonly) NSString *udid;
 
 + (id)currentDevice;
 

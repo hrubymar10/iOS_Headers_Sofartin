@@ -6,12 +6,12 @@
     AVAssetResourceLoaderInternal *_resourceLoader;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) <AVAssetResourceLoaderDelegate> * delegate;
-@property(assign,readonly) NSObject<OS_dispatch_queue> * delegateQueue;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) <AVAssetResourceLoaderDelegate> *delegate;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *delegateQueue;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (void)_cancelRequestWithKey:(id)arg1 requestDictionary:(id)arg2 fallbackHandler:(id)arg3;
 - (void)_issueLoadingRequestWithKey:(id)arg1 requestDictionary:(id)arg2 fallbackHandler:(id)arg3;

@@ -58,21 +58,21 @@
     NSArray *_orderedSourceIds;
 }
 
-@property(assign,readwrite) unsigned long long bucketIndex;
-@property(assign,retain) NSArray * bucketPeriods;
-@property(assign,readwrite) unsigned long long currPeriod;
-@property(assign,readwrite) long long currentAligned;
-@property(assign,retain) <HDHealthDaemon> * daemon;
-@property(assign,readwrite) unsigned long long dataCount;
-@property(assign,readwrite) bool detailBySource;
-@property(assign,retain) NSMutableArray * futureBuckets;
-@property(assign,retain) NSMutableArray * futureCounts;
-@property(assign,retain) NSMutableArray * futureIntervals;
-@property(assign,readwrite) bool lastBucket;
-@property(assign,readonly) HDLastIntervalInfo * lastIntervalInfo;
-@property(assign,readwrite) unsigned long long mergeStrategy;
-@property(assign,retain) NSArray * orderedSourceIds;
-@property(assign,readonly) NSDictionary * sumsBySource;
+@property (nonatomic) unsigned long long bucketIndex;
+@property (nonatomic, retain) NSArray *bucketPeriods;
+@property (nonatomic) unsigned long long currPeriod;
+@property (nonatomic) long long currentAligned;
+@property (nonatomic, retain) <HDHealthDaemon> *daemon;
+@property (nonatomic) unsigned long long dataCount;
+@property (nonatomic) bool detailBySource;
+@property (nonatomic, retain) NSMutableArray *futureBuckets;
+@property (nonatomic, retain) NSMutableArray *futureCounts;
+@property (nonatomic, retain) NSMutableArray *futureIntervals;
+@property (nonatomic) bool lastBucket;
+@property (nonatomic, readonly) HDLastIntervalInfo *lastIntervalInfo;
+@property (nonatomic) unsigned long long mergeStrategy;
+@property (nonatomic, retain) NSArray *orderedSourceIds;
+@property (nonatomic, readonly) NSDictionary *sumsBySource;
 
 - (id).cxx_construct;
 - (void).cxx_destruct;

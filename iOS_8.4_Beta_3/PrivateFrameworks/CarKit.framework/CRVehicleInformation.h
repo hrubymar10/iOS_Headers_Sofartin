@@ -6,9 +6,9 @@
     unsigned long long _vehicleAmbientBrightness;
 }
 
-@property(assign,readonly) unsigned long long driverPosition;
-@property(assign,readonly) unsigned long long interactionRestrictions;
-@property(assign,readonly) unsigned long long vehicleAmbientBrightness;
+@property (nonatomic, readonly) unsigned long long driverPosition;
+@property (nonatomic, readonly) unsigned long long interactionRestrictions;
+@property (nonatomic, readonly) unsigned long long vehicleAmbientBrightness;
 
 - (unsigned long long)ambientBrightness;
 - (void)dealloc;

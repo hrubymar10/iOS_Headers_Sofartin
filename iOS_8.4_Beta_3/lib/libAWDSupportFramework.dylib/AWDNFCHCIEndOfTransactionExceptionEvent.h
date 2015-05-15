@@ -10,10 +10,10 @@
     NSData *_uuidReference;
 }
 
-@property(assign,readwrite) bool hasTimestamp;
-@property(assign,readonly) bool hasUuidReference;
-@property(assign,readwrite) unsigned long long timestamp;
-@property(assign,retain) NSData * uuidReference;
+@property (nonatomic) bool hasTimestamp;
+@property (nonatomic, readonly) bool hasUuidReference;
+@property (nonatomic) unsigned long long timestamp;
+@property (nonatomic, retain) NSData *uuidReference;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

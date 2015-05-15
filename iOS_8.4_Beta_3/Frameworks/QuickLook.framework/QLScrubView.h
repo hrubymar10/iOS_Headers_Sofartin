@@ -20,13 +20,13 @@
     NSMutableArray *_visibleThumbIndexes;
 }
 
-@property(assign,readwrite) <QLScrubViewDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) id delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) bool runOnMainThread;
-@property(assign,readonly) Class superclass;
+@property <QLScrubViewDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property id delegate;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property bool runOnMainThread;
+@property (readonly) Class superclass;
 
 + (double)defaultWidth;
 

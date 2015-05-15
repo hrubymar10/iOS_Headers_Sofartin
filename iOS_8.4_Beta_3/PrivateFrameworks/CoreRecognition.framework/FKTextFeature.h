@@ -19,11 +19,11 @@
     long long _type;
 }
 
-@property(assign,readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingBox;
-@property(assign,retain) NSArray * corners;
-@property(assign,readonly) long long featureID;
-@property(assign,retain) NSArray * subFeatures;
-@property(assign,readonly) long long type;
+@property (nonatomic, readonly) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } boundingBox;
+@property (nonatomic, readonly, retain) NSArray *corners;
+@property (nonatomic, readonly) long long featureID;
+@property (nonatomic, retain) NSArray *subFeatures;
+@property (nonatomic, readonly) long long type;
 
 + (id)featureFromConcomp:(struct concomp { int x1; int x2; int x3; int x4; int x5; int x6; unsigned short x7; unsigned short x8; unsigned short x9; unsigned short x10; unsigned short x11; unsigned char x12; unsigned char x13; unsigned char x14; struct concomp {} *x15[2]; BOOL x16[6]; }*)arg1 session:(struct { int x1; int x2; int x3; int x4; char *x5; char *x6; int x7; int x8; int x9; struct lineseg {} *x10; int x11; int x12; int x13; struct concomp {} *x14; int x15; int x16; int x17; int x18; struct sequence {} *x19; int x20; int x21; }*)arg2 roiOffset:(struct CGPoint { double x1; double x2; })arg3 dimensions:(struct CGSize { double x1; double x2; })arg4 type:(long long)arg5 createDiacriticFeatures:(bool)arg6 featureID:(long long*)arg7;
 + (id)featureFromSequenceIndex:(int)arg1 session:(struct { int x1; int x2; int x3; int x4; char *x5; char *x6; int x7; int x8; int x9; struct lineseg {} *x10; int x11; int x12; int x13; struct concomp {} *x14; int x15; int x16; int x17; int x18; struct sequence {} *x19; int x20; int x21; }*)arg2 roiOffset:(struct CGPoint { double x1; double x2; })arg3 dimensions:(struct CGSize { double x1; double x2; })arg4 createConcompFeatures:(bool)arg5 createDiacriticFeatures:(bool)arg6 featureID:(long long*)arg7;

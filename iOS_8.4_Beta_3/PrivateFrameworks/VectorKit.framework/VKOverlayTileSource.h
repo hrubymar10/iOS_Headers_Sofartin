@@ -7,7 +7,7 @@
     VKTileSource *_tileSourceToMatch;
 }
 
-@property(assign,readonly) NSArray * overlays;
+@property (nonatomic, readonly) NSArray *overlays;
 
 - (void)_overlayBoundingMapRegionChanged:(id)arg1;
 - (void)addOverlay:(id)arg1;

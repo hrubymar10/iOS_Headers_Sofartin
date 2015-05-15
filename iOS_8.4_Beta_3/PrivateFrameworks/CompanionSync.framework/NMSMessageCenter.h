@@ -28,22 +28,22 @@
     NSObject<OS_dispatch_source> *_windowTimeout;
 }
 
-@property(assign,readonly) NSObject<OS_dispatch_queue> * actionQ;
-@property(getter=_currentBytesInFlight,assign,readonly) unsigned long long currentBytesInFlight;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readwrite) <NMSMessageCenterDelegate> * delegate;
-@property(assign,readwrite) bool delegateRequiresACKs;
-@property(assign,copy) NSString * description;
-@property(assign,readwrite) bool enableTransmissionWindow;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) IDSService * idsService;
-@property(assign,readwrite) unsigned long long maxBytesInFlight;
-@property(assign,readwrite) unsigned long long maxMessagesInFlight;
-@property(assign,readwrite) unsigned long long minMessagesInFlight;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queue;
-@property(assign,retain) IDSService * service;
-@property(assign,readonly) Class superclass;
-@property(assign,readwrite) double windowResponseTimeout;
+@property (nonatomic, readonly) NSObject<OS_dispatch_queue> *actionQ;
+@property (getter=_currentBytesInFlight, nonatomic, readonly) unsigned long long currentBytesInFlight;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic) <NMSMessageCenterDelegate> *delegate;
+@property (nonatomic) bool delegateRequiresACKs;
+@property (readonly, copy) NSString *description;
+@property (nonatomic) bool enableTransmissionWindow;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, readonly) IDSService *idsService;
+@property (nonatomic) unsigned long long maxBytesInFlight;
+@property (nonatomic) unsigned long long maxMessagesInFlight;
+@property (nonatomic) unsigned long long minMessagesInFlight;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queue;
+@property (nonatomic, retain) IDSService *service;
+@property (readonly) Class superclass;
+@property (nonatomic) double windowResponseTimeout;
 
 + (bool)messageWindowCountEnabled;
 + (void)setMessageWindowCountEnabled:(bool)arg1;

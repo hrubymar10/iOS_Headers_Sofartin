@@ -17,13 +17,13 @@
     } fActivity;
 }
 
-@property(assign,readonly) int confidence;
-@property(assign,readonly) bool hasExitedVehicle;
-@property(assign,readonly) bool isDriving;
-@property(assign,readonly) bool isMoving;
-@property(assign,readonly) bool isRunning;
-@property(assign,readonly) bool isWalking;
-@property(assign,readonly) bool maybeExitingVehicle;
+@property (nonatomic, readonly) int confidence;
+@property (nonatomic, readonly) bool hasExitedVehicle;
+@property (nonatomic, readonly) bool isDriving;
+@property (nonatomic, readonly) bool isMoving;
+@property (nonatomic, readonly) bool isRunning;
+@property (nonatomic, readonly) bool isWalking;
+@property (nonatomic, readonly) bool maybeExitingVehicle;
 
 + (bool)supportsSecureCoding;
 

@@ -8,8 +8,8 @@
     bool hideSystemActivities;
 }
 
-@property(assign,readwrite) UIDocumentInteractionController * documentInteractionController;
-@property(assign,readwrite) bool hideSystemActivities;
+@property (nonatomic) UIDocumentInteractionController *documentInteractionController;
+@property (nonatomic) bool hideSystemActivities;
 
 - (void)_performActivity:(id)arg1;
 - (void)_prepareActivity:(id)arg1;

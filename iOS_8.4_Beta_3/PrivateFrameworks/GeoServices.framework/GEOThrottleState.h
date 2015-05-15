@@ -7,8 +7,8 @@
     unsigned long long _requestCount;
 }
 
-@property(assign,readwrite) double lastResetTime;
-@property(assign,readwrite) unsigned long long requestCount;
+@property (nonatomic) double lastResetTime;
+@property (nonatomic) unsigned long long requestCount;
 
 - (double)lastResetTime;
 - (unsigned long long)requestCount;

@@ -10,8 +10,8 @@
     UIAlertView *_useCellularAlertView;
 }
 
-@property(assign,readwrite) bool cellularNetworkingAllowed;
-@property(assign,readwrite) long long style;
+@property (nonatomic) bool cellularNetworkingAllowed;
+@property (nonatomic) long long style;
 
 - (void).cxx_destruct;
 - (void)_useCellularAction:(id)arg1;

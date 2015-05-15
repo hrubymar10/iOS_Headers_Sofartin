@@ -6,7 +6,7 @@
     NSString *_label;
 }
 
-@property(assign,readonly) NSString * label;
+@property (nonatomic, readonly) NSString *label;
 
 - (void).cxx_destruct;
 - (id)initWithDOMElement:(id)arg1 parent:(id)arg2 elementFactory:(id)arg3;

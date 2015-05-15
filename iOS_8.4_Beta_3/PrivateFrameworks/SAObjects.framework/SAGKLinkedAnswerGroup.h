@@ -4,13 +4,13 @@
 
 @interface SAGKLinkedAnswerGroup : AceObject <SAAceSerializable>
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,copy) NSArray * linkedAnswers;
-@property(assign,copy) NSNumber * numberOfResults;
-@property(assign,readonly) Class superclass;
-@property(assign,copy) NSString * title;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, copy) NSArray *linkedAnswers;
+@property (nonatomic, copy) NSNumber *numberOfResults;
+@property (readonly) Class superclass;
+@property (nonatomic, copy) NSString *title;
 
 + (id)linkedAnswerGroup;
 + (id)linkedAnswerGroupWithDictionary:(id)arg1 context:(id)arg2;

@@ -4,7 +4,7 @@
 
 @interface SAGKDisambiguationPod : SAGKPodView
 
-@property(assign,copy) NSString * text;
+@property (nonatomic, copy) NSString *text;
 
 + (id)disambiguationPod;
 + (id)disambiguationPodWithDictionary:(id)arg1 context:(id)arg2;

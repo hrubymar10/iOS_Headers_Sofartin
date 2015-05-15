@@ -10,9 +10,9 @@
     UIBarButtonItem *_imagePickerMultipleSelectionDoneButton;
 }
 
-@property(setter=_setAlbumFilter:,assign,readwrite) int _albumFilter;
-@property(assign,readonly) PUUIImagePickerControllerHelper * _imagePickerControllerHelper;
-@property(setter=_setImagePickerMediaTypes:,assign,copy) NSArray * _imagePickerMediaTypes;
+@property (setter=_setAlbumFilter:, nonatomic) int _albumFilter;
+@property (readonly) PUUIImagePickerControllerHelper *_imagePickerControllerHelper;
+@property (setter=_setImagePickerMediaTypes:, nonatomic, copy) NSArray *_imagePickerMediaTypes;
 
 - (void).cxx_destruct;
 - (int)_albumFilter;

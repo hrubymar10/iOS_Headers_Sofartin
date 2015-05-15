@@ -8,9 +8,9 @@
     NSMutableArray *_milestones;
 }
 
-@property(assign,retain) NSMutableArray * macroActivites;
-@property(assign,retain) NSMutableArray * measures;
-@property(assign,retain) NSMutableArray * milestones;
+@property (nonatomic, retain) NSMutableArray *macroActivites;
+@property (nonatomic, retain) NSMutableArray *measures;
+@property (nonatomic, retain) NSMutableArray *milestones;
 
 - (void).cxx_destruct;
 - (void)addMacroActivites:(id)arg1;

@@ -9,15 +9,15 @@
     NSURL *_statusFileURL;
 }
 
-@property(assign,readonly) NSDictionary * cloudAssetCountPerType;
-@property(assign,readonly) NSDate * cloudAssetCountPerTypeLastCheckDate;
-@property(assign,readwrite) <CPLStatusDelegate> * delegate;
-@property(assign,readwrite) NSDate * exitDeleteTime;
-@property(assign,readwrite) bool hasChangesToProcess;
-@property(assign,readwrite) bool iCloudLibraryExists;
-@property(assign,readwrite) bool iCloudLibraryHasBeenWiped;
-@property(assign,readwrite) bool isExceedingQuota;
-@property(assign,readwrite) NSDate * lastSuccessfulSyncDate;
+@property (nonatomic, readonly) NSDictionary *cloudAssetCountPerType;
+@property (nonatomic, readonly) NSDate *cloudAssetCountPerTypeLastCheckDate;
+@property (nonatomic) <CPLStatusDelegate> *delegate;
+@property (nonatomic) NSDate *exitDeleteTime;
+@property (nonatomic) bool hasChangesToProcess;
+@property (nonatomic) bool iCloudLibraryExists;
+@property (nonatomic) bool iCloudLibraryHasBeenWiped;
+@property (nonatomic) bool isExceedingQuota;
+@property (nonatomic) NSDate *lastSuccessfulSyncDate;
 
 + (id)statusForSharedLibrary;
 

@@ -12,9 +12,9 @@
     int _travelMethod;
 }
 
-@property(assign,readonly) NSDate * date;
-@property(assign,readonly) CLLocation * location;
-@property(assign,readonly) int travelMethod;
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) CLLocation *location;
+@property (nonatomic, readonly) int travelMethod;
 
 + (bool)_clLocation:(id)arg1 isEqualToCLLocation:(id)arg2;
 

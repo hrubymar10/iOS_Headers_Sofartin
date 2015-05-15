@@ -16,11 +16,11 @@
     bool _visible;
 }
 
-@property(getter=isContentLoaded,assign,readonly) bool contentLoaded;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } contentSize;
-@property(assign,readwrite) double paddingRight;
-@property(assign,readwrite) double paddingTop;
-@property(assign,copy) NSString * userInfoString;
+@property (getter=isContentLoaded, nonatomic, readonly) bool contentLoaded;
+@property (nonatomic) struct CGSize { double x1; double x2; } contentSize;
+@property (nonatomic) double paddingRight;
+@property (nonatomic) double paddingTop;
+@property (nonatomic, copy) NSString *userInfoString;
 
 + (void)_setContentInsetsForScrollView:(id)arg1 viewController:(id)arg2;
 + (double)defaultAnimationDuration;

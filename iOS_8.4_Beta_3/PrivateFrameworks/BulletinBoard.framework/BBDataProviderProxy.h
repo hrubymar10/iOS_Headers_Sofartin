@@ -13,11 +13,11 @@
     <BBRemoteDataProviderServerProxy> *_serverProxy;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) BBDataProviderIdentity * identity;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (retain) BBDataProviderIdentity *identity;
+@property (readonly) Class superclass;
 
 - (void)_makeClientRequest:(id)arg1;
 - (void)_makeServerRequest:(id)arg1;

@@ -17,14 +17,14 @@
     SUToolbarAppearance *_toolbarAppearance;
 }
 
-@property(assign,copy) SUControlAppearance * backButtonAppearance;
-@property(assign,copy) SUControlAppearance * confirmationButtonAppearance;
-@property(assign,copy) SUControlAppearance * destructiveButtonAppearance;
-@property(assign,copy) SUControlAppearance * exitStoreButtonAppearance;
-@property(assign,copy) SUControlAppearance * forwardButtonAppearance;
-@property(assign,copy) NSDictionary * navigationBarTitleTextAttributes;
-@property(assign,copy) SUTabBarAppearance * tabBarAppearance;
-@property(assign,copy) SUToolbarAppearance * toolbarAppearance;
+@property (nonatomic, copy) SUControlAppearance *backButtonAppearance;
+@property (nonatomic, copy) SUControlAppearance *confirmationButtonAppearance;
+@property (nonatomic, copy) SUControlAppearance *destructiveButtonAppearance;
+@property (nonatomic, copy) SUControlAppearance *exitStoreButtonAppearance;
+@property (nonatomic, copy) SUControlAppearance *forwardButtonAppearance;
+@property (nonatomic, copy) NSDictionary *navigationBarTitleTextAttributes;
+@property (nonatomic, copy) SUTabBarAppearance *tabBarAppearance;
+@property (nonatomic, copy) SUToolbarAppearance *toolbarAppearance;
 
 + (id)_defaultBackButtonAppearance;
 + (id)_defaultButtonAppearance;

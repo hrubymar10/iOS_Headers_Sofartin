@@ -16,17 +16,17 @@
     double _targetOffset;
 }
 
-@property(setter=_setAccumulatedOffset:,assign,readwrite) double _accumulatedOffset;
-@property(setter=_setHasEnteredAttractionThreshold:,assign,readwrite) bool _hasEnteredAttractionThreshold;
-@property(setter=_setHasEnteredRetentionThreshold:,assign,readwrite) bool _hasEnteredRetentionThreshold;
-@property(setter=_setPreviousOffset:,assign,readwrite) double _previousOffset;
-@property(getter=_isPreviousOffsetInvalid,setter=_setPreviousOffsetInvalid:,assign,readwrite) bool _previousOffsetInvalid;
-@property(assign,readwrite) bool accumulateOffsetWhileSnapped;
-@property(assign,readwrite) double attractionOffsetThreshold;
-@property(assign,readwrite) double attractionVelocityThreshold;
-@property(assign,readwrite) double retentionOffsetThreshold;
-@property(getter=isSnappedToTarget,assign,readonly) bool snappedToTarget;
-@property(assign,readwrite) double targetOffset;
+@property (setter=_setAccumulatedOffset:, nonatomic) double _accumulatedOffset;
+@property (setter=_setHasEnteredAttractionThreshold:, nonatomic) bool _hasEnteredAttractionThreshold;
+@property (setter=_setHasEnteredRetentionThreshold:, nonatomic) bool _hasEnteredRetentionThreshold;
+@property (setter=_setPreviousOffset:, nonatomic) double _previousOffset;
+@property (getter=_isPreviousOffsetInvalid, setter=_setPreviousOffsetInvalid:, nonatomic) bool _previousOffsetInvalid;
+@property (nonatomic) bool accumulateOffsetWhileSnapped;
+@property (nonatomic) double attractionOffsetThreshold;
+@property (nonatomic) double attractionVelocityThreshold;
+@property (nonatomic) double retentionOffsetThreshold;
+@property (getter=isSnappedToTarget, nonatomic, readonly) bool snappedToTarget;
+@property (nonatomic) double targetOffset;
 
 - (double)_accumulatedOffset;
 - (bool)_hasEnteredAttractionThreshold;

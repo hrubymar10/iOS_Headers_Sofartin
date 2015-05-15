@@ -20,11 +20,11 @@
     bool _userLiked;
 }
 
-@property(assign,retain) SKUIColorScheme * colorScheme;
-@property(assign,readwrite) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
-@property(assign,copy) NSArray * friendNames;
-@property(assign,readonly) UIControl * likeToggleButton;
-@property(getter=isUserLiked,assign,readwrite) bool userLiked;
+@property (nonatomic, retain) SKUIColorScheme *colorScheme;
+@property (nonatomic) struct UIEdgeInsets { double x1; double x2; double x3; double x4; } contentInsets;
+@property (nonatomic, copy) NSArray *friendNames;
+@property (nonatomic, readonly) UIControl *likeToggleButton;
+@property (getter=isUserLiked, nonatomic) bool userLiked;
 
 - (void).cxx_destruct;
 - (id)_composedStringForNames:(id)arg1 userLiked:(bool)arg2;

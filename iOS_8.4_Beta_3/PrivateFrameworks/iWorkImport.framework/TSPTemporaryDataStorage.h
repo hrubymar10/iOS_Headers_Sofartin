@@ -10,8 +10,8 @@
     bool _isMissingOriginalData;
 }
 
-@property(assign,readwrite) bool isMissingData;
-@property(assign,readwrite) bool isMissingOriginalData;
+@property (nonatomic) bool isMissingData;
+@property (nonatomic) bool isMissingOriginalData;
 
 - (void).cxx_destruct;
 - (void)dealloc;

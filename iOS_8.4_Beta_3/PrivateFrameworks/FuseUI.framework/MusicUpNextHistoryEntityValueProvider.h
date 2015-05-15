@@ -7,12 +7,12 @@
     MPMediaItem *_mediaItem;
 }
 
-@property(assign,readwrite) <MusicLocalPlaybackHistoryItemDataSource> * dataSource;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) MPMediaItem * mediaItem;
-@property(assign,readonly) Class superclass;
+@property (nonatomic) <MusicLocalPlaybackHistoryItemDataSource> *dataSource;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) MPMediaItem *mediaItem;
+@property (readonly) Class superclass;
 
 - (void).cxx_destruct;
 - (id)dataSource;

@@ -8,9 +8,9 @@
     TSUSparseArray *_mergeRanges;
 }
 
-@property(assign,readonly) unsigned long long count;
-@property(assign,readonly) NSIndexSet * mergeIndexes;
-@property(assign,readonly) TSTMergeOwner * mergeOwner;
+@property (nonatomic, readonly) unsigned long long count;
+@property (nonatomic, readonly) NSIndexSet *mergeIndexes;
+@property (nonatomic, readonly) TSTMergeOwner *mergeOwner;
 
 - (unsigned long long)count;
 - (void)dealloc;

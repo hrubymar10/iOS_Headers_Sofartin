@@ -7,8 +7,8 @@
     NSString *_key;
 }
 
-@property(assign,retain) CAAnimation * animation;
-@property(assign,copy) NSString * key;
+@property (nonatomic, retain) CAAnimation *animation;
+@property (nonatomic, copy) NSString *key;
 
 - (id)CAMLTypeForKey:(id)arg1;
 - (id)animation;

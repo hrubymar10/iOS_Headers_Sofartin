@@ -22,10 +22,10 @@
     SSURLBag *_urlBag;
 }
 
-@property(assign,copy) NSData * certificateData;
-@property(assign,copy) NSString * certificateURLBagKey;
-@property(assign,readwrite) <SSVPlaybackLeaseDelegate> * delegate;
-@property(assign,readwrite) bool refreshesAutomatically;
+@property (copy) NSData *certificateData;
+@property (copy) NSString *certificateURLBagKey;
+@property <SSVPlaybackLeaseDelegate> *delegate;
+@property bool refreshesAutomatically;
 
 - (void).cxx_destruct;
 - (id)_addOperationWithRequest:(id)arg1 configurationURL:(id)arg2 bagKey:(id)arg3 completionBlock:(id)arg4;

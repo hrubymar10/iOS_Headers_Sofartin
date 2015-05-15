@@ -30,31 +30,31 @@
     NSString *_validationFunction;
 }
 
-@property(assign,retain) NSDictionary * alert;
-@property(assign,readonly) RUIAlertView * alertElement;
-@property(assign,readonly) NSArray * allPages;
-@property(assign,retain) NSDictionary * clientInfo;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,readonly) NSArray * defaultPages;
-@property(assign,readwrite) <RUIObjectModelDelegate> * delegate;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) NSArray * displayedPages;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSString * inlineScript;
-@property(assign,retain) NSString * name;
-@property(assign,readonly) NSDictionary * namedPages;
-@property(assign,readwrite) long long nextButtonStyle;
-@property(assign,readonly) NSArray * pages;
-@property(assign,readwrite) int refreshDelay;
-@property(assign,retain) NSString * refreshURL;
-@property(assign,retain) NSURL * scriptURL;
-@property(assign,retain) NSDictionary * serverInfo;
-@property(assign,retain) NSURL * sourceURL;
-@property(assign,retain) RUIStyle * style;
-@property(assign,readonly) Class superclass;
-@property(assign,retain) NSDictionary * updateInfo;
-@property(assign,retain) NSString * validationFunction;
-@property(assign,readonly) RUIPage * visiblePage;
+@property (nonatomic, retain) NSDictionary *alert;
+@property (nonatomic, readonly) RUIAlertView *alertElement;
+@property (nonatomic, readonly) NSArray *allPages;
+@property (nonatomic, retain) NSDictionary *clientInfo;
+@property (readonly, copy) NSString *debugDescription;
+@property (nonatomic, readonly) NSArray *defaultPages;
+@property (nonatomic) <RUIObjectModelDelegate> *delegate;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) NSArray *displayedPages;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSString *inlineScript;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, readonly) NSDictionary *namedPages;
+@property (nonatomic) long long nextButtonStyle;
+@property (nonatomic, readonly) NSArray *pages;
+@property (nonatomic) int refreshDelay;
+@property (nonatomic, retain) NSString *refreshURL;
+@property (nonatomic, retain) NSURL *scriptURL;
+@property (nonatomic, retain) NSDictionary *serverInfo;
+@property (nonatomic, retain) NSURL *sourceURL;
+@property (nonatomic, retain) RUIStyle *style;
+@property (readonly) Class superclass;
+@property (nonatomic, retain) NSDictionary *updateInfo;
+@property (nonatomic, retain) NSString *validationFunction;
+@property (nonatomic, readonly) RUIPage *visiblePage;
 
 + (id)objectModelForXMLNamed:(id)arg1;
 

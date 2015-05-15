@@ -21,16 +21,16 @@
     NSDate *_transit;
 }
 
-@property(assign,readonly) GEOSolarEclipticCelestialBodyData * eclipticCoord;
-@property(assign,readonly) double elongation;
-@property(assign,readonly) GEOEquatorialCelestialBodyData * equatorialCoord;
-@property(assign,readonly) GEOHorizontalCelestialBodyData * horizontalCoord;
-@property(assign,readonly) double illuminatedFraction;
-@property(assign,readonly) double parallacticAngle;
-@property(assign,readonly) double phaseAngle;
-@property(assign,readonly) NSDate * rise;
-@property(assign,readonly) NSDate * set;
-@property(assign,readonly) NSDate * transit;
+@property (nonatomic, readonly) GEOSolarEclipticCelestialBodyData *eclipticCoord;
+@property (nonatomic, readonly) double elongation;
+@property (nonatomic, readonly) GEOEquatorialCelestialBodyData *equatorialCoord;
+@property (nonatomic, readonly) GEOHorizontalCelestialBodyData *horizontalCoord;
+@property (nonatomic, readonly) double illuminatedFraction;
+@property (nonatomic, readonly) double parallacticAngle;
+@property (nonatomic, readonly) double phaseAngle;
+@property (nonatomic, readonly) NSDate *rise;
+@property (nonatomic, readonly) NSDate *set;
+@property (nonatomic, readonly) NSDate *transit;
 
 - (id).cxx_construct;
 - (void)_getRightAscension:(double*)arg1 declination:(double*)arg2 forJulianDay:(double)arg3 forBody:(long long)arg4;

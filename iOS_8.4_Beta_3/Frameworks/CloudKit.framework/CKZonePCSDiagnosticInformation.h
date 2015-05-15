@@ -9,10 +9,10 @@
     bool _wasRepaired;
 }
 
-@property(assign,retain) NSString * pcsDiagnosticString;
-@property(assign,retain) NSError * pcsError;
-@property(assign,readwrite) int pcsStatus;
-@property(assign,readwrite) bool wasRepaired;
+@property (nonatomic, retain) NSString *pcsDiagnosticString;
+@property (nonatomic, retain) NSError *pcsError;
+@property (nonatomic) int pcsStatus;
+@property (nonatomic) bool wasRepaired;
 
 + (bool)supportsSecureCoding;
 

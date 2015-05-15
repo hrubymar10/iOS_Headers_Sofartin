@@ -15,10 +15,10 @@
     unsigned long long _visibleFields;
 }
 
-@property(assign,copy) NSDate * endDate;
-@property(assign,copy) UIColor * textColor;
-@property(assign,retain) UIFont * valueFont;
-@property(assign,readwrite) unsigned long long visibleFields;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) UIColor *textColor;
+@property (nonatomic, retain) UIFont *valueFont;
+@property (nonatomic) unsigned long long visibleFields;
 
 - (void).cxx_destruct;
 - (id)_allFieldViews;

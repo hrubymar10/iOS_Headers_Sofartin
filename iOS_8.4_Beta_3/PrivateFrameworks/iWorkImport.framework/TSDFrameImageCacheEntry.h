@@ -13,10 +13,10 @@
     double mViewScale;
 }
 
-@property(assign,readwrite) double assetScale;
-@property(assign,readwrite) TSDFrameSpec * frameSpec;
-@property(assign,readwrite) struct CGSize { double x1; double x2; } size;
-@property(assign,readwrite) double viewScale;
+@property (nonatomic) double assetScale;
+@property (nonatomic) TSDFrameSpec *frameSpec;
+@property (nonatomic) struct CGSize { double x1; double x2; } size;
+@property (nonatomic) double viewScale;
 
 - (double)assetScale;
 - (void)dealloc;

@@ -4,10 +4,10 @@
 
 @interface SAUIImageView : SAAceView
 
-@property(assign,copy) NSArray * commands;
-@property(assign,copy) NSString * descriptionText;
-@property(assign,retain) SAUIImageResource * image;
-@property(assign,copy) NSNumber * tintColor;
+@property (nonatomic, copy) NSArray *commands;
+@property (nonatomic, copy) NSString *descriptionText;
+@property (nonatomic, retain) SAUIImageResource *image;
+@property (nonatomic, copy) NSNumber *tintColor;
 
 + (id)imageView;
 + (id)imageViewWithDictionary:(id)arg1 context:(id)arg2;

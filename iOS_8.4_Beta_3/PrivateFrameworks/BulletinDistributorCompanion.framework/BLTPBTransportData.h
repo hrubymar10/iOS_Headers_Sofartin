@@ -11,10 +11,10 @@
     unsigned long long _sequenceNumber;
 }
 
-@property(assign,readwrite) bool hasIsInitialSequenceNumber;
-@property(assign,readwrite) bool hasSequenceNumber;
-@property(assign,readwrite) bool isInitialSequenceNumber;
-@property(assign,readwrite) unsigned long long sequenceNumber;
+@property (nonatomic) bool hasIsInitialSequenceNumber;
+@property (nonatomic) bool hasSequenceNumber;
+@property (nonatomic) bool isInitialSequenceNumber;
+@property (nonatomic) unsigned long long sequenceNumber;
 
 - (void)copyTo:(id)arg1;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

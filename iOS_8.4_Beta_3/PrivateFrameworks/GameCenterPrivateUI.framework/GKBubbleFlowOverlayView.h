@@ -4,7 +4,7 @@
 
 @interface GKBubbleFlowOverlayView : GKBubbleFlowContainerView
 
-@property(assign,readonly) GKBubbleSet * secondaryBubbleControls;
+@property (nonatomic, readonly) GKBubbleSet *secondaryBubbleControls;
 
 + (id)sharedBubbleOverlayView;
 + (id)sharedBubbleOverlayViewForWindow:(id)arg1;

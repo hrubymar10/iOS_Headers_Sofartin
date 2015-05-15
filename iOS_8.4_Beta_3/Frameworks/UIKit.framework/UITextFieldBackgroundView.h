@@ -9,7 +9,7 @@
     float _progress;
 }
 
-@property(assign,retain) UIColor * fillColor;
+@property (nonatomic, retain) UIColor *fillColor;
 
 - (void)_updateImages;
 - (void)dealloc;

@@ -12,10 +12,10 @@
     NSString *_vertexShader;
 }
 
-@property(assign,readwrite) <SCNProgramDelegate> * delegate;
-@property(assign,copy) NSString * fragmentShader;
-@property(getter=isOpaque,assign,readwrite) bool opaque;
-@property(assign,copy) NSString * vertexShader;
+@property (nonatomic) <SCNProgramDelegate> *delegate;
+@property (nonatomic, copy) NSString *fragmentShader;
+@property (getter=isOpaque, nonatomic) bool opaque;
+@property (nonatomic, copy) NSString *vertexShader;
 
 + (id)SCNJSExportProtocol;
 + (id)program;

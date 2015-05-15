@@ -6,7 +6,7 @@
     NSMutableIndexSet *_visibleIndexSet;
 }
 
-@property(assign,retain) NSMutableIndexSet * visibleIndexSet;
+@property (nonatomic, retain) NSMutableIndexSet *visibleIndexSet;
 
 - (bool)anyHiddenIndicesInRange:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg1;
 - (void)dealloc;

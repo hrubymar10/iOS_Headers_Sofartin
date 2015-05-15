@@ -9,10 +9,10 @@
     NSString *_summary;
 }
 
-@property(assign,copy) NSString * chatGUID;
-@property(assign,retain) NSDate * messageDate;
-@property(assign,copy) NSString * messageGUID;
-@property(assign,copy) NSString * summary;
+@property (nonatomic, copy) NSString *chatGUID;
+@property (nonatomic, retain) NSDate *messageDate;
+@property (nonatomic, copy) NSString *messageGUID;
+@property (nonatomic, copy) NSString *summary;
 
 - (id)chatGUID;
 - (long long)compare:(id)arg1;

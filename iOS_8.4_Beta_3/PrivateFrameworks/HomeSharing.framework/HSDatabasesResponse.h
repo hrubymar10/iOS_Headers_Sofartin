@@ -6,7 +6,7 @@
     NSArray *_databases;
 }
 
-@property(assign,copy) NSArray * databases;
+@property (nonatomic, copy) NSArray *databases;
 
 - (void).cxx_destruct;
 - (id)databases;

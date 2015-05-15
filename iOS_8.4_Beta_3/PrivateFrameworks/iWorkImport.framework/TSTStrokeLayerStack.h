@@ -12,13 +12,13 @@
     long long _type;
 }
 
-@property(assign,retain) TSTMutableStrokeLayer * clearedStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * customStrokeLayer;
-@property(assign,retain) TSTStrokeLayer * defaultStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * dynamicStrokeLayer;
-@property(assign,retain) TSTMutableStrokeLayer * spillStrokeLayer;
-@property(assign,readwrite) long long stackKind;
-@property(assign,readwrite) long long type;
+@property (nonatomic, retain) TSTMutableStrokeLayer *clearedStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *customStrokeLayer;
+@property (nonatomic, retain) TSTStrokeLayer *defaultStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *dynamicStrokeLayer;
+@property (nonatomic, retain) TSTMutableStrokeLayer *spillStrokeLayer;
+@property (nonatomic) long long stackKind;
+@property (nonatomic) long long type;
 
 + (id)strokeLayerStackWithStackKind:(long long)arg1;
 

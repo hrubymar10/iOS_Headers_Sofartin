@@ -6,7 +6,7 @@
     CRRecentContact *_recentContact;
 }
 
-@property(assign,retain) CRRecentContact * recentContact;
+@property (nonatomic, readonly, retain) CRRecentContact *recentContact;
 
 - (void)dealloc;
 - (id)initWithChildren:(id)arg1 displayString:(id)arg2 recentContact:(id)arg3;

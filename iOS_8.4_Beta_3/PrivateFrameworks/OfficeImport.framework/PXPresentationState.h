@@ -13,8 +13,8 @@
     PDPresentation *mTgtPresentation;
 }
 
-@property(assign,retain) CXNamespace * PXPresentationMLNamespace;
-@property(assign,retain) <TCCancelDelegate> * cancelDelegate;
+@property (nonatomic, retain) CXNamespace *PXPresentationMLNamespace;
+@property (nonatomic, retain) <TCCancelDelegate> *cancelDelegate;
 
 - (id)PXPresentationMLNamespace;
 - (id)cancelDelegate;

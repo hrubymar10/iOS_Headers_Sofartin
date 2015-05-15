@@ -9,7 +9,7 @@
     NSHashTable *_observers;
 }
 
-@property(assign,retain) FBSDisplay * mainDisplay;
+@property (nonatomic, retain) FBSDisplay *mainDisplay;
 
 + (id)mainDisplay;
 + (id)sharedInstance;

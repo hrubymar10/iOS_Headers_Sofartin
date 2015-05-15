@@ -9,7 +9,7 @@
     unsigned char _subjectPrefixLength;
 }
 
-@property(assign,readwrite) unsigned long long modSequenceNumber;
+@property unsigned long long modSequenceNumber;
 
 + (Class)dataMessageStoreToUse;
 + (unsigned int)displayablePriorityForPriority:(int)arg1;

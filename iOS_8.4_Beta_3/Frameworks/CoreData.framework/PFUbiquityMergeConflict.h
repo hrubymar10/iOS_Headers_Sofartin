@@ -6,7 +6,7 @@
     NSDictionary *_ancestorSnapshot;
 }
 
-@property(assign,retain) NSDictionary * ancestorSnapshot;
+@property (retain) NSDictionary *ancestorSnapshot;
 
 - (id)ancestorSnapshot;
 - (void)dealloc;

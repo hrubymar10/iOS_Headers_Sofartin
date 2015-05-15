@@ -11,10 +11,10 @@
     void *reserved2;
 }
 
-@property(assign,copy) NSArray * components;
-@property(assign,readwrite) unsigned int msgid;
-@property(assign,retain) NSPort * receivePort;
-@property(assign,retain) NSPort * sendPort;
+@property (readonly, copy) NSArray *components;
+@property unsigned int msgid;
+@property (readonly, retain) NSPort *receivePort;
+@property (readonly, retain) NSPort *sendPort;
 
 - (id)components;
 - (id)copyWithZone:(struct _NSZone { }*)arg1;

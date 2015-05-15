@@ -6,10 +6,10 @@
     void *_exFATCameraFolderProperties;
 }
 
-@property(assign,readonly) struct timespec { long long x1; long long x2; } fsCreationTime;
-@property(assign,readonly) struct timespec { long long x1; long long x2; } fsModificationTime;
-@property(assign,readonly) long long fsSize;
-@property(assign,readonly) id object;
+@property (readonly) struct timespec { long long x1; long long x2; } fsCreationTime;
+@property (readonly) struct timespec { long long x1; long long x2; } fsModificationTime;
+@property (readonly) long long fsSize;
+@property (readonly) id object;
 
 - (void)dealloc;
 - (bool)deleteItemFromCamera:(id)arg1;

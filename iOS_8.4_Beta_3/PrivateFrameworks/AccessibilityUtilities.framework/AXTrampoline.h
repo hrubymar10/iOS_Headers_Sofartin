@@ -8,9 +8,9 @@
     bool _warnAboutUnknownSelectors;
 }
 
-@property(assign,readwrite) id caller;
-@property(assign,readwrite) Class targetClass;
-@property(assign,readwrite) bool warnAboutUnknownSelectors;
+@property (nonatomic) id caller;
+@property (nonatomic) Class targetClass;
+@property (nonatomic) bool warnAboutUnknownSelectors;
 
 + (void)methodDoesNotExistSentinal;
 + (id)methodNotFoundSentinal;

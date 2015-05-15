@@ -6,7 +6,7 @@
     bool _topSeparator;
 }
 
-@property(assign,readwrite) bool topSeparator;
+@property (nonatomic) bool topSeparator;
 
 + (void)initialize;
 + (double)separatorHeight;

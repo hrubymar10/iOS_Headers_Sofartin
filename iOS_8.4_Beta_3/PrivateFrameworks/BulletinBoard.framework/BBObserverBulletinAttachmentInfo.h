@@ -10,10 +10,10 @@
     NSString *_sizesRecordID;
 }
 
-@property(assign,readwrite) bool imagesFetched;
-@property(assign,copy) NSString * imagesRecordID;
-@property(assign,readwrite) bool sizesFetched;
-@property(assign,copy) NSString * sizesRecordID;
+@property (nonatomic) bool imagesFetched;
+@property (nonatomic, copy) NSString *imagesRecordID;
+@property (nonatomic) bool sizesFetched;
+@property (nonatomic, copy) NSString *sizesRecordID;
 
 - (id)_pairForKey:(id)arg1 create:(bool)arg2;
 - (void)dealloc;

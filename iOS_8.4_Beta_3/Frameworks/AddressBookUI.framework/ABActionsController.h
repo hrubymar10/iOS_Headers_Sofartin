@@ -13,7 +13,7 @@
     id _value;
 }
 
-@property(assign,retain) ABUIPerson * person;
+@property (nonatomic, retain) ABUIPerson *person;
 
 + (int)defaultActionForProperty:(int)arg1;
 + (id)newActionsControllerForProperty:(int)arg1;

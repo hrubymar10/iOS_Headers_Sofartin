@@ -17,18 +17,18 @@
     CKRecordZoneID *_zoneID;
 }
 
-@property(assign,copy) CKQueryCursor * cursor;
-@property(assign,copy) NSArray * desiredKeys;
-@property(assign,readwrite) bool isFinishing;
-@property(assign,copy) CKQuery * query;
-@property(assign,copy) id queryCompletionBlock;
-@property(assign,retain) NSObject<OS_dispatch_queue> * queryResultQueue;
-@property(assign,copy) id recordFetchedBlock;
-@property(assign,retain) NSArray * results;
-@property(assign,retain) CKQueryCursor * resultsCursor;
-@property(assign,readwrite) unsigned long long resultsLimit;
-@property(assign,readwrite) bool shouldFetchAssetContent;
-@property(assign,copy) CKRecordZoneID * zoneID;
+@property (nonatomic, copy) CKQueryCursor *cursor;
+@property (nonatomic, copy) NSArray *desiredKeys;
+@property (nonatomic) bool isFinishing;
+@property (nonatomic, copy) CKQuery *query;
+@property (nonatomic, copy) id queryCompletionBlock;
+@property (nonatomic, retain) NSObject<OS_dispatch_queue> *queryResultQueue;
+@property (nonatomic, copy) id recordFetchedBlock;
+@property (nonatomic, retain) NSArray *results;
+@property (nonatomic, retain) CKQueryCursor *resultsCursor;
+@property (nonatomic) unsigned long long resultsLimit;
+@property (nonatomic) bool shouldFetchAssetContent;
+@property (nonatomic, copy) CKRecordZoneID *zoneID;
 
 - (void).cxx_destruct;
 - (bool)CKOperationShouldRun:(id*)arg1;

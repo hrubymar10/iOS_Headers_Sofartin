@@ -6,14 +6,14 @@
     AVAssetDownloadSessionInternal *_internal;
 }
 
-@property(assign,readonly) NSURL * URL;
-@property(assign,readonly) unsigned long long availableFileSize;
-@property(assign,readonly) NSURL * destinationURL;
-@property(assign,readonly) unsigned long long downloadToken;
-@property(assign,readonly) NSError * error;
-@property(assign,readonly) unsigned long long fileSize;
-@property(assign,readonly) long long priority;
-@property(assign,readonly) long long status;
+@property (nonatomic, readonly) NSURL *URL;
+@property (nonatomic, readonly) unsigned long long availableFileSize;
+@property (nonatomic, readonly) NSURL *destinationURL;
+@property (nonatomic, readonly) unsigned long long downloadToken;
+@property (nonatomic, readonly) NSError *error;
+@property (nonatomic, readonly) unsigned long long fileSize;
+@property (nonatomic, readonly) long long priority;
+@property (nonatomic, readonly) long long status;
 
 + (id)assetDownloadSessionWithDownloadToken:(unsigned long long)arg1;
 + (id)assetDownloadSessionWithURL:(id)arg1 destinationURL:(id)arg2 options:(id)arg3;

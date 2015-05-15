@@ -7,8 +7,8 @@
     NSString *_message;
 }
 
-@property(assign,readonly) int level;
-@property(assign,readonly) NSString * message;
+@property (readonly) int level;
+@property (readonly) NSString *message;
 
 + (id)noteAtLocation:(id)arg1 ofLevel:(int)arg2 withFormat:(id)arg3;
 

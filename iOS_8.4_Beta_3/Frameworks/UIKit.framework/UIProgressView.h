@@ -17,12 +17,12 @@
     UIImageView *_trackView;
 }
 
-@property(assign,readwrite) float progress;
-@property(assign,retain) UIImage * progressImage;
-@property(assign,retain) UIColor * progressTintColor;
-@property(assign,readwrite) long long progressViewStyle;
-@property(assign,retain) UIImage * trackImage;
-@property(assign,retain) UIColor * trackTintColor;
+@property (nonatomic) float progress;
+@property (nonatomic, retain) UIImage *progressImage;
+@property (nonatomic, retain) UIColor *progressTintColor;
+@property (nonatomic) long long progressViewStyle;
+@property (nonatomic, retain) UIImage *trackImage;
+@property (nonatomic, retain) UIColor *trackTintColor;
 
 + (int)_indexForStyle:(long long)arg1 barStyle:(long long)arg2;
 + (struct { id x1; id x2; })_standardImagesForStyle:(long long)arg1 barStyle:(long long)arg2;

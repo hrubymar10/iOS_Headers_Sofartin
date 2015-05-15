@@ -6,11 +6,11 @@
     NSURL *_link;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,retain) NSURL * link;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (readonly) unsigned long long hash;
+@property (nonatomic, retain) NSURL *link;
+@property (readonly) Class superclass;
 
 + (id)interactableLinkWithURL:(id)arg1 range:(struct _NSRange { unsigned long long x1; unsigned long long x2; })arg2;
 

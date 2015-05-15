@@ -12,7 +12,7 @@
     long long _version;
 }
 
-@property(getter=isComplete,assign,readonly) bool complete;
+@property (getter=isComplete, nonatomic, readonly) bool complete;
 
 - (void)dealloc;
 - (id)exchangeData:(id)arg1 error:(id*)arg2;

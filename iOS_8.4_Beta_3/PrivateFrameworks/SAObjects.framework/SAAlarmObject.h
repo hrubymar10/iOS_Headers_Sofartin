@@ -4,12 +4,12 @@
 
 @interface SAAlarmObject : SADomainObject
 
-@property(assign,copy) NSNumber * enabled;
-@property(assign,copy) NSArray * frequency;
-@property(assign,copy) NSNumber * hour;
-@property(assign,copy) NSString * label;
-@property(assign,copy) NSNumber * minute;
-@property(assign,copy) NSNumber * relativeOffsetMinutes;
+@property (nonatomic, copy) NSNumber *enabled;
+@property (nonatomic, copy) NSArray *frequency;
+@property (nonatomic, copy) NSNumber *hour;
+@property (nonatomic, copy) NSString *label;
+@property (nonatomic, copy) NSNumber *minute;
+@property (nonatomic, copy) NSNumber *relativeOffsetMinutes;
 
 + (id)object;
 + (id)objectWithDictionary:(id)arg1 context:(id)arg2;

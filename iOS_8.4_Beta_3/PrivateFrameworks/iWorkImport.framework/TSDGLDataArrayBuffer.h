@@ -18,14 +18,14 @@
     unsigned long long mVertexCount;
 }
 
-@property(assign,readonly) unsigned long long GLDataBufferEntrySize;
-@property(assign,readonly) unsigned long long bufferCount;
-@property(assign,readwrite) unsigned long long currentBufferIndex;
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,readonly) bool hasUpdatedData;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readonly) Class superclass;
+@property (nonatomic, readonly) unsigned long long GLDataBufferEntrySize;
+@property (nonatomic, readonly) unsigned long long bufferCount;
+@property (nonatomic) unsigned long long currentBufferIndex;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, readonly) bool hasUpdatedData;
+@property (readonly) unsigned long long hash;
+@property (readonly) Class superclass;
 
 - (unsigned long long)GLDataBufferEntrySize;
 - (char *)GLDataPointer;

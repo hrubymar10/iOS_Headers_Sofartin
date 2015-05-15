@@ -8,9 +8,9 @@
     int _uniqueID;
 }
 
-@property(assign,readonly) TRAdvertisingInfo * advertisingInfo;
-@property(assign,readonly) NSString * name;
-@property(assign,readonly) int uniqueID;
+@property (nonatomic, readonly) TRAdvertisingInfo *advertisingInfo;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) int uniqueID;
 
 + (bool)supportsSecureCoding;
 

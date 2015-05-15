@@ -20,12 +20,12 @@
     double m_pointerOffset;
 }
 
-@property(assign,retain) _UIBackdropView * blurView;
-@property(assign,retain) NSArray * gradientColors;
-@property(assign,readwrite) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyRect;
-@property(assign,readwrite) UIKeyboardMenuView * menu;
-@property(assign,readwrite) int mode;
-@property(assign,readwrite) double pointerOffset;
+@property (nonatomic, retain) _UIBackdropView *blurView;
+@property (nonatomic, retain) NSArray *gradientColors;
+@property (nonatomic) struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; } keyRect;
+@property (nonatomic) UIKeyboardMenuView *menu;
+@property (nonatomic) int mode;
+@property (nonatomic) double pointerOffset;
 
 - (id)blurView;
 - (void)dealloc;

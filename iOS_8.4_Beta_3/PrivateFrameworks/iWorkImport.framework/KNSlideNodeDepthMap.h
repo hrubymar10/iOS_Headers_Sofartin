@@ -7,8 +7,8 @@
     NSArray *_slideNodes;
 }
 
-@property(assign,readonly) NSArray * depthsOfSlideNodes;
-@property(assign,readonly) NSArray * slideNodes;
+@property (nonatomic, readonly) NSArray *depthsOfSlideNodes;
+@property (nonatomic, readonly) NSArray *slideNodes;
 
 - (void)dealloc;
 - (id)depthsOfSlideNodes;

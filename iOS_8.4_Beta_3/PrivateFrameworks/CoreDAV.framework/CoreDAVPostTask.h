@@ -4,7 +4,7 @@
 
 @interface CoreDAVPostTask : CoreDAVPostOrPutTask
 
-@property(assign,readwrite) <CoreDAVTaskDelegate> * delegate;
+@property (nonatomic) <CoreDAVTaskDelegate> *delegate;
 
 - (void)finishCoreDAVTaskWithError:(id)arg1;
 - (id)httpMethod;

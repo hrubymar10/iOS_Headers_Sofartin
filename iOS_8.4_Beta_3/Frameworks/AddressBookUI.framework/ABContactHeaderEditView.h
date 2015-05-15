@@ -8,12 +8,12 @@
     <ABPropertyCellDelegate> *_namePropertyDelegate;
 }
 
-@property(assign,copy) NSString * debugDescription;
-@property(assign,copy) NSString * description;
-@property(assign,retain) NSArray * editingGroups;
-@property(assign,readonly) unsigned long long hash;
-@property(assign,readwrite) <ABPropertyCellDelegate> * namePropertyDelegate;
-@property(assign,readonly) Class superclass;
+@property (readonly, copy) NSString *debugDescription;
+@property (readonly, copy) NSString *description;
+@property (nonatomic, retain) NSArray *editingGroups;
+@property (readonly) unsigned long long hash;
+@property (nonatomic) <ABPropertyCellDelegate> *namePropertyDelegate;
+@property (readonly) Class superclass;
 
 + (id)contactHeaderViewWithContact:(id)arg1 editingGroups:(id)arg2;
 

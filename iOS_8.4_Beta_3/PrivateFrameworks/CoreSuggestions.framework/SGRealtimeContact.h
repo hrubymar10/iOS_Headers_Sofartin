@@ -8,9 +8,9 @@
     int _state;
 }
 
-@property(assign,readonly) int abPersonId;
-@property(assign,readonly) SGContact * contact;
-@property(assign,readonly) int state;
+@property (nonatomic, readonly) int abPersonId;
+@property (nonatomic, readonly) SGContact *contact;
+@property (nonatomic, readonly) int state;
 
 + (id)realtimeContactForFields:(id)arg1 addedToCuratedContact:(int)arg2;
 + (id)realtimeContactForNewContact:(id)arg1;
